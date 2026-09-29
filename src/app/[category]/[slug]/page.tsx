@@ -134,7 +134,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {/* AEO / GEO Direct Answer Box */}
         <DirectAnswerBox directAnswer={article.directAnswer} />
 
-        {/* Key Takeaways */}
+        {/* Main Points */}
         <KeyTakeaways takeaways={article.keyTakeaways} />
 
         {/* 2-Column Content Layout: Main Text (8 cols) + Sticky TOC (4 cols) */}

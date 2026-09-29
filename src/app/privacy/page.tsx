@@ -43,7 +43,7 @@ export default function PrivacyPage() {
             <ul>
               <li><strong>Newsletter Subscriptions:</strong> If you voluntarily subscribe to SaaSInsider Weekly, we store your email address strictly for dispatching editorial newsletters. You may unsubscribe with a single click at any time.</li>
               <li><strong>Contact &amp; Correction Forms:</strong> Information submitted via our contact forms (name, email, feedback) is used solely to respond to your specific inquiry.</li>
-              <li><strong>Aggregated Anonymous Telemetry:</strong> We collect privacy-preserving server logs (pages requested, browser type, referrer) to assess aggregate article popularity and optimize site performance without profiling individual users.</li>
+              <li><strong>Aggregated Anonymous Telemetry:</strong> We collect privacy-preserving server logs (pages requested, browser type, referrer) to assess aggregate article popularity and improve site performance without profiling individual users.</li>
             </ul>
           </section>
 

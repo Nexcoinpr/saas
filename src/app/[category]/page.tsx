@@ -160,7 +160,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         {/* Other Hubs Navigation */}
         <section className="my-16 pt-10 border-t border-slate-200 dark:border-slate-800">
           <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">
-            Explore Other Category Hubs
+            Browse Other Category Hubs
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {CATEGORIES.filter((c) => c.slug !== category.slug).slice(0, 6).map((c) => (

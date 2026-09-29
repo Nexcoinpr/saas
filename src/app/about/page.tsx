@@ -33,7 +33,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            SaaSInsider was founded with a single mission: to cut through vendor marketing hype and provide technology buyers with rigorous, hands-on software teardowns, verified benchmarks, and actionable architecture guides.
+            SaaSInsider was founded with a single mission: to cut through vendor marketing hype and provide technology buyers with rigorous, hands-on software teardowns, verified benchmarks, and practical architecture guides.
           </p>
         </header>
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="prose-content text-slate-800 dark:text-slate-200 space-y-8 my-10">
           
           <section>
-            <h2>Our Core Mission</h2>
+            <h2>Our Mission</h2>
             <p>
               The B2B software ecosystem has exploded into tens of thousands of specialized tools. Buying committees face information overload: review aggregators riddled with incentivized feedback, vendor marketing that overpromises on capabilities, and fragmented documentation.
             </p>
@@ -63,7 +63,7 @@ export default function AboutPage() {
                   <span>1. Sandbox Testing Required</span>
                 </div>
                 <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                  We deploy every software product inside dedicated sandbox environments, testing edge cases, API throughput, and real user workflows before rating.
+                  We deploy every software product inside dedicated sandbox environments, testing edge cases, API call speeds, and real workflows before rating.
                 </p>
               </div>
 
@@ -105,10 +105,10 @@ export default function AboutPage() {
               Our scoring model assesses software across five standardized dimensions, each rated on a 1.0 to 5.0 scale:
             </p>
             <ul>
-              <li><strong>User Interface &amp; Onboarding:</strong> How quickly can a cross-functional team adopt the platform with minimal friction?</li>
-              <li><strong>Feature Depth &amp; Flexibility:</strong> Does the software accommodate complex enterprise edge cases, custom fields, and relational models?</li>
+              <li><strong>Screen Layout &amp; First-Run Setup:</strong> How quickly can a team start using the platform with minimal friction?</li>
+              <li><strong>Feature Depth &amp; Flexibility:</strong> Does the software accommodate complex team edge cases, custom fields, and relational models?</li>
               <li><strong>Security &amp; Governance:</strong> Does the vendor provide SAML SSO, SOC2 Type II compliance, role-based access control (RBAC), and encryption at rest?</li>
-              <li><strong>Integration &amp; API Robustness:</strong> Are REST / GraphQL endpoints well-documented, rate-limits generous, and webhooks instant?</li>
+              <li><strong>Integration &amp; API Reliability:</strong> Are REST / GraphQL endpoints well-documented, rate-limits generous, and webhooks instant?</li>
               <li><strong>Total Cost of Ownership:</strong> How transparent are pricing tiers, seat minimums, and hidden overage fees?</li>
             </ul>
           </section>
@@ -116,7 +116,7 @@ export default function AboutPage() {
           <section>
             <h2>Meet the Writers</h2>
             <p>
-              Explore our verified editorial roster on the <Link href="/authors" className="text-indigo-600 dark:text-indigo-400 font-semibold underline">Authors Directory</Link> to inspect individual credentials, past industry roles, and published guides.
+              Check our verified editorial roster on the <Link href="/authors" className="text-indigo-600 dark:text-indigo-400 font-semibold underline">Authors Directory</Link> to inspect individual credentials, past industry roles, and published guides.
             </p>
           </section>
 

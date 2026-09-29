@@ -137,7 +137,7 @@ export function StepByStepGuide({ howToData }: StepByStepGuideProps) {
         <div id="pro-tips-for-scale" className="p-6 rounded-2xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/40 dark:bg-indigo-950/20 space-y-3">
           <h4 className="text-sm font-bold uppercase tracking-wider text-indigo-900 dark:text-indigo-200 flex items-center gap-2">
             <Lightbulb className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-            <span>Best Practices for Enterprise Scale</span>
+            <span>Setup Tips for High-Volume Use</span>
           </h4>
           <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
             {proTips.map((tip, idx) => (

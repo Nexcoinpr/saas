@@ -64,7 +64,7 @@ const TOPICS: TopicItem[] = [
   {
     name: "Business",
     slug: "business",
-    description: "Digital transformation, vendor procurement & IT modernization",
+    description: "Software migration, vendor procurement & IT modernization",
     icon: Briefcase,
     count: "18+ Teardowns",
     color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
@@ -75,7 +75,7 @@ const TOPICS: TopicItem[] = [
     description: "Zero-to-one tech stacks, lean tooling & founder operations",
     icon: Rocket,
     count: "25+ Articles",
-    color: "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-200 dark:border-rose-900/60"
+    color: "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-200 dark:rose-900/60"
   }
 ];
 
@@ -86,13 +86,13 @@ export function TopicCards() {
         
         <div className="max-w-2xl mb-8">
           <span className="text-xs uppercase tracking-widest font-bold text-indigo-600 dark:text-indigo-400">
-            Explore By Domain
+            Browse By Subject
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
             Popular Topics &amp; Topic Clusters
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 mt-2">
-            Structured thematic clusters designed for deep learning, technical SEO, and AI search indexing.
+            Structured thematic clusters arranged for fast retrieval and topic depth.
           </p>
         </div>
 

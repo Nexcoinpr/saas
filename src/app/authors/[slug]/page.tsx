@@ -118,13 +118,13 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
                 </ul>
               </div>
 
-              {/* Areas of Expertise */}
+              {/* Topics */}
               <div className="pt-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">
-                  Areas of Subject-Matter Expertise
+                  Primary Coverage Topics
                 </span>
                 <div className="flex flex-wrap gap-2">
-                  {author.expertise.map((exp, idx) => (
+                  {author.specialties.map((exp, idx) => (
                     <span
                       key={idx}
                       className="text-xs px-3 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 font-medium text-slate-700 dark:text-slate-300"

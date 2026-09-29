@@ -16,7 +16,7 @@ export function BuyerGuideCta() {
               Ready to Upgrade Your Team&apos;s Software Stack?
             </h2>
             <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
-              Explore hundreds of verified software reviews, head-to-head comparisons, and implementation playbooks designed to eliminate software bloat and accelerate execution.
+              Read hundreds of verified software reviews, head-to-head comparisons, and setup playbooks designed to eliminate software bloat and avoid unnecessary fees.
             </p>
           </div>
 

@@ -11,7 +11,7 @@ export function KeyTakeaways({ takeaways }: KeyTakeawaysProps) {
   return (
     <div className="my-8 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/60">
       <h3 className="text-xs uppercase font-extrabold tracking-widest text-slate-500 dark:text-slate-400 mb-4">
-        Key Takeaways &amp; Executive Summary
+        At a Glance: Main Points
       </h3>
       <ul className="space-y-3">
         {takeaways.map((point, index) => (

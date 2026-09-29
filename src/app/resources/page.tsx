@@ -32,7 +32,7 @@ const GLOSSARY_TERMS = [
   },
   {
     term: "Rule of 40",
-    definition: "A benchmark for SaaS operational health stating that a company's year-over-year revenue growth rate plus its free cash flow margin should equal or exceed 40%."
+    definition: "A benchmark for SaaS operational health stating that a company's year-over-year revenue expansion rate plus its free cash flow margin should equal or exceed 40%."
   },
   {
     term: "Idempotent Webhooks",
@@ -79,7 +79,7 @@ export default function ResourcesPage() {
               href="/saas/what-is-saas"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
             >
-              <span>Explore Guide &amp; Criteria</span>
+              <span>Read Guide &amp; Criteria</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -93,7 +93,7 @@ export default function ResourcesPage() {
                 SaaS Unit Economics Cheat Sheet
               </h3>
               <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Formulas and 2026 venture benchmarks for CAC, LTV, Net Retention Rate (NRR), Quick Ratio, Magic Number, and CAC payback calculations.
+                Formulas and 2026 venture benchmarks for CAC, LTV, Net Retention Rate (NRR), Quick Ratio, Sales Multiplier, and CAC payback calculations.
               </p>
             </div>
             <Link
@@ -135,7 +135,7 @@ export default function ResourcesPage() {
               SaaS &amp; Cloud Terminology Glossary
             </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-              Clear definitions of essential acronyms and concepts in modern software.
+              Clear definitions of standard acronyms and concepts in modern software.
             </p>
           </div>
 

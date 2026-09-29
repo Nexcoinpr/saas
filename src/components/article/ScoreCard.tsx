@@ -130,7 +130,7 @@ export function ScoreCard({ reviewData }: ScoreCardProps) {
               rel="nofollow noopener"
               className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm transition-all shadow-md shadow-indigo-600/20"
             >
-              <span>Explore {reviewData.productName}</span>
+              <span>Visit {reviewData.productName}</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>

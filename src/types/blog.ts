@@ -8,7 +8,7 @@ export interface Author {
   bio: string;
   avatar: string;
   credentials: string[];
-  expertise: string[];
+  specialties: string[];
   twitter?: string;
   linkedin?: string;
   github?: string;

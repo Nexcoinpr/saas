@@ -108,13 +108,13 @@ export default function AuthorsPage() {
                   {author.bio}
                 </p>
 
-                {/* Expertise tags */}
+                {/* Focus area tags */}
                 <div className="space-y-2 mb-6">
                   <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">
-                    Core Expertise
+                    Focus Areas
                   </span>
                   <div className="flex flex-wrap gap-1.5">
-                    {author.expertise.map((exp, idx) => (
+                    {author.specialties.map((exp, idx) => (
                       <span
                         key={idx}
                         className="text-xs px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium"

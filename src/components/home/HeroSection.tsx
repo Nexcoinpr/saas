@@ -36,7 +36,7 @@ export function HeroSection() {
               href="#latest-articles"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm shadow-md shadow-indigo-600/25 transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
-              <span>Explore Articles</span>
+              <span>Read Articles</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
 
@@ -60,7 +60,7 @@ export function HeroSection() {
             </div>
             <div className="flex items-center justify-center gap-1.5">
               <Zap className="w-4 h-4 text-amber-500" />
-              <span>Actionable Frameworks</span>
+              <span>Hands-On Testing</span>
             </div>
             <div className="flex items-center justify-center gap-1.5">
               <Sparkles className="w-4 h-4 text-purple-500" />

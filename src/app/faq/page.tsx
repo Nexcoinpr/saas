@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const SITE_FAQS = [
   {
     question: "How does SaaSInsider test and evaluate software?",
-    answer: "Every software review on SaaSInsider is conducted inside a real, dedicated sandbox environment. Our reviewers test real user onboarding, create complex data relationships, execute integrations through APIs or webhooks, measure client loading times, and evaluate customer support responsiveness over a 30 to 90 day evaluation cycle."
+    answer: "Every software review on SaaSInsider is conducted inside a real, dedicated sandbox environment. Our reviewers test initial account setup, build multi-table data models, execute integrations through APIs or webhooks, measure client loading times, and evaluate support responsiveness over a 30 to 90 day evaluation cycle."
   },
   {
     question: "Can software vendors pay to improve their review scores?",

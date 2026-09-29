@@ -3,7 +3,7 @@ import { Article, Author, Category } from "@/types/blog";
 export const SITE_CONFIG = {
   name: "SaaSInsider",
   title: "SaaS Insights, Software Reviews & Technology Guides",
-  description: "High-quality editorial insights, verified software reviews, head-to-head SaaS comparisons, AI tool teardowns, and actionable business automation guides.",
+  description: "Independent editorial reviews, verified software tests, head-to-head SaaS comparisons, AI tool teardowns, and practical business automation guides.",
   siteUrl: "https://saasinsider.io",
   defaultOgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
   twitterHandle: "@saasinsider_io",

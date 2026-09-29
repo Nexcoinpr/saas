@@ -9,20 +9,20 @@ Editorial Lead: Elena Vance (Former VP of Product Strategy)
 
 ---
 
-## Direct Definitions & Key Concepts
+## Direct Definitions & Standard Concepts
 
 ### What is SaaS (Software as a Service)?
-Software as a Service (SaaS) is a cloud-based software delivery model where applications are centrally hosted by a vendor and accessed by end users over the internet through web browsers, desktop clients, or APIs on a recurring subscription or consumption basis.
+Software as a Service (SaaS) is a hosted software delivery model where applications are centrally run by a vendor and accessed by end users over the web through browsers, desktop apps, or APIs on a recurring subscription or consumption basis.
 Key characteristics:
 1. Multi-tenant architecture with logical data separation.
-2. Centralized hosting and automated zero-downtime updates.
+2. Centralized hosting and automated updates without service interruption.
 3. Subscription or usage-based operational expenditure (OpEx) pricing.
 4. Immediate cross-device accessibility with no client hardware maintenance.
 
 ### What is Multi-Tenancy?
 Multi-tenancy is an architectural principle where a single software instance and underlying database infrastructure serves multiple distinct customer organizations (tenants). Each tenant's data is logically segregated via tenant identifiers (e.g. tenant_id) and row-level security (RLS).
 
-### Core SaaS Unit Economic Metrics
+### Standard SaaS Unit Economic Metrics
 - Customer Acquisition Cost (CAC): Total sales and marketing expenditures divided by the number of new customers acquired during a given timeframe.
 - Customer Lifetime Value (LTV): (Average Revenue Per Account * Gross Margin %) / Churn Rate. Healthy SaaS target ratio is LTV:CAC >= 3:1.
 - Net Retention Rate (NRR): Measures the percentage of recurring revenue retained from existing customers over a period, factoring in expansion revenue, downgrades, and churn. Formula: [(Starting MRR + Expansion MRR - Downgrade MRR - Churn MRR) / Starting MRR] * 100.
@@ -37,20 +37,20 @@ Multi-tenancy is an architectural principle where a single software instance and
 - Category: All-in-One Workspace & Team Wiki
 - Scorecard: 4.8 / 5.0
 - Starting Price: $10 / user / month (Plus tier, billed annually). Free tier available.
-- Core Strengths: Unmatched modular block editing, relational databases with rollups, contextual Notion AI search across workspace docs.
-- Limitations: Steep initial learning curve for non-technical teams; less suited for complex agile sprints and critical path Gantt dependencies.
+- Main Strengths: Unmatched modular block editing, relational databases with rollups, contextual Notion AI search across workspace docs.
+- Limitations: Initial learning curve for non-technical teams; less suited for sprint planning and strict dependency chains.
 - Alternatives: ClickUp, Coda, Slite.
 
 ### ClickUp
 - Category: Project Management & Sprints
 - Scorecard: 4.6 / 5.0
 - Starting Price: $7 / user / month (Unlimited tier). Free tier available.
-- Core Strengths: Deep native task dependencies, built-in time tracking, sprint points, automated scheduling.
-- Limitations: UI density can feel overwhelming; documentation tool is less fluid than Notion.
+- Main Strengths: Deep native task dependencies, built-in time tracking, sprint points, automated scheduling.
+- Limitations: Screen density can feel overwhelming; documentation tool is less fluid than Notion.
 - Alternatives: Notion, Asana, Monday.com, Jira.
 
 ### Notion vs ClickUp Verdict
-Choose Notion for team documentation, knowledge wikis, company handbooks, and dynamic roadmaps. Choose ClickUp for rigorous task hierarchies, sprint point tracking, client billing hours, and automated task dependencies.
+Choose Notion for team documentation, knowledge wikis, company handbooks, and project timelines. Choose ClickUp for task hierarchies, sprint point tracking, client billing hours, and automated task dependencies.
 
 ### Zapier vs Make Verdict
 Choose Zapier for fast, beginner-friendly setups and access to 7,000+ niche software integrations. Choose Make for high-volume workflows, 2D visual canvas design, nested JSON manipulation, and up to 70% lower operational costs per task.

@@ -41,7 +41,7 @@ export default function CookiesPage() {
               We maintain a minimal, privacy-centric approach to local storage:
             </p>
             <ul>
-              <li><strong>Essential Preferences (Local Storage):</strong> We store your chosen display theme (<code>light</code> or <code>dark</code> mode) in your browser’s <code>localStorage</code> so your preference persists across page navigations without requiring cookies.</li>
+              <li><strong>Functional Preferences (Local Storage):</strong> We store your chosen display theme (<code>light</code> or <code>dark</code> mode) in your browser’s <code>localStorage</code> so your preference persists across page navigations without requiring cookies.</li>
               <li><strong>No Third-Party Advertising Cookies:</strong> We do not deploy third-party advertising cookies, retargeting pixels (e.g. Facebook Pixel), or cross-site tracking scripts.</li>
             </ul>
           </section>
