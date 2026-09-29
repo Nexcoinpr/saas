@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, MessageSquare, CheckCircle2, Send, ShieldCheck, MapPin } from "lucide-react";
+import { CheckCircle2, Send, ShieldCheck } from "lucide-react";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
 
         {/* Page Header */}
         <header className="my-8 max-w-2xl space-y-3">
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
             Contact the Editorial Team
           </h1>
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
@@ -42,7 +42,7 @@ export default function ContactPage() {
           
           {/* Contact Form (7 cols) */}
           <div className="md:col-span-7">
-            <div className="p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+            <div className="p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm">
               {status === "success" ? (
                 <div className="py-12 text-center space-y-4">
                   <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto">
@@ -73,7 +73,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Alex Morgan"
-                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
                     />
                   </div>
 
@@ -87,7 +87,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="e.g. alex@company.com"
-                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
                     />
                   </div>
 
@@ -98,7 +98,7 @@ export default function ContactPage() {
                     <select
                       value={formData.topic}
                       onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
                     >
                       <option value="editorial">Editorial Inquiry / Story Lead</option>
                       <option value="correction">Factual Correction / Pricing Update</option>
@@ -117,14 +117,14 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Provide specific details or links to relevant articles..."
-                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 leading-relaxed"
+                      className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 leading-relaxed"
                     />
                   </div>
 
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm transition-all shadow-sm shadow-indigo-600/20 disabled:opacity-50"
+                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-semibold text-sm transition-all shadow-md shadow-cyan-600/25 disabled:opacity-50"
                   >
                     <span>{status === "loading" ? "Transmitting..." : "Send Inquiry"}</span>
                     <Send className="w-4 h-4" />
@@ -137,7 +137,7 @@ export default function ContactPage() {
           {/* Sidebar Guidelines (5 cols) */}
           <div className="md:col-span-5 space-y-6">
             
-            <div className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 text-xs text-slate-600 dark:text-slate-400 space-y-4">
+            <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-slate-50 dark:bg-[#0a0f1d] text-xs text-slate-600 dark:text-slate-400 space-y-4">
               <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider">
                 Direct Department Inboxes
               </h3>
@@ -146,8 +146,8 @@ export default function ContactPage() {
                 <strong className="block text-slate-800 dark:text-slate-200 mb-0.5">
                   Editorial &amp; Review Desk:
                 </strong>
-                <a href="mailto:editorial@saasinsider.io" className="text-indigo-600 dark:text-indigo-400 hover:underline">
-                  editorial@saasinsider.io
+                <a href="mailto:editorial@nexsas.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
+                  editorial@nexsas.io
                 </a>
               </div>
 
@@ -155,8 +155,8 @@ export default function ContactPage() {
                 <strong className="block text-slate-800 dark:text-slate-200 mb-0.5">
                   Fact-Checking &amp; Corrections:
                 </strong>
-                <a href="mailto:corrections@saasinsider.io" className="text-indigo-600 dark:text-indigo-400 hover:underline">
-                  corrections@saasinsider.io
+                <a href="mailto:corrections@nexsas.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
+                  corrections@nexsas.io
                 </a>
               </div>
 
@@ -164,13 +164,13 @@ export default function ContactPage() {
                 <strong className="block text-slate-800 dark:text-slate-200 mb-0.5">
                   Press &amp; Syndication:
                 </strong>
-                <a href="mailto:press@saasinsider.io" className="text-indigo-600 dark:text-indigo-400 hover:underline">
-                  press@saasinsider.io
+                <a href="mailto:press@nexsas.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
+                  press@nexsas.io
                 </a>
               </div>
             </div>
 
-            <div className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-600 dark:text-slate-400 space-y-2">
+            <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] text-xs text-slate-600 dark:text-slate-400 space-y-2">
               <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
                 <ShieldCheck className="w-4 h-4 text-emerald-500" />
                 <span>Vendor Submission Policy</span>

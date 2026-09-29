@@ -21,7 +21,7 @@ export function SocialShare({ title, path }: SocialShareProps) {
   };
 
   const shareTwitter = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(fullUrl)}&via=saasinsider_io`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(fullUrl)}&via=nexsas_hq`;
     window.open(twitterUrl, "_blank", "noopener,noreferrer");
   };
 
@@ -35,7 +35,7 @@ export function SocialShare({ title, path }: SocialShareProps) {
       <button
         onClick={shareTwitter}
         aria-label="Share on X / Twitter"
-        className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-500 hover:text-indigo-600 hover:border-indigo-300 dark:hover:border-slate-700 transition-colors"
+        className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-500 hover:text-cyan-600 hover:border-cyan-400 dark:hover:border-cyan-800 transition-colors"
       >
         <TwitterIcon className="w-3.5 h-3.5" />
       </button>
@@ -43,7 +43,7 @@ export function SocialShare({ title, path }: SocialShareProps) {
       <button
         onClick={shareLinkedIn}
         aria-label="Share on LinkedIn"
-        className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-500 hover:text-indigo-600 hover:border-indigo-300 dark:hover:border-slate-700 transition-colors"
+        className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-500 hover:text-cyan-600 hover:border-cyan-400 dark:hover:border-cyan-800 transition-colors"
       >
         <LinkedinIcon className="w-3.5 h-3.5" />
       </button>
@@ -51,7 +51,7 @@ export function SocialShare({ title, path }: SocialShareProps) {
       <button
         onClick={copyToClipboard}
         aria-label="Copy link to article"
-        className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-500 hover:text-indigo-600 hover:border-indigo-300 dark:hover:border-slate-700 transition-colors relative"
+        className="w-8 h-8 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-500 hover:text-cyan-600 hover:border-cyan-400 dark:hover:border-cyan-800 transition-colors relative"
       >
         {copied ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <LinkIcon className="w-3.5 h-3.5" />}
         {copied && (

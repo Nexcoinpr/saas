@@ -26,18 +26,18 @@ export function ScoreCard({ reviewData }: ScoreCardProps) {
   return (
     <div
       id="verdict-scorecard"
-      className="my-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-lg"
+      className="my-8 rounded-3xl border border-slate-200 dark:border-cyan-500/20 bg-white dark:bg-darkSurface overflow-hidden shadow-lg"
     >
       {/* Top Banner */}
-      <div className="p-6 sm:p-8 bg-gradient-to-r from-slate-900 to-indigo-950 text-white flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="p-6 sm:p-8 bg-gradient-to-r from-slate-950 via-slate-900 to-cyan-950/50 text-white flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-cyan-500/20">
         <div>
-          <span className="text-xs uppercase font-extrabold tracking-wider text-indigo-300 block mb-1">
+          <span className="text-xs uppercase font-extrabold tracking-wider text-cyan-400 block mb-1">
             {reviewData.productCategory} Review Scorecard
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
             {reviewData.productName}
           </h2>
-          <div className="mt-2 flex items-center gap-2 text-xs text-indigo-200">
+          <div className="mt-2 flex items-center gap-2 text-xs text-cyan-200">
             <span className="font-semibold text-white">Best For:</span>
             <span>{reviewData.bestFor}</span>
           </div>
@@ -62,9 +62,9 @@ export function ScoreCard({ reviewData }: ScoreCardProps) {
               ))}
             </div>
           </div>
-          <div className="text-left text-xs border-l border-white/20 pl-3 space-y-0.5 text-indigo-100">
+          <div className="text-left text-xs border-l border-white/20 pl-3 space-y-0.5 text-cyan-100">
             <span className="font-semibold block text-white">Editor&apos;s Choice</span>
-            <span className="text-[11px] text-indigo-200">Tested &amp; Verified</span>
+            <span className="text-[11px] text-cyan-200">Tested &amp; Verified</span>
           </div>
         </div>
       </div>
@@ -82,11 +82,11 @@ export function ScoreCard({ reviewData }: ScoreCardProps) {
               <div key={item.aspect}>
                 <div className="flex justify-between text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                   <span>{item.aspect}</span>
-                  <span className="text-indigo-600 dark:text-indigo-400">{item.score.toFixed(1)} / 5.0</span>
+                  <span className="text-cyan-600 dark:text-cyan-400">{item.score.toFixed(1)} / 5.0</span>
                 </div>
                 <div className="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
                   <div
-                    className="h-full bg-indigo-600 rounded-full transition-all duration-500"
+                    className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full transition-all duration-500"
                     style={{ width: `${(item.score / 5) * 100}%` }}
                   />
                 </div>
@@ -128,7 +128,7 @@ export function ScoreCard({ reviewData }: ScoreCardProps) {
             <a
               href="#"
               rel="nofollow noopener"
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm transition-all shadow-md shadow-indigo-600/20"
+              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm transition-all shadow-md shadow-cyan-600/20"
             >
               <span>Visit {reviewData.productName}</span>
               <ExternalLink className="w-4 h-4" />
@@ -140,7 +140,7 @@ export function ScoreCard({ reviewData }: ScoreCardProps) {
 
       {/* Bottom Editorial Verdict */}
       <div className="p-6 bg-slate-50/80 dark:bg-slate-900/40 text-sm text-slate-700 dark:text-slate-300 flex items-start gap-3">
-        <ShieldCheck className="w-5 h-5 text-indigo-600 dark:text-indigo-400 flex-shrink-0 mt-0.5" />
+        <ShieldCheck className="w-5 h-5 text-cyan-600 dark:text-cyan-400 flex-shrink-0 mt-0.5" />
         <div className="leading-relaxed">
           <span className="font-bold text-slate-900 dark:text-white block mb-0.5">
             The Editorial Verdict:

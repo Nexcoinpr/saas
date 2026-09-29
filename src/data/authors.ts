@@ -6,7 +6,7 @@ export const AUTHORS: Author[] = [
     name: "Sarah Jenkins",
     slug: "sarah-jenkins",
     role: "Editor-in-Chief & SaaS Finance Lead",
-    bio: "Sarah spent nine years managing software budgets and subscription renewals at mid-sized tech companies before joining SaaSInsider. She tests pricing changes, audits contract terms, and breaks down the math behind software unit economics.",
+    bio: "Sarah spent nine years managing software budgets and subscription renewals at mid-sized tech companies before joining Nexsas. She tests pricing changes, audits contract terms, and breaks down the math behind software unit economics.",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
     credentials: [
       "Former Director of Finance Operations at CloudScale",
@@ -29,7 +29,7 @@ export const AUTHORS: Author[] = [
     name: "Alex Rivera",
     slug: "alex-rivera",
     role: "Principal Technical Reviewer & Systems Engineer",
-    bio: "Alex is a backend software developer who spent over a decade maintaining distributed systems and internal developer portals. At SaaSInsider, he tests software speed, writes custom webhook scripts, and stress-tests third-party API limits.",
+    bio: "Alex is a backend software developer who spent over a decade maintaining distributed systems and internal developer portals. At Nexsas, he tests software speed, writes custom webhook scripts, and stress-tests third-party API limits.",
     avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
     credentials: [
       "Former Senior Infrastructure Engineer at DataMesh",

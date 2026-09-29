@@ -8,8 +8,8 @@ import { generateOrganizationSchema, generateWebsiteSchema, SITE_CONFIG } from "
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.siteUrl),
   title: {
-    default: "SaaSInsider | SaaS Insights, Software Reviews & Technology Guides",
-    template: "%s | SaaSInsider",
+    default: "Nexsas | SaaS Intelligence, Software Teardowns & Architecture",
+    template: "%s | Nexsas",
   },
   description: SITE_CONFIG.description,
   keywords: [
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     "productivity tools",
     "startup technology"
   ],
-  authors: [{ name: "SaaSInsider Editorial Board" }],
-  creator: "SaaSInsider",
-  publisher: "SaaSInsider Publishing Network",
+  authors: [{ name: "Nexsas Editorial Board" }],
+  creator: "Nexsas",
+  publisher: "Nexsas Media Network",
   formatDetection: {
     email: false,
     address: false,
@@ -85,7 +85,7 @@ export default function RootLayout({
         <JsonLd data={orgSchema} />
         <JsonLd data={websiteSchema} />
       </head>
-      <body className="min-h-screen flex flex-col font-sans antialiased selection:bg-indigo-500 selection:text-white">
+      <body className="min-h-screen flex flex-col font-sans antialiased selection:bg-cyan-500 selection:text-white">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

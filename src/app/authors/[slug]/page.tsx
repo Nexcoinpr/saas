@@ -9,7 +9,7 @@ import { ArticleCard } from "@/components/common/ArticleCard";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { JsonLd } from "@/components/common/JsonLd";
 import { generatePersonSchema, SITE_CONFIG } from "@/lib/seo";
-import { Globe, Award, CheckCircle } from "lucide-react";
+import { Globe, CheckCircle } from "lucide-react";
 import { TwitterIcon, LinkedinIcon, GithubIcon } from "@/components/common/SocialIcons";
 
 interface AuthorProfilePageProps {
@@ -35,13 +35,13 @@ export async function generateMetadata({ params }: AuthorProfilePageProps): Prom
   }
 
   return {
-    title: `${author.name} | ${author.role} | SaaSInsider`,
+    title: `${author.name} | ${author.role} | Nexsas`,
     description: author.bio,
     alternates: {
       canonical: `${SITE_CONFIG.siteUrl}/authors/${author.slug}`,
     },
     openGraph: {
-      title: `${author.name} | SaaSInsider`,
+      title: `${author.name} | Nexsas`,
       description: author.bio,
       type: "profile",
       images: [{ url: author.avatar }],
@@ -74,7 +74,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
         />
 
         {/* Profile Card Header */}
-        <header className="my-8 p-8 sm:p-12 rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90">
+        <header className="my-8 p-8 sm:p-12 rounded-3xl bg-slate-50 dark:bg-[#0a0f1d] border border-slate-200/90 dark:border-cyan-950/60 shadow-cyan-glow">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             
             <Image
@@ -83,15 +83,15 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
               width={120}
               height={120}
               priority
-              className="w-28 h-28 aspect-square rounded-3xl object-cover border-2 border-white dark:border-slate-800 shadow-md flex-shrink-0"
+              className="w-28 h-28 aspect-square rounded-3xl object-cover border-2 border-white dark:border-slate-800 ring-2 ring-cyan-500/40 shadow-md flex-shrink-0"
             />
 
             <div className="flex-1 space-y-4">
               <div>
-                <span className="text-xs uppercase font-extrabold tracking-widest text-indigo-600 dark:text-indigo-400 block mb-1">
+                <span className="text-xs uppercase font-extrabold tracking-widest text-cyan-600 dark:text-cyan-400 block mb-1">
                   Verified Editorial Contributor
                 </span>
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+                <h1 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">
                   {author.name}
                 </h1>
                 <p className="text-sm font-semibold text-slate-600 dark:text-slate-300 mt-1">
@@ -142,7 +142,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
                     href={author.twitter}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 hover:border-indigo-400 transition-colors"
+                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-cyan-600 hover:border-cyan-400 transition-colors"
                   >
                     <TwitterIcon className="w-4 h-4" />
                   </a>
@@ -152,7 +152,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
                     href={author.linkedin}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 hover:border-indigo-400 transition-colors"
+                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-cyan-600 hover:border-cyan-400 transition-colors"
                   >
                     <LinkedinIcon className="w-4 h-4" />
                   </a>
@@ -162,7 +162,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
                     href={author.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 hover:border-indigo-400 transition-colors"
+                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-cyan-600 hover:border-cyan-400 transition-colors"
                   >
                     <GithubIcon className="w-4 h-4" />
                   </a>
@@ -172,7 +172,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
                     href={author.website}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 hover:border-indigo-400 transition-colors"
+                    className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-cyan-600 hover:border-cyan-400 transition-colors"
                   >
                     <Globe className="w-4 h-4" />
                   </a>
@@ -186,7 +186,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
 
         {/* Articles by this author */}
         <section className="my-12">
-          <div className="flex items-center justify-between mb-8 pb-3 border-b border-slate-200 dark:border-slate-800">
+          <div className="flex items-center justify-between mb-8 pb-3 border-b border-slate-200/80 dark:border-cyan-950/40">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
               Articles by {author.name} ({articles.length})
             </h2>

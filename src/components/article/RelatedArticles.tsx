@@ -16,7 +16,7 @@ export function RelatedArticles({ articles, categorySlug }: RelatedArticlesProps
     <section className="my-14 pt-10 border-t border-slate-200 dark:border-slate-800">
       <div className="flex items-center justify-between mb-8">
         <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">
+          <span className="text-xs font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 block mb-1">
             Topic Cluster Continuity
           </span>
           <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white">
@@ -26,7 +26,7 @@ export function RelatedArticles({ articles, categorySlug }: RelatedArticlesProps
 
         <Link
           href={`/${categorySlug}`}
-          className="hidden sm:inline-flex items-center gap-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+          className="hidden sm:inline-flex items-center gap-1 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
         >
           <span>More in this topic</span>
           <ArrowRight className="w-3.5 h-3.5" />

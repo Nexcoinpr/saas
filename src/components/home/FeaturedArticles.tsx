@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Calendar, ArrowRight, RefreshCw, Star } from "lucide-react";
+import { Calendar, ArrowRight, RefreshCw } from "lucide-react";
 import { Article } from "@/types/blog";
 import { formatDate } from "@/lib/utils";
 
@@ -16,24 +16,25 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
   const secondaries = articles.slice(1, 4);
 
   return (
-    <section className="py-12 md:py-16">
+    <section className="py-14 md:py-18">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-slate-200/80 dark:border-cyan-950/40">
           <div>
-            <span className="text-xs uppercase tracking-widest font-bold text-indigo-600 dark:text-indigo-400">
-              Curated Editorial
+            <span className="text-xs uppercase tracking-widest font-extrabold text-cyan-600 dark:text-cyan-400 flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
+              Nexsas Curated Intelligence
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
               Featured Analysis &amp; Teardowns
             </h2>
           </div>
           <Link
             href="/saas"
-            className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700"
+            className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 transition-colors"
           >
-            <span>View All Topics</span>
+            <span>View All Analysis</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
@@ -43,7 +44,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
           
           {/* Primary Big Feature Card (7 cols) */}
           <div className="lg:col-span-7">
-            <article className="group h-full flex flex-col rounded-3xl border border-slate-200/90 dark:border-slate-800/90 bg-white dark:bg-slate-900/60 overflow-hidden hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-xl transition-all">
+            <article className="group h-full flex flex-col rounded-3xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] overflow-hidden hover:border-cyan-400/80 dark:hover:border-cyan-500/60 hover:shadow-cyan-glow transition-all">
               <Link href={primary.path} className="aspect-[16/9] relative overflow-hidden bg-slate-100 dark:bg-slate-800">
                 <Image
                   src={primary.featuredImage}
@@ -54,8 +55,8 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-600 text-white shadow-md">
-                    Featured Cover Story
+                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md shadow-cyan-600/30">
+                    Featured Dossier
                   </span>
                 </div>
               </Link>
@@ -65,7 +66,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                   <div className="flex items-center gap-2 mb-3">
                     <Link
                       href={`/${primary.category}`}
-                      className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline uppercase tracking-wider"
+                      className="text-xs font-bold text-cyan-600 dark:text-cyan-400 hover:underline uppercase tracking-wider"
                     >
                       {primary.subcategory || primary.category}
                     </Link>
@@ -75,7 +76,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                     </span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors leading-tight">
+                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors leading-tight">
                     <Link href={primary.path}>{primary.title}</Link>
                   </h3>
 
@@ -84,14 +85,14 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+                <div className="mt-6 pt-5 border-t border-slate-100 dark:border-cyan-950/40 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
                   <Link href={`/authors/${primary.author.slug}`} className="flex items-center gap-2.5 hover:underline">
                     <Image
                       src={primary.author.avatar}
                       alt={primary.author.name}
                       width={32}
                       height={32}
-                      className="rounded-full object-cover"
+                      className="rounded-full object-cover ring-2 ring-cyan-500/30"
                     />
                     <div>
                       <span className="font-semibold text-slate-900 dark:text-slate-100 block">
@@ -125,7 +126,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
             {secondaries.map((sec) => (
               <article
                 key={sec.slug}
-                className="group flex flex-col sm:flex-row gap-4 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-md transition-all"
+                className="group flex flex-col sm:flex-row gap-4 p-4 rounded-2xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] hover:border-cyan-400/80 dark:hover:border-cyan-500/60 hover:shadow-cyan-glow transition-all"
               >
                 <Link
                   href={sec.path}
@@ -145,7 +146,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                     <div className="flex items-center gap-2 mb-1.5">
                       <Link
                         href={`/${sec.category}`}
-                        className="text-[11px] font-bold text-indigo-600 dark:text-indigo-400 hover:underline uppercase tracking-wider"
+                        className="text-[11px] font-bold text-cyan-600 dark:text-cyan-400 hover:underline uppercase tracking-wider"
                       >
                         {sec.subcategory || sec.category}
                       </Link>
@@ -153,12 +154,12 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                       <span className="text-[11px] text-slate-400">{sec.readingTime}</span>
                     </div>
 
-                    <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2 leading-snug">
+                    <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors line-clamp-2 leading-snug">
                       <Link href={sec.path}>{sec.title}</Link>
                     </h4>
                   </div>
 
-                  <div className="mt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-800/60">
+                  <div className="mt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-cyan-950/40">
                     <span className="truncate max-w-[130px] font-medium text-slate-700 dark:text-slate-300">
                       By {sec.author.name}
                     </span>

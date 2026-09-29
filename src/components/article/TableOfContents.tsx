@@ -53,7 +53,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
     >
       <div className="flex items-center justify-between pb-3 border-b border-slate-200/80 dark:border-slate-800/80">
         <div className="flex items-center gap-2">
-          <List className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+          <List className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
           <span className="text-xs uppercase font-extrabold tracking-wider text-slate-800 dark:text-slate-200">
             Table of Contents
           </span>
@@ -78,9 +78,9 @@ export function TableOfContents({ items }: TableOfContentsProps) {
               >
                 <a
                   href={`#${item.id}`}
-                  className={`block py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors leading-tight ${
+                  className={`block py-1 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors leading-tight ${
                     isActive
-                      ? "text-indigo-600 dark:text-indigo-400 font-semibold"
+                      ? "text-cyan-600 dark:text-cyan-400 font-semibold"
                       : ""
                   }`}
                 >

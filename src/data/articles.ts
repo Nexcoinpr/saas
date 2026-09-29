@@ -64,7 +64,7 @@ export const ARTICLES: Article[] = [
         content: `
 <p>Unlike traditional packaged software, where users purchased an installation disc, executed a local binary, and managed their own security patches, SaaS operates on an entirely centralized cloud infrastructure. The software vendor manages the physical servers, database systems, networking layers, security certifications, and continuous deployment pipelines.</p>
 
-<p>When a user opens an application like <a href="/reviews/notion-review" class="text-indigo-600 dark:text-indigo-400 font-medium underline">Notion</a> or Salesforce, the frontend client makes secure HTTPS requests to cloud endpoints. These endpoints authenticate user credentials, enforce permission boundaries, retrieve encrypted customer records, and return interactive interfaces in milliseconds.</p>
+<p>When a user opens an application like <a href="/reviews/notion-review" class="text-cyan-600 dark:text-cyan-400 font-medium underline">Notion</a> or Salesforce, the frontend client makes secure HTTPS requests to cloud endpoints. These endpoints authenticate user credentials, enforce permission boundaries, retrieve encrypted customer records, and return interactive interfaces in milliseconds.</p>
         `,
         callout: {
           type: "info",
@@ -104,19 +104,19 @@ export const ARTICLES: Article[] = [
     </thead>
     <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
       <tr>
-        <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">SaaS (Software)</td>
+        <td class="p-3 font-semibold text-cyan-600 dark:text-cyan-400">SaaS (Software)</td>
         <td class="p-3">User accounts and your own data</td>
         <td class="p-3">Application, runtime, OS, servers, storage, networking</td>
         <td class="p-3">Google Workspace, Slack, Figma, HubSpot</td>
       </tr>
       <tr>
-        <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">PaaS (Platform)</td>
+        <td class="p-3 font-semibold text-cyan-600 dark:text-cyan-400">PaaS (Platform)</td>
         <td class="p-3">Application code and database schemas</td>
         <td class="p-3">Runtime environments, OS, server provisioning, scaling</td>
         <td class="p-3">Vercel, Heroku, AWS Elastic Beanstalk</td>
       </tr>
       <tr>
-        <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">IaaS (Infrastructure)</td>
+        <td class="p-3 font-semibold text-cyan-600 dark:text-cyan-400">IaaS (Infrastructure)</td>
         <td class="p-3">OS, middleware, runtimes, data, application logic</td>
         <td class="p-3">Physical virtualization, servers, hard drives, data centers</td>
         <td class="p-3">Amazon EC2, Google Cloud Compute, Azure VMs</td>
@@ -156,7 +156,7 @@ export const ARTICLES: Article[] = [
   <li><strong>Freemium:</strong> A free tier designed to let users test software before upgrading for team capabilities.</li>
 </ul>
 
-<p>For a detailed breakdown of pricing setups, read our guide on <a href="/saas/saas-pricing-models" class="text-indigo-600 dark:text-indigo-400 font-medium underline">SaaS Pricing Models Explained</a>.</p>
+<p>For a detailed breakdown of pricing setups, read our guide on <a href="/saas/saas-pricing-models" class="text-cyan-600 dark:text-cyan-400 font-medium underline">SaaS Pricing Models Explained</a>.</p>
         `
       },
       {
@@ -564,7 +564,7 @@ export const ARTICLES: Article[] = [
 
 <ul>
   <li>Admin or API access to your source software (CRM, Web Forms, or Billing Portal).</li>
-  <li>An account on an integration platform (we recommend <a href="/comparisons/zapier-vs-make" class="text-indigo-600 dark:text-indigo-400 font-medium underline">Zapier or Make</a>).</li>
+  <li>An account on an integration platform (we recommend <a href="/comparisons/zapier-vs-make" class="text-cyan-600 dark:text-cyan-400 font-medium underline">Zapier or Make</a>).</li>
   <li>A centralized alert destination (such as a dedicated <code>#ops-alerts</code> Slack channel or Discord webhook).</li>
   <li>A sample payload representing realistic customer data to use during testing.</li>
 </ul>
@@ -840,7 +840,7 @@ export const ARTICLES: Article[] = [
         level: 2,
         content: `
 <div class="space-y-4 my-6">
-  <div class="p-4 border-l-4 border-indigo-600 bg-slate-50 dark:bg-slate-900/40 rounded-r-lg">
+  <div class="p-4 border-l-4 border-cyan-500 bg-slate-50 dark:bg-slate-900/40 rounded-r-lg">
     <h4 class="font-bold text-slate-900 dark:text-slate-100">1. Tiered Pricing (Good / Better / Best)</h4>
     <p class="text-sm mt-1 text-slate-700 dark:text-slate-300">The most ubiquitous model in SaaS (e.g. Starter at $29/mo, Pro at $99/mo, Enterprise at $299/mo). It allows companies to appeal to freelancers, mid-market businesses, and enterprise accounts simultaneously.</p>
   </div>

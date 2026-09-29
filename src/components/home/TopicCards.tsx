@@ -27,7 +27,7 @@ const TOPICS: TopicItem[] = [
     description: "Business models, pricing psychology, unit economics & benchmarks",
     icon: Layers,
     count: "40+ Guides",
-    color: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/60"
+    color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
   },
   {
     name: "AI Tools",
@@ -35,7 +35,7 @@ const TOPICS: TopicItem[] = [
     description: "Generative AI, enterprise LLMs, reasoning models & AI agents",
     icon: Sparkles,
     count: "28+ Tools",
-    color: "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-900/60"
+    color: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/60"
   },
   {
     name: "Software",
@@ -51,7 +51,7 @@ const TOPICS: TopicItem[] = [
     description: "No-code workflows, webhooks, Zapier, Make & algorithmic ops",
     icon: GitMerge,
     count: "22+ Playbooks",
-    color: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-900/60"
+    color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
   },
   {
     name: "Productivity",
@@ -59,7 +59,7 @@ const TOPICS: TopicItem[] = [
     description: "Async collaboration, team wikis, project management & sprint tools",
     icon: CheckCircle,
     count: "30+ Reviews",
-    color: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border-indigo-200 dark:border-indigo-900/60"
+    color: "bg-teal-500/10 text-teal-600 dark:text-teal-400 border-teal-200 dark:border-teal-900/60"
   },
   {
     name: "Business",
@@ -67,7 +67,7 @@ const TOPICS: TopicItem[] = [
     description: "Software migration, vendor procurement & IT modernization",
     icon: Briefcase,
     count: "18+ Teardowns",
-    color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
+    color: "bg-sky-500/10 text-sky-600 dark:text-sky-400 border-sky-200 dark:border-sky-900/60"
   },
   {
     name: "Startups",
@@ -75,21 +75,22 @@ const TOPICS: TopicItem[] = [
     description: "Zero-to-one tech stacks, lean tooling & founder operations",
     icon: Rocket,
     count: "25+ Articles",
-    color: "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-200 dark:rose-900/60"
+    color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
   }
 ];
 
 export function TopicCards() {
   return (
-    <section className="py-12 bg-slate-50/70 dark:bg-slate-900/30 border-y border-slate-200/80 dark:border-slate-800/80">
+    <section className="py-14 bg-slate-100/50 dark:bg-[#060912] border-y border-slate-200/80 dark:border-cyan-950/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="max-w-2xl mb-8">
-          <span className="text-xs uppercase tracking-widest font-bold text-indigo-600 dark:text-indigo-400">
-            Browse By Subject
+          <span className="text-xs uppercase tracking-widest font-extrabold text-cyan-600 dark:text-cyan-400 flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
+            Nexsas Subject Clusters
           </span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
-            Popular Topics &amp; Topic Clusters
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
+            Topical Hubs &amp; Intelligence Clusters
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 mt-2">
             Structured thematic clusters arranged for fast retrieval and topic depth.
@@ -103,7 +104,7 @@ export function TopicCards() {
               <Link
                 key={topic.slug}
                 href={`/${topic.slug}`}
-                className="group p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-slate-900/80 hover:border-indigo-300 dark:hover:border-indigo-800 hover:shadow-md transition-all flex flex-col justify-between"
+                className="group p-5 rounded-2xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]/90 hover:border-cyan-400/80 dark:hover:border-cyan-500/60 hover:shadow-cyan-glow transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -115,9 +116,9 @@ export function TopicCards() {
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                  <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors flex items-center gap-1.5">
                     <span>{topic.name}</span>
-                    <ArrowRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                    <ArrowRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-cyan-500" />
                   </h3>
 
                   <p className="mt-1.5 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">

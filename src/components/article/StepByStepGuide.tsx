@@ -27,12 +27,12 @@ export function StepByStepGuide({ howToData }: StepByStepGuideProps) {
     <div className="my-10 space-y-10">
       
       {/* Prerequisites & Quick Meta Card */}
-      <div id="prerequisites" className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm space-y-6">
+      <div id="prerequisites" className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-500/20 bg-white dark:bg-darkSurface shadow-sm space-y-6">
         
         {/* Meta badges */}
         <div className="flex flex-wrap items-center gap-3 pb-4 border-b border-slate-100 dark:border-slate-800">
           <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
-            <Clock className="w-4 h-4 text-indigo-500" />
+            <Clock className="w-4 h-4 text-cyan-500" />
             <span>Estimated Time: <strong className="text-slate-800 dark:text-slate-200">{estimatedTime}</strong></span>
           </div>
           <span className="text-slate-300 dark:text-slate-700">•</span>
@@ -61,13 +61,13 @@ export function StepByStepGuide({ howToData }: StepByStepGuideProps) {
           {/* Tools Needed */}
           <div>
             <h4 className="font-bold text-slate-900 dark:text-slate-100 mb-2.5 flex items-center gap-2">
-              <Wrench className="w-4 h-4 text-indigo-500" />
+              <Wrench className="w-4 h-4 text-cyan-500" />
               <span>Required Tools</span>
             </h4>
             <ul className="space-y-2 text-slate-600 dark:text-slate-400">
               {toolsNeeded.map((tool, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0" />
                   <span>{tool}</span>
                 </li>
               ))}
@@ -87,10 +87,10 @@ export function StepByStepGuide({ howToData }: StepByStepGuideProps) {
           {steps.map((step) => (
             <div
               key={step.stepNumber}
-              className="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white dark:bg-slate-900 shadow-xs relative pl-6 sm:pl-8"
+              className="p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white dark:bg-darkSurface shadow-xs relative pl-6 sm:pl-8"
             >
               <div className="flex items-start gap-4">
-                <span className="w-8 h-8 rounded-xl bg-indigo-600 text-white font-extrabold text-sm flex items-center justify-center flex-shrink-0 shadow-sm shadow-indigo-600/30">
+                <span className="w-8 h-8 rounded-xl bg-cyan-600 text-white font-extrabold text-sm flex items-center justify-center flex-shrink-0 shadow-sm shadow-cyan-600/30">
                   {step.stepNumber}
                 </span>
                 
@@ -134,15 +134,15 @@ export function StepByStepGuide({ howToData }: StepByStepGuideProps) {
 
       {/* Pro Tips Section */}
       {proTips && proTips.length > 0 && (
-        <div id="pro-tips-for-scale" className="p-6 rounded-2xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/40 dark:bg-indigo-950/20 space-y-3">
-          <h4 className="text-sm font-bold uppercase tracking-wider text-indigo-900 dark:text-indigo-200 flex items-center gap-2">
-            <Lightbulb className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+        <div id="pro-tips-for-scale" className="p-6 rounded-2xl border border-cyan-200 dark:border-cyan-900/60 bg-cyan-50/40 dark:bg-cyan-950/20 space-y-3">
+          <h4 className="text-sm font-bold uppercase tracking-wider text-cyan-900 dark:text-cyan-200 flex items-center gap-2">
+            <Lightbulb className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
             <span>Setup Tips for High-Volume Use</span>
           </h4>
           <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
             {proTips.map((tip, idx) => (
               <li key={idx} className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-indigo-500 flex-shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-cyan-500 flex-shrink-0 mt-0.5" />
                 <span>{tip}</span>
               </li>
             ))}

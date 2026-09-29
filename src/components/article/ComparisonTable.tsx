@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, X, Trophy, Star, ArrowRight } from "lucide-react";
+import { Check, X, Trophy, Star } from "lucide-react";
 import { ComparisonMatrixRow } from "@/types/blog";
 
 interface ComparisonTableProps {
@@ -53,9 +53,9 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         {/* Entity A Card */}
-        <div className={`p-6 rounded-3xl border ${winner === "A" ? "border-indigo-500 bg-indigo-50/30 dark:bg-indigo-950/20" : "border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"} shadow-sm`}>
+        <div className={`p-6 rounded-3xl border ${winner === "A" ? "border-cyan-400 bg-cyan-50/40 dark:bg-cyan-950/20 shadow-cyan-glow" : "border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]"} shadow-sm`}>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs uppercase font-extrabold tracking-wider text-indigo-600 dark:text-indigo-400">
+            <span className="text-xs uppercase font-extrabold tracking-wider text-cyan-600 dark:text-cyan-400">
               Contender A
             </span>
             <div className="flex items-center gap-1 text-amber-500 text-xs font-bold">
@@ -64,7 +64,7 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
             </div>
           </div>
 
-          <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white">
+          <h3 className="text-2xl font-black text-slate-900 dark:text-white">
             {entityA.name}
           </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 mb-4">
@@ -84,9 +84,9 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
         </div>
 
         {/* Entity B Card */}
-        <div className={`p-6 rounded-3xl border ${winner === "B" ? "border-indigo-500 bg-indigo-50/30 dark:bg-indigo-950/20" : "border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"} shadow-sm`}>
+        <div className={`p-6 rounded-3xl border ${winner === "B" ? "border-cyan-400 bg-cyan-50/40 dark:bg-cyan-950/20 shadow-cyan-glow" : "border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]"} shadow-sm`}>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs uppercase font-extrabold tracking-wider text-purple-600 dark:text-purple-400">
+            <span className="text-xs uppercase font-extrabold tracking-wider text-blue-600 dark:text-blue-400">
               Contender B
             </span>
             <div className="flex items-center gap-1 text-amber-500 text-xs font-bold">
@@ -95,7 +95,7 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
             </div>
           </div>
 
-          <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white">
+          <h3 className="text-2xl font-black text-slate-900 dark:text-white">
             {entityB.name}
           </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 mb-4">
@@ -117,18 +117,18 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
       </div>
 
       {/* Winner Callout Banner */}
-      <div className="p-6 rounded-2xl bg-gradient-to-r from-indigo-900 via-indigo-950 to-slate-950 text-white flex items-start gap-4 shadow-md">
+      <div className="p-6 rounded-2xl bg-gradient-to-r from-[#061529] via-[#080d1a] to-[#04060c] text-white flex items-start gap-4 border border-cyan-900/40 shadow-cyan-glow">
         <div className="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0">
           <Trophy className="w-5 h-5 text-amber-400" />
         </div>
         <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-indigo-300 block mb-0.5">
-            Editorial Verdict &amp; Overall Champion
+          <span className="text-xs font-bold uppercase tracking-wider text-cyan-300 block mb-0.5">
+            Nexsas Verdict &amp; Overall Recommendation
           </span>
           <h4 className="text-lg font-bold text-white mb-1">
             {winner === "Tie" ? "Contextual Draw (Specific Use Cases)" : `Winner: ${winner === "A" ? entityA.name : entityB.name}`}
           </h4>
-          <p className="text-sm text-indigo-100/90 leading-relaxed">
+          <p className="text-sm text-slate-300 leading-relaxed">
             {winnerSummary}
           </p>
         </div>
@@ -143,9 +143,9 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
           Evaluated side-by-side across architecture, capabilities, and usability.
         </p>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+        <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-cyan-950/60">
           <table className="w-full text-left text-sm border-collapse">
-            <thead className="bg-slate-50 dark:bg-slate-800/80 font-semibold text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700">
+            <thead className="bg-slate-50 dark:bg-[#0d1424] font-semibold text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-800">
               <tr>
                 <th className="p-3.5">Capability / Spec</th>
                 <th className="p-3.5">{entityA.name}</th>
@@ -155,7 +155,7 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
             </thead>
             <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
               {matrix.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-50/50 dark:hover:bg-slate-800/40">
+                <tr key={idx} className="hover:bg-slate-50/50 dark:hover:bg-cyan-950/20">
                   <td className="p-3.5 font-medium text-slate-900 dark:text-slate-100">
                     <div>{row.feature}</div>
                     {row.notes && (
@@ -168,10 +168,10 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
                   <td className="p-3.5">{renderValue(row.entityB)}</td>
                   <td className="p-3.5 font-bold">
                     {row.winner === "A" && (
-                      <span className="text-indigo-600 dark:text-indigo-400">{entityA.name}</span>
+                      <span className="text-cyan-600 dark:text-cyan-400">{entityA.name}</span>
                     )}
                     {row.winner === "B" && (
-                      <span className="text-purple-600 dark:text-purple-400">{entityB.name}</span>
+                      <span className="text-blue-600 dark:text-blue-400">{entityB.name}</span>
                     )}
                     {row.winner === "Tie" && (
                       <span className="text-slate-500">Draw</span>
@@ -187,28 +187,28 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
       {/* When to Choose A vs When to Choose B */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
         
-        <div id="when-to-choose-notion" className="p-6 rounded-2xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/30 dark:bg-indigo-950/20">
-          <h4 className="text-sm font-bold uppercase tracking-wider text-indigo-800 dark:text-indigo-300 mb-3">
+        <div id="when-to-choose-notion" className="p-6 rounded-2xl border border-cyan-200 dark:border-cyan-900/60 bg-cyan-50/30 dark:bg-cyan-950/20">
+          <h4 className="text-sm font-bold uppercase tracking-wider text-cyan-800 dark:text-cyan-300 mb-3">
             Choose {entityA.name} If:
           </h4>
           <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
             {whenToChooseA.map((point, idx) => (
               <li key={idx} className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-cyan-600 flex-shrink-0 mt-0.5" />
                 <span>{point}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        <div id="when-to-choose-clickup" className="p-6 rounded-2xl border border-purple-200 dark:border-purple-900/60 bg-purple-50/30 dark:bg-purple-950/20">
-          <h4 className="text-sm font-bold uppercase tracking-wider text-purple-800 dark:text-purple-300 mb-3">
+        <div id="when-to-choose-clickup" className="p-6 rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/30 dark:bg-blue-950/20">
+          <h4 className="text-sm font-bold uppercase tracking-wider text-blue-800 dark:text-blue-300 mb-3">
             Choose {entityB.name} If:
           </h4>
           <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
             {whenToChooseB.map((point, idx) => (
               <li key={idx} className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
                 <span>{point}</span>
               </li>
             ))}

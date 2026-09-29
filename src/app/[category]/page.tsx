@@ -106,13 +106,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <Breadcrumbs items={[{ name: category.name, item: category.path }]} />
 
         {/* Category Hero Banner */}
-        <header className="my-8 p-8 sm:p-12 rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 relative overflow-hidden">
+        <header className="my-8 p-8 sm:p-12 rounded-3xl bg-slate-50 dark:bg-darkSurface border border-slate-200/90 dark:border-cyan-500/20 relative overflow-hidden">
           <div className="max-w-3xl space-y-4">
             <div className="flex items-center gap-3">
-              <span className="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-md shadow-indigo-600/20">
+              <span className="w-12 h-12 rounded-2xl bg-cyan-600 text-white flex items-center justify-center shadow-md shadow-cyan-600/20">
                 <IconComponent className="w-6 h-6" />
               </span>
-              <span className="text-xs uppercase font-extrabold tracking-widest text-indigo-600 dark:text-indigo-400">
+              <span className="text-xs uppercase font-extrabold tracking-widest text-cyan-600 dark:text-cyan-400">
                 Topic Pillar Hub
               </span>
             </div>
@@ -167,7 +167,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               <Link
                 key={c.slug}
                 href={c.path}
-                className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-indigo-400 hover:shadow-xs transition-all text-xs font-semibold text-slate-800 dark:text-slate-200 text-center block"
+                className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface hover:border-cyan-400 hover:shadow-cyan-glow transition-all text-xs font-semibold text-slate-800 dark:text-slate-200 text-center block"
               >
                 {c.name}
               </Link>

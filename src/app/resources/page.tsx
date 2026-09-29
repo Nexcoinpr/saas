@@ -2,11 +2,11 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { FileText, Download, CheckSquare, Calculator, BookOpen, ExternalLink, ArrowRight } from "lucide-react";
+import { CheckSquare, Calculator, BookOpen, ArrowRight } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "SaaS Resources, Buyer Checklists & Glossaries | SaaSInsider",
+  title: "SaaS Resources, Buyer Checklists & Glossaries | Nexsas",
   description: "Free downloadable checklists, software evaluation templates, SaaS glossary, and unit economic cheat sheets for technology executives.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/resources`,
@@ -49,10 +49,10 @@ export default function ResourcesPage() {
 
         {/* Header */}
         <header className="my-8 max-w-3xl space-y-3">
-          <span className="text-xs uppercase font-extrabold tracking-widest text-indigo-600 dark:text-indigo-400">
+          <span className="text-xs uppercase font-extrabold tracking-widest text-cyan-600 dark:text-cyan-400">
             Free Toolkits &amp; Glossaries
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
             SaaS Buyer Resources &amp; Guides
           </h1>
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
@@ -63,9 +63,9 @@ export default function ResourcesPage() {
         {/* Toolkits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
           
-          <div className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between">
             <div>
-              <span className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-4">
+              <span className="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center mb-4">
                 <CheckSquare className="w-5 h-5" />
               </span>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
@@ -77,14 +77,14 @@ export default function ResourcesPage() {
             </div>
             <Link
               href="/saas/what-is-saas"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
             >
               <span>Read Guide &amp; Criteria</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
-          <div className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between">
             <div>
               <span className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4">
                 <Calculator className="w-5 h-5" />
@@ -105,9 +105,9 @@ export default function ResourcesPage() {
             </Link>
           </div>
 
-          <div className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between">
+          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between">
             <div>
-              <span className="w-10 h-10 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-4">
+              <span className="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4">
                 <BookOpen className="w-5 h-5" />
               </span>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
@@ -119,7 +119,7 @@ export default function ResourcesPage() {
             </div>
             <Link
               href="/tutorials/how-to-automate-business-tasks"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-purple-600 dark:text-purple-400 hover:underline"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
             >
               <span>View Automation Blueprint</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -130,7 +130,7 @@ export default function ResourcesPage() {
 
         {/* SaaS Terminology Glossary */}
         <section className="my-16">
-          <div className="mb-8 pb-3 border-b border-slate-200 dark:border-slate-800">
+          <div className="mb-8 pb-3 border-b border-slate-200/80 dark:border-cyan-950/40">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
               SaaS &amp; Cloud Terminology Glossary
             </h2>
@@ -143,7 +143,7 @@ export default function ResourcesPage() {
             {GLOSSARY_TERMS.map((item, idx) => (
               <div
                 key={idx}
-                className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60"
+                className="p-5 rounded-2xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]"
               >
                 <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-1.5">
                   {item.term}

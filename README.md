@@ -1,6 +1,6 @@
-# SaaSInsider | Modern, SEO & AEO-Focused SaaS Blog Publication
+# Nexsas | Modern, SEO & AEO-Focused SaaS Blog Publication
 
-**SaaSInsider** is a modern, high-performance, and editorial Software as a Service (SaaS) technology publication built from scratch with Next.js 15, TypeScript, Tailwind CSS, and full Schema.org structured data.
+**Nexsas** is a modern, high-performance, and editorial Software as a Service (SaaS) technology publication built from scratch with Next.js 15, TypeScript, Tailwind CSS, and full Schema.org structured data.
 
 ---
 
@@ -101,7 +101,7 @@ To publish a new article, add an entry to `src/data/articles.ts`:
   excerpt: "Short 2-sentence teaser for cards and search snippets.",
   category: "reviews", // matches category slug
   template: "review",  // "informational" | "review" | "comparison" | "how-to"
-  author: authorElena,
+  author: authorSarah,
   publishedAt: "2026-04-01T08:00:00Z",
   updatedAt: "2026-04-01T08:00:00Z",
   readingTime: "8 min read",

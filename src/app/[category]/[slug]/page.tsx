@@ -213,7 +213,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <TableOfContents items={article.tableOfContents} />
 
             {/* Quick Fact Checking & Methodology Card */}
-            <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-600 dark:text-slate-400 space-y-3">
+            <div className="p-5 rounded-2xl border border-slate-200 dark:border-cyan-500/20 bg-white dark:bg-darkSurface text-xs text-slate-600 dark:text-slate-400 space-y-3">
               <h4 className="font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                 Editorial Rigor
               </h4>
@@ -223,7 +223,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <div className="pt-2 border-t border-slate-100 dark:border-slate-800">
                 <Link
                   href="/about"
-                  className="font-semibold text-indigo-600 dark:text-indigo-400 hover:underline block"
+                  className="font-semibold text-cyan-600 dark:text-cyan-400 hover:underline block"
                 >
                   Read our Testing Methodology →
                 </Link>
@@ -231,16 +231,16 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
 
             {/* In-Article Mini Newsletter Signup */}
-            <div className="p-5 rounded-2xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-200/80 dark:border-indigo-800/80 space-y-3">
-              <h4 className="font-bold text-sm text-indigo-950 dark:text-indigo-200">
-                SaaS Weekly Dispatch
+            <div className="p-5 rounded-2xl bg-cyan-950/20 dark:bg-darkSurface border border-cyan-500/20 space-y-3">
+              <h4 className="font-bold text-sm text-slate-950 dark:text-cyan-200">
+                Nexsas Executive Dispatch
               </h4>
-              <p className="text-xs text-indigo-900/80 dark:text-indigo-300/80 leading-relaxed">
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                 Receive practical SaaS metrics, software teardowns, and automation playbooks in your inbox every Thursday.
               </p>
               <a
                 href="#newsletter"
-                className="w-full inline-flex items-center justify-center px-3.5 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs shadow-xs transition-colors"
+                className="w-full inline-flex items-center justify-center px-3.5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs shadow-cyan-glow transition-colors"
               >
                 Join 28,000+ Subscribers
               </a>

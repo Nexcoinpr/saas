@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { AUTHORS } from "@/data/authors";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { Award, ArrowRight, Globe, ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { TwitterIcon, LinkedinIcon, GithubIcon } from "@/components/common/SocialIcons";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Authors & Editorial Team | SaaSInsider",
-  description: "Meet the engineers, SaaS executives, and technical researchers behind SaaSInsider's hands-on reviews and technology guides.",
+  title: "Authors & Editorial Team | Nexsas",
+  description: "Meet the engineers, SaaS executives, and technical researchers behind Nexsas hands-on reviews and technology guides.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/authors`,
   },
@@ -25,17 +25,17 @@ export default function AuthorsPage() {
 
         {/* Page Header */}
         <div className="my-8 max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 mb-3">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-50 dark:bg-cyan-950/50 text-cyan-700 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800 mb-3">
+            <ShieldCheck className="w-3.5 h-3.5 text-cyan-500" />
             <span>Verified Industry Experts &amp; Engineers</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
             Our Editorial Team &amp; Reviewers
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            Every software teardown, comparison matrix, and financial model at SaaSInsider is authored and audited by practitioners with deep domain experience across product leadership, cloud systems, and AI research.
+            Every software teardown, comparison matrix, and financial model at Nexsas is authored and audited by practitioners with deep domain experience across product leadership, cloud systems, and AI research.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function AuthorsPage() {
           {AUTHORS.map((author) => (
             <div
               key={author.slug}
-              className="p-8 rounded-3xl border border-slate-200/90 dark:border-slate-800/90 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between"
+              className="p-8 rounded-3xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-start gap-5 mb-5">
@@ -53,15 +53,15 @@ export default function AuthorsPage() {
                     alt={author.name}
                     width={80}
                     height={80}
-                    className="w-20 h-20 aspect-square flex-shrink-0 rounded-2xl object-cover border border-slate-200 dark:border-slate-700 shadow-sm"
+                    className="w-20 h-20 aspect-square flex-shrink-0 rounded-2xl object-cover border border-slate-200 dark:border-cyan-900/50 ring-1 ring-cyan-500/30 shadow-sm"
                   />
                   <div>
                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-                      <Link href={`/authors/${author.slug}`} className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                      <Link href={`/authors/${author.slug}`} className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                         {author.name}
                       </Link>
                     </h2>
-                    <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 mt-0.5">
+                    <p className="text-xs font-semibold text-cyan-600 dark:text-cyan-400 mt-0.5">
                       {author.role}
                     </p>
                     
@@ -73,7 +73,7 @@ export default function AuthorsPage() {
                           target="_blank"
                           rel="noreferrer"
                           aria-label="Twitter"
-                          className="text-slate-400 hover:text-indigo-500"
+                          className="text-slate-400 hover:text-cyan-500"
                         >
                           <TwitterIcon className="w-3.5 h-3.5" />
                         </a>
@@ -84,7 +84,7 @@ export default function AuthorsPage() {
                           target="_blank"
                           rel="noreferrer"
                           aria-label="LinkedIn"
-                          className="text-slate-400 hover:text-indigo-500"
+                          className="text-slate-400 hover:text-cyan-500"
                         >
                           <LinkedinIcon className="w-3.5 h-3.5" />
                         </a>
@@ -95,7 +95,7 @@ export default function AuthorsPage() {
                           target="_blank"
                           rel="noreferrer"
                           aria-label="GitHub"
-                          className="text-slate-400 hover:text-indigo-500"
+                          className="text-slate-400 hover:text-cyan-500"
                         >
                           <GithubIcon className="w-3.5 h-3.5" />
                         </a>
@@ -127,10 +127,10 @@ export default function AuthorsPage() {
               </div>
 
               {/* View Profile Action */}
-              <div className="pt-4 border-t border-slate-100 dark:border-slate-800">
+              <div className="pt-4 border-t border-slate-100 dark:border-cyan-950/40">
                 <Link
                   href={`/authors/${author.slug}`}
-                  className="inline-flex items-center gap-2 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+                  className="inline-flex items-center gap-2 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
                 >
                   <span>Read articles by {author.name}</span>
                   <ArrowRight className="w-3.5 h-3.5" />

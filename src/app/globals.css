@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --background: #f8fafc;
+  --foreground: #090d16;
 }
 
 .dark {
-  --background: #020617;
-  --foreground: #f8fafc;
+  --background: #060911;
+  --foreground: #f1f5f9;
 }
 
 html {
@@ -24,7 +24,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom scrollbar for table of contents and code */
+::selection {
+  background-color: #06b6d4;
+  color: #ffffff;
+}
+
+.dark ::selection {
+  background-color: #0891b2;
+  color: #ffffff;
+}
+
+/* Subtle tech grid background for hero and featured sections */
+.nexsas-grid-pattern {
+  background-size: 32px 32px;
+  background-image: linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+}
+
+.dark .nexsas-grid-pattern {
+  background-size: 32px 32px;
+  background-image: linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -37,7 +60,7 @@ body {
   border-radius: 9999px;
 }
 .dark ::-webkit-scrollbar-thumb {
-  background: rgba(71, 85, 105, 0.5);
+  background: rgba(14, 116, 144, 0.45);
 }
 
 /* Prose styles for article content */
@@ -99,5 +122,6 @@ body {
 }
 
 .dark .prose-content code {
-  background-color: rgba(30, 41, 59, 0.7);
+  background-color: rgba(13, 19, 32, 0.85);
+  border: 1px solid rgba(6, 182, 212, 0.2);
 }

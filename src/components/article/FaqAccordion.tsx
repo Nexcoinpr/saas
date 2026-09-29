@@ -28,7 +28,7 @@ export function FaqAccordion({ faqs }: FaqAccordionProps) {
       <JsonLd data={schema} />
 
       <div className="flex items-center gap-2 mb-6">
-        <span className="w-8 h-8 rounded-xl bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+        <span className="w-8 h-8 rounded-xl bg-cyan-100 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center">
           <HelpCircle className="w-4 h-4" />
         </span>
         <div>
@@ -47,12 +47,12 @@ export function FaqAccordion({ faqs }: FaqAccordionProps) {
           return (
             <div
               key={index}
-              className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden transition-colors"
+              className="rounded-2xl border border-slate-200 dark:border-cyan-500/20 bg-white dark:bg-darkSurface overflow-hidden transition-colors"
             >
               <button
                 onClick={() => toggleIndex(index)}
                 aria-expanded={isOpen}
-                className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
               >
                 <span>{faq.question}</span>
                 <span className="text-slate-400 flex-shrink-0">

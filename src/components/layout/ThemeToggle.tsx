@@ -9,7 +9,7 @@ export function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem("saasinsider-theme") as "light" | "dark" | null;
+    const savedTheme = localStorage.getItem("nexsas-theme") as "light" | "dark" | null;
     if (savedTheme) {
       setTheme(savedTheme);
       if (savedTheme === "dark") {
@@ -26,7 +26,7 @@ export function ThemeToggle() {
   const toggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
     setTheme(nextTheme);
-    localStorage.setItem("saasinsider-theme", nextTheme);
+    localStorage.setItem("nexsas-theme", nextTheme);
     if (nextTheme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -49,9 +49,9 @@ export function ThemeToggle() {
     <button
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-      className="w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      className="w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-cyan-950/40 hover:border-cyan-400 dark:hover:border-cyan-800 transition-all focus:outline-none focus:ring-2 focus:ring-cyan-500"
     >
-      {theme === "light" ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4 text-amber-400" />}
+      {theme === "light" ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4 text-cyan-400" />}
     </button>
   );
 }

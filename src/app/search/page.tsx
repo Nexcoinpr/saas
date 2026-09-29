@@ -83,7 +83,7 @@ function SearchContent() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search by keywords, software name (e.g. Notion, Zapier, CAC, pricing)..."
               aria-label="Search articles"
-              className="w-full pl-12 pr-10 py-3.5 rounded-2xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-xs transition-all"
+              className="w-full pl-12 pr-10 py-3.5 rounded-2xl border border-slate-300 dark:border-cyan-500/30 bg-white dark:bg-darkSurface text-slate-900 dark:text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 shadow-xs transition-all"
             />
             {query && (
               <button
@@ -109,7 +109,7 @@ function SearchContent() {
               id="cat-filter"
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+              className="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-cyan-500"
             >
               <option value="all">All Categories</option>
               {CATEGORIES.map((c) => (
@@ -129,7 +129,7 @@ function SearchContent() {
               id="temp-filter"
               value={selectedTemplate}
               onChange={(e) => setSelectedTemplate(e.target.value)}
-              className="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+              className="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-cyan-500"
             >
               <option value="all">All Formats</option>
               <option value="informational">In-Depth Analysis</option>
@@ -148,7 +148,7 @@ function SearchContent() {
               id="sort-filter"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
-              className="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+              className="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-cyan-500"
             >
               <option value="latest">Latest Published</option>
               <option value="popular">Most Popular (Reads)</option>
@@ -164,7 +164,7 @@ function SearchContent() {
                 setSelectedCategory("all");
                 setSelectedTemplate("all");
               }}
-              className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
+              className="text-cyan-600 dark:text-cyan-400 font-semibold hover:underline"
             >
               Reset Filters
             </button>
@@ -183,7 +183,7 @@ function SearchContent() {
             {filteredArticles.map((article) => (
               <article
                 key={article.slug}
-                className="group flex flex-col rounded-2xl border border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-slate-900/60 overflow-hidden hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-lg transition-all"
+                className="group flex flex-col rounded-2xl border border-slate-200/80 dark:border-cyan-500/20 bg-white dark:bg-darkSurface overflow-hidden hover:border-cyan-500/50 hover:shadow-cyan-glow transition-all"
               >
                 <Link
                   href={article.path}
@@ -205,7 +205,7 @@ function SearchContent() {
 
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors leading-snug line-clamp-2">
+                    <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors leading-snug line-clamp-2">
                       <Link href={article.path}>{article.title}</Link>
                     </h3>
 
