@@ -1,0 +1,95 @@
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Calendar, Clock, RefreshCw, ShieldCheck } from "lucide-react";
+import { Article } from "@/types/blog";
+import { formatDate } from "@/lib/utils";
+import { SocialShare } from "./SocialShare";
+
+interface ArticleHeaderProps {
+  article: Article;
+}
+
+export function ArticleHeader({ article }: ArticleHeaderProps) {
+  return (
+    <header className="mb-8">
+      {/* Category and Read Time */}
+      <div className="flex flex-wrap items-center gap-2 mb-4">
+        <Link
+          href={`/${article.category}`}
+          className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider px-2.5 py-1 rounded-md bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200/60 dark:border-indigo-800/60 hover:bg-indigo-100 transition-colors"
+        >
+          {article.subcategory || article.category}
+        </Link>
+        <span className="text-slate-300 dark:text-slate-700">•</span>
+        <span className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
+          <Clock className="w-3.5 h-3.5" />
+          {article.readingTime}
+        </span>
+        <span className="text-slate-300 dark:text-slate-700">•</span>
+        <span className="inline-flex items-center gap-1 text-[11px] font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-2 py-0.5 rounded-full border border-emerald-200/60 dark:border-emerald-800/60">
+          <ShieldCheck className="w-3 h-3 text-emerald-500" />
+          Fact Checked
+        </span>
+      </div>
+
+      {/* H1 Title */}
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.18] mb-4">
+        {article.h1 || article.title}
+      </h1>
+
+      {/* Excerpt */}
+      <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-6 font-normal">
+        {article.excerpt}
+      </p>
+
+      {/* Metadata Row: Author, Dates, Share */}
+      <div className="pt-4 border-t border-b border-slate-200/80 dark:border-slate-800/80 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        
+        {/* Author Details */}
+        <Link
+          href={`/authors/${article.author.slug}`}
+          className="flex items-center gap-3 group"
+        >
+          <Image
+            src={article.author.avatar}
+            alt={article.author.name}
+            width={44}
+            height={44}
+            className="rounded-full object-cover border border-slate-200 dark:border-slate-700 group-hover:border-indigo-500 transition-colors"
+          />
+          <div>
+            <span className="font-semibold text-sm text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors block">
+              {article.author.name}
+            </span>
+            <span className="text-xs text-slate-500 dark:text-slate-400 block">
+              {article.author.role}
+            </span>
+          </div>
+        </Link>
+
+        {/* Dates and Social Share */}
+        <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+          <div className="flex flex-col sm:items-end">
+            <span className="flex items-center gap-1.5">
+              <Calendar className="w-3.5 h-3.5 text-slate-400" />
+              Published: {formatDate(article.publishedAt)}
+            </span>
+            {article.updatedAt && (
+              <span className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium mt-0.5">
+                <RefreshCw className="w-3 h-3" />
+                Updated: {formatDate(article.updatedAt)}
+              </span>
+            )}
+          </div>
+
+          <div className="hidden sm:block w-px h-8 bg-slate-200 dark:bg-slate-800" />
+
+          {/* Social sharing icons */}
+          <SocialShare title={article.title} path={article.path} />
+        </div>
+
+      </div>
+    </header>
+  );
+}
