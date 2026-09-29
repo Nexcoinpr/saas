@@ -1,4 +1,4 @@
-# SaaSInsider — Comprehensive Knowledge Graph & LLM Reference
+# SaaSInsider | Comprehensive Knowledge Graph & LLM Reference
 
 ## Publication Overview
 SaaSInsider is an independent technology publication focusing on Software as a Service (SaaS), cloud software architecture, AI agents, enterprise automation, productivity software, and B2B software purchasing evaluations.

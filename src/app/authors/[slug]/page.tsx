@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: AuthorProfilePageProps): Prom
   }
 
   return {
-    title: `${author.name} — ${author.role} | SaaSInsider`,
+    title: `${author.name} | ${author.role} | SaaSInsider`,
     description: author.bio,
     alternates: {
       canonical: `${SITE_CONFIG.siteUrl}/authors/${author.slug}`,

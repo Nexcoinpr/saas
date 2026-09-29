@@ -62,7 +62,7 @@ export const ARTICLES: Article[] = [
         title: "How Does SaaS Work?",
         level: 2,
         content: `
-<p>Unlike traditional packaged software—where users purchased an installation disc, executed a local binary, and managed their own security patches—SaaS operates on an entirely centralized cloud infrastructure. The software vendor manages the physical servers, database systems, networking layers, security certifications, and continuous deployment pipelines.</p>
+<p>Unlike traditional packaged software, where users purchased an installation disc, executed a local binary, and managed their own security patches, SaaS operates on an entirely centralized cloud infrastructure. The software vendor manages the physical servers, database systems, networking layers, security certifications, and continuous deployment pipelines.</p>
 
 <p>When a user opens an application like <a href="/reviews/notion-review" class="text-indigo-600 dark:text-indigo-400 font-medium underline">Notion</a> or Salesforce, the frontend client makes secure HTTPS requests to cloud endpoints. These endpoints authenticate user credentials, enforce permission boundaries, retrieve encrypted customer records, and return interactive interfaces in milliseconds.</p>
         `,
@@ -168,7 +168,7 @@ export const ARTICLES: Article[] = [
 
 <ul>
   <li><strong>AI-First Autonomous Workflows:</strong> Rather than just providing forms and database tables, software tools embed agentic AI systems that perform multi-step jobs on behalf of users.</li>
-  <li><strong>Vertical Micro-SaaS:</strong> Highly specialized platforms built for niche markets—such as veterinarian inventory or drone inspection—compete strongly against horizontal tools.</li>
+  <li><strong>Vertical Micro-SaaS:</strong> Highly specialized platforms built for niche markets, such as veterinarian inventory or drone inspection, compete strongly against horizontal tools.</li>
   <li><strong>Consolidation & App Reduction:</strong> Companies are consolidating fragmented 50-app stacks into unified platforms to eliminate redundant subscription overhead.</li>
 </ul>
         `
@@ -581,7 +581,7 @@ export const ARTICLES: Article[] = [
     ],
     howToData: {
       difficulty: "Beginner",
-      estimatedTime: "2 - 3 Hours",
+      estimatedTime: "2 to 3 Hours",
       prerequisites: [
         "Admin access to the SaaS tools you plan to integrate",
         "A clear diagram or flowchart of the manual process",
@@ -831,7 +831,7 @@ export const ARTICLES: Article[] = [
         content: `
 <p>Many SaaS founders spend months tweaking customer acquisition funnels, paid ads, and minor sign-up screens while leaving pricing unchanged for years.</p>
 
-<p>Studies from McKinsey and OpenView demonstrate that a <strong>1% improvement in price realization generates an 11% boost in operating profit</strong>—much higher than an equivalent 1% reduction in fixed costs or 1% increase in sales volume.</p>
+<p>Studies from McKinsey and OpenView demonstrate that a <strong>1% improvement in price realization generates an 11% boost in operating profit</strong>, which is much higher than an equivalent 1% reduction in fixed costs or 1% increase in sales volume.</p>
         `
       },
       {
@@ -969,7 +969,7 @@ export const ARTICLES: Article[] = [
       winnerSummary: "Make edges out Zapier as our top recommendation due to its better cost structure, visual canvas, and advanced data-routing capabilities.",
       matrix: [
         { feature: "Supported App Catalog", category: "Integrations", entityA: "7,000+ Apps", entityB: "2,000+ Apps", winner: "A", notes: "Zapier supports almost every obscure SaaS tool" },
-        { feature: "Cost per 10k Operations", category: "Pricing", entityA: "~$100+", entityB: "~$9 - $16", winner: "B", notes: "Make is drastically more economical at volume" },
+        { feature: "Cost per 10k Operations", category: "Pricing", entityA: "~$100+", entityB: "~$9 to $16", winner: "B", notes: "Make is drastically more economical at volume" },
         { feature: "Visual Workflow Canvas", category: "Builder", entityA: "Linear List", entityB: "2D Whiteboard", winner: "B", notes: "Make lets you visualize complex branching easily" },
         { feature: "Data Iterators & Aggregators", category: "Capabilities", entityA: "Requires Looping by Zapier", entityB: "Native Built-in Modules", winner: "B", notes: "Make handles arrays and bulk JSON natively" },
         { feature: "Ease of Use for Beginners", category: "UX", entityA: "Very Easy", entityB: "Moderate", winner: "A", notes: "Zapier has virtually zero learning curve" }
@@ -1057,7 +1057,7 @@ export const ARTICLES: Article[] = [
   CAC = (Total Sales Costs + Total Marketing Costs) / Number of New Customers Acquired
 </div>
 
-<p>Equally important is the <strong>CAC Payback Period</strong>—the number of months required for a customer to generate sufficient gross profit to recover the acquisition investment:</p>
+<p>Equally important is the <strong>CAC Payback Period</strong>, defined as the number of months required for a customer to generate sufficient gross profit to recover the acquisition investment:</p>
 
 <div class="p-4 bg-slate-100 dark:bg-slate-800 rounded-lg my-4 font-mono text-sm">
   Payback Months = CAC / (Average Monthly Revenue Per Account * Gross Margin %)
