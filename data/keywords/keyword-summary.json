@@ -1,0 +1,829 @@
+{
+  "totalKeywords": 207084,
+  "generatedAt": "2026-09-29T11:57:30.775Z",
+  "distributionByCompetitor": {
+    "sonary.com": 158610,
+    "dev.to": 20060,
+    "airbyte.com": 12718,
+    "kissflow.com": 10330,
+    "howtobuysaas.com": 3598,
+    "refrens.com": 700,
+    "startuphub.ai": 336,
+    "thedatascientist.com": 336,
+    "denebrixai.com": 336,
+    "screenapp.io": 60
+  },
+  "distributionByIntent": {
+    "Commercial": 184136,
+    "Informational": 21889,
+    "Transactional": 1059
+  },
+  "distributionByTemplate": {
+    "comparison": 149890,
+    "how-to": 44953,
+    "review": 10729,
+    "informational": 1512
+  },
+  "topHighIntentSamples": [
+    {
+      "keyword": "Notion vs ClickUp",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp pricing",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp features",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp for small business",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp for startups",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp for enterprise",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp reddit",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp which is better",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp reviews and rating",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp migration guide",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp security checklist",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "Notion vs ClickUp pros and cons",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-clickup"
+    },
+    {
+      "keyword": "how to migrate from Notion to ClickUp",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "High",
+      "slug": "how-to-migrate-from-notion-to-clickup"
+    },
+    {
+      "keyword": "switch from Notion to ClickUp",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "switch-from-notion-to-clickup"
+    },
+    {
+      "keyword": "export from Notion to ClickUp",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "Medium",
+      "slug": "export-from-notion-to-clickup"
+    },
+    {
+      "keyword": "sync Notion with ClickUp",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "airbyte.com",
+      "tier": "High",
+      "slug": "sync-notion-with-clickup"
+    },
+    {
+      "keyword": "Notion integration with ClickUp",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "kissflow.com",
+      "tier": "High",
+      "slug": "notion-integration-with-clickup"
+    },
+    {
+      "keyword": "Notion vs Asana",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana pricing",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana features",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana for small business",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana for startups",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana for enterprise",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana reddit",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana which is better",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana reviews and rating",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana migration guide",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana security checklist",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "Notion vs Asana pros and cons",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-asana"
+    },
+    {
+      "keyword": "how to migrate from Notion to Asana",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "High",
+      "slug": "how-to-migrate-from-notion-to-asana"
+    },
+    {
+      "keyword": "switch from Notion to Asana",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "switch-from-notion-to-asana"
+    },
+    {
+      "keyword": "export from Notion to Asana",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "Medium",
+      "slug": "export-from-notion-to-asana"
+    },
+    {
+      "keyword": "sync Notion with Asana",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "airbyte.com",
+      "tier": "High",
+      "slug": "sync-notion-with-asana"
+    },
+    {
+      "keyword": "Notion integration with Asana",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "kissflow.com",
+      "tier": "High",
+      "slug": "notion-integration-with-asana"
+    },
+    {
+      "keyword": "Notion vs Monday",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday pricing",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday features",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday for small business",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday for startups",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday for enterprise",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday reddit",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday which is better",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday reviews and rating",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday migration guide",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday security checklist",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "Notion vs Monday pros and cons",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-monday"
+    },
+    {
+      "keyword": "how to migrate from Notion to Monday",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "High",
+      "slug": "how-to-migrate-from-notion-to-monday"
+    },
+    {
+      "keyword": "switch from Notion to Monday",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "switch-from-notion-to-monday"
+    },
+    {
+      "keyword": "export from Notion to Monday",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "Medium",
+      "slug": "export-from-notion-to-monday"
+    },
+    {
+      "keyword": "sync Notion with Monday",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "airbyte.com",
+      "tier": "High",
+      "slug": "sync-notion-with-monday"
+    },
+    {
+      "keyword": "Notion integration with Monday",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "kissflow.com",
+      "tier": "High",
+      "slug": "notion-integration-with-monday"
+    },
+    {
+      "keyword": "Notion vs Jira",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira pricing",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira features",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira for small business",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira for startups",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira for enterprise",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira reddit",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira which is better",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira reviews and rating",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira migration guide",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira security checklist",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "Notion vs Jira pros and cons",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-jira"
+    },
+    {
+      "keyword": "how to migrate from Notion to Jira",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "High",
+      "slug": "how-to-migrate-from-notion-to-jira"
+    },
+    {
+      "keyword": "switch from Notion to Jira",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "switch-from-notion-to-jira"
+    },
+    {
+      "keyword": "export from Notion to Jira",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "Medium",
+      "slug": "export-from-notion-to-jira"
+    },
+    {
+      "keyword": "sync Notion with Jira",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "airbyte.com",
+      "tier": "High",
+      "slug": "sync-notion-with-jira"
+    },
+    {
+      "keyword": "Notion integration with Jira",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "kissflow.com",
+      "tier": "High",
+      "slug": "notion-integration-with-jira"
+    },
+    {
+      "keyword": "Notion vs Trello",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello pricing",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello features",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello for small business",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello for startups",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello for enterprise",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello reddit",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello which is better",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello reviews and rating",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello migration guide",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello security checklist",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "Notion vs Trello pros and cons",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-trello"
+    },
+    {
+      "keyword": "how to migrate from Notion to Trello",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "High",
+      "slug": "how-to-migrate-from-notion-to-trello"
+    },
+    {
+      "keyword": "switch from Notion to Trello",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "switch-from-notion-to-trello"
+    },
+    {
+      "keyword": "export from Notion to Trello",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "Medium",
+      "slug": "export-from-notion-to-trello"
+    },
+    {
+      "keyword": "sync Notion with Trello",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "airbyte.com",
+      "tier": "High",
+      "slug": "sync-notion-with-trello"
+    },
+    {
+      "keyword": "Notion integration with Trello",
+      "intent": "Commercial",
+      "template": "how-to",
+      "competitor": "kissflow.com",
+      "tier": "High",
+      "slug": "notion-integration-with-trello"
+    },
+    {
+      "keyword": "Notion vs Airtable",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable pricing",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable features",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable for small business",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable for startups",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable for enterprise",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable reddit",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable which is better",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable reviews and rating",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable migration guide",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable security checklist",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "Notion vs Airtable pros and cons",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "Medium",
+      "slug": "notion-vs-airtable"
+    },
+    {
+      "keyword": "how to migrate from Notion to Airtable",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "High",
+      "slug": "how-to-migrate-from-notion-to-airtable"
+    },
+    {
+      "keyword": "switch from Notion to Airtable",
+      "intent": "Commercial",
+      "template": "comparison",
+      "competitor": "sonary.com",
+      "tier": "High",
+      "slug": "switch-from-notion-to-airtable"
+    },
+    {
+      "keyword": "export from Notion to Airtable",
+      "intent": "Informational",
+      "template": "how-to",
+      "competitor": "dev.to",
+      "tier": "Medium",
+      "slug": "export-from-notion-to-airtable"
+    }
+  ]
+}
