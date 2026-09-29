@@ -53,7 +53,7 @@ export default function AuthorsPage() {
                     alt={author.name}
                     width={80}
                     height={80}
-                    className="rounded-2xl object-cover border border-slate-200 dark:border-slate-700 shadow-sm"
+                    className="w-20 h-20 aspect-square flex-shrink-0 rounded-2xl object-cover border border-slate-200 dark:border-slate-700 shadow-sm"
                   />
                   <div>
                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white">

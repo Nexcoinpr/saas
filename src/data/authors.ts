@@ -2,93 +2,93 @@ import { Author } from "@/types/blog";
 
 export const AUTHORS: Author[] = [
   {
-    id: "elena-vance",
-    name: "Elena Vance",
-    slug: "elena-vance",
-    role: "Editor-in-Chief & SaaS Metrics Analyst",
-    bio: "Elena Vance has over 12 years of background covering software economics, business applications, and product growth. Previously VP of Product Strategy at a developer platform, she leads editorial direction and testing standards at SaaSInsider.",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    id: "sarah-jenkins",
+    name: "Sarah Jenkins",
+    slug: "sarah-jenkins",
+    role: "Editor-in-Chief & SaaS Finance Lead",
+    bio: "Sarah spent nine years managing software budgets and subscription renewals at mid-sized tech companies before joining SaaSInsider. She tests pricing changes, audits contract terms, and breaks down the math behind software unit economics.",
+    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
     credentials: [
-      "Former VP of Product Strategy at CloudFlow",
-      "MBA from Stanford Graduate School of Business",
-      "Speaker at SaaStr Annual and TechCrunch Disrupt"
+      "Former Director of Finance Operations at CloudScale",
+      "B.S. in Economics from University of Michigan",
+      "Speaker on SaaS subscription economics"
     ],
     specialties: [
       "SaaS Unit Economics (CAC, LTV, NRR)",
-      "B2B Pricing Plans",
-      "Product Growth Models",
-      "Enterprise Software Purchasing"
+      "Subscription Pricing Models",
+      "Contract Renewal Math",
+      "Software Procurement Checklists"
     ],
-    twitter: "https://twitter.com/elenavance_tech",
-    linkedin: "https://linkedin.com/in/elenavance-saas",
-    website: "https://elenavance.io",
+    twitter: "https://twitter.com/sarahjenkins_saas",
+    linkedin: "https://linkedin.com/in/sarahjenkins-ops",
+    website: "https://sarahjenkins.dev",
     articlesCount: 18
   },
   {
-    id: "marcus-chen",
-    name: "Marcus Chen",
-    slug: "marcus-chen",
-    role: "Principal Software Reviewer & Lead Engineer",
-    bio: "Marcus Chen is a former systems engineer and tech lead who has tested over 250 enterprise applications. He focuses on server hosting, software speed tests, database systems, and API integrations.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    id: "alex-rivera",
+    name: "Alex Rivera",
+    slug: "alex-rivera",
+    role: "Principal Technical Reviewer & Systems Engineer",
+    bio: "Alex is a backend software developer who spent over a decade maintaining distributed systems and internal developer portals. At SaaSInsider, he tests software speed, writes custom webhook scripts, and stress-tests third-party API limits.",
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
     credentials: [
-      "B.S. in Computer Science from UC Berkeley",
-      "10+ years engineering across distributed systems",
+      "Former Senior Infrastructure Engineer at DataMesh",
+      "B.S. in Computer Engineering from Georgia Tech",
       "Certified Kubernetes Administrator (CKA)"
     ],
     specialties: [
       "Head-to-Head Software Testing",
-      "Cloud Infrastructure & Serverless",
-      "Developer Tools & CI/CD",
-      "Database & Storage Systems"
+      "API & Webhook Reliability",
+      "Cloud Infrastructure & Hosting",
+      "Database & Backup Systems"
     ],
-    twitter: "https://twitter.com/marcuschen_dev",
-    linkedin: "https://linkedin.com/in/marcuschen-systems",
-    github: "https://github.com/marcuschen-dev",
+    twitter: "https://twitter.com/alexrivera_dev",
+    linkedin: "https://linkedin.com/in/alexrivera-tech",
+    github: "https://github.com/alexrivera-dev",
     articlesCount: 24
   },
   {
-    id: "sophia-alvarez",
-    name: "Dr. Sophia Alvarez",
-    slug: "sophia-alvarez",
-    role: "Lead AI & Automation Researcher",
-    bio: "Dr. Sophia Alvarez heads artificial intelligence and workflow automation coverage at SaaSInsider. Holding a Ph.D. in Machine Learning, she reviews language models, automated assistants, and business workflows.",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    id: "maya-lin",
+    name: "Maya Lin",
+    slug: "maya-lin",
+    role: "AI & Automation Editor",
+    bio: "Maya has built automation pipelines and evaluated natural language software since 2019. She spends her workdays connecting webhooks across Zapier, Make, and Python to separate practical AI tools from marketing claims.",
+    avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80",
     credentials: [
-      "Ph.D. in Machine Learning from MIT",
-      "Former Senior Research Scientist in Applied NLP",
-      "Author of 8 peer-reviewed publications on machine intelligence"
+      "M.S. in Computer Science from Carnegie Mellon",
+      "Former Automation Specialist at ParsePoint",
+      "Creator of open-source API testing scripts"
     ],
     specialties: [
-      "Autonomous AI Assistants",
-      "Enterprise Large Language Models (LLMs)",
-      "Workflow Linking (Zapier, Make, n8n)",
-      "AI Data Safety & Privacy Rules"
+      "Autonomous AI Agents",
+      "Enterprise Language Models",
+      "Workflow Automation (Zapier, Make, n8n)",
+      "Data Privacy & Retention Rules"
     ],
-    twitter: "https://twitter.com/drsophiaalvarez",
-    linkedin: "https://linkedin.com/in/drsophiaalvarez",
+    twitter: "https://twitter.com/mayalin_ai",
+    linkedin: "https://linkedin.com/in/mayalin-automation",
     articlesCount: 15
   },
   {
-    id: "david-ross",
-    name: "David Ross",
-    slug: "david-ross",
-    role: "Senior Startup & Productivity Editor",
-    bio: "David Ross has spent a decade advising early-stage companies on team coordination and workspace software. He writes on project management software, no-code stacks, and tool replacement.",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    id: "liam-cooper",
+    name: "Liam Cooper",
+    slug: "liam-cooper",
+    role: "Workplace Software & Productivity Editor",
+    bio: "Liam spent eight years setting up workspace software, documentation wikis, and task systems for software teams. He writes practical evaluations on how software handles real team communication.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
     credentials: [
-      "Co-founder of RemoteOps Collective",
-      "Advisor to 15+ Y-Combinator alumni startups",
-      "Former Growth Lead at Asana Integrations"
+      "Former Product Operations Lead at TeamSync",
+      "B.A. in Technical Communication from University of Washington",
+      "Advisor to early-stage founder collectives"
     ],
     specialties: [
-      "Project & Task Management Systems",
-      "Async Team Coordination",
-      "Startup Software Stacks",
-      "No-Code Operations"
+      "Project & Task Management Tools",
+      "Team Knowledge Bases & Wikis",
+      "Workspace Organization",
+      "No-Code Business Workflows"
     ],
-    twitter: "https://twitter.com/davidross_ops",
-    linkedin: "https://linkedin.com/in/davidross-ops",
+    twitter: "https://twitter.com/liamcooper_ops",
+    linkedin: "https://linkedin.com/in/liamcooper-work",
     articlesCount: 19
   }
 ];

@@ -83,7 +83,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
               width={120}
               height={120}
               priority
-              className="rounded-3xl object-cover border-2 border-white dark:border-slate-800 shadow-md flex-shrink-0"
+              className="w-28 h-28 aspect-square rounded-3xl object-cover border-2 border-white dark:border-slate-800 shadow-md flex-shrink-0"
             />
 
             <div className="flex-1 space-y-4">

@@ -1,10 +1,10 @@
 import { Article } from "@/types/blog";
 import { AUTHORS } from "./authors";
 
-const authorElena = AUTHORS[0];
-const authorMarcus = AUTHORS[1];
-const authorSophia = AUTHORS[2];
-const authorDavid = AUTHORS[3];
+const authorSarah = AUTHORS[0];
+const authorAlex = AUTHORS[1];
+const authorMaya = AUTHORS[2];
+const authorLiam = AUTHORS[3];
 
 export const ARTICLES: Article[] = [
   // 1. INFORMATIONAL ARTICLE: What Is SaaS?
@@ -19,7 +19,7 @@ export const ARTICLES: Article[] = [
     category: "saas",
     subcategory: "SaaS Basics",
     template: "informational",
-    author: authorElena,
+    author: authorSarah,
     publishedAt: "2026-01-14T09:00:00Z",
     updatedAt: "2026-09-18T14:30:00Z",
     readingTime: "9 min read",
@@ -203,7 +203,7 @@ export const ARTICLES: Article[] = [
     category: "reviews",
     subcategory: "Productivity Reviews",
     template: "review",
-    author: authorMarcus,
+    author: authorAlex,
     publishedAt: "2026-02-10T11:00:00Z",
     updatedAt: "2026-09-22T08:15:00Z",
     readingTime: "11 min read",
@@ -370,7 +370,7 @@ export const ARTICLES: Article[] = [
     category: "comparisons",
     subcategory: "Productivity Comparisons",
     template: "comparison",
-    author: authorElena,
+    author: authorSarah,
     publishedAt: "2026-02-18T10:00:00Z",
     updatedAt: "2026-09-24T12:00:00Z",
     readingTime: "12 min read",
@@ -515,7 +515,7 @@ export const ARTICLES: Article[] = [
     category: "tutorials",
     subcategory: "Business Automation",
     template: "how-to",
-    author: authorSophia,
+    author: authorMaya,
     publishedAt: "2026-03-04T08:30:00Z",
     updatedAt: "2026-09-25T16:00:00Z",
     readingTime: "10 min read",
@@ -617,7 +617,7 @@ export const ARTICLES: Article[] = [
           stepNumber: 4,
           title: "Execute Downstream Actions with Fallbacks",
           description: "Map verified data variables into destination systems. Create the contact record in your CRM, update your accounting ledger, and post a formatted summary into your team Slack channel.",
-          codeSnippet: ":tada: *New Enterprise Lead Captured*\n*Company:* Acme Corp\n*Contact:* sarah@acmecorp.com\n*Value:* $24,000/yr\n*Owner Assigned:* @marcus",
+          codeSnippet: ":tada: *New Enterprise Lead Captured*\n*Company:* Acme Corp\n*Contact:* sarah@acmecorp.com\n*Value:* $24,000/yr\n*Owner Assigned:* @alex",
           codeLanguage: "markdown"
         },
         {
@@ -676,7 +676,7 @@ export const ARTICLES: Article[] = [
     category: "ai-tools",
     subcategory: "Generative AI",
     template: "informational",
-    author: authorSophia,
+    author: authorMaya,
     publishedAt: "2026-03-12T14:00:00Z",
     updatedAt: "2026-09-26T11:45:00Z",
     readingTime: "11 min read",
@@ -788,7 +788,7 @@ export const ARTICLES: Article[] = [
     category: "saas",
     subcategory: "SaaS Pricing",
     template: "informational",
-    author: authorElena,
+    author: authorSarah,
     publishedAt: "2026-03-20T10:00:00Z",
     updatedAt: "2026-09-27T09:00:00Z",
     readingTime: "10 min read",
@@ -883,7 +883,7 @@ export const ARTICLES: Article[] = [
     category: "comparisons",
     subcategory: "Automation Comparisons",
     template: "comparison",
-    author: authorMarcus,
+    author: authorAlex,
     publishedAt: "2026-03-25T11:00:00Z",
     updatedAt: "2026-09-28T14:00:00Z",
     readingTime: "11 min read",
@@ -1010,7 +1010,7 @@ export const ARTICLES: Article[] = [
     category: "saas",
     subcategory: "SaaS Metrics",
     template: "informational",
-    author: authorElena,
+    author: authorSarah,
     publishedAt: "2026-03-28T12:00:00Z",
     updatedAt: "2026-09-28T17:00:00Z",
     readingTime: "12 min read",
@@ -1104,7 +1104,7 @@ export const ARTICLES: Article[] = [
     category: "how-to",
     subcategory: "SaaS Analytics",
     template: "how-to",
-    author: authorElena,
+    author: authorSarah,
     publishedAt: "2026-03-30T10:00:00Z",
     updatedAt: "2026-09-28T16:00:00Z",
     readingTime: "9 min read",
