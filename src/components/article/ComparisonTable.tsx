@@ -123,7 +123,7 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
         </div>
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-cyan-300 block mb-0.5">
-            Nexsas Verdict &amp; Overall Recommendation
+            SaaSInsider Verdict &amp; Overall Recommendation
           </span>
           <h4 className="text-lg font-bold text-white mb-1">
             {winner === "Tie" ? "Contextual Draw (Specific Use Cases)" : `Winner: ${winner === "A" ? entityA.name : entityB.name}`}

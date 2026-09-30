@@ -34,7 +34,7 @@ export function LatestArticlesGrid({ articles }: LatestArticlesGridProps) {
           <div>
             <span className="text-xs uppercase tracking-widest font-extrabold text-cyan-600 dark:text-cyan-400 flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-              Nexsas Dispatches
+              SaaSInsider Dispatches
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
               Latest Intel &amp; Playbooks

@@ -233,7 +233,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {/* In-Article Mini Newsletter Signup */}
             <div className="p-5 rounded-2xl bg-cyan-950/20 dark:bg-darkSurface border border-cyan-500/20 space-y-3">
               <h4 className="font-bold text-sm text-slate-950 dark:text-cyan-200">
-                Nexsas Executive Dispatch
+                SaaSInsider Executive Dispatch
               </h4>
               <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                 Receive practical SaaS metrics, software teardowns, and automation playbooks in your inbox every Thursday.

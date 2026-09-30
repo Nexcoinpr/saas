@@ -35,13 +35,13 @@ export async function generateMetadata({ params }: AuthorProfilePageProps): Prom
   }
 
   return {
-    title: `${author.name} | ${author.role} | Nexsas`,
+    title: `${author.name} | ${author.role} | SaaSInsider`,
     description: author.bio,
     alternates: {
       canonical: `${SITE_CONFIG.siteUrl}/authors/${author.slug}`,
     },
     openGraph: {
-      title: `${author.name} | Nexsas`,
+      title: `${author.name} | SaaSInsider`,
       description: author.bio,
       type: "profile",
       images: [{ url: author.avatar }],

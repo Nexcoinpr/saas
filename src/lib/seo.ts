@@ -1,15 +1,15 @@
 import { Article, Author, Category } from "@/types/blog";
 
 export const SITE_CONFIG = {
-  name: "Nexsas",
-  title: "Nexsas | SaaS Intelligence, Software Teardowns & Architecture",
+  name: "SaaSInsider",
+  title: "SaaSInsider | SaaS Intelligence, Software Teardowns & Architecture",
   description: "Independent software testing, verified SaaS benchmarks, head-to-head software comparisons, AI agent analysis, and workflow automation playbooks.",
-  siteUrl: "https://nexsas.io",
+  siteUrl: "https://saasinsider.io",
   defaultOgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-  twitterHandle: "@nexsas_hq",
+  twitterHandle: "@saasinsider",
   publisher: {
-    name: "Nexsas Media Network",
-    logo: "https://nexsas.io/logo.png"
+    name: "SaaSInsider",
+    logo: "https://saasinsider.io/logo.png"
   }
 };
 
@@ -26,9 +26,9 @@ export function generateOrganizationSchema() {
       "height": 120
     },
     "sameAs": [
-      "https://twitter.com/nexsas_hq",
-      "https://linkedin.com/company/nexsas",
-      "https://github.com/nexsas"
+      "https://twitter.com/saasinsider",
+      "https://linkedin.com/company/saasinsider",
+      "https://github.com/saasinsider"
     ],
     "description": SITE_CONFIG.description
   };

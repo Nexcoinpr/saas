@@ -4,8 +4,8 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Nexsas",
-  description: "Privacy policy detailing data handling, zero-tracking philosophy, and rights for Nexsas readers.",
+  title: "Privacy Policy | SaaSInsider",
+  description: "Privacy policy detailing data handling, zero-tracking philosophy, and rights for SaaSInsider readers.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/privacy`,
   },
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
           <section>
             <h2>1. Our Commitment to Reader Privacy</h2>
             <p>
-              Nexsas is dedicated to providing high-quality software journalism and analysis without invasive surveillance. We do not sell your personal information, operate covert tracking beacons, or share your email address with third-party software vendors.
+              SaaSInsider is dedicated to providing high-quality software journalism and analysis without invasive surveillance. We do not sell your personal information, operate covert tracking beacons, or share your email address with third-party software vendors.
             </p>
           </section>
 
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
               We collect minimal data necessary to deliver our content and weekly newsletter:
             </p>
             <ul>
-              <li><strong>Newsletter Subscriptions:</strong> If you voluntarily subscribe to the Nexsas Executive Dispatch, we store your email address strictly for dispatching editorial newsletters. You may unsubscribe with a single click at any time.</li>
+              <li><strong>Newsletter Subscriptions:</strong> If you voluntarily subscribe to the SaaSInsider Executive Dispatch, we store your email address strictly for dispatching editorial newsletters. You may unsubscribe with a single click at any time.</li>
               <li><strong>Contact &amp; Correction Forms:</strong> Information submitted via our contact forms (name, email, feedback) is used solely to respond to your specific inquiry.</li>
               <li><strong>Aggregated Anonymous Telemetry:</strong> We collect privacy-preserving server logs (pages requested, browser type, referrer) to assess aggregate article popularity and improve site performance without profiling individual users.</li>
             </ul>
@@ -57,7 +57,7 @@ export default function PrivacyPage() {
           <section>
             <h2>4. Data Rights &amp; Contact</h2>
             <p>
-              Under GDPR, CCPA, and international data regulations, you have the right to request access to or deletion of your email address from our newsletter list. Please submit any data requests to <a href="mailto:privacy@nexsas.io" className="text-cyan-600 dark:text-cyan-400 underline">privacy@nexsas.io</a>.
+              Under GDPR, CCPA, and international data regulations, you have the right to request access to or deletion of your email address from our newsletter list. Please submit any data requests to <a href="mailto:privacy@saasinsider.io" className="text-cyan-600 dark:text-cyan-400 underline">privacy@saasinsider.io</a>.
             </p>
           </section>
         </div>

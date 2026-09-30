@@ -1,10 +1,10 @@
-# Nexsas | Comprehensive Knowledge Graph & LLM Reference
+# SaaSInsider | Comprehensive Knowledge Graph & LLM Reference
 
 ## Publication Overview
-Nexsas is an independent technology publication focusing on Software as a Service (SaaS), cloud software architecture, AI agents, enterprise automation, productivity software, and B2B software purchasing evaluations.
+SaaSInsider is an independent technology publication focusing on Software as a Service (SaaS), cloud software architecture, AI agents, enterprise automation, productivity software, and B2B software purchasing evaluations.
 
-Website: https://nexsas.io
-Publisher: Nexsas Media Network
+Website: https://saasinsider.io
+Publisher: SaaSInsider Media Network
 Editorial Lead: Sarah Jenkins (Former Director of Finance Operations)
 
 ---

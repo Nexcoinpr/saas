@@ -146,8 +146,8 @@ export default function ContactPage() {
                 <strong className="block text-slate-800 dark:text-slate-200 mb-0.5">
                   Editorial &amp; Review Desk:
                 </strong>
-                <a href="mailto:editorial@nexsas.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
-                  editorial@nexsas.io
+                <a href="mailto:editorial@saasinsider.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
+                  editorial@saasinsider.io
                 </a>
               </div>
 
@@ -155,8 +155,8 @@ export default function ContactPage() {
                 <strong className="block text-slate-800 dark:text-slate-200 mb-0.5">
                   Fact-Checking &amp; Corrections:
                 </strong>
-                <a href="mailto:corrections@nexsas.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
-                  corrections@nexsas.io
+                <a href="mailto:corrections@saasinsider.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
+                  corrections@saasinsider.io
                 </a>
               </div>
 
@@ -164,8 +164,8 @@ export default function ContactPage() {
                 <strong className="block text-slate-800 dark:text-slate-200 mb-0.5">
                   Press &amp; Syndication:
                 </strong>
-                <a href="mailto:press@nexsas.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
-                  press@nexsas.io
+                <a href="mailto:press@saasinsider.io" className="text-cyan-600 dark:text-cyan-400 hover:underline">
+                  press@saasinsider.io
                 </a>
               </div>
             </div>

@@ -38,16 +38,16 @@ export function Header() {
               <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-400 via-cyan-500 to-blue-600 p-[1.5px] shadow-sm shadow-cyan-500/30 group-hover:shadow-cyan-500/50 group-hover:scale-105 transition-all">
                 <div className="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center">
                   <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-300 text-lg tracking-tight">
-                    N
+                    S
                   </span>
                 </div>
               </div>
               <div className="flex flex-col">
                 <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white flex items-center">
-                  Nex<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400">sas</span>
+                  SaaS<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400">Insider</span>
                 </span>
                 <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-cyan-400/80 font-bold -mt-1">
-                  SaaS Intelligence
+                  Software Intelligence
                 </span>
               </div>
             </Link>
@@ -150,7 +150,7 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg text-center shadow-md shadow-cyan-600/25"
             >
-              <span>Subscribe to Nexsas Briefing</span>
+              <span>Subscribe to SaaSInsider Briefing</span>
             </a>
           </div>
         </div>

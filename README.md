@@ -1,6 +1,6 @@
-# Nexsas | Modern, SEO & AEO-Focused SaaS Blog Publication
+# SaaSInsider | Modern, SEO & AEO-Focused SaaS Blog Publication
 
-**Nexsas** is a modern, high-performance, and editorial Software as a Service (SaaS) technology publication built from scratch with Next.js 15, TypeScript, Tailwind CSS, and full Schema.org structured data.
+**SaaSInsider** is a modern, high-performance, and editorial Software as a Service (SaaS) technology publication built from scratch with Next.js 15, TypeScript, Tailwind CSS, and full Schema.org structured data.
 
 ---
 

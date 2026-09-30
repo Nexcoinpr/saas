@@ -15,12 +15,12 @@ export function Footer() {
               <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-400 via-cyan-500 to-blue-600 p-[1.5px] shadow-sm shadow-cyan-500/30">
                 <div className="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center">
                   <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-300 text-base tracking-tight">
-                    N
+                    S
                   </span>
                 </div>
               </div>
               <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white">
-                Nex<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400">sas</span>
+                SaaS<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400">Insider</span>
               </span>
             </Link>
             
@@ -162,7 +162,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <Link href="/about" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  About Nexsas
+                  About SaaSInsider
                 </Link>
               </li>
               <li>
@@ -203,7 +203,7 @@ export function Footer() {
         {/* Technical SEO and LLM index links */}
         <div className="mt-12 pt-8 border-t border-slate-200/80 dark:border-cyan-950/40 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-500">
           <div className="flex flex-wrap items-center gap-4">
-            <span>© {new Date().getFullYear()} Nexsas. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} SaaSInsider. All rights reserved.</span>
             <span className="hidden sm:inline">•</span>
             <Link href="/sitemap.xml" className="hover:underline">
               Sitemap.xml

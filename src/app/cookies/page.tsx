@@ -4,8 +4,8 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy | Nexsas",
-  description: "Explanation of cookies, local storage preferences, and zero tracking on Nexsas.",
+  title: "Cookie Policy | SaaSInsider",
+  description: "Explanation of cookies, local storage preferences, and zero tracking on SaaSInsider.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/cookies`,
   },
@@ -36,7 +36,7 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2>2. How Nexsas Uses Cookies &amp; Local Storage</h2>
+            <h2>2. How SaaSInsider Uses Cookies &amp; Local Storage</h2>
             <p>
               We maintain a minimal, privacy-centric approach to local storage:
             </p>
@@ -49,7 +49,7 @@ export default function CookiesPage() {
           <section>
             <h2>3. Managing Cookie Preferences</h2>
             <p>
-              You can configure your browser settings to reject or delete cookies at any time. Because Nexsas does not depend on invasive tracking cookies, disabling cookies will not degrade your reading experience.
+              You can configure your browser settings to reject or delete cookies at any time. Because SaaSInsider does not depend on invasive tracking cookies, disabling cookies will not degrade your reading experience.
             </p>
           </section>
         </div>

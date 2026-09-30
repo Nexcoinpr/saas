@@ -9,7 +9,7 @@ export function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem("nexsas-theme") as "light" | "dark" | null;
+    const savedTheme = localStorage.getItem("saasinsider-theme") as "light" | "dark" | null;
     if (savedTheme) {
       setTheme(savedTheme);
       if (savedTheme === "dark") {
@@ -26,7 +26,7 @@ export function ThemeToggle() {
   const toggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
     setTheme(nextTheme);
-    localStorage.setItem("nexsas-theme", nextTheme);
+    localStorage.setItem("saasinsider-theme", nextTheme);
     if (nextTheme === "dark") {
       document.documentElement.classList.add("dark");
     } else {

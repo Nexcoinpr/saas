@@ -6,7 +6,7 @@ import { CheckSquare, Calculator, BookOpen, ArrowRight } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "SaaS Resources, Buyer Checklists & Glossaries | Nexsas",
+  title: "SaaS Resources, Buyer Checklists & Glossaries | SaaSInsider",
   description: "Free downloadable checklists, software evaluation templates, SaaS glossary, and unit economic cheat sheets for technology executives.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/resources`,

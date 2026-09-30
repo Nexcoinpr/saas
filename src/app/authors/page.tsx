@@ -9,8 +9,8 @@ import { TwitterIcon, LinkedinIcon, GithubIcon } from "@/components/common/Socia
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Authors & Editorial Team | Nexsas",
-  description: "Meet the engineers, SaaS executives, and technical researchers behind Nexsas hands-on reviews and technology guides.",
+  title: "Authors & Editorial Team | SaaSInsider",
+  description: "Meet the engineers, SaaS executives, and technical researchers behind SaaSInsider hands-on reviews and technology guides.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/authors`,
   },
@@ -35,7 +35,7 @@ export default function AuthorsPage() {
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            Every software teardown, comparison matrix, and financial model at Nexsas is authored and audited by practitioners with deep domain experience across product leadership, cloud systems, and AI research.
+            Every software teardown, comparison matrix, and financial model at SaaSInsider is authored and audited by practitioners with deep domain experience across product leadership, cloud systems, and AI research.
           </p>
         </div>
 

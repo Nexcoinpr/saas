@@ -21,7 +21,7 @@ export function SocialShare({ title, path }: SocialShareProps) {
   };
 
   const shareTwitter = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(fullUrl)}&via=nexsas_hq`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(fullUrl)}&via=saasinsider`;
     window.open(twitterUrl, "_blank", "noopener,noreferrer");
   };
 

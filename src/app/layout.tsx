@@ -8,8 +8,8 @@ import { generateOrganizationSchema, generateWebsiteSchema, SITE_CONFIG } from "
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.siteUrl),
   title: {
-    default: "Nexsas | SaaS Intelligence, Software Teardowns & Architecture",
-    template: "%s | Nexsas",
+    default: "SaaSInsider | SaaS Intelligence, Software Teardowns & Architecture",
+    template: "%s | SaaSInsider",
   },
   description: SITE_CONFIG.description,
   keywords: [
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     "productivity tools",
     "startup technology"
   ],
-  authors: [{ name: "Nexsas Editorial Board" }],
-  creator: "Nexsas",
-  publisher: "Nexsas Media Network",
+  authors: [{ name: "SaaSInsider Editorial Board" }],
+  creator: "SaaSInsider",
+  publisher: "SaaSInsider Media Network",
   formatDetection: {
     email: false,
     address: false,

@@ -6,8 +6,8 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "About Us & Editorial Standards | Nexsas",
-  description: "Learn about Nexsas editorial mission, hands-on software testing methodology, and our commitment to unbiased B2B software evaluations.",
+  title: "About Us & Editorial Standards | SaaSInsider",
+  description: "Learn about SaaSInsider editorial mission, hands-on software testing methodology, and our commitment to unbiased B2B software evaluations.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/about`,
   },
@@ -32,7 +32,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            Nexsas was founded with a single mission: to cut through vendor marketing hype and provide technology buyers with rigorous, hands-on software teardowns, verified benchmarks, and practical architecture guides.
+            SaaSInsider was founded with a single mission: to cut through vendor marketing hype and provide technology buyers with rigorous, hands-on software teardowns, verified benchmarks, and practical architecture guides.
           </p>
         </header>
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
               The B2B software ecosystem has exploded into tens of thousands of specialized tools. Buying committees face information overload: review aggregators riddled with incentivized feedback, vendor marketing that overpromises on capabilities, and fragmented documentation.
             </p>
             <p>
-              At Nexsas, we believe in <strong>evidence-grounded software evaluations</strong>. Every review published on our platform is the result of direct sandbox testing by former product strategists, cloud infrastructure engineers, and machine learning researchers.
+              At SaaSInsider, we believe in <strong>evidence-grounded software evaluations</strong>. Every review published on our platform is the result of direct sandbox testing by former product strategists, cloud infrastructure engineers, and machine learning researchers.
             </p>
           </section>
 

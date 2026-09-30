@@ -23,7 +23,7 @@ export function DirectAnswerBox({ directAnswer }: DirectAnswerBoxProps) {
           <Sparkles className="w-3.5 h-3.5" />
         </span>
         <span className="text-xs uppercase font-extrabold tracking-wider text-cyan-700 dark:text-cyan-300">
-          Nexsas Verified Summary
+          SaaSInsider Verified Summary
         </span>
       </div>
 

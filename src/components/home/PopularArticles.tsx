@@ -19,7 +19,7 @@ export function PopularArticles({ articles }: PopularArticlesProps) {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-xs uppercase tracking-widest font-extrabold text-cyan-600 dark:text-cyan-400">
-                Nexsas Telemetry
+                SaaSInsider Telemetry
               </span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1 flex items-center gap-2.5">

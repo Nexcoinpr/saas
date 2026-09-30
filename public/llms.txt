@@ -1,4 +1,4 @@
-# Nexsas
+# SaaSInsider
 > High-quality editorial analysis, verified software reviews, head-to-head SaaS comparisons, AI tool teardowns, and practical business automation guides.
 
 ## Main Topics
@@ -10,15 +10,15 @@
 - Workflow Automation: No-code integration engines (Zapier, Make, n8n), APIs, and webhook pipelines.
 
 ## Canonical Articles & Pillar Guides
-- [What Is SaaS? Complete Guide](https://nexsas.io/saas/what-is-saas): Definition, multi-tenant cloud architectures, pricing models, and 2026 industry trends.
-- [Notion Review (2026)](https://nexsas.io/reviews/notion-review): Hands-on review of Notion databases, Notion AI, collaboration capabilities, pricing, and alternatives.
-- [Notion vs ClickUp Showdown](https://nexsas.io/comparisons/notion-vs-clickup): Head-to-head feature matrix, task dependencies, documentation wikis, pricing, and final winner.
-- [How to Automate Repetitive Business Tasks](https://nexsas.io/tutorials/how-to-automate-business-tasks): Step-by-step playbook on mapping workflows, webhooks, error handling, and automation tools.
-- [10 Best AI Tools for Business in 2026](https://nexsas.io/ai-tools/best-ai-tools-for-business): Benchmark rankings of Claude 3.7, ChatGPT Enterprise, Perplexity, and Cursor.
-- [SaaS Pricing Models Explained](https://nexsas.io/saas/saas-pricing-models): Tiered, usage-based, flat-rate, and hybrid pricing strategies with empirical benchmarks.
-- [Zapier vs Make Comparison](https://nexsas.io/comparisons/zapier-vs-make): Full teardown of visual scenario builders, task cost math, and app integration counts.
-- [Top SaaS Metrics](https://nexsas.io/saas/saas-metrics-guide): CAC, LTV, Net Retention Rate (NRR), and Rule of 40 formulas and investor expectations.
-- [How to Calculate Customer Churn](https://nexsas.io/how-to/how-to-calculate-customer-churn): Logo churn vs revenue churn, cohort retention curves, and involuntary churn elimination.
+- [What Is SaaS? Complete Guide](https://saasinsider.io/saas/what-is-saas): Definition, multi-tenant cloud architectures, pricing models, and 2026 industry trends.
+- [Notion Review (2026)](https://saasinsider.io/reviews/notion-review): Hands-on review of Notion databases, Notion AI, collaboration capabilities, pricing, and alternatives.
+- [Notion vs ClickUp Showdown](https://saasinsider.io/comparisons/notion-vs-clickup): Head-to-head feature matrix, task dependencies, documentation wikis, pricing, and final winner.
+- [How to Automate Repetitive Business Tasks](https://saasinsider.io/tutorials/how-to-automate-business-tasks): Step-by-step playbook on mapping workflows, webhooks, error handling, and automation tools.
+- [10 Best AI Tools for Business in 2026](https://saasinsider.io/ai-tools/best-ai-tools-for-business): Benchmark rankings of Claude 3.7, ChatGPT Enterprise, Perplexity, and Cursor.
+- [SaaS Pricing Models Explained](https://saasinsider.io/saas/saas-pricing-models): Tiered, usage-based, flat-rate, and hybrid pricing strategies with empirical benchmarks.
+- [Zapier vs Make Comparison](https://saasinsider.io/comparisons/zapier-vs-make): Full teardown of visual scenario builders, task cost math, and app integration counts.
+- [Top SaaS Metrics](https://saasinsider.io/saas/saas-metrics-guide): CAC, LTV, Net Retention Rate (NRR), and Rule of 40 formulas and investor expectations.
+- [How to Calculate Customer Churn](https://saasinsider.io/how-to/how-to-calculate-customer-churn): Logo churn vs revenue churn, cohort retention curves, and involuntary churn elimination.
 
 ## Editorial Standards & Trust
-All evaluations at Nexsas are conducted by credentialed industry engineers and product leaders. We test software directly in production sandbox environments and maintain strict separation between affiliate partnerships and editorial review ratings.
+All evaluations at SaaSInsider are conducted by credentialed industry engineers and product leaders. We test software directly in production sandbox environments and maintain strict separation between affiliate partnerships and editorial review ratings.

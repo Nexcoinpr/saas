@@ -11,7 +11,7 @@ export function BuyerGuideCta() {
           <div className="max-w-2xl space-y-3">
             <span className="text-xs uppercase tracking-widest font-extrabold text-cyan-600 dark:text-cyan-400 flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-              Nexsas Procurement Intelligence
+              SaaSInsider Procurement Intelligence
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white leading-tight">
               Ready to Upgrade Your Team&apos;s Software Stack?

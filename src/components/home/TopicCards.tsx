@@ -87,7 +87,7 @@ export function TopicCards() {
         <div className="max-w-2xl mb-8">
           <span className="text-xs uppercase tracking-widest font-extrabold text-cyan-600 dark:text-cyan-400 flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-            Nexsas Subject Clusters
+            SaaSInsider Subject Clusters
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
             Topical Hubs &amp; Intelligence Clusters
