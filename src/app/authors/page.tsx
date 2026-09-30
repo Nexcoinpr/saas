@@ -14,6 +14,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/authors`,
   },
+  openGraph: {
+    title: "Authors & Editorial Team | SaaSInsider",
+    description: "Meet the engineers, SaaS executives, and technical researchers behind SaaSInsider hands-on reviews and technology guides.",
+    url: `${SITE_CONFIG.siteUrl}/authors`,
+    siteName: SITE_CONFIG.name,
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "SaaSInsider Editorial Team",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Authors & Editorial Team | SaaSInsider",
+    description: "Meet the engineers, SaaS executives, and technical researchers behind SaaSInsider hands-on reviews and technology guides.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
+  },
 };
 
 export default function AuthorsPage() {

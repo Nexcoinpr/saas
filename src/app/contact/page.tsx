@@ -7,21 +7,31 @@ import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact Editorial Team & Support | SaaSInsider",
-  description: "Contact the SaaSInsider editorial desk for software review inquiries, pricing updates, and correction requests.",
+  description: "Contact the SaaSInsider editorial desk for software review inquiries, pricing updates, correction requests, and media questions.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/contact`,
   },
   openGraph: {
     title: "Contact Editorial Team & Support | SaaSInsider",
-    description: "Contact the SaaSInsider editorial desk for software review inquiries, pricing updates, and correction requests.",
+    description: "Contact the SaaSInsider editorial desk for software review inquiries, pricing updates, correction requests, and media questions.",
     url: `${SITE_CONFIG.siteUrl}/contact`,
     siteName: SITE_CONFIG.name,
     type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Contact SaaSInsider",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Editorial Team & Support | SaaSInsider",
-    description: "Contact the SaaSInsider editorial desk for software review inquiries, pricing updates, and correction requests.",
+    description: "Contact the SaaSInsider editorial desk for software review inquiries, pricing updates, correction requests, and media questions.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
   },
 };
 

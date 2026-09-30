@@ -77,11 +77,21 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       url: `${SITE_CONFIG.siteUrl}${category.path}`,
       siteName: SITE_CONFIG.name,
       type: "website",
+      images: [
+        {
+          url: SITE_CONFIG.defaultOgImage,
+          width: 1200,
+          height: 630,
+          alt: category.name,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: category.metaTitle,
       description: category.metaDescription,
+      creator: SITE_CONFIG.twitterHandle,
+      images: [SITE_CONFIG.defaultOgImage],
     },
   };
 }

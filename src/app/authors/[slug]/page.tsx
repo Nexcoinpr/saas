@@ -34,17 +34,36 @@ export async function generateMetadata({ params }: AuthorProfilePageProps): Prom
     };
   }
 
+  const desc = author.metaDescription || `${author.name} is a contributing editor and software tester at SaaSInsider.`;
+  const authorTitle = `${author.name} | Author Profile | SaaSInsider`;
+
   return {
-    title: `${author.name} | ${author.role} | SaaSInsider`,
-    description: author.bio,
+    title: authorTitle,
+    description: desc,
     alternates: {
       canonical: `${SITE_CONFIG.siteUrl}/authors/${author.slug}`,
     },
     openGraph: {
-      title: `${author.name} | SaaSInsider`,
-      description: author.bio,
+      title: authorTitle,
+      description: desc,
+      url: `${SITE_CONFIG.siteUrl}/authors/${author.slug}`,
+      siteName: SITE_CONFIG.name,
       type: "profile",
-      images: [{ url: author.avatar }],
+      images: [
+        {
+          url: author.avatar,
+          width: 400,
+          height: 400,
+          alt: author.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: authorTitle,
+      description: desc,
+      creator: SITE_CONFIG.twitterHandle,
+      images: [author.avatar],
     },
   };
 }

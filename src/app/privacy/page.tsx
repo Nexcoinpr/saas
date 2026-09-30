@@ -5,9 +5,31 @@ import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | SaaSInsider",
-  description: "Privacy policy detailing data handling, zero-tracking philosophy, and rights for SaaSInsider readers.",
+  description: "Read our privacy policy detailing data protection, cookie handling, zero-tracking philosophy, and rights for SaaSInsider readers and members.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/privacy`,
+  },
+  openGraph: {
+    title: "Privacy Policy | SaaSInsider",
+    description: "Read our privacy policy detailing data protection, cookie handling, zero-tracking philosophy, and rights for SaaSInsider readers and members.",
+    url: `${SITE_CONFIG.siteUrl}/privacy`,
+    siteName: SITE_CONFIG.name,
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "SaaSInsider Privacy Policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | SaaSInsider",
+    description: "Read our privacy policy detailing data protection, cookie handling, zero-tracking philosophy, and rights for SaaSInsider readers and members.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
   },
 };
 

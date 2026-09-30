@@ -6,10 +6,32 @@ import { CheckSquare, Calculator, BookOpen, ArrowRight } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "SaaS Resources, Buyer Checklists & Glossaries | SaaSInsider",
+  title: "SaaS Buyer Resources & Checklists | SaaSInsider",
   description: "Free downloadable checklists, software evaluation templates, SaaS glossary, and unit economic cheat sheets for technology executives.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/resources`,
+  },
+  openGraph: {
+    title: "SaaS Buyer Resources & Checklists | SaaSInsider",
+    description: "Free downloadable checklists, software evaluation templates, SaaS glossary, and unit economic cheat sheets for technology executives.",
+    url: `${SITE_CONFIG.siteUrl}/resources`,
+    siteName: SITE_CONFIG.name,
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "SaaS Buyer Resources and Checklists",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SaaS Buyer Resources & Checklists | SaaSInsider",
+    description: "Free downloadable checklists, software evaluation templates, SaaS glossary, and unit economic cheat sheets for technology executives.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
   },
 };
 
@@ -76,7 +98,7 @@ export default function ResourcesPage() {
               </p>
             </div>
             <Link
-              href="/productivity/asana-review"
+              href="/reviews/asana-review"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
             >
               <span>Read Guide &amp; Criteria</span>
@@ -118,7 +140,7 @@ export default function ResourcesPage() {
               </p>
             </div>
             <Link
-              href="/automation/zapier-review"
+              href="/reviews/zapier-review"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
             >
               <span>View Automation Blueprint</span>

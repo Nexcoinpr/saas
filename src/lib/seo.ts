@@ -4,8 +4,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.saasinsider.co.
 
 export const SITE_CONFIG = {
   name: "SaaSInsider",
-  title: "SaaSInsider | SaaS Intelligence, Software Teardowns & Architecture",
-  description: "Independent software testing, verified SaaS benchmarks, head-to-head software comparisons, AI agent analysis, and workflow automation playbooks.",
+  title: "SaaSInsider | Software Reviews, Comparisons & Guides",
+  description: "Independent software testing, verified SaaS benchmarks, head-to-head software comparisons, and workflow automation playbooks for teams.",
   siteUrl: siteUrl.replace(/\/$/, ""),
   defaultOgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
   twitterHandle: "@saasinsider",
@@ -132,22 +132,27 @@ export function generateArticleSchema(article: Article) {
     "keywords": article.tags.join(", ")
   };
 
-  // If Review template, add SoftwareApplication and reviewRating schema
-  if (article.template === "review" && article.reviewData) {
+  if (article.template === "review") {
+    const rawRating = article.reviewData?.overallRating ?? (article.scoreCard ? article.scoreCard.overallScore / 2 : 4.4);
+    const numericRating = Number(Number(rawRating).toFixed(1));
+    const productName = article.reviewData?.productName || article.title.replace(/Review.*$/i, "").trim() || "Software";
+    const productCategory = article.reviewData?.productCategory || "BusinessApplication";
+    const rawPrice = article.reviewData?.startingPrice?.replace(/[^0-9.]/g, "") || "0";
+
     baseSchema["itemReviewed"] = {
       "@type": "SoftwareApplication",
-      "name": article.reviewData.productName,
-      "applicationCategory": article.reviewData.productCategory,
+      "name": productName,
+      "applicationCategory": productCategory,
       "operatingSystem": "Web, Windows, macOS, iOS, Android",
       "offers": {
         "@type": "Offer",
-        "price": article.reviewData.startingPrice.replace(/[^0-9.]/g, "") || "0",
+        "price": rawPrice,
         "priceCurrency": "USD"
       }
     };
     baseSchema["reviewRating"] = {
       "@type": "Rating",
-      "ratingValue": article.reviewData.overallRating,
+      "ratingValue": numericRating,
       "bestRating": 5,
       "worstRating": 1
     };

@@ -5,9 +5,31 @@ import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | SaaSInsider",
-  description: "Terms and conditions of use for SaaSInsider content, reviews, metrics, and guides.",
+  description: "Review the complete terms of service and conditions for using SaaSInsider software evaluations, comparison guides, and architectural content.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/terms`,
+  },
+  openGraph: {
+    title: "Terms & Conditions | SaaSInsider",
+    description: "Review the complete terms of service and conditions for using SaaSInsider software evaluations, comparison guides, and architectural content.",
+    url: `${SITE_CONFIG.siteUrl}/terms`,
+    siteName: SITE_CONFIG.name,
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "SaaSInsider Terms and Conditions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions | SaaSInsider",
+    description: "Review the complete terms of service and conditions for using SaaSInsider software evaluations, comparison guides, and architectural content.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
   },
 };
 

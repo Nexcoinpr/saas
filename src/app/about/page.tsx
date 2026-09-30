@@ -11,6 +11,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/about`,
   },
+  openGraph: {
+    title: "About Us & Editorial Standards | SaaSInsider",
+    description: "Learn about SaaSInsider editorial mission, hands-on software testing methodology, and our commitment to unbiased B2B software evaluations.",
+    url: `${SITE_CONFIG.siteUrl}/about`,
+    siteName: SITE_CONFIG.name,
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "About SaaSInsider",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us & Editorial Standards | SaaSInsider",
+    description: "Learn about SaaSInsider editorial mission, hands-on software testing methodology, and our commitment to unbiased B2B software evaluations.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
+  },
 };
 
 export default function AboutPage() {

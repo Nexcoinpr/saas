@@ -5,9 +5,31 @@ import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | SaaSInsider",
-  description: "Explanation of cookies, local storage preferences, and zero tracking on SaaSInsider.",
+  description: "Understand how SaaSInsider uses core cookies, local preferences, and privacy-preserving settings to deliver a fast browsing experience.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/cookies`,
+  },
+  openGraph: {
+    title: "Cookie Policy | SaaSInsider",
+    description: "Understand how SaaSInsider uses core cookies, local preferences, and privacy-preserving settings to deliver a fast browsing experience.",
+    url: `${SITE_CONFIG.siteUrl}/cookies`,
+    siteName: SITE_CONFIG.name,
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "SaaSInsider Cookie Policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cookie Policy | SaaSInsider",
+    description: "Understand how SaaSInsider uses core cookies, local preferences, and privacy-preserving settings to deliver a fast browsing experience.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
   },
 };
 

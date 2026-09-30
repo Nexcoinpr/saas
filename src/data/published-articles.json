@@ -234,7 +234,68 @@
       "asana-review",
       "copper-review",
       "zapier-review"
-    ]
+    ],
+    "reviewData": {
+      "productName": "Remote",
+      "productCategory": "HR & Global Payroll Software",
+      "overallRating": 4.4,
+      "ratingBreakdown": [
+        {
+          "aspect": "Contractor Free Value",
+          "score": 4.8
+        },
+        {
+          "aspect": "Contract Compliance",
+          "score": 4.6
+        },
+        {
+          "aspect": "Payment Rails",
+          "score": 4.3
+        },
+        {
+          "aspect": "Customer Support",
+          "score": 4
+        }
+      ],
+      "bestFor": "Distributed teams managing international contractors and EOR hires",
+      "startingPrice": "Free (Contractors) / $599 (EOR)",
+      "pricingModel": "Freemium / Per-seat monthly",
+      "freeTrial": "Permanent free contractor tier",
+      "pros": [
+        "Zero monthly software subscription fee for global contractor management",
+        "Direct legal entities owned in 80+ countries for reliable EOR payroll",
+        "Automated W-8BEN collection and localized contract templates",
+        "Clean modern portal for contractors to upload invoices and track payments"
+      ],
+      "cons": [
+        "Customer support for free contractor accounts is limited to email ticketing",
+        "Full Employer of Record pricing ($599/mo per seat) requires sizable budget",
+        "Credit card funding incurs a 3.5% transaction fee",
+        "Hardware leasing and equipment shipping require custom enterprise agreements"
+      ],
+      "alternatives": [
+        {
+          "name": "Deel",
+          "reason": "Broader contractor crypto payout options"
+        },
+        {
+          "name": "Rippling",
+          "reason": "Unified IT device management and US payroll"
+        },
+        {
+          "name": "Oyster HR",
+          "reason": "Competitive European hiring packages"
+        }
+      ],
+      "verdict": "Remote free contractor platform is an outstanding zero-dollar tool for managing global independent talent, while its direct-entity EOR tier provides dependable international legal protection.",
+      "editorialScorecard": {
+        "performance": 4.5,
+        "easeOfUse": 4.7,
+        "featureDepth": 4.6,
+        "customerSupport": 4,
+        "valueForMoney": 4.5
+      }
+    }
   },
   {
     "slug": "vidyard-review",
@@ -482,7 +543,68 @@
       "github-copilot-vs-loom",
       "zapier-review",
       "asana-review"
-    ]
+    ],
+    "reviewData": {
+      "productName": "Vidyard",
+      "productCategory": "Video Messaging Software",
+      "overallRating": 4.2,
+      "ratingBreakdown": [
+        {
+          "aspect": "Recording Duration",
+          "score": 4.7
+        },
+        {
+          "aspect": "Video Player Speed",
+          "score": 4.5
+        },
+        {
+          "aspect": "Free Storage Quota",
+          "score": 3.4
+        },
+        {
+          "aspect": "Commercial Value",
+          "score": 4.2
+        }
+      ],
+      "bestFor": "Sales reps and customer teams sending personalized async video pitches",
+      "startingPrice": "Free / $19/mo (Pro)",
+      "pricingModel": "Freemium / Per-user monthly",
+      "freeTrial": "Free plan with 25 video cap",
+      "pros": [
+        "Generous 30-minute recording duration on the free plan",
+        "Direct browser extensions for Chrome and Edge with instant capture",
+        "Real-time viewer engagement analytics and percentage-watched alerts",
+        "Custom video thumbnail generator with animated GIF previews"
+      ],
+      "cons": [
+        "Lifetime limit of 25 active videos in free library storage",
+        "Vidyard branding watermark cannot be removed on free accounts",
+        "Automated closed captioning requires paid Pro tier subscription",
+        "CRM integrations with HubSpot and Salesforce locked to higher plans"
+      ],
+      "alternatives": [
+        {
+          "name": "Loom",
+          "reason": "5-minute recording cap but superior collaboration comments"
+        },
+        {
+          "name": "Wistia",
+          "reason": "Dedicated marketing video player with custom CTA forms"
+        },
+        {
+          "name": "Sendspark",
+          "reason": "Automated video personalization for outbound cold email"
+        }
+      ],
+      "verdict": "Vidyard free plan provides generous 30-minute recording times, but its 25-video lifetime storage cap makes upgrading to the $19 Pro plan necessary for active sales reps.",
+      "editorialScorecard": {
+        "performance": 4.6,
+        "easeOfUse": 4.5,
+        "featureDepth": 4.2,
+        "customerSupport": 4,
+        "valueForMoney": 4.1
+      }
+    }
   },
   {
     "slug": "copper-review",
@@ -730,7 +852,68 @@
       "pipedrive-vs-convertkit",
       "asana-review",
       "remote-review"
-    ]
+    ],
+    "reviewData": {
+      "productName": "Copper CRM",
+      "productCategory": "Google Workspace CRM Software",
+      "overallRating": 4.3,
+      "ratingBreakdown": [
+        {
+          "aspect": "Google Workspace Sync",
+          "score": 4.9
+        },
+        {
+          "aspect": "Adoption Ease",
+          "score": 4.7
+        },
+        {
+          "aspect": "Starter Value",
+          "score": 4.1
+        },
+        {
+          "aspect": "Reporting Depth",
+          "score": 4
+        }
+      ],
+      "bestFor": "Teams working exclusively inside Google Gmail, Docs, and Calendar",
+      "startingPrice": "$9/mo (Starter)",
+      "pricingModel": "Subscription / Per-seat monthly",
+      "freeTrial": "14-Day Free Trial",
+      "pros": [
+        "Unmatched Chrome extension operating directly inside Gmail inbox",
+        "Automatic zero-click contact logging from Google Workspace emails",
+        "Native bidirectional synchronization with Google Calendar meetings",
+        "Clean Kanban deal pipelines that require virtually no employee training"
+      ],
+      "cons": [
+        "No permanent free tier; trial expires after 14 days",
+        "Starter tier limits pipeline records and workflow automations",
+        "Jump to Professional plan ($69/seat/mo) is steep for bootstrapped teams",
+        "Suboptimal fit for companies primarily using Microsoft Outlook"
+      ],
+      "alternatives": [
+        {
+          "name": "Pipedrive",
+          "reason": "Better standalone sales focus independent of Google suite"
+        },
+        {
+          "name": "HubSpot CRM",
+          "reason": "Free permanent tier for basic contact databases"
+        },
+        {
+          "name": "Streak",
+          "reason": "Alternative Gmail-native spreadsheet CRM architecture"
+        }
+      ],
+      "verdict": "Copper is the gold standard for Google Workspace teams that want zero-friction CRM tracking inside Gmail, though the absence of a permanent free plan and the $69 jump to Professional require budget discipline.",
+      "editorialScorecard": {
+        "performance": 4.6,
+        "easeOfUse": 4.8,
+        "featureDepth": 4.1,
+        "customerSupport": 4.2,
+        "valueForMoney": 4.2
+      }
+    }
   },
   {
     "slug": "asana-review",
@@ -977,7 +1160,68 @@
       "copper-review",
       "zapier-review",
       "remote-review"
-    ]
+    ],
+    "reviewData": {
+      "productName": "Asana",
+      "productCategory": "Project Management Software",
+      "overallRating": 4.4,
+      "ratingBreakdown": [
+        {
+          "aspect": "Usability & Speed",
+          "score": 4.8
+        },
+        {
+          "aspect": "Free Plan Value",
+          "score": 4.5
+        },
+        {
+          "aspect": "Feature Depth",
+          "score": 3.9
+        },
+        {
+          "aspect": "Upgrade Math",
+          "score": 4.2
+        }
+      ],
+      "bestFor": "Cross-functional teams needing flexible Kanban, list, and project boards",
+      "startingPrice": "Free / $10.99/mo (Starter)",
+      "pricingModel": "Freemium / Per-user monthly",
+      "freeTrial": "Permanent free tier for up to 10 users",
+      "pros": [
+        "Free tier supports up to 10 teammates with unlimited projects and tasks",
+        "Fast, responsive keyboard shortcuts and delightful task-completion animations",
+        "Multiple project views: list, board, calendar, and activity feeds",
+        "Reliable mobile apps for iOS and Android with offline caching"
+      ],
+      "cons": [
+        "Gantt timeline view locked behind paid Starter tier ($10.99/user/mo)",
+        "Custom fields and automated workflow rules unavailable on free plan",
+        "Single project assignee model requires workarounds for co-owned tasks",
+        "Per-user pricing escalates quickly as headcount crosses 10 teammates"
+      ],
+      "alternatives": [
+        {
+          "name": "Monday.com",
+          "reason": "More customizable colored column formulas"
+        },
+        {
+          "name": "ClickUp",
+          "reason": "More features packed into free tier, though steeper learning curve"
+        },
+        {
+          "name": "Notion",
+          "reason": "Unified document wikis merged with database views"
+        }
+      ],
+      "verdict": "Asana Personal is a dependable free tool for small teams under 10 members, but the absence of Gantt timelines and custom fields makes upgrading to Starter necessary for mature project coordination.",
+      "editorialScorecard": {
+        "performance": 4.7,
+        "easeOfUse": 4.8,
+        "featureDepth": 4.4,
+        "customerSupport": 4.2,
+        "valueForMoney": 4.4
+      }
+    }
   },
   {
     "slug": "pipedrive-vs-convertkit",
@@ -1276,7 +1520,103 @@
       "copper-review",
       "asana-review",
       "zapier-review"
-    ]
+    ],
+    "comparisonData": {
+      "entityA": {
+        "name": "Pipedrive",
+        "tagline": "High-velocity visual sales pipeline CRM for deal closing",
+        "rating": 4.3,
+        "startingPrice": "$14/mo per user",
+        "bestFor": "B2B Sales Teams & Account Executives",
+        "primaryStrength": "Visual Kanban deal tracking & activity reminders"
+      },
+      "entityB": {
+        "name": "ConvertKit",
+        "tagline": "Creator marketing platform for email newsletters & digital commerce",
+        "rating": 4.4,
+        "startingPrice": "Free up to 1,000 subscribers / $25/mo",
+        "bestFor": "Content Creators, Newsletters & Solopreneurs",
+        "primaryStrength": "Visual subscriber automations & broadcast deliverability"
+      },
+      "winner": "Tie",
+      "winnerSummary": "Choose Pipedrive for 1-to-1 sales deal pipelines; choose ConvertKit for 1-to-many email newsletters and automations.",
+      "matrix": [
+        {
+          "feature": "Primary Operational Goal",
+          "category": "Core Design",
+          "entityA": "High-Touch B2B Deal Closing",
+          "entityB": "Audience Email Nurturing",
+          "winner": "Tie",
+          "notes": "Depends on sales model"
+        },
+        {
+          "feature": "Pricing Mechanism",
+          "category": "Pricing",
+          "entityA": "Per User Seat ($14 to $29/mo)",
+          "entityB": "Per Subscriber Count",
+          "winner": "Tie",
+          "notes": "Different cost drivers"
+        },
+        {
+          "feature": "Free Tier Availability",
+          "category": "Pricing",
+          "entityA": "14-Day Free Trial",
+          "entityB": "Free Up to 1,000 Subscribers",
+          "winner": "B",
+          "notes": "ConvertKit offers free tier"
+        },
+        {
+          "feature": "Visual Pipeline Boards",
+          "category": "Sales",
+          "entityA": "Drag-and-drop Kanban Stages",
+          "entityB": "Not Available",
+          "winner": "A",
+          "notes": "Pipedrive core strength"
+        },
+        {
+          "feature": "Visual Automation Canvas",
+          "category": "Workflow",
+          "entityA": "Internal Task Rules",
+          "entityB": "Subscriber Funnel Maps",
+          "winner": "B",
+          "notes": "ConvertKit handles nurture"
+        },
+        {
+          "feature": "Email Deliverability Focus",
+          "category": "Marketing",
+          "entityA": "1-to-1 Rep Inboxes",
+          "entityB": "Mass Broadcast Delivery",
+          "winner": "B",
+          "notes": "ConvertKit built for scale"
+        },
+        {
+          "feature": "Meeting & Activity Tracking",
+          "category": "Sales",
+          "entityA": "Built-in Activity Scheduler",
+          "entityB": "Basic Event Triggers",
+          "winner": "A",
+          "notes": "Pipedrive tracks calls"
+        },
+        {
+          "feature": "Landing Page Builder",
+          "category": "Lead Gen",
+          "entityA": "Basic Web Forms",
+          "entityB": "50+ Hosted Templates",
+          "winner": "B",
+          "notes": "ConvertKit builds pages"
+        }
+      ],
+      "whenToChooseA": [
+        "Your revenue model relies on closing individual high-value contracts",
+        "You manage sales reps with meeting quotas and phone call logging",
+        "You need visual deal rotting alerts to keep proposals moving"
+      ],
+      "whenToChooseB": [
+        "Your business model relies on email subscribers and digital sales",
+        "You need visual funnel maps triggered by purchases or tags",
+        "You want hosted newsletter landing pages and digital product checkout"
+      ]
+    }
   },
   {
     "slug": "perplexity-review",
@@ -1523,7 +1863,68 @@
       "github-copilot-vs-loom",
       "zapier-review",
       "asana-review"
-    ]
+    ],
+    "reviewData": {
+      "productName": "Perplexity AI",
+      "productCategory": "AI Search & Research Software",
+      "overallRating": 4.6,
+      "ratingBreakdown": [
+        {
+          "aspect": "Search Accuracy",
+          "score": 4.8
+        },
+        {
+          "aspect": "Citation Quality",
+          "score": 4.8
+        },
+        {
+          "aspect": "Free Tier Utility",
+          "score": 4.4
+        },
+        {
+          "aspect": "Pro Plan ROI",
+          "score": 4.6
+        }
+      ],
+      "bestFor": "Knowledge workers, researchers, and engineers needing cited web research",
+      "startingPrice": "Free / $20/mo (Pro)",
+      "pricingModel": "Freemium / Subscription",
+      "freeTrial": "Unlimited free Quick Searches",
+      "pros": [
+        "Every factual statement linked with clickable, reputable source footnotes",
+        "Pro search executes multi-step web queries and synthetic verification",
+        "Switchable underlying frontier models (Claude 3.5 Sonnet, GPT-4o)",
+        "Collection spaces to organize documents and research threads by project"
+      ],
+      "cons": [
+        "Free tier limited to basic search and 5 Pro queries every 4 hours",
+        "Occasional web hallucination when synthesizing obscure technical topics",
+        "Pro subscription ($20/mo) adds up when running multiple AI assistant tools",
+        "Document upload size caps on free tier restrict full codebase indexing"
+      ],
+      "alternatives": [
+        {
+          "name": "ChatGPT Plus",
+          "reason": "Superior creative writing and custom GPT ecosystem"
+        },
+        {
+          "name": "Claude Pro",
+          "reason": "Unmatched 200k context window for long code repos"
+        },
+        {
+          "name": "Google Gemini Advanced",
+          "reason": "Native integration with Google Drive and Docs"
+        }
+      ],
+      "verdict": "Perplexity is the most capable conversational research tool on the market today, offering an outstanding free tier with cited sources and an exceptionally useful $20 Pro plan for serious knowledge workers.",
+      "editorialScorecard": {
+        "performance": 4.8,
+        "easeOfUse": 4.8,
+        "featureDepth": 4.6,
+        "customerSupport": 4.1,
+        "valueForMoney": 4.7
+      }
+    }
   },
   {
     "slug": "github-copilot-vs-loom",
@@ -1823,7 +2224,103 @@
       "perplexity-review",
       "vidyard-review",
       "zapier-review"
-    ]
+    ],
+    "comparisonData": {
+      "entityA": {
+        "name": "GitHub Copilot",
+        "tagline": "AI pair programmer embedded inside your IDE",
+        "rating": 4.6,
+        "startingPrice": "$10/mo per developer",
+        "bestFor": "Software Engineers & Full-Stack Developers",
+        "primaryStrength": "Context-aware code completion & regex generation"
+      },
+      "entityB": {
+        "name": "Loom",
+        "tagline": "Async video messaging for screen and camera capture",
+        "rating": 4.4,
+        "startingPrice": "Free (25 videos) / $12.50/mo",
+        "bestFor": "Distributed Engineering & Product Teams",
+        "primaryStrength": "Instant code walkthroughs & bug reproduction recording"
+      },
+      "winner": "Tie",
+      "winnerSummary": "Copilot accelerates line-by-line coding velocity; Loom accelerates cross-team architectural alignment and async code reviews.",
+      "matrix": [
+        {
+          "feature": "Primary Operational Function",
+          "category": "Core Design",
+          "entityA": "AI Code Autocomplete & Pair Programming",
+          "entityB": "Asynchronous Screen & Video Messaging",
+          "winner": "Tie",
+          "notes": "Completely distinct use cases"
+        },
+        {
+          "feature": "Primary Environment",
+          "category": "Integration",
+          "entityA": "VS Code, JetBrains, Visual Studio",
+          "entityB": "Chrome Extension & Desktop App",
+          "winner": "Tie",
+          "notes": "IDE vs Browser workspace"
+        },
+        {
+          "feature": "Pricing (Business Tier)",
+          "category": "Pricing",
+          "entityA": "$19 per user monthly",
+          "entityB": "$12.50 per user monthly",
+          "winner": "B",
+          "notes": "Loom has lower entry cost"
+        },
+        {
+          "feature": "Free Plan Availability",
+          "category": "Pricing",
+          "entityA": "30-day Free Trial only",
+          "entityB": "Free Plan (25 videos / 5 min limit)",
+          "winner": "B",
+          "notes": "Loom offers permanent free tier"
+        },
+        {
+          "feature": "Boilerplate Reduction",
+          "category": "Coding",
+          "entityA": "Instant multi-line tab completions",
+          "entityB": "Not Applicable",
+          "winner": "A",
+          "notes": "Copilot core competency"
+        },
+        {
+          "feature": "Meeting Elimination",
+          "category": "Communication",
+          "entityA": "Not Applicable",
+          "entityB": "Replaces standups and demo meetings",
+          "winner": "B",
+          "notes": "Loom core competency"
+        },
+        {
+          "feature": "Code Review Assistance",
+          "category": "Workflow",
+          "entityA": "Automated PR text summaries",
+          "entityB": "Video demos with cursor tracking",
+          "winner": "Tie",
+          "notes": "Text summary vs video walkthrough"
+        },
+        {
+          "feature": "Speech to Text Transcription",
+          "category": "Features",
+          "entityA": "Not Applicable",
+          "entityB": "Automatic transcripts in 50+ languages",
+          "winner": "B",
+          "notes": "Loom provides searchable text"
+        }
+      ],
+      "whenToChooseA": [
+        "You want real-time syntax suggestions and boilerplate generation",
+        "You write unit tests, data parsing, or regex patterns regularly",
+        "You want contextual AI chat inside VS Code or JetBrains IDEs"
+      ],
+      "whenToChooseB": [
+        "You need to explain complex pull requests or architecture choices",
+        "You want to replace repetitive status meetings with 2-minute videos",
+        "You need automated transcripts and video chapters for documentation"
+      ]
+    }
   },
   {
     "slug": "zapier-review",
@@ -2070,7 +2567,68 @@
       "asana-review",
       "pipedrive-vs-convertkit",
       "copper-review"
-    ]
+    ],
+    "reviewData": {
+      "productName": "Zapier",
+      "productCategory": "Workflow Automation Software",
+      "overallRating": 4.3,
+      "ratingBreakdown": [
+        {
+          "aspect": "App Connector Breadth",
+          "score": 4.9
+        },
+        {
+          "aspect": "Ease of Setup",
+          "score": 4.8
+        },
+        {
+          "aspect": "Free Tier Quotas",
+          "score": 3.3
+        },
+        {
+          "aspect": "Paid Plan Value",
+          "score": 4.1
+        }
+      ],
+      "bestFor": "Businesses connecting disjointed cloud apps without developer resources",
+      "startingPrice": "Free / $19.99/mo (Starter)",
+      "pricingModel": "Freemium / Usage-based",
+      "freeTrial": "Free plan with 100 tasks/month",
+      "pros": [
+        "Largest integration ecosystem with over 6,000 supported SaaS applications",
+        "Intuitive no-code trigger-and-action visual canvas with field mapping",
+        "Built-in formatter utility for text, dates, numbers, and currency",
+        "Zapier Tables and Interfaces add lightweight database and front-end tools"
+      ],
+      "cons": [
+        "Free tier restricted to 100 tasks/month and single-step automations",
+        "Multi-step workflows require paid plan starting at $19.99/mo",
+        "Task volume overages can result in unexpected monthly bill spikes",
+        "Polling triggers on free tier only refresh every 15 minutes"
+      ],
+      "alternatives": [
+        {
+          "name": "Make (Integromat)",
+          "reason": "More complex routing and cheaper bulk task pricing"
+        },
+        {
+          "name": "n8n",
+          "reason": "Self-hostable open-source engine with unlimited free execution"
+        },
+        {
+          "name": "Pipedream",
+          "reason": "Developer-centric platform combining Node.js code and pre-built steps"
+        }
+      ],
+      "verdict": "Zapier boasts the largest app connector library in the industry, but its 100-task free limit and single-step rule mean growing businesses must budget for the $19.99 Starter plan.",
+      "editorialScorecard": {
+        "performance": 4.6,
+        "easeOfUse": 4.8,
+        "featureDepth": 4.7,
+        "customerSupport": 4.1,
+        "valueForMoney": 4
+      }
+    }
   },
   {
     "slug": "todoist-vs-debezium",
@@ -2370,6 +2928,102 @@
         "notes": "Debezium for small business offers deeper data rollups"
       }
     ],
-    "howToData": null
+    "howToData": null,
+    "comparisonData": {
+      "entityA": {
+        "name": "Todoist",
+        "tagline": "Intuitive task management and personal productivity app",
+        "rating": 4.5,
+        "startingPrice": "Free / $4/mo (Pro)",
+        "bestFor": "Knowledge Workers & Small Team Task Tracking",
+        "primaryStrength": "Natural language input and fast cross-device sync"
+      },
+      "entityB": {
+        "name": "Debezium",
+        "tagline": "Open-source distributed change data capture platform",
+        "rating": 4.6,
+        "startingPrice": "Free (Apache 2.0 Open Source)",
+        "bestFor": "Data Engineers & Distributed Systems Architects",
+        "primaryStrength": "Real-time database transaction log streaming to Kafka"
+      },
+      "winner": "Tie",
+      "winnerSummary": "Todoist organizes human workflows and task deadlines; Debezium synchronizes machine-level database events for event-driven systems.",
+      "matrix": [
+        {
+          "feature": "Primary Architectural Focus",
+          "category": "Core Design",
+          "entityA": "Intuitive Team Workflows",
+          "entityB": "Deep Operational Controls",
+          "winner": "Tie",
+          "notes": "Depends on team style"
+        },
+        {
+          "feature": "Deployment Speed",
+          "category": "Usability",
+          "entityA": "Under 1 Hour",
+          "entityB": "2 to 3 Days",
+          "winner": "A",
+          "notes": "Todoist deploys noticeably faster"
+        },
+        {
+          "feature": "Customization Depth",
+          "category": "Features",
+          "entityA": "Moderate (Templates)",
+          "entityB": "High (Custom Fields)",
+          "winner": "B",
+          "notes": "Debezium for small business offers detailed schema rules"
+        },
+        {
+          "feature": "Automation Rules",
+          "category": "Workflow",
+          "entityA": "Standard Triggers",
+          "entityB": "Multi-branch Logic",
+          "winner": "B",
+          "notes": "Debezium for small business handles complex conditions"
+        },
+        {
+          "feature": "Free Tier Availability",
+          "category": "Pricing",
+          "entityA": "Yes (Seat limited)",
+          "entityB": "Yes (Trial/Feature limited)",
+          "winner": "A",
+          "notes": "Todoist offers broader free usage"
+        },
+        {
+          "feature": "API & Webhook Reliability",
+          "category": "Integration",
+          "entityA": "REST API Supported",
+          "entityB": "REST & Webhook Events",
+          "winner": "Tie",
+          "notes": "Both support standard connections"
+        },
+        {
+          "feature": "Guest User Access",
+          "category": "Collaboration",
+          "entityA": "Unlimited Viewers",
+          "entityB": "Controlled Folder Guests",
+          "winner": "Tie",
+          "notes": "Different collaborator models"
+        },
+        {
+          "feature": "Executive Dashboards",
+          "category": "Reporting",
+          "entityA": "Standard Summary Cards",
+          "entityB": "Custom Formula Blocks",
+          "winner": "B",
+          "notes": "Debezium for small business offers deeper data rollups"
+        }
+      ],
+      "whenToChooseA": [
+        "You need intuitive personal task tracking with natural language dates",
+        "You want lightweight project boards for small team checklists",
+        "You need reliable mobile and desktop notifications"
+      ],
+      "whenToChooseB": [
+        "You need to capture database row mutations in real-time to Kafka",
+        "You are designing event-driven microservices or audit streams",
+        "You require real-time database replication without dual-writes"
+      ]
+    }
   }
 ]

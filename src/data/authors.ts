@@ -22,7 +22,8 @@ export const AUTHORS: Author[] = [
     twitter: "https://twitter.com/sarahjenkins_saas",
     linkedin: "https://linkedin.com/in/sarahjenkins-ops",
     website: "https://sarahjenkins.dev",
-    articlesCount: 18
+    articlesCount: 18,
+    metaDescription: "Read software teardowns, subscription pricing models, and procurement guides by Sarah Jenkins, SaaS Finance Lead at SaaSInsider."
   },
   {
     id: "alex-rivera",
@@ -45,7 +46,8 @@ export const AUTHORS: Author[] = [
     twitter: "https://twitter.com/alexrivera_dev",
     linkedin: "https://linkedin.com/in/alexrivera-tech",
     github: "https://github.com/alexrivera-dev",
-    articlesCount: 24
+    articlesCount: 24,
+    metaDescription: "Read hands-on software reviews, webhook testing, and cloud infrastructure guides by Alex Rivera, Systems Engineer at SaaSInsider."
   },
   {
     id: "maya-lin",
@@ -67,7 +69,8 @@ export const AUTHORS: Author[] = [
     ],
     twitter: "https://twitter.com/mayalin_ai",
     linkedin: "https://linkedin.com/in/mayalin-automation",
-    articlesCount: 15
+    articlesCount: 15,
+    metaDescription: "Read independent software teardowns, AI tool evaluations, and workflow automation guides by Maya Lin, AI Editor at SaaSInsider."
   },
   {
     id: "liam-cooper",
@@ -89,7 +92,8 @@ export const AUTHORS: Author[] = [
     ],
     twitter: "https://twitter.com/liamcooper_ops",
     linkedin: "https://linkedin.com/in/liamcooper-work",
-    articlesCount: 19
+    articlesCount: 19,
+    metaDescription: "Read workplace software reviews, project management tests, and collaboration guides by Liam Cooper, Productivity Editor at SaaSInsider."
   }
 ];
 

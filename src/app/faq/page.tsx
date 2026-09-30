@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/faq`,
   },
+  openGraph: {
+    title: "Frequently Asked Questions (FAQ) | SaaSInsider",
+    description: "Answers to common questions regarding SaaSInsider testing methodology, editorial independence, affiliate policies, and software updates.",
+    url: `${SITE_CONFIG.siteUrl}/faq`,
+    siteName: SITE_CONFIG.name,
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "SaaSInsider FAQ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frequently Asked Questions (FAQ) | SaaSInsider",
+    description: "Answers to common questions regarding SaaSInsider testing methodology, editorial independence, affiliate policies, and software updates.",
+    creator: SITE_CONFIG.twitterHandle,
+    images: [SITE_CONFIG.defaultOgImage],
+  },
 };
 
 const SITE_FAQS = [

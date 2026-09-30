@@ -9,7 +9,7 @@ import { generateOrganizationSchema, generateWebsiteSchema, SITE_CONFIG } from "
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.siteUrl),
   title: {
-    default: "SaaSInsider | SaaS Intelligence, Software Teardowns & Architecture",
+    default: SITE_CONFIG.title,
     template: "%s | SaaSInsider",
   },
   description: SITE_CONFIG.description,

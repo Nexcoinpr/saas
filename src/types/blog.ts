@@ -14,6 +14,7 @@ export interface Author {
   github?: string;
   website?: string;
   articlesCount?: number;
+  metaDescription?: string;
 }
 
 export interface Category {
@@ -96,6 +97,16 @@ export interface Article {
   sections: ArticleSection[];
   faqs: FAQItem[];
   relatedArticleSlugs: string[];
+  scoreCard?: {
+    overallScore: number;
+    verdict?: string;
+    ratings?: { label: string; score: number }[];
+  };
+  prosCons?: {
+    pros: string[];
+    cons: string[];
+  };
+  comparisonMatrix?: ComparisonMatrixRow[];
   
   // Review specific
   reviewData?: {
