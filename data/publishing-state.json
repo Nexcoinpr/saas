@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-09-30T12:10:00.490Z",
-  "totalPublishedCount": 9,
+  "lastPublishedAt": "2026-09-30T15:11:41.762Z",
+  "totalPublishedCount": 10,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 6,
-  "lastCategory": "Productivity & Collaboration",
+  "categoryIndex": 7,
+  "lastCategory": "Finance & Accounting",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -14,7 +14,8 @@
     "perplexity-review",
     "github-copilot-vs-loom",
     "zapier-review",
-    "todoist-vs-debezium"
+    "todoist-vs-debezium",
+    "quickbooks-vs-brevo"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -25,7 +26,8 @@
     "/images/articles/perplexity-review.jpg",
     "/images/articles/github-copilot-vs-loom.jpg",
     "/images/articles/zapier-review.jpg",
-    "https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -99,6 +101,18 @@
           "title": "Todoist vs Debezium for small business: Usability, Integration Depth & Value Breakdown",
           "path": "/comparisons/todoist-vs-debezium",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30T15:11:41.762Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "quickbooks-vs-brevo",
+          "title": "QuickBooks vs Brevo for small business Review:",
+          "path": "/comparisons/quickbooks-vs-brevo",
+          "author": "Alex Rivera"
         }
       ]
     }
