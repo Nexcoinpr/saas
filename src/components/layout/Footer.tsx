@@ -90,6 +90,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/crm" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  CRM &amp; Sales
+                </Link>
+              </li>
+              <li>
                 <Link href="/productivity" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                   Productivity
                 </Link>

@@ -21,7 +21,6 @@ export const AUTHORS: Author[] = [
     ],
     twitter: "https://twitter.com/sarahjenkins_saas",
     linkedin: "https://linkedin.com/in/sarahjenkins-ops",
-    website: "https://sarahjenkins.dev",
     articlesCount: 18,
     metaDescription: "Read software teardowns, subscription pricing models, and procurement guides by Sarah Jenkins, SaaS Finance Lead at SaaSInsider."
   },
@@ -45,7 +44,6 @@ export const AUTHORS: Author[] = [
     ],
     twitter: "https://twitter.com/alexrivera_dev",
     linkedin: "https://linkedin.com/in/alexrivera-tech",
-    github: "https://github.com/alexrivera-dev",
     articlesCount: 24,
     metaDescription: "Read hands-on software reviews, webhook testing, and cloud infrastructure guides by Alex Rivera, Systems Engineer at SaaSInsider."
   },
