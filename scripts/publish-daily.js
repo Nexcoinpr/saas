@@ -68,7 +68,6 @@ const AUTHORS = [
     ],
     twitter: "https://twitter.com/sarahjenkins_saas",
     linkedin: "https://linkedin.com/in/sarahjenkins-ops",
-    website: "https://sarahjenkins.dev",
     articlesCount: 18
   },
   {
@@ -91,7 +90,6 @@ const AUTHORS = [
     ],
     twitter: "https://twitter.com/alexrivera_dev",
     linkedin: "https://linkedin.com/in/alexrivera-tech",
-    github: "https://github.com/alexrivera-dev",
     articlesCount: 24
   },
   {
@@ -831,11 +829,12 @@ function buildArticleObject(item, index, totalOffset, allAvailableSlugs = []) {
     const trimmed = articleTitle.substring(0, 53).replace(/\s+\S*$/, '');
     articleTitle = trimmed.length >= 45 ? trimmed : articleTitle.substring(0, 53);
   }
+  articleTitle = articleTitle.replace(/[:\-,\s]+$/, '');
   h1 = articleTitle;
   metaTitle = articleTitle;
 
   if (metaDescription.length > 140) {
-    const trimmedDesc = metaDescription.substring(0, 137).replace(/\s+\S*$/, '');
+    const trimmedDesc = metaDescription.substring(0, 137).replace(/\s+\S*$/, '').replace(/[,:\-\s]+$/, '');
     metaDescription = (trimmedDesc.length >= 100 ? trimmedDesc : metaDescription.substring(0, 137)) + '.';
     metaDescription = metaDescription.replace(/\.\.+$/, '.');
   }
