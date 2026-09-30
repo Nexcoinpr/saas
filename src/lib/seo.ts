@@ -1,15 +1,20 @@
 import { Article, Author, Category } from "@/types/blog";
 
+const siteUrl = 
+  process.env.NEXT_PUBLIC_SITE_URL || 
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 
+   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://saas-three-theta-94.vercel.app"));
+
 export const SITE_CONFIG = {
   name: "SaaSInsider",
   title: "SaaSInsider | SaaS Intelligence, Software Teardowns & Architecture",
   description: "Independent software testing, verified SaaS benchmarks, head-to-head software comparisons, AI agent analysis, and workflow automation playbooks.",
-  siteUrl: "https://saasinsider.io",
+  siteUrl: siteUrl.replace(/\/$/, ""),
   defaultOgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
   twitterHandle: "@saasinsider",
   publisher: {
     name: "SaaSInsider",
-    logo: "https://saasinsider.io/logo.png"
+    logo: `${siteUrl.replace(/\/$/, "")}/logo.png`
   }
 };
 

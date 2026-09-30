@@ -77,6 +77,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_CONFIG.siteUrl,
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+    other: {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "",
+    },
+  },
 };
 
 export default function RootLayout({

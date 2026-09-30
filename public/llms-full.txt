@@ -3,9 +3,9 @@
 ## Publication Overview
 SaaSInsider is an independent technology publication focusing on Software as a Service (SaaS), cloud software architecture, AI agents, enterprise automation, productivity software, and B2B software purchasing evaluations.
 
-Website: https://saasinsider.io
+Website: https://saas-three-theta-94.vercel.app
 Publisher: SaaSInsider Media Network
-Editorial Lead: Sarah Jenkins (Former Director of Finance Operations)
+Editorial Team: Sarah Jenkins, Alex Rivera, Liam Cooper, Maya Lin
 
 ---
 
@@ -31,34 +31,56 @@ Multi-tenancy is an architectural principle where a single software instance and
 
 ---
 
-## Software Evaluations & Direct Comparisons
+## Tested Software Evaluations & Comparisons
 
-### Notion
-- Category: All-in-One Workspace & Team Wiki
+### Remote.com
+- Category: Global HR & Payroll
 - Scorecard: 4.8 / 5.0
-- Starting Price: $10 / user / month (Plus tier, billed annually). Free tier available.
-- Main Strengths: Unmatched modular block editing, relational databases with rollups, contextual Notion AI search across workspace docs.
-- Limitations: Initial learning curve for non-technical teams; less suited for sprint planning and strict dependency chains.
-- Alternatives: ClickUp, Coda, Slite.
+- Starting Price: $0 (Free Contractor Management) / $599 monthly EOR per employee
+- Strengths: Completely free contractor setup and invoicing across 180+ countries; owned local legal entities.
+- Limitations: Full Employer of Record (EOR) service costs $599/seat/mo; add-on fees for specialized mobility.
 
-### ClickUp
-- Category: Project Management & Sprints
+### Vidyard
+- Category: Video Messaging & Sales
 - Scorecard: 4.6 / 5.0
-- Starting Price: $7 / user / month (Unlimited tier). Free tier available.
-- Main Strengths: Deep native task dependencies, built-in time tracking, sprint points, automated scheduling.
-- Limitations: Screen density can feel overwhelming; documentation tool is less fluid than Notion.
-- Alternatives: Notion, Asana, Monday.com, Jira.
+- Starting Price: Free (25 video storage limit) / $19 monthly Pro tier
+- Strengths: Instant viewer engagement heatmaps, CRM activity logging, interactive video CTAs.
+- Limitations: Free tier caps video library at 25 total recordings; team sharing requires Plus upgrade.
 
-### Notion vs ClickUp Verdict
-Choose Notion for team documentation, knowledge wikis, company handbooks, and project timelines. Choose ClickUp for task hierarchies, sprint point tracking, client billing hours, and automated task dependencies.
+### Copper CRM
+- Category: CRM & Sales (Google Workspace Native)
+- Scorecard: 4.7 / 5.0
+- Starting Price: $9 monthly Starter (billed annually) / $29 Professional tier
+- Strengths: Zero-configuration Chrome extension embedding directly into Gmail, Google Calendar, and Docs.
+- Limitations: Starter tier caps contact records at 2,500; workflow automation rules restricted to Professional tier.
 
-### Zapier vs Make Verdict
-Choose Zapier for fast, beginner-friendly setups and access to 7,000+ niche software integrations. Choose Make for high-volume workflows, 2D visual canvas design, nested JSON manipulation, and up to 70% lower operational costs per task.
+### Asana
+- Category: Project & Task Management
+- Scorecard: 4.5 / 5.0
+- Starting Price: Free Personal (10 user seat cap) / $10.99 monthly Starter tier
+- Strengths: Fluid list and Kanban views, intuitive subtask hierarchy, unlimited storage on attachments.
+- Limitations: Personal plan limits teams to 10 members and disables Timeline Gantt views and custom fields.
 
----
+### Pipedrive vs ConvertKit
+- Category: Sales CRM vs Marketing Automation Showdown
+- Scorecard: Pipedrive 4.7 / 5.0, ConvertKit 4.6 / 5.0
+- Verdict: Choose Pipedrive for outbound B2B sales pipelines and deal tracking. Choose ConvertKit for creator newsletter broadcasts and visual subscriber automation funnels.
 
-## 2026 AI Tools for Business
-1. Claude 3.7 Sonnet: Leading model for deep hybrid reasoning, multi-file codebases, and long-context synthesis.
-2. ChatGPT Enterprise: Versatile general assistant with administrative controls, data privacy, and custom GPTs.
-3. Perplexity Enterprise Pro: Live web research and competitive intelligence with cited source verification and zero data retention.
-4. Cursor: AI-native code editor with entire-repository indexing and multi-file refactoring.
+### Perplexity AI
+- Category: AI Search Engine & Research
+- Scorecard: 4.8 / 5.0
+- Starting Price: Free (5 Pro searches every 4 hours) / $20 monthly Pro tier
+- Strengths: Direct inline source citations, access to Claude 3.7 and reasoning models, zero training data retention option.
+- Limitations: Free tier limits deep multi-step research queries; Pro tier seat management designed for individuals or teams.
+
+### GitHub Copilot vs Loom
+- Category: Developer Productivity Showdown
+- Scorecard: GitHub Copilot 4.8 / 5.0, Loom 4.7 / 5.0
+- Verdict: Choose GitHub Copilot for real-time IDE code completion and unit test generation. Choose Loom for asynchronous video bug reproduction and cross-functional product walkthroughs.
+
+### Zapier
+- Category: Workflow Automation
+- Scorecard: 4.7 / 5.0
+- Starting Price: Free (100 tasks monthly limit) / $19.99 monthly Starter tier
+- Strengths: Massive ecosystem of 6,000+ app connectors, reliable webhooks, multi-step branching logic.
+- Limitations: Free tier limited to single-step zaps and 100 monthly tasks; high-volume tasks require Professional tier.
