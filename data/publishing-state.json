@@ -1,11 +1,15 @@
 {
-  "lastPublishedAt": "2026-09-30T09:04:46.605Z",
-  "totalPublishedCount": 3,
-  "dailyTarget": 3,
+  "lastPublishedAt": "2026-09-30T09:11:00.774Z",
+  "totalPublishedCount": 4,
+  "dailyTarget": 8,
+  "scheduleInterval": "every 3 hours (8 articles/day)",
+  "categoryIndex": 1,
+  "lastCategory": "Project Management",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
-    "copper-review"
+    "copper-review",
+    "asana-review"
   ],
   "history": [
     {
@@ -29,6 +33,18 @@
           "title": "Copper Free Plan Limitations: Caps, Restrictions & Upgrade Value",
           "path": "/reviews/copper-review",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30T09:11:00.773Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "asana-review",
+          "title": "Asana Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "path": "/reviews/asana-review",
+          "author": "Liam Vance"
         }
       ]
     }

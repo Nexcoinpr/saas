@@ -1,15 +1,15 @@
-name: Daily Article Publishing Automation
+name: Automated Article Publishing (8 Articles/Day, Every 3 Hours)
 
 on:
   schedule:
-    # Runs every day at 06:00 UTC (11:00 AM PKT)
-    - cron: '0 6 * * *'
+    # Runs every 3 hours (24 / 8 = every 3 hours: 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC)
+    - cron: '0 */3 * * *'
   workflow_dispatch:
     inputs:
       count:
-        description: 'Number of articles to publish'
+        description: 'Number of articles to publish (default 1 per 3h run, or enter 8 for full day)'
         required: true
-        default: '3'
+        default: '1'
         type: string
 
 permissions:
@@ -34,9 +34,9 @@ jobs:
       - name: Install Dependencies
         run: npm ci || npm install
 
-      - name: Publish Daily Articles
+      - name: Publish Article Across Rotating Categories
         run: |
-          COUNT="${{ github.event.inputs.count || '3' }}"
+          COUNT="${{ github.event.inputs.count || '1' }}"
           node scripts/publish-daily.js --count "$COUNT"
 
       - name: Verify Clean Word Checklist
@@ -52,6 +52,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new articles to commit."
           else
-            git commit -m "chore(content): auto-publish daily articles [skip ci]"
+            git commit -m "chore(content): auto-publish article across rotating categories [skip ci]"
             git push origin main
           fi

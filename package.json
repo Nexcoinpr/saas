@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "publish:daily": "node scripts/publish-daily.js --count 3",
+    "publish:next": "node scripts/publish-daily.js --count 1",
+    "publish:daily": "node scripts/publish-daily.js --count 8",
     "clean-check": "node scripts/clean-check.js"
   },
   "dependencies": {

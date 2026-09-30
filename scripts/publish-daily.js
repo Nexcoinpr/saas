@@ -153,12 +153,59 @@ const IMAGES = {
   ]
 };
 
-// Find candidates to publish
+// Ordered rotation of SaaS categories to ensure balanced topic coverage across the entire site
+const CATEGORY_ROTATION = [
+  'Project Management',
+  'CRM & Sales',
+  'AI & Machine Learning',
+  'Developer Tools',
+  'Workflow Automation',
+  'Productivity & Collaboration',
+  'Finance & Accounting',
+  'Communication & Video',
+  'Design & Creative',
+  'Data Integration & ETL',
+  'HR & Payroll',
+  'Marketing',
+  'Support & Success',
+  'Commerce & Sales',
+  'IT & Security'
+];
+
+let catIndex = state.categoryIndex || 0;
 const candidates = [];
-for (const item of roadmap) {
-  if (candidates.length >= count) break;
-  if (item.Status !== 'published' && !publishedSlugsSet.has(item.SuggestedSlug)) {
-    candidates.push(item);
+const candidateSlugs = new Set();
+
+for (let step = 0; step < count; step++) {
+  let found = null;
+  // Try categories in round-robin order
+  for (let attempt = 0; attempt < CATEGORY_ROTATION.length; attempt++) {
+    const targetCat = CATEGORY_ROTATION[(catIndex + attempt) % CATEGORY_ROTATION.length];
+    const match = roadmap.find(r => 
+      r.Category === targetCat && 
+      r.Status !== 'published' && 
+      !publishedSlugsSet.has(r.SuggestedSlug) &&
+      !candidateSlugs.has(r.SuggestedSlug)
+    );
+    if (match) {
+      found = match;
+      catIndex = (catIndex + attempt + 1) % CATEGORY_ROTATION.length;
+      break;
+    }
+  }
+
+  // Fallback: If no category matched, take any top pending item
+  if (!found) {
+    found = roadmap.find(r => 
+      r.Status !== 'published' && 
+      !publishedSlugsSet.has(r.SuggestedSlug) &&
+      !candidateSlugs.has(r.SuggestedSlug)
+    );
+  }
+
+  if (found) {
+    candidates.push(found);
+    candidateSlugs.add(found.SuggestedSlug);
   }
 }
 
@@ -167,8 +214,8 @@ if (candidates.length === 0) {
   process.exit(0);
 }
 
-console.log(`[Publisher] Selected ${candidates.length} keyword candidates:`);
-candidates.forEach((c, idx) => console.log(`  ${idx + 1}. [${c.ArticleID}] ${c.PrimaryKeyword} (${c.TargetTemplate})`));
+console.log(`[Publisher] Selected ${candidates.length} keyword candidates across rotating categories:`);
+candidates.forEach((c, idx) => console.log(`  ${idx + 1}. [${c.Category}] [${c.ArticleID}] ${c.PrimaryKeyword} (${c.TargetTemplate})`));
 
 // Helper: Ensure ZERO 2026 anywhere
 function stripYear(str) {
@@ -745,7 +792,12 @@ function buildArticleObject(item, index, totalOffset) {
     if (scoreCard.freePlan) scoreCard.freePlan = sanitizeProse(stripYear(scoreCard.freePlan));
   }
 
-  const slug = item.SuggestedSlug.replace(/-2026/g, '').replace(/2026-/g, '');
+  const slug = item.SuggestedSlug
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+    .replace(/-2026/g, '')
+    .replace(/2026-/g, '');
   const readingTime = `${Math.ceil(bodyWordCount / 180)} min read`;
 
   console.log(`[Publisher] Article "${articleTitle}" generated with ${bodyWordCount} body words (excluding FAQs). Reading time: ${readingTime}`);
@@ -847,12 +899,15 @@ updatedHistory.push({
 const updatedState = {
   lastPublishedAt: new Date().toISOString(),
   totalPublishedCount: currentTotal + newArticles.length,
-  dailyTarget: 3,
+  dailyTarget: 8,
+  scheduleInterval: "every 3 hours (8 articles/day)",
+  categoryIndex: catIndex,
+  lastCategory: newArticles[newArticles.length - 1].tags[0],
   publishedSlugs: updatedSlugs,
   history: updatedHistory
 };
 fs.writeFileSync(statePath, JSON.stringify(updatedState, null, 2), 'utf8');
-console.log(`[Publisher] Updated publishing-state.json (Total published to date: ${updatedState.totalPublishedCount})`);
+console.log(`[Publisher] Updated publishing-state.json (Total: ${updatedState.totalPublishedCount}, Next Category Index: ${catIndex})`);
 
 console.log('\n================ PUBLISHED ARTICLES SUMMARY ================');
 newArticles.forEach((a, i) => {
