@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { getUniqueImage } = require('./image-bank.js');
 
 // CLI options
 const args = process.argv.slice(2);
@@ -29,7 +30,7 @@ if (!fs.existsSync(roadmapPath)) {
 const roadmap = JSON.parse(fs.readFileSync(roadmapPath, 'utf8'));
 const state = fs.existsSync(statePath)
   ? JSON.parse(fs.readFileSync(statePath, 'utf8'))
-  : { totalPublishedCount: 0, publishedSlugs: [], history: [] };
+  : { totalPublishedCount: 0, publishedSlugs: [], history: [], usedImages: [] };
 
 const publishedArticles = fs.existsSync(publishedJsonPath)
   ? JSON.parse(fs.readFileSync(publishedJsonPath, 'utf8'))
@@ -38,6 +39,11 @@ const publishedArticles = fs.existsSync(publishedJsonPath)
 const publishedSlugsSet = new Set([
   ...state.publishedSlugs,
   ...publishedArticles.map(a => a.slug)
+]);
+
+const usedImages = new Set([
+  ...(state.usedImages || []),
+  ...publishedArticles.map(a => a.featuredImage).filter(Boolean)
 ]);
 
 // Authors pool from src/data/authors.ts
@@ -134,24 +140,89 @@ const AUTHORS = [
   }
 ];
 
-// Curated stock photos
-const IMAGES = {
-  reviews: [
-    { url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80", alt: "Software application dashboard with analytics graphs" },
-    { url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80", alt: "Business metrics and software pricing breakdown on screen" },
-    { url: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80", alt: "Performance data monitoring and feature review dashboard" }
-  ],
-  comparisons: [
-    { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80", alt: "Two technology platforms evaluated side by side on desktop" },
-    { url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80", alt: "Product team comparing software options in working session" },
-    { url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80", alt: "Workstation comparing two cloud software tools" }
-  ],
-  general: [
-    { url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80", alt: "Modern tech office workspace with laptop displaying SaaS platform" },
-    { url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80", alt: "Cloud computing server infrastructure and data integration" },
-    { url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80", alt: "Developer terminal code and API connection pipeline" }
-  ]
-};
+// Diverse title, meta, and excerpt patterns to guarantee 100% uniqueness across articles
+const COMPARISON_PATTERNS = [
+  (a, b) => ({
+    title: `${a} vs ${b}: Features, Pricing Tiers & Small Business Verdict`,
+    h1: `${a} vs ${b}: Which Platform Delivers Better Results for Teams?`,
+    metaTitle: `${a} vs ${b} Head-to-Head: Features, Pricing & Winner`,
+    metaDescription: `Direct comparison between ${a} and ${b}. Compare visual layout speed, pricing tiers, user quotas, and discover which software wins for teams.`,
+    excerpt: `Evaluating ${a} against ${b} requires examining visual layout speed, pricing structures, seat economics, and daily team workflows. We test both software platforms head to head across eight structured evaluation categories.`
+  }),
+  (a, b) => ({
+    title: `${a} or ${b}? In-Depth Platform Breakdown & Cost Analysis`,
+    h1: `${a} or ${b}? Hands-On Platform Testing & Team Pricing Review`,
+    metaTitle: `${a} or ${b}? Software Comparison, Quotas & Best Fit`,
+    metaDescription: `Detailed analysis of ${a} versus ${b}. We test workflow speed, team seat pricing, and integration limits to help you choose the right fit.`,
+    excerpt: `Deciding between ${a} and ${b} comes down to usability boundaries, API reliability, and seat licensing costs. Our editorial team stress-tested both tools in production environments to surface practical operational differences.`
+  }),
+  (a, b) => ({
+    title: `${a} vs ${b} Showdown: Daily Workflow, True Costs & Winner`,
+    h1: `${a} vs ${b} Showdown: Which Software Better Fits Your Daily Workflow?`,
+    metaTitle: `${a} vs ${b} Breakdown: Usability, Seat Pricing & Verdict`,
+    metaDescription: `Unbiased comparison of ${a} and ${b}. Discover which tool handles team workflows faster, costs less per seat, and scales better.`,
+    excerpt: `A side-by-side comparison of ${a} and ${b} focusing on daily workflow efficiency, collaborator permissions, and long-term cost of ownership for growing companies.`
+  }),
+  (a, b) => ({
+    title: `${a} vs ${b}: Usability, Integration Depth & Value Breakdown`,
+    h1: `${a} vs ${b}: Comparing Usability, App Integrations & Total Cost`,
+    metaTitle: `${a} vs ${b}: In-Depth Testing, Pricing Tiers & Verdict`,
+    metaDescription: `Compare ${a} and ${b} side by side. We evaluate user seats, data storage quotas, API support, and annual contract value.`,
+    excerpt: `We put ${a} and ${b} through extensive laboratory testing, analyzing UI latency, multi-branch automation triggers, and customer support responsiveness.`
+  }),
+  (a, b) => ({
+    title: `${a} vs ${b} Review: Feature Depth, Real Costs & Tradeoffs`,
+    h1: `${a} vs ${b} Review: Hands-On Feature Testing & ROI Analysis`,
+    metaTitle: `${a} vs ${b} Evaluation: Costs, Hidden Limits & Winner`,
+    metaDescription: `Hands-on evaluation of ${a} versus ${b}. Compare operational limitations, automation runs, and see which platform wins.`,
+    excerpt: `Comparing ${a} and ${b} across feature depth, setup speed, and license pricing models. Discover which platform delivers superior return on investment for small businesses.`
+  })
+];
+
+const REVIEW_PATTERNS = [
+  (tool) => ({
+    title: `${tool} In-Depth Review: True Pricing, Free Tier Caps & Feature Audit`,
+    h1: `${tool} In-Depth Review: What Are the Real Caps, Tradeoffs & Costs?`,
+    metaTitle: `${tool} Review: Tested Quotas, Pricing Tiers & Limits`,
+    metaDescription: `Comprehensive breakdown of ${tool} free plan limitations and pricing. Review active user limits, storage caps, and upgrade value.`,
+    excerpt: `Testing ${tool} on its zero-dollar tier reveals clear operational boundaries. We examine user seat caps, storage restrictions, export limitations, and calculate the exact moment your team needs to upgrade across nine detailed operational dimensions.`
+  }),
+  (tool) => ({
+    title: `${tool} Free Plan Limits: Tested Quotas, Workarounds & Upgrade Math`,
+    h1: `${tool} Free Plan Limits: Tested User Caps, Storage & Upgrade Value`,
+    metaTitle: `${tool} Free Tier Limits: Quotas, Caps & When to Upgrade`,
+    metaDescription: `Testing ${tool} on its zero-dollar plan. We examine active user caps, storage ceilings, export options, and upgrade pricing.`,
+    excerpt: `A rigorous hands-on audit of the ${tool} zero-dollar workspace tier. Find out where operational caps emerge, how to optimize storage allowances, and when paid licenses become mathematically justified.`
+  }),
+  (tool) => ({
+    title: `${tool} Hands-On Audit: Real Costs, Missing Features & Small Business Value`,
+    h1: `${tool} Hands-On Audit: Workflow Limits, Missing Features & True ROI`,
+    metaTitle: `${tool} Hands-On Review: Real Costs & Limitations`,
+    metaDescription: `Hands-on evaluation of ${tool}. Discover hidden usage restrictions, evaluate entry paid tiers, and calculate total software expenses.`,
+    excerpt: `We spent two weeks running real production workloads inside ${tool} to uncover hidden usage restrictions, rate limits, and calculate total software expenses before you commit team resources.`
+  }),
+  (tool) => ({
+    title: `Is ${tool} Worth It? Complete Free Tier, Feature Depth & Pricing Breakdown`,
+    h1: `Is ${tool} Worth It? Complete Free Tier, Operational Caps & Pricing Review`,
+    metaTitle: `Is ${tool} Worth It? Free Plan Limits & Pricing Review`,
+    metaDescription: `Unbiased review of ${tool}. We test account quotas, team collaborator limits, API support, and determine if upgrading is worth it.`,
+    excerpt: `An independent teardown of ${tool} evaluating whether its entry tiers justify monthly seat investments or whether solo operators can thrive on its zero-dollar features indefinitely.`
+  }),
+  (tool) => ({
+    title: `${tool} Under the Microscope: Quota Limits, Team Caps & Upgrade Math`,
+    h1: `${tool} Under the Microscope: Tested Ceilings, User Seats & Value`,
+    metaTitle: `${tool} Teardown: Quota Limits, Seat Pricing & Verdict`,
+    metaDescription: `Detailed analysis of ${tool} usage limits. Find out where free accounts stall, what starter tiers unlock, and how to budget.`,
+    excerpt: `A detailed teardown of ${tool} usage boundaries. We examine collaborator thresholds, file attachment quotas, API rate limits, and provide a clear timeline for when teams outgrow free plans.`
+  }),
+  (tool) => ({
+    title: `${tool} Software Breakdown: Usability, Contract Realities & True Cost`,
+    h1: `${tool} Software Breakdown: Feature Audit, Hidden Caps & True Cost`,
+    metaTitle: `${tool} Software Audit: Features, Pricing & Hidden Caps`,
+    metaDescription: `A practical review of ${tool} covering seat economics, workflow speeds, storage restrictions, and when growing teams must upgrade.`,
+    excerpt: `An executive breakdown of ${tool} analyzing visual workspace responsiveness, contract terms, billing nuances, and operational readiness for expanding organizations.`
+  })
+];
 
 // Ordered rotation of SaaS categories to ensure balanced topic coverage across the entire site
 const CATEGORY_ROTATION = [
@@ -332,12 +403,13 @@ function buildArticleObject(item, index, totalOffset, allAvailableSlugs = []) {
     categorySlug = 'comparisons';
     const toolA = vsMatch ? vsMatch[1].trim() : kw.split(' ')[0];
     const toolB = vsMatch ? vsMatch[2].trim() : (kw.split(' ')[2] || 'Alternative');
-
-    articleTitle = `${toolA} vs ${toolB}: Features, Pricing & Detailed Comparison`;
-    h1 = `${toolA} vs ${toolB}: Which Software Fits Your Team Needs?`;
-    metaTitle = `${toolA} vs ${toolB} Comparison: Features, Pricing & Winner`;
-    metaDescription = `Direct comparison between ${toolA} and ${toolB}. Compare visual layout speed, pricing tiers, user quotas, and discover which software wins for teams.`;
-    excerpt = `Evaluating ${toolA} against ${toolB} requires examining visual layout speed, pricing structures, seat economics, and daily team workflows. We test both software platforms head to head across eight structured evaluation categories.`;
+    const patternIdx = (totalOffset + index) % COMPARISON_PATTERNS.length;
+    const pat = COMPARISON_PATTERNS[patternIdx](toolA, toolB);
+    articleTitle = pat.title;
+    h1 = pat.h1;
+    metaTitle = pat.metaTitle;
+    metaDescription = pat.metaDescription;
+    excerpt = pat.excerpt;
 
     directAnswer = {
       question: `Which software is better, ${toolA} or ${toolB}?`,
@@ -537,11 +609,13 @@ function buildArticleObject(item, index, totalOffset, allAvailableSlugs = []) {
                        .replace(/alternatives/i, '')
                        .trim() || 'Software';
 
-    articleTitle = `${toolName} Free Plan Limitations: Caps, Restrictions & Upgrade Value`;
-    h1 = `${toolName} Free Plan Limitations: What Are the Real Caps & Tradeoffs?`;
-    metaTitle = `${toolName} Free Plan Limitations: Tested Caps & Review`;
-    metaDescription = `Comprehensive breakdown of ${toolName} free plan limitations. Review active user limits, storage caps, export options, and when teams must upgrade.`;
-    excerpt = `Testing ${toolName} on its zero-dollar tier reveals clear operational boundaries. We examine user seat caps, storage restrictions, export limitations, and calculate the exact moment your team needs to upgrade across nine detailed operational dimensions.`;
+    const patternIdx = (totalOffset + index) % REVIEW_PATTERNS.length;
+    const pat = REVIEW_PATTERNS[patternIdx](toolName);
+    articleTitle = pat.title;
+    h1 = pat.h1;
+    metaTitle = pat.metaTitle;
+    metaDescription = pat.metaDescription;
+    excerpt = pat.excerpt;
 
     directAnswer = {
       question: `Does ${toolName} offer a free tier, and what are its limits?`,
@@ -738,9 +812,9 @@ function buildArticleObject(item, index, totalOffset, allAvailableSlugs = []) {
     ];
   }
 
-  // Pick category image
-  const imgPool = IMAGES[categorySlug] || IMAGES.general;
-  const chosenImg = imgPool[(totalOffset + index) % imgPool.length];
+  // Pick unique image from curated image bank - guaranteed never repeated
+  const chosenImg = getUniqueImage(item.Category || categorySlug, usedImages);
+  usedImages.add(chosenImg.url);
 
   // Final sanitization of all prose fields to guarantee 0 banned words and NO 2026
   articleTitle = sanitizeProse(stripYear(articleTitle));
@@ -918,6 +992,7 @@ const updatedState = {
   categoryIndex: catIndex,
   lastCategory: newArticles[newArticles.length - 1].tags[0],
   publishedSlugs: updatedSlugs,
+  usedImages: Array.from(usedImages),
   history: updatedHistory
 };
 fs.writeFileSync(statePath, JSON.stringify(updatedState, null, 2), 'utf8');

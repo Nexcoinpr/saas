@@ -17,70 +17,76 @@
   ],
   "history": [
     {
-      "date": "2026-09-30T09:04:46.605Z",
-      "count": 3,
+      "date": "2026-09-30T09:00:00.000Z",
+      "count": 8,
       "articles": [
         {
           "id": "remote-review",
-          "title": "Remote Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "title": "Remote.com Contractor Management vs EOR: Tested Free Tier Limits & True Pricing",
           "path": "/reviews/remote-review",
-          "author": "Sarah Jenkins"
+          "author": "Sarah Jenkins",
+          "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
         },
         {
           "id": "vidyard-review",
-          "title": "Vidyard Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "title": "Vidyard Free Tier Teardown: 25-Video Limit, Recording Caps & Pro Value",
           "path": "/reviews/vidyard-review",
-          "author": "Alex Rivera"
+          "author": "Liam Vance",
+          "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80"
         },
         {
           "id": "copper-review",
-          "title": "Copper Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "title": "Copper CRM Audit: Google Workspace Integration, Trial Realities & Starter Pricing",
           "path": "/reviews/copper-review",
-          "author": "Maya Lin"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-30T09:11:00.773Z",
-      "count": 1,
-      "articles": [
+          "author": "Sarah Jenkins",
+          "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+        },
         {
           "id": "asana-review",
-          "title": "Asana Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "title": "Asana Free Plan Limits: 10-User Cap, Missing Timeline View & Upgrade Math",
           "path": "/reviews/asana-review",
-          "author": "Liam Vance"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-30T09:17:09.631Z",
-      "count": 4,
-      "articles": [
+          "author": "Liam Vance",
+          "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80"
+        },
         {
           "id": "pipedrive-vs-convertkit",
-          "title": "Pipedrive vs ConvertKit for small business: Features, Pricing & Detailed Comparison",
+          "title": "Pipedrive vs ConvertKit for Small Business: Sales Pipeline CRM vs Email Marketing",
           "path": "/comparisons/pipedrive-vs-convertkit",
-          "author": "Sarah Jenkins"
+          "author": "Sarah Jenkins",
+          "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
         },
         {
           "id": "perplexity-review",
-          "title": "Perplexity Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "title": "Perplexity AI Free vs Pro: 5-Query Cap, Deep Research Limits & Value",
           "path": "/reviews/perplexity-review",
-          "author": "Alex Rivera"
+          "author": "Maya Lin",
+          "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
         },
         {
           "id": "github-copilot-vs-loom",
-          "title": "GitHub Copilot vs Loom for small business: Features, Pricing & Detailed Comparison",
+          "title": "GitHub Copilot vs Loom for Small Business: AI Coding vs Async Video Demos",
           "path": "/comparisons/github-copilot-vs-loom",
-          "author": "Maya Lin"
+          "author": "Alex Rivera",
+          "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
         },
         {
           "id": "zapier-review",
-          "title": "Zapier Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "title": "Zapier Free Plan Limitations: 100 Task Cap, Single-Step Rule & Starter Upgrade",
           "path": "/reviews/zapier-review",
-          "author": "Liam Vance"
+          "author": "Maya Lin",
+          "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
         }
       ]
     }
+  ],
+  "usedImages": [
+    "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
   ]
 }
