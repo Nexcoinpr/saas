@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-09-30T09:17:09.631Z",
-  "totalPublishedCount": 8,
+  "lastPublishedAt": "2026-09-30T12:10:00.490Z",
+  "totalPublishedCount": 9,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 5,
-  "lastCategory": "Workflow Automation",
+  "categoryIndex": 6,
+  "lastCategory": "Productivity & Collaboration",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -13,7 +13,19 @@
     "pipedrive-vs-convertkit",
     "perplexity-review",
     "github-copilot-vs-loom",
-    "zapier-review"
+    "zapier-review",
+    "todoist-vs-debezium"
+  ],
+  "usedImages": [
+    "/images/articles/remote-review.jpg",
+    "/images/articles/vidyard-review.jpg",
+    "/images/articles/copper-review.jpg",
+    "/images/articles/asana-review.jpg",
+    "/images/articles/pipedrive-vs-convertkit.jpg",
+    "/images/articles/perplexity-review.jpg",
+    "/images/articles/github-copilot-vs-loom.jpg",
+    "/images/articles/zapier-review.jpg",
+    "https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -77,16 +89,18 @@
           "image": "/images/articles/zapier-review.jpg"
         }
       ]
+    },
+    {
+      "date": "2026-09-30T12:10:00.490Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "todoist-vs-debezium",
+          "title": "Todoist vs Debezium for small business: Usability, Integration Depth & Value Breakdown",
+          "path": "/comparisons/todoist-vs-debezium",
+          "author": "Sarah Jenkins"
+        }
+      ]
     }
-  ],
-  "usedImages": [
-    "/images/articles/remote-review.jpg",
-    "/images/articles/vidyard-review.jpg",
-    "/images/articles/copper-review.jpg",
-    "/images/articles/asana-review.jpg",
-    "/images/articles/pipedrive-vs-convertkit.jpg",
-    "/images/articles/perplexity-review.jpg",
-    "/images/articles/github-copilot-vs-loom.jpg",
-    "/images/articles/zapier-review.jpg"
   ]
 }
