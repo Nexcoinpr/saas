@@ -70,7 +70,7 @@ export function LatestArticlesGrid({ articles }: LatestArticlesGridProps) {
         <div className="mt-12 text-center">
           <Link
             href="/search"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-300 dark:border-cyan-900/60 bg-white dark:bg-[#0a0f1d] hover:bg-slate-50 dark:hover:bg-cyan-950/40 text-slate-900 dark:text-slate-100 font-semibold text-sm transition-all shadow-sm hover:shadow-cyan-glow"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-300 dark:border-cyan-900/60 bg-white dark:bg-[#0a0f1d] hover:bg-slate-50 dark:hover:bg-cyan-950/40 text-slate-900 dark:text-slate-100 font-semibold text-sm transition-all shadow-sm hover:shadow-md hover:border-slate-400 dark:hover:border-cyan-700"
           >
             <span>Search &amp; Filter All Articles</span>
             <ArrowRight className="w-4 h-4 text-cyan-500" />

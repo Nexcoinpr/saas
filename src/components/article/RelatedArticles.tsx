@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Article } from "@/types/blog";
 import { ArticleCard } from "@/components/common/ArticleCard";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 
 interface RelatedArticlesProps {
   articles: Article[];
@@ -17,7 +17,7 @@ export function RelatedArticles({ articles, categorySlug }: RelatedArticlesProps
       <div className="flex items-center justify-between mb-8">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 block mb-1">
-            Topic Cluster Continuity
+            Keep Reading
           </span>
           <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white">
             Related Guides &amp; Teardowns

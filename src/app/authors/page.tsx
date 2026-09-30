@@ -44,7 +44,7 @@ export default function AuthorsPage() {
           {AUTHORS.map((author) => (
             <div
               key={author.slug}
-              className="p-8 rounded-3xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between"
+              className="p-8 rounded-3xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-cyan-800 transition-all flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-start gap-5 mb-5">

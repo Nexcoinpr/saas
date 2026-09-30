@@ -21,10 +21,10 @@ export default function HomePage() {
       {/* Hero Section with Interactive Dashboard Showcase */}
       <HeroSection />
 
-      {/* NextSaaS 4-Column Feature Architecture */}
+      {/* Editorial Testing Principles */}
       <SaaSFeatureGrid />
 
-      {/* Software Intelligence Scoreboard Matrix */}
+      {/* Tested Tools Breakdown & Pricing Verdicts */}
       <SaaSMatrixSection />
 
       {/* Featured Cover Stories & Teardowns */}
@@ -33,10 +33,10 @@ export default function HomePage() {
       {/* Popular Topic Hubs */}
       <TopicCards />
 
-      {/* Testimonials & Reader Verification */}
+      {/* Editorial Team & Testing Charter */}
       <SaaSTestimonials />
 
-      {/* Popular Articles based on verified readership telemetry */}
+      {/* Reader Favorites */}
       <PopularArticles articles={popularArticles} />
 
       {/* Latest Articles in clean filterable grid */}

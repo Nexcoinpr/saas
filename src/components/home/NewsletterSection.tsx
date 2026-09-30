@@ -20,7 +20,7 @@ export function NewsletterSection() {
     // Simulate instantaneous client confirmation
     setTimeout(() => {
       setStatus("success");
-      setMessage("You're subscribed! Welcome to the SaaSInsider Executive Dispatch.");
+      setMessage("You are subscribed! Welcome to our weekly software briefing.");
       setEmail("");
     }, 600);
   };
@@ -39,11 +39,11 @@ export function NewsletterSection() {
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
-          Get verified SaaS and AI tool intelligence in your inbox.
+          Hands-on software teardowns and pricing verdicts in your inbox.
         </h2>
 
         <p className="mt-4 text-base sm:text-lg text-slate-300 max-w-xl mx-auto leading-relaxed">
-          Join 28,000+ software founders, engineering leaders, and operations executives who read the SaaSInsider breakdown every Thursday morning.
+          Delivered every Thursday morning. Real workflow testing, honest trade-offs, and zero sponsored rankings.
         </p>
 
         {/* Signup Form */}

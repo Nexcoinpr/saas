@@ -74,7 +74,7 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
         />
 
         {/* Profile Card Header */}
-        <header className="my-8 p-8 sm:p-12 rounded-3xl bg-slate-50 dark:bg-[#0a0f1d] border border-slate-200/90 dark:border-cyan-950/60 shadow-cyan-glow">
+        <header className="my-8 p-8 sm:p-12 rounded-3xl bg-slate-50 dark:bg-[#0a0f1d] border border-slate-200/90 dark:border-cyan-950/60 shadow-sm">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             
             <Image

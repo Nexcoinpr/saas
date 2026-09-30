@@ -47,7 +47,7 @@ export function Header() {
                   SaaS<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400">Insider</span>
                 </span>
                 <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-cyan-400/80 font-bold -mt-1">
-                  Software Intelligence
+                  Independent Software Reviews
                 </span>
               </div>
             </Link>

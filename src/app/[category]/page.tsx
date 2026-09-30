@@ -167,7 +167,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               <Link
                 key={c.slug}
                 href={c.path}
-                className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface hover:border-cyan-400 hover:shadow-cyan-glow transition-all text-xs font-semibold text-slate-800 dark:text-slate-200 text-center block"
+                className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface hover:border-slate-400 dark:hover:border-cyan-700/60 hover:shadow-sm transition-all text-xs font-semibold text-slate-800 dark:text-slate-200 text-center block"
               >
                 {c.name}
               </Link>

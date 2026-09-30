@@ -11,7 +11,7 @@ interface AuthorCardProps {
 
 export function AuthorCard({ author }: AuthorCardProps) {
   return (
-    <div className="my-10 p-6 sm:p-8 rounded-3xl border border-slate-200/90 dark:border-cyan-950/60 bg-slate-50/60 dark:bg-[#0a0f1d] shadow-cyan-glow">
+    <div className="my-10 p-6 sm:p-8 rounded-3xl border border-slate-200/90 dark:border-cyan-950/60 bg-slate-50/60 dark:bg-[#0a0f1d] shadow-sm">
       <div className="flex flex-col sm:flex-row gap-5 items-start">
         
         {/* Avatar */}

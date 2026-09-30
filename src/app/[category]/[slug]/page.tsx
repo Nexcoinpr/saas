@@ -231,18 +231,18 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
 
             {/* In-Article Mini Newsletter Signup */}
-            <div className="p-5 rounded-2xl bg-cyan-950/20 dark:bg-darkSurface border border-cyan-500/20 space-y-3">
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-darkSurface border border-slate-200 dark:border-cyan-900/30 space-y-3">
               <h4 className="font-bold text-sm text-slate-950 dark:text-cyan-200">
-                SaaSInsider Executive Dispatch
+                The Weekly Software Briefing
               </h4>
               <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Receive practical SaaS metrics, software teardowns, and automation playbooks in your inbox every Thursday.
+                Hands-on teardowns, pricing math, and architecture reviews delivered every Thursday morning.
               </p>
               <a
                 href="#newsletter"
-                className="w-full inline-flex items-center justify-center px-3.5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs shadow-cyan-glow transition-colors"
+                className="w-full inline-flex items-center justify-center px-3.5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs shadow-sm transition-colors"
               >
-                Join 28,000+ Subscribers
+                Get Weekly Dispatch
               </a>
             </div>
 

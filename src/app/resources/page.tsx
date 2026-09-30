@@ -63,7 +63,7 @@ export default function ResourcesPage() {
         {/* Toolkits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
           
-          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between">
+          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-cyan-800 transition-all flex flex-col justify-between">
             <div>
               <span className="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center mb-4">
                 <CheckSquare className="w-5 h-5" />
@@ -84,7 +84,7 @@ export default function ResourcesPage() {
             </Link>
           </div>
 
-          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between">
+          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-cyan-800 transition-all flex flex-col justify-between">
             <div>
               <span className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4">
                 <Calculator className="w-5 h-5" />
@@ -105,7 +105,7 @@ export default function ResourcesPage() {
             </Link>
           </div>
 
-          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-cyan-glow transition-all flex flex-col justify-between">
+          <div className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d] shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-cyan-800 transition-all flex flex-col justify-between">
             <div>
               <span className="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4">
                 <BookOpen className="w-5 h-5" />

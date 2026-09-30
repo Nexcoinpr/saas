@@ -53,7 +53,7 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         {/* Entity A Card */}
-        <div className={`p-6 rounded-3xl border ${winner === "A" ? "border-cyan-400 bg-cyan-50/40 dark:bg-cyan-950/20 shadow-cyan-glow" : "border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]"} shadow-sm`}>
+        <div className={`p-6 rounded-3xl border ${winner === "A" ? "border-cyan-500 bg-cyan-50/40 dark:bg-cyan-950/20 shadow-md ring-1 ring-cyan-500/20" : "border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]"} shadow-sm`}>
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs uppercase font-extrabold tracking-wider text-cyan-600 dark:text-cyan-400">
               Contender A
@@ -84,7 +84,7 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
         </div>
 
         {/* Entity B Card */}
-        <div className={`p-6 rounded-3xl border ${winner === "B" ? "border-cyan-400 bg-cyan-50/40 dark:bg-cyan-950/20 shadow-cyan-glow" : "border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]"} shadow-sm`}>
+        <div className={`p-6 rounded-3xl border ${winner === "B" ? "border-cyan-500 bg-cyan-50/40 dark:bg-cyan-950/20 shadow-md ring-1 ring-cyan-500/20" : "border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]"} shadow-sm`}>
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs uppercase font-extrabold tracking-wider text-blue-600 dark:text-blue-400">
               Contender B
@@ -117,13 +117,13 @@ export function ComparisonTable({ comparisonData }: ComparisonTableProps) {
       </div>
 
       {/* Winner Callout Banner */}
-      <div className="p-6 rounded-2xl bg-gradient-to-r from-[#061529] via-[#080d1a] to-[#04060c] text-white flex items-start gap-4 border border-cyan-900/40 shadow-cyan-glow">
+      <div className="p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 text-white flex items-start gap-4 border border-slate-800 shadow-md">
         <div className="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0">
           <Trophy className="w-5 h-5 text-amber-400" />
         </div>
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-cyan-300 block mb-0.5">
-            SaaSInsider Verdict &amp; Overall Recommendation
+            Editorial Verdict &amp; Recommendation
           </span>
           <h4 className="text-lg font-bold text-white mb-1">
             {winner === "Tie" ? "Contextual Draw (Specific Use Cases)" : `Winner: ${winner === "A" ? entityA.name : entityB.name}`}

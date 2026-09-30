@@ -183,7 +183,7 @@ function SearchContent() {
             {filteredArticles.map((article) => (
               <article
                 key={article.slug}
-                className="group flex flex-col rounded-2xl border border-slate-200/80 dark:border-cyan-500/20 bg-white dark:bg-darkSurface overflow-hidden hover:border-cyan-500/50 hover:shadow-cyan-glow transition-all"
+                className="group flex flex-col rounded-2xl border border-slate-200/80 dark:border-cyan-500/20 bg-white dark:bg-darkSurface overflow-hidden hover:border-slate-400 dark:hover:border-cyan-700/60 hover:shadow-md transition-all"
               >
                 <Link
                   href={article.path}

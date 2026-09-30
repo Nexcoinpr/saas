@@ -50,9 +50,9 @@ const config: Config = {
         mono: ["var(--font-mono)", "monospace"],
       },
       boxShadow: {
-        'cyan-glow': '0 0 25px -5px rgba(6, 182, 212, 0.25)',
-        'cyan-glow-lg': '0 0 40px -10px rgba(6, 182, 212, 0.35)',
-        'violet-glow': '0 0 25px -5px rgba(139, 92, 246, 0.25)',
+        'cyan-glow': '0 4px 20px -2px rgba(15, 23, 42, 0.06)',
+        'cyan-glow-lg': '0 10px 25px -5px rgba(15, 23, 42, 0.1)',
+        'violet-glow': '0 4px 20px -2px rgba(15, 23, 42, 0.06)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

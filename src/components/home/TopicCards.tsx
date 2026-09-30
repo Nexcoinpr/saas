@@ -104,7 +104,7 @@ export function TopicCards() {
               <Link
                 key={topic.slug}
                 href={`/${topic.slug}`}
-                className="group p-5 rounded-2xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]/90 hover:border-cyan-400/80 dark:hover:border-cyan-500/60 hover:shadow-cyan-glow transition-all flex flex-col justify-between"
+                className="group p-5 rounded-2xl border border-slate-200/90 dark:border-cyan-950/60 bg-white dark:bg-[#0a0f1d]/90 hover:border-cyan-400/80 dark:hover:border-cyan-500/60 hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">

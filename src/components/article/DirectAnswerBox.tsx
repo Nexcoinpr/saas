@@ -1,5 +1,5 @@
 import React from "react";
-import { Sparkles, Check } from "lucide-react";
+import { Award, Check } from "lucide-react";
 
 interface DirectAnswerBoxProps {
   directAnswer?: {
@@ -16,18 +16,18 @@ export function DirectAnswerBox({ directAnswer }: DirectAnswerBoxProps) {
     <section
       id="direct-answer"
       aria-label="Direct Answer"
-      className="my-8 p-6 rounded-2xl border border-cyan-300 dark:border-cyan-500/40 bg-cyan-50/50 dark:bg-[#081525]/90 text-slate-800 dark:text-slate-200 shadow-cyan-glow backdrop-blur-sm"
+      className="my-8 p-6 sm:p-7 rounded-2xl border border-blue-200/80 dark:border-blue-900/60 bg-blue-50/40 dark:bg-slate-900/60 text-slate-800 dark:text-slate-200 shadow-xs"
     >
       <div className="flex items-center gap-2 mb-3">
-        <span className="w-6 h-6 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 text-white flex items-center justify-center shadow-xs">
-          <Sparkles className="w-3.5 h-3.5" />
+        <span className="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-xs">
+          <Award className="w-3.5 h-3.5" />
         </span>
-        <span className="text-xs uppercase font-extrabold tracking-wider text-cyan-700 dark:text-cyan-300">
-          SaaSInsider Verified Summary
+        <span className="text-xs uppercase font-extrabold tracking-wider text-blue-700 dark:text-blue-300">
+          The Editorial Bottom Line
         </span>
       </div>
 
-      <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white mb-2.5">
+      <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 leading-snug">
         {directAnswer.question}
       </h2>
 
@@ -36,10 +36,10 @@ export function DirectAnswerBox({ directAnswer }: DirectAnswerBoxProps) {
       </p>
 
       {directAnswer.summaryBullets && directAnswer.summaryBullets.length > 0 && (
-        <ul className="mt-4 pt-4 border-t border-cyan-200/80 dark:border-cyan-900/50 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+        <ul className="mt-4 pt-4 border-t border-blue-200/60 dark:border-slate-800 space-y-2 text-sm text-slate-700 dark:text-slate-300">
           {directAnswer.summaryBullets.map((bullet, idx) => (
             <li key={idx} className="flex items-start gap-2.5">
-              <span className="w-4 h-4 rounded-full bg-cyan-500/15 text-cyan-600 dark:text-cyan-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span className="w-4 h-4 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="w-3 h-3 stroke-[2.5]" />
               </span>
               <span>{bullet}</span>
