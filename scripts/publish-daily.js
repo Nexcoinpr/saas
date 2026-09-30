@@ -351,6 +351,9 @@ function sanitizeProse(text) {
     .replace(/\bhowever\b/gi, 'yet')
     .replace(/\buptime\b/gi, 'service availability')
     .replace(/\bonboarding\b/gi, 'getting started')
+    .replace(/\blatency\b/gi, 'response speed')
+    .replace(/\bseamless\b/gi, 'smooth')
+    .replace(/\brobust\b/gi, 'solid')
     .replace(/\buser interface\b/gi, 'visual layout')
     .replace(/\buser experience\b/gi, 'product experience')
     .replace(/\bnimble\b/gi, 'compact')
@@ -822,6 +825,20 @@ function buildArticleObject(item, index, totalOffset, allAvailableSlugs = []) {
   metaTitle = sanitizeProse(stripYear(metaTitle));
   metaDescription = sanitizeProse(stripYear(metaDescription));
   excerpt = sanitizeProse(stripYear(excerpt));
+
+  // Strict constraints: ~55 characters for title, <= 140 chars for metaDescription
+  if (articleTitle.length > 56) {
+    const trimmed = articleTitle.substring(0, 53).replace(/\s+\S*$/, '');
+    articleTitle = trimmed.length >= 45 ? trimmed : articleTitle.substring(0, 53);
+  }
+  h1 = articleTitle;
+  metaTitle = articleTitle;
+
+  if (metaDescription.length > 140) {
+    const trimmedDesc = metaDescription.substring(0, 137).replace(/\s+\S*$/, '');
+    metaDescription = (trimmedDesc.length >= 100 ? trimmedDesc : metaDescription.substring(0, 137)) + '.';
+    metaDescription = metaDescription.replace(/\.\.+$/, '.');
+  }
 
   sections.forEach(s => {
     s.title = sanitizeProse(stripYear(s.title));
