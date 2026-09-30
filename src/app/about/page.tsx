@@ -119,6 +119,13 @@ export default function AboutPage() {
             </p>
           </section>
 
+          <section>
+            <h2>Get in Touch</h2>
+            <p>
+              Have a question about our methodology, want to suggest a software product for evaluation, or need to report a factual update? Contact our team directly at <a href="mailto:info.saasinsider@gmail.com" className="text-cyan-600 dark:text-cyan-400 font-semibold underline">info.saasinsider@gmail.com</a>.
+            </p>
+          </section>
+
         </div>
 
       </div>

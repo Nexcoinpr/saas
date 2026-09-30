@@ -57,7 +57,7 @@ export default function PrivacyPage() {
           <section>
             <h2>4. Data Rights &amp; Contact</h2>
             <p>
-              Under GDPR, CCPA, and international data regulations, you have the right to request access to or deletion of your email address from our newsletter list. Please submit any data requests to <a href="mailto:privacy@saasinsider.io" className="text-cyan-600 dark:text-cyan-400 underline">privacy@saasinsider.io</a>.
+              Under GDPR, CCPA, and international data regulations, you have the right to request access to or deletion of your email address from our newsletter list. Please submit any data requests to <a href="mailto:info.saasinsider@gmail.com" className="text-cyan-600 dark:text-cyan-400 underline">info.saasinsider@gmail.com</a>.
             </p>
           </section>
         </div>

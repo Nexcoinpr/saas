@@ -55,6 +55,13 @@ export default function TermsPage() {
               Some outbound links on SaaSInsider are affiliate referral links. SaaSInsider may earn compensation if you purchase software through these links. This relationship never compromises our editorial independence or scorecard ratings.
             </p>
           </section>
+
+          <section>
+            <h2>5. Contact &amp; Legal Notices</h2>
+            <p>
+              For legal inquiries, copyright notices, or questions regarding these Terms, please contact our administrative desk at <a href="mailto:info.saasinsider@gmail.com" className="text-cyan-600 dark:text-cyan-400 underline">info.saasinsider@gmail.com</a>.
+            </p>
+          </section>
         </div>
 
       </div>

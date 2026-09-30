@@ -25,6 +25,13 @@ export function Footer() {
               </span>
             </div>
 
+            <div className="text-xs">
+              <span className="text-slate-500 dark:text-slate-400 block mb-0.5">Direct Contact:</span>
+              <a href="mailto:info.saasinsider@gmail.com" className="text-cyan-600 dark:text-cyan-400 font-semibold hover:underline">
+                info.saasinsider@gmail.com
+              </a>
+            </div>
+
             <div className="flex items-center gap-4 pt-2">
               <a
                 href="https://twitter.com"

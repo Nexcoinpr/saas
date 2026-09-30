@@ -12,6 +12,7 @@ export const SITE_CONFIG = {
   siteUrl: siteUrl.replace(/\/$/, ""),
   defaultOgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
   twitterHandle: "@saasinsider",
+  email: "info.saasinsider@gmail.com",
   publisher: {
     name: "SaaSInsider",
     logo: `${siteUrl.replace(/\/$/, "")}/logo.png`
@@ -24,6 +25,7 @@ export function generateOrganizationSchema() {
     "@type": "Organization",
     "name": SITE_CONFIG.name,
     "url": SITE_CONFIG.siteUrl,
+    "email": SITE_CONFIG.email,
     "logo": {
       "@type": "ImageObject",
       "url": `${SITE_CONFIG.siteUrl}/logo.png`,
