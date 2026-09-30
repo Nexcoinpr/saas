@@ -10,7 +10,10 @@ export function getArticleBySlug(slug: string): Article | undefined {
 }
 
 export function getArticlesByCategory(categorySlug: string): Article[] {
-  return ARTICLES.filter(a => a.category === categorySlug);
+  return ARTICLES.filter(a => 
+    a.category === categorySlug || 
+    (categorySlug === "crm" && (a.subcategory?.toLowerCase().includes("crm") || a.tags?.some(t => t.toLowerCase().includes("crm"))))
+  );
 }
 
 export function getArticlesByAuthor(authorSlug: string): Article[] {

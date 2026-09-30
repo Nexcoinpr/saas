@@ -86,6 +86,18 @@ export const CATEGORIES: Category[] = [
     keywords: ["workflow automation", "no-code automation", "Zapier vs Make", "business automation", "API integration"]
   },
   {
+    id: "crm",
+    name: "CRM & Sales",
+    slug: "crm",
+    path: "/crm",
+    description: "Customer relationship management software, sales pipeline tracking, and email sync tools.",
+    longDescription: "Find the best CRM software for your sales team. We test deal tracking, automated email logging, contact limits, and pipeline management across leading platforms.",
+    iconName: "Briefcase",
+    metaTitle: "Best CRM Software, Sales Pipelines & Reviews | SaaSInsider",
+    metaDescription: "Read tested CRM software reviews, sales pipeline comparisons, and email logging evaluations.",
+    keywords: ["CRM software", "sales pipelines", "sales CRM", "CRM reviews", "customer management"]
+  },
+  {
     id: "business",
     name: "Business",
     slug: "business",
