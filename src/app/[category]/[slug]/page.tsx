@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       authors: [article.author.name],
       images: [
         {
-          url: article.featuredImage,
+          url: article.featuredImage.startsWith("http") ? article.featuredImage : `${SITE_CONFIG.siteUrl}${article.featuredImage}`,
           width: 1200,
           height: 630,
           alt: article.featuredImageAlt,
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       title: article.metaTitle,
       description: article.metaDescription,
       creator: SITE_CONFIG.twitterHandle,
-      images: [article.featuredImage],
+      images: [article.featuredImage.startsWith("http") ? article.featuredImage : `${SITE_CONFIG.siteUrl}${article.featuredImage}`],
     },
   };
 }

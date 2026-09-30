@@ -104,7 +104,7 @@ export function generateArticleSchema(article: Article) {
     "@type": article.template === 'review' ? "Review" : "Article",
     "headline": article.title,
     "description": article.metaDescription,
-    "image": [article.featuredImage],
+    "image": [article.featuredImage.startsWith("http") ? article.featuredImage : `${SITE_CONFIG.siteUrl}${article.featuredImage}`],
     "datePublished": article.publishedAt,
     "dateModified": article.updatedAt,
     "mainEntityOfPage": {
