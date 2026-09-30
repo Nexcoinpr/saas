@@ -64,11 +64,11 @@ export function Header() {
             <Link
               href="/search"
               aria-label="Search articles"
-              className="flex items-center gap-2 px-3 py-1.5 text-sm text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800/90 rounded-lg hover:border-cyan-400 dark:hover:border-cyan-700/60 hover:bg-slate-50 dark:hover:bg-slate-900/60 transition-all"
+              className="flex items-center gap-2 px-3 py-1.5 text-sm text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800/90 rounded-lg hover:border-cyan-400 dark:hover:border-cyan-700/60 hover:bg-slate-50 dark:hover:bg-slate-900/60 transition-all"
             >
               <Search className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
               <span className="hidden sm:inline font-normal">Search...</span>
-              <kbd className="hidden sm:inline text-[10px] bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-slate-400 font-mono border border-slate-200 dark:border-slate-700">
+              <kbd className="hidden sm:inline text-[10px] bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-slate-500 dark:text-slate-400 font-mono border border-slate-200 dark:border-slate-700">
                 ⌘K
               </kbd>
             </Link>

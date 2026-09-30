@@ -211,20 +211,20 @@ export function SaaSMatrixSection() {
                           {item.verdictBadge}
                         </span>
                       </div>
-                      <span className="text-xs text-slate-500 dark:text-slate-400">{item.category}</span>
+                      <span className="text-xs text-slate-600 dark:text-slate-400">{item.category}</span>
                     </td>
 
                     <td className="p-4 sm:px-6">
                       <div className="flex items-center gap-1 text-slate-900 dark:text-white font-bold">
                         <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                         <span>{item.rating}</span>
-                        <span className="text-slate-400 text-xs font-normal">/ 5.0</span>
+                        <span className="text-slate-600 dark:text-slate-400 text-xs font-normal">/ 5.0</span>
                       </div>
                     </td>
 
                     <td className="p-4 sm:px-6">
                       <span className="font-semibold text-slate-800 dark:text-slate-200 block">{item.pricing}</span>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400">{item.model}</span>
+                      <span className="text-[11px] text-slate-600 dark:text-slate-400">{item.model}</span>
                     </td>
 
                     <td className="p-4 sm:px-6 hidden md:table-cell text-slate-600 dark:text-slate-300 max-w-xs leading-relaxed">
@@ -234,6 +234,7 @@ export function SaaSMatrixSection() {
                     <td className="p-4 sm:px-6 text-right">
                       <Link
                         href={item.path}
+                        aria-label={`Read ${item.name} review`}
                         className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-xs transition-colors"
                       >
                         <span>Read Review</span>

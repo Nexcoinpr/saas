@@ -36,7 +36,8 @@ export function SaaSTestimonials() {
                 <div className="flex items-center gap-3.5 mb-4">
                   <Image
                     src={author.avatar}
-                    alt={author.name}
+                    alt=""
+                    aria-hidden="true"
                     width={48}
                     height={48}
                     className="rounded-full object-cover ring-2 ring-slate-200 dark:ring-slate-700 group-hover:ring-blue-500 transition-all"
@@ -45,7 +46,7 @@ export function SaaSTestimonials() {
                     <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
                       {author.name}
                     </h3>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <p className="text-xs text-slate-600 dark:text-slate-400">
                       {author.role.split("&")[0].trim()}
                     </p>
                   </div>
@@ -71,6 +72,7 @@ export function SaaSTestimonials() {
               <div className="pt-3 border-t border-slate-100 dark:border-slate-800/80">
                 <Link
                   href={`/authors/${author.slug}`}
+                  aria-label={`View author profile for ${author.name}`}
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-cyan-400 hover:text-blue-700 dark:hover:text-cyan-300 transition-colors"
                 >
                   <span>View Author Profile</span>
@@ -95,7 +97,7 @@ export function SaaSTestimonials() {
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                 &ldquo;Most software blogs republish vendor feature lists or regurgitate artificial summaries. At SaaSInsider, our golden rule is absolute: if we have not personally logged in, imported real data, and stress-tested quota limits inside a live workspace, we will not publish a review.&rdquo;
               </p>
-              <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold pt-1">
+              <p className="text-xs text-slate-600 dark:text-slate-400 font-semibold pt-1">
                 — Sarah Jenkins, Editor-in-Chief &amp; SaaS Finance Lead
               </p>
             </div>

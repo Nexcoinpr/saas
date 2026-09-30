@@ -27,7 +27,7 @@ export function PopularArticles({ articles }: PopularArticlesProps) {
               <TrendingUp className="w-5 h-5 text-blue-600 dark:text-cyan-400" />
             </h2>
           </div>
-          <span className="text-xs text-slate-500 dark:text-slate-400 mt-2 sm:mt-0 font-medium">
+          <span className="text-xs text-slate-600 dark:text-slate-400 mt-2 sm:mt-0 font-medium">
             Curated by our editorial staff based on reader feedback
           </span>
         </div>

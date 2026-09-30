@@ -48,7 +48,11 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
   if (variant === "horizontal") {
     return (
       <article className="group flex flex-col sm:flex-row gap-5 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-md transition-all">
-        <Link href={article.path} className="sm:w-1/3 aspect-[16/10] relative rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0">
+        <Link
+          href={article.path}
+          aria-label={`Read ${article.title}`}
+          className="sm:w-1/3 aspect-[16/10] relative rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0"
+        >
           <Image
             src={article.featuredImage}
             alt={article.featuredImageAlt}
@@ -79,12 +83,13 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
             </p>
           </div>
 
-          <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+          <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-600 dark:text-slate-400">
             <div className="flex items-center gap-2">
               <Link href={`/authors/${article.author.slug}`} className="flex items-center gap-2 hover:underline">
                 <Image
                   src={article.author.avatar}
-                  alt={article.author.name}
+                  alt=""
+                  aria-hidden="true"
                   width={24}
                   height={24}
                   className="rounded-full object-cover ring-1 ring-slate-200 dark:ring-slate-700"
@@ -92,7 +97,7 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
                 <span className="font-medium text-slate-700 dark:text-slate-300">{article.author.name}</span>
               </Link>
             </div>
-            <div className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
+            <div className="flex items-center gap-1 text-xs text-slate-600 dark:text-slate-400">
               <Calendar className="w-3.5 h-3.5" />
               <span>{formatDate(article.publishedAt)}</span>
             </div>
@@ -104,7 +109,11 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
 
   return (
     <article className="group flex flex-col rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 overflow-hidden hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-md transition-all">
-      <Link href={article.path} className="aspect-[16/10] relative overflow-hidden bg-slate-100 dark:bg-slate-800">
+      <Link
+        href={article.path}
+        aria-label={`Read ${article.title}`}
+        className="aspect-[16/10] relative overflow-hidden bg-slate-100 dark:bg-slate-800"
+      >
         <Image
           src={article.featuredImage}
           alt={article.featuredImageAlt}
@@ -138,11 +147,12 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
           </p>
         </div>
 
-        <div className="mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+        <div className="mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-600 dark:text-slate-400">
           <Link href={`/authors/${article.author.slug}`} className="flex items-center gap-2 hover:underline">
             <Image
               src={article.author.avatar}
-              alt={article.author.name}
+              alt=""
+              aria-hidden="true"
               width={22}
               height={22}
               className="rounded-full object-cover ring-1 ring-slate-200 dark:ring-slate-700"
@@ -152,8 +162,8 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
             </span>
           </Link>
 
-          <div className="flex items-center gap-1.5 text-[11px] text-slate-500 dark:text-slate-400">
-            <Calendar className="w-3 h-3 text-slate-400" />
+          <div className="flex items-center gap-1.5 text-[11px] text-slate-600 dark:text-slate-400">
+            <Calendar className="w-3.5 h-3.5 text-slate-400" />
             <span>{formatDate(article.publishedAt)}</span>
           </div>
         </div>

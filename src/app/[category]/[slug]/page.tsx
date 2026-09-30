@@ -126,6 +126,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             alt={article.featuredImageAlt}
             fill
             priority
+            fetchPriority="high"
             sizes="(max-width: 1024px) 100vw, 1200px"
             className="object-cover"
           />

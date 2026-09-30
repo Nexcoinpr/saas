@@ -45,7 +45,11 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
           {/* Primary Big Feature Card (7 cols) */}
           <div className="lg:col-span-7">
             <article className="group h-full flex flex-col rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 overflow-hidden hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-md transition-all">
-              <Link href={primary.path} className="aspect-[16/9] relative overflow-hidden bg-slate-100 dark:bg-slate-800">
+              <Link
+                href={primary.path}
+                aria-label={`Read cover story: ${primary.title}`}
+                className="aspect-[16/9] relative overflow-hidden bg-slate-100 dark:bg-slate-800"
+              >
                 <Image
                   src={primary.featuredImage}
                   alt={primary.featuredImageAlt}
@@ -82,11 +86,12 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+                <div className="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400">
                   <Link href={`/authors/${primary.author.slug}`} className="flex items-center gap-2.5 hover:underline">
                     <Image
                       src={primary.author.avatar}
-                      alt={primary.author.name}
+                      alt=""
+                      aria-hidden="true"
                       width={32}
                       height={32}
                       className="rounded-full object-cover ring-1 ring-slate-200 dark:ring-slate-700"
@@ -95,7 +100,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                       <span className="font-semibold text-slate-900 dark:text-slate-100 block">
                         {primary.author.name}
                       </span>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400 block -mt-0.5">
+                      <span className="text-[11px] text-slate-600 dark:text-slate-400 block -mt-0.5">
                         {primary.author.role}
                       </span>
                     </div>
@@ -127,6 +132,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
               >
                 <Link
                   href={article.path}
+                  aria-label={`Read ${article.title}`}
                   className="sm:w-2/5 aspect-[16/10] relative rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0"
                 >
                   <Image
@@ -158,7 +164,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                     </p>
                   </div>
 
-                  <div className="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                  <div className="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-600 dark:text-slate-400">
                     <span className="font-medium text-slate-700 dark:text-slate-300 truncate max-w-[120px]">
                       {article.author.name}
                     </span>

@@ -103,12 +103,12 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col font-sans antialiased selection:bg-cyan-500 selection:text-white">
         {/* Google Analytics 4 (gtag.js) */}
         <Script
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-EFS8DX89TN"
         />
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         >
           {`
             window.dataLayer = window.dataLayer || [];

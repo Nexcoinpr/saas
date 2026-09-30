@@ -50,7 +50,7 @@ export function LatestArticlesGrid({ articles }: LatestArticlesGridProps) {
                 className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all ${
                   selectedFilter === tab.value
                     ? "bg-white dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-300 border border-slate-200/50 dark:border-cyan-800/60 shadow-xs"
-                    : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                    : "text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
                 }`}
               >
                 {tab.label}

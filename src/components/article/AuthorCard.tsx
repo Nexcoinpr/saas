@@ -15,10 +15,15 @@ export function AuthorCard({ author }: AuthorCardProps) {
       <div className="flex flex-col sm:flex-row gap-5 items-start">
         
         {/* Avatar */}
-        <Link href={`/authors/${author.slug}`} className="flex-shrink-0 group">
+        <Link
+          href={`/authors/${author.slug}`}
+          aria-label={`View author profile for ${author.name}`}
+          className="flex-shrink-0 group"
+        >
           <Image
             src={author.avatar}
-            alt={author.name}
+            alt=""
+            aria-hidden="true"
             width={72}
             height={72}
             className="rounded-2xl object-cover border-2 border-white dark:border-slate-800 ring-2 ring-cyan-500/30 shadow-md group-hover:scale-105 transition-transform"
@@ -37,7 +42,7 @@ export function AuthorCard({ author }: AuthorCardProps) {
                   {author.name}
                 </Link>
               </h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
+              <p className="text-xs text-slate-600 dark:text-slate-400">
                 {author.role}
               </p>
             </div>

@@ -48,7 +48,8 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
         >
           <Image
             src={article.author.avatar}
-            alt={article.author.name}
+            alt=""
+            aria-hidden="true"
             width={44}
             height={44}
             className="rounded-full object-cover border border-slate-200 dark:border-slate-700 ring-1 ring-cyan-500/30 group-hover:ring-cyan-500 transition-all"
@@ -57,14 +58,14 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
             <span className="font-semibold text-sm text-slate-900 dark:text-slate-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors block">
               {article.author.name}
             </span>
-            <span className="text-xs text-slate-500 dark:text-slate-400 block">
+            <span className="text-xs text-slate-600 dark:text-slate-400 block">
               {article.author.role}
             </span>
           </div>
         </Link>
 
         {/* Dates and Social Share */}
-        <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+        <div className="flex flex-wrap items-center gap-4 text-xs text-slate-600 dark:text-slate-400">
           <div className="flex flex-col sm:items-end">
             <span className="flex items-center gap-1.5">
               <Calendar className="w-3.5 h-3.5 text-slate-400" />

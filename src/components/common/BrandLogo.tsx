@@ -25,7 +25,8 @@ export function BrandLogo({
           <div className="w-10 h-10 rounded-xl overflow-hidden border border-slate-200 dark:border-cyan-900/60 shadow-sm group-hover:scale-105 transition-transform duration-200">
             <Image
               src="/images/brand/saasinsider-favicon-3d.jpg"
-              alt="SaaSInsider Logo"
+              alt=""
+              aria-hidden="true"
               width={iconDimensions}
               height={iconDimensions}
               className="object-cover w-full h-full"
@@ -116,7 +117,7 @@ export function BrandLogo({
           </span>
         </span>
         {showTagline && (
-          <span className="text-[9px] uppercase tracking-widest text-slate-500 dark:text-cyan-400/80 font-bold -mt-1">
+          <span className="text-[9px] uppercase tracking-widest text-slate-600 dark:text-cyan-400/80 font-bold -mt-1">
             Independent Software Reviews
           </span>
         )}

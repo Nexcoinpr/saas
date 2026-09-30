@@ -18,7 +18,7 @@ export function Footer() {
               An independent technology publication dedicated to high-signal SaaS insights, hands-on software reviews, head-to-head comparisons, and enterprise automation guides.
             </p>
 
-            <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-cyan-900/30 rounded-lg p-2.5 max-w-sm">
+            <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-cyan-900/30 rounded-lg p-2.5 max-w-sm">
               <ShieldCheck className="w-4 h-4 text-emerald-500 flex-shrink-0" />
               <span>
                 <strong>Editorial Independence:</strong> Reviews are tested rigorously in sandbox environments without sponsored vendor influence.
@@ -26,7 +26,7 @@ export function Footer() {
             </div>
 
             <div className="text-xs">
-              <span className="text-slate-500 dark:text-slate-400 block mb-0.5">Direct Contact:</span>
+              <span className="text-slate-600 dark:text-slate-400 block mb-0.5">Direct Contact:</span>
               <a href="mailto:info.saasinsider@gmail.com" className="text-cyan-600 dark:text-cyan-400 font-semibold hover:underline">
                 info.saasinsider@gmail.com
               </a>
@@ -203,7 +203,7 @@ export function Footer() {
         </div>
 
         {/* Technical SEO and LLM index links */}
-        <div className="mt-12 pt-8 border-t border-slate-200/80 dark:border-cyan-950/40 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-500">
+        <div className="mt-12 pt-8 border-t border-slate-200/80 dark:border-cyan-950/40 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400">
           <div className="flex flex-wrap items-center gap-4">
             <span>© {new Date().getFullYear()} SaaSInsider. All rights reserved.</span>
             <span className="hidden sm:inline">•</span>

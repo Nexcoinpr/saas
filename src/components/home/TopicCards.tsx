@@ -111,7 +111,7 @@ export function TopicCards() {
                     <span className={`w-10 h-10 rounded-xl flex items-center justify-center border ${topic.color}`}>
                       <Icon className="w-5 h-5" />
                     </span>
-                    <span className="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-400">
                       {topic.count}
                     </span>
                   </div>

@@ -101,20 +101,25 @@ export function HeroSection() {
                       <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
                       Lead Story • Editor&apos;s Choice
                     </span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1 font-medium">
+                    <span className="text-xs text-slate-600 dark:text-slate-400 flex items-center gap-1 font-medium">
                       <Calendar className="w-3.5 h-3.5" />
                       {formatDate(leadArticle.publishedAt)}
                     </span>
                   </div>
 
                   {/* Big Featured UI Screenshot */}
-                  <Link href={leadArticle.path} className="block relative aspect-[16/9] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800 mb-5">
+                  <Link
+                    href={leadArticle.path}
+                    aria-label={`Read full review of ${leadArticle.title}`}
+                    className="block relative aspect-[16/9] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800 mb-5"
+                  >
                     <Image
                       src={leadArticle.featuredImage}
                       alt={leadArticle.featuredImageAlt}
                       fill
                       priority
-                      sizes="(max-width: 1024px) 100vw, 60vw"
+                      fetchPriority="high"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 700px"
                       className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
                     />
                   </Link>
@@ -137,7 +142,8 @@ export function HeroSection() {
                   <div className="flex items-center gap-3">
                     <Image
                       src={leadArticle.author.avatar}
-                      alt={leadArticle.author.name}
+                      alt=""
+                      aria-hidden="true"
                       width={38}
                       height={38}
                       className="rounded-full object-cover ring-1 ring-slate-300 dark:ring-slate-700"
@@ -146,7 +152,7 @@ export function HeroSection() {
                       <span className="text-sm font-semibold text-slate-900 dark:text-white block">
                         {leadArticle.author.name}
                       </span>
-                      <span className="text-xs text-slate-500 dark:text-slate-400 block">
+                      <span className="text-xs text-slate-600 dark:text-slate-400 block">
                         {leadArticle.author.role}
                       </span>
                     </div>
@@ -154,6 +160,7 @@ export function HeroSection() {
 
                   <Link
                     href={leadArticle.path}
+                    aria-label={`Read full review of ${leadArticle.title}`}
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs font-semibold hover:bg-slate-800 dark:hover:bg-slate-100 transition-all"
                   >
                     <span>Read Full Review</span>
@@ -171,7 +178,7 @@ export function HeroSection() {
                 <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-cyan-400" />
                 Trending Showdowns &amp; Audits
               </span>
-              <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">
                 Tested This Week
               </span>
             </div>
@@ -179,7 +186,11 @@ export function HeroSection() {
             {/* Trending Card 1: Pipedrive vs ConvertKit */}
             {trending1 && (
               <article className="group p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 hover:border-slate-300 dark:hover:border-slate-700 transition-all flex gap-4">
-                <Link href={trending1.path} className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800">
+                <Link
+                  href={trending1.path}
+                  aria-label={`Read ${trending1.title}`}
+                  className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800"
+                >
                   <Image
                     src={trending1.featuredImage}
                     alt={trending1.featuredImageAlt}
@@ -199,7 +210,7 @@ export function HeroSection() {
                       </Link>
                     </h3>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-2">
+                  <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 mt-2">
                     <span>{trending1.author.name}</span>
                     <span>•</span>
                     <span>{formatDate(trending1.publishedAt)}</span>
@@ -211,7 +222,11 @@ export function HeroSection() {
             {/* Trending Card 2: Asana */}
             {trending2 && (
               <article className="group p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 hover:border-slate-300 dark:hover:border-slate-700 transition-all flex gap-4">
-                <Link href={trending2.path} className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800">
+                <Link
+                  href={trending2.path}
+                  aria-label={`Read ${trending2.title}`}
+                  className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800"
+                >
                   <Image
                     src={trending2.featuredImage}
                     alt={trending2.featuredImageAlt}
@@ -231,7 +246,7 @@ export function HeroSection() {
                       </Link>
                     </h3>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-2">
+                  <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 mt-2">
                     <span>{trending2.author.name}</span>
                     <span>•</span>
                     <span>{formatDate(trending2.publishedAt)}</span>
@@ -243,7 +258,11 @@ export function HeroSection() {
             {/* Trending Card 3: Zapier */}
             {trending3 && (
               <article className="group p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 hover:border-slate-300 dark:hover:border-slate-700 transition-all flex gap-4">
-                <Link href={trending3.path} className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800">
+                <Link
+                  href={trending3.path}
+                  aria-label={`Read ${trending3.title}`}
+                  className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800"
+                >
                   <Image
                     src={trending3.featuredImage}
                     alt={trending3.featuredImageAlt}
@@ -263,7 +282,7 @@ export function HeroSection() {
                       </Link>
                     </h3>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-2">
+                  <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 mt-2">
                     <span>{trending3.author.name}</span>
                     <span>•</span>
                     <span>{formatDate(trending3.publishedAt)}</span>
