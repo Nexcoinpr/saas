@@ -29,7 +29,7 @@ export function HeroSection() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-white/90 dark:bg-cyan-950/50 border border-cyan-200/80 dark:border-cyan-800/70 text-cyan-800 dark:text-cyan-300 shadow-xs backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
             <Sparkles className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
-            <span>SaaSInsider Telemetry • Verified Software Teardowns 2026</span>
+            <span>SaaSInsider Telemetry • Verified Software Teardowns</span>
           </div>
 
           {/* Main Headline */}
@@ -160,20 +160,20 @@ export function HeroSection() {
                 </div>
 
                 <div className="divide-y divide-slate-100 dark:divide-slate-800/80 text-xs sm:text-sm">
-                  {/* Notion Row */}
+                  {/* Asana Row */}
                   <div className="p-3.5 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/50 dark:hover:bg-slate-900/40 transition-colors">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold flex items-center justify-center text-xs">
-                        N
+                      <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">
+                        A
                       </div>
                       <div>
                         <div className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                          <span>Notion Workspace</span>
+                          <span>Asana Workspace</span>
                           <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300">
                             Editor&apos;s Pick
                           </span>
                         </div>
-                        <span className="text-xs text-slate-500 dark:text-slate-400">Team Docs, Database &amp; Knowledge Base</span>
+                        <span className="text-xs text-slate-500 dark:text-slate-400">Project Management, Team Sprints &amp; Task Tracking</span>
                       </div>
                     </div>
                     <div className="flex items-center gap-4 text-xs">
@@ -183,10 +183,10 @@ export function HeroSection() {
                       </div>
                       <div className="text-right hidden sm:block">
                         <span className="text-slate-400 block text-[10px]">Pricing</span>
-                        <span className="font-bold text-cyan-600 dark:text-cyan-400">$8/seat</span>
+                        <span className="font-bold text-cyan-600 dark:text-cyan-400">Free Tier Tested</span>
                       </div>
                       <Link
-                        href="/reviews/notion-review"
+                        href="/reviews/asana-review"
                         className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/40 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-colors"
                       >
                         <span>View Review</span>
@@ -195,20 +195,20 @@ export function HeroSection() {
                     </div>
                   </div>
 
-                  {/* Zapier vs Make Row */}
+                  {/* Pipedrive vs ConvertKit Row */}
                   <div className="p-3.5 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/50 dark:hover:bg-slate-900/40 transition-colors">
                     <div className="flex items-center gap-3">
                       <div className="w-8 h-8 rounded-lg bg-amber-500 text-white font-bold flex items-center justify-center text-xs">
-                        ⚡
+                        P
                       </div>
                       <div>
                         <div className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                          <span>Zapier vs. Make</span>
+                          <span>Pipedrive vs. ConvertKit</span>
                           <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300">
                             Head-to-Head
                           </span>
                         </div>
-                        <span className="text-xs text-slate-500 dark:text-slate-400">Workflow Automation &amp; Webhook Reliability</span>
+                        <span className="text-xs text-slate-500 dark:text-slate-400">CRM Pipeline vs Creator Email Marketing</span>
                       </div>
                     </div>
                     <div className="flex items-center gap-4 text-xs">
@@ -218,10 +218,10 @@ export function HeroSection() {
                       </div>
                       <div className="text-right hidden sm:block">
                         <span className="text-slate-400 block text-[10px]">Pricing</span>
-                        <span className="font-bold text-cyan-600 dark:text-cyan-400">Free Tier Available</span>
+                        <span className="font-bold text-cyan-600 dark:text-cyan-400">Side-by-Side</span>
                       </div>
                       <Link
-                        href="/comparisons/zapier-vs-make"
+                        href="/comparisons/pipedrive-vs-convertkit"
                         className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/40 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-colors"
                       >
                         <span>View Comparison</span>
@@ -230,36 +230,36 @@ export function HeroSection() {
                     </div>
                   </div>
 
-                  {/* Notion vs ClickUp Row */}
+                  {/* Zapier Row */}
                   <div className="p-3.5 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/50 dark:hover:bg-slate-900/40 transition-colors">
                     <div className="flex items-center gap-3">
                       <div className="w-8 h-8 rounded-lg bg-violet-600 text-white font-bold flex items-center justify-center text-xs">
-                        C
+                        Z
                       </div>
                       <div>
                         <div className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                          <span>Notion vs. ClickUp</span>
+                          <span>Zapier Workflow Automation</span>
                           <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-100 dark:bg-cyan-950/60 text-cyan-800 dark:text-cyan-300">
-                            Pillar Teardown
+                            Limits Teardown
                           </span>
                         </div>
-                        <span className="text-xs text-slate-500 dark:text-slate-400">Task Management, Wiki Architecture &amp; Scale</span>
+                        <span className="text-xs text-slate-500 dark:text-slate-400">App Connections, Task Limits &amp; Webhook Logic</span>
                       </div>
                     </div>
                     <div className="flex items-center gap-4 text-xs">
                       <div className="text-right hidden md:block">
                         <span className="text-slate-400 block text-[10px]">Benchmark Score</span>
-                        <span className="font-bold text-slate-900 dark:text-white">4.8 / 5.0</span>
+                        <span className="font-bold text-slate-900 dark:text-white">4.7 / 5.0</span>
                       </div>
                       <div className="text-right hidden sm:block">
                         <span className="text-slate-400 block text-[10px]">Pricing</span>
-                        <span className="font-bold text-cyan-600 dark:text-cyan-400">$7 to $10/seat</span>
+                        <span className="font-bold text-cyan-600 dark:text-cyan-400">Free Tier Tested</span>
                       </div>
                       <Link
-                        href="/comparisons/notion-vs-clickup"
+                        href="/reviews/zapier-review"
                         className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/40 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-colors"
                       >
-                        <span>View Comparison</span>
+                        <span>View Review</span>
                         <ExternalLink className="w-3 h-3" />
                       </Link>
                     </div>

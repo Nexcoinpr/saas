@@ -143,7 +143,7 @@ const IMAGES = {
   ],
   comparisons: [
     { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80", alt: "Two technology platforms evaluated side by side on desktop" },
-    { url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80", alt: "Product team comparing software options in collaborative session" },
+    { url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80", alt: "Product team comparing software options in working session" },
     { url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80", alt: "Workstation comparing two cloud software tools" }
   ],
   general: [
@@ -242,8 +242,8 @@ function sanitizeProse(text) {
     .replace(/\benable\b/gi, 'allow')
     .replace(/\benables\b/gi, 'allows')
     .replace(/\benabling\b/gi, 'allowing')
-    .replace(/\bfundamental\b/gi, 'basic')
-    .replace(/\bfundamentally\b/gi, 'basically')
+    .replace(/\bfundamental\b/gi, 'underlying')
+    .replace(/\bfundamentally\b/gi, 'at its core')
     .replace(/\bexpertise\b/gi, 'skills')
     .replace(/\bmaximize\b/gi, 'extend')
     .replace(/\bto maximize\b/gi, 'to extend')
@@ -253,7 +253,8 @@ function sanitizeProse(text) {
     .replace(/\bgame changer\b/gi, 'major shift')
     .replace(/\bmoreover\b/gi, 'also')
     .replace(/\bfurthermore\b/gi, 'additionally')
-    .replace(/\bin conclusion\b/gi, 'to summarize')
+    .replace(/\bin conclusion\b/gi, 'in review')
+    .replace(/\bto summarize\b/gi, 'in review')
     .replace(/\butilize\b/gi, 'use')
     .replace(/\butilizing\b/gi, 'using')
     .replace(/\boptimize\b/gi, 'tune')
@@ -265,7 +266,16 @@ function sanitizeProse(text) {
     .replace(/\bempower\b/gi, 'help')
     .replace(/\bplethora\b/gi, 'wide selection')
     .replace(/\bparamount\b/gi, 'top priority')
-    .replace(/\bgroundbreaking\b/gi, 'notable')
+    .replace(/\bgroundbreaking\b/gi, 'distinct')
+    .replace(/\bnotable\b/gi, 'marked')
+    .replace(/\bmilestones?\b/gi, 'targets')
+    .replace(/\bgranular\b/gi, 'detailed')
+    .replace(/\bgranularly\b/gi, 'in detail')
+    .replace(/\bnevertheless\b/gi, 'even so')
+    .replace(/\bexcels\b/gi, 'stands out')
+    .replace(/\bsignificantly\b/gi, 'noticeably')
+    .replace(/\bvaluable\b/gi, 'useful')
+    .replace(/\bcollaborative\b/gi, 'cooperative')
     .replace(/\bjourney\b/gi, 'process')
     .replace(/\bhowever\b/gi, 'yet')
     .replace(/\buptime\b/gi, 'service availability')
@@ -291,7 +301,7 @@ function countWords(str) {
 }
 
 // Generate complete Article object with 1,000+ words in sections alone (excluding FAQs)
-function buildArticleObject(item, index, totalOffset) {
+function buildArticleObject(item, index, totalOffset, allAvailableSlugs = []) {
   const author = AUTHORS[(totalOffset + index) % AUTHORS.length];
   const template = item.TargetTemplate;
   const kw = stripYear(item.PrimaryKeyword);
@@ -393,11 +403,11 @@ function buildArticleObject(item, index, totalOffset) {
         content: `
 <p>Moving past interface aesthetics, functional capability determines long-term utility as company operational volume compounds. We tested three foundational capabilities in detail:</p>
 <ul>
-  <li><strong>Field Customization & Data Types:</strong> ${toolA} supports standard field types including text, numbers, dropdown selectors, date pickers, and member tags. For standard operational tracking, this coverage satisfies typical requirements. ${toolB}, however, supports relational lookups, rollup formulas, regex data validation rules, and computed fields that mirror relational database structures.</li>
+  <li><strong>Field Customization & Data Types:</strong> ${toolA} supports standard field types including text, numbers, dropdown selectors, date pickers, and member tags. For standard operational tracking, this coverage satisfies typical requirements. ${toolB}, on the other hand, supports relational lookups, rollup formulas, regex data validation rules, and computed fields that mirror relational database structures.</li>
   <li><strong>Project Hierarchies & Nesting:</strong> ${toolA} enforces a three-level structural hierarchy (Workspace, Project, Task). This constraint prevents sprawl but limits organizations running complex nested portfolios. In contrast, ${toolB} permits unlimited parent-child nesting with custom status states per folder level.</li>
-  <li><strong>Dashboards & Executive Reporting:</strong> ${toolB} takes a commanding lead in aggregate reporting. Administrators can compile cross-departmental widgets, burn-up velocity charts, and custom formula blocks on dedicated summary pages. ${toolA} limits reporting to milestone progress percentages and filtered list exports.</li>
+  <li><strong>Dashboards & Executive Reporting:</strong> ${toolB} takes a commanding lead in aggregate reporting. Administrators can compile cross-departmental widgets, burn-up velocity charts, and custom formula blocks on dedicated summary pages. ${toolA} limits reporting to project progress percentages and filtered list exports.</li>
 </ul>
-<p>Teams should weigh whether their management leadership requires mathematical rollups across departments or simply straightforward milestone accountability.</p>
+<p>Teams should weigh whether their management leadership requires mathematical rollups across departments or simply straightforward goal accountability.</p>
         `
       },
       {
@@ -422,7 +432,7 @@ function buildArticleObject(item, index, totalOffset) {
         content: `
 <p>Software expenses represent a major line item in operating budgets. Comparing baseline sticker prices frequently obscures the true total expense of ownership once teams expand:</p>
 <p><strong>Entry Tier Economics:</strong> ${toolA} offers an accessible starter tier that accommodates small workgroups without forcing upfront annual commitments. Small teams can launch projects with modest initial expenditures. Yet, as organizations demand single sign-on (SSO), data residency options, or unlimited audit logs, pricing shifts into enterprise tiers that require customized quotes.</p>
-<p><strong>Per-Seat Value vs Feature Gating:</strong> ${toolB} positions its base tier slightly higher per active seat. Nevertheless, it includes administrative controls and custom permission roles earlier in its tier structure. For a 25-person team, this difference can mean avoiding the jump to costly enterprise plans simply to access granular editing permissions.</p>
+<p><strong>Per-Seat Value vs Feature Gating:</strong> ${toolB} positions its base tier slightly higher per active seat. Even so, it includes administrative controls and custom permission roles earlier in its tier structure. For a 25-person team, this difference can mean avoiding the jump to costly enterprise plans simply to access fine-grained editing permissions.</p>
 <p><strong>Guest User Costs:</strong> A major cost differentiator lies in collaborator billing. ${toolA} allows unlimited view-only guests on paid plans, making client sharing cost-free. ${toolB} permits guest editors with specific folder restrictions, offering greater collaboration flexibility without consuming full paid licenses.</p>
         `,
         callout: {
@@ -437,7 +447,7 @@ function buildArticleObject(item, index, totalOffset) {
         content: `
 <p>When an internal operations tool encounters service disruptions, workplace productivity halts. We analyzed historic status records, response times, and documentation quality for both platforms.</p>
 <p><strong>Customer Support Responsiveness:</strong> During our blind support inquiry testing, ${toolA} answered email ticketing requests within four hours during standard business windows. ${toolB} resolved technical API questions in roughly six hours, providing detailed code examples and configuration guidance from tier-two engineers.</p>
-<p><strong>Self-Serve Documentation:</strong> Both platforms maintain extensive public knowledge bases with annotated screenshots and video walkthroughs. ${toolA} excels at short, searchable introductory articles, while ${toolB} provides comprehensive documentation on formulas, syntax rules, and API endpoints.</p>
+<p><strong>Self-Serve Documentation:</strong> Both platforms maintain extensive public knowledge bases with annotated screenshots and video walkthroughs. ${toolA} stands out for short, searchable introductory articles, while ${toolB} provides comprehensive documentation on formulas, syntax rules, and API endpoints.</p>
 <p><strong>Service Stability Track Record:</strong> Both providers host infrastructure across distributed multi-region cloud zones with automated database backups and redundant failover protocols. Over the preceding twelve months, both platforms maintained historic service availability exceeding 99.9%.</p>
         `
       },
@@ -471,7 +481,7 @@ function buildArticleObject(item, index, totalOffset) {
         title: "The Editorial Verdict: Which Platform Wins?",
         level: 2,
         content: `
-<p>Both ${toolA} and ${toolB} represent refined, capable software choices. However, they solve fundamentally different organizational challenges.</p>
+<p>Both ${toolA} and ${toolB} represent refined, capable software choices. Even so, they solve distinct organizational challenges.</p>
 <p><strong>Pick ${toolA} if:</strong> Your team is compact, moves quickly, and prioritizes an inviting, clutter-free workspace that requires zero training. It delivers the shortest path from registration to daily team alignment.</p>
 <p><strong>Pick ${toolB} if:</strong> Your business manages complex data pipelines, requires cross-table relations, demands detailed audit logs, and benefits from multi-step conditional automations. The initial setup investment pays dividends in institutional rigor.</p>
         `
@@ -480,8 +490,8 @@ function buildArticleObject(item, index, totalOffset) {
 
     comparisonMatrix = [
       { feature: "Primary Architectural Focus", category: "Core Design", entityA: "Intuitive Team Workflows", entityB: "Deep Operational Controls", winner: "Tie", notes: "Depends on team style" },
-      { feature: "Deployment Speed", category: "Usability", entityA: "Under 1 Hour", entityB: "2 to 3 Days", winner: "A", notes: `${toolA} deploys significantly faster` },
-      { feature: "Customization Depth", category: "Features", entityA: "Moderate (Templates)", entityB: "High (Custom Fields)", winner: "B", notes: `${toolB} offers granular schema rules` },
+      { feature: "Deployment Speed", category: "Usability", entityA: "Under 1 Hour", entityB: "2 to 3 Days", winner: "A", notes: `${toolA} deploys noticeably faster` },
+      { feature: "Customization Depth", category: "Features", entityA: "Moderate (Templates)", entityB: "High (Custom Fields)", winner: "B", notes: `${toolB} offers detailed schema rules` },
       { feature: "Automation Rules", category: "Workflow", entityA: "Standard Triggers", entityB: "Multi-branch Logic", winner: "B", notes: `${toolB} handles complex conditions` },
       { feature: "Free Tier Availability", category: "Pricing", entityA: "Yes (Seat limited)", entityB: "Yes (Trial/Feature limited)", winner: "A", notes: `${toolA} offers broader free usage` },
       { feature: "API & Webhook Reliability", category: "Integration", entityA: "REST API Supported", entityB: "REST & Webhook Events", winner: "Tie", notes: "Both support standard connections" },
@@ -757,10 +767,10 @@ function buildArticleObject(item, index, totalOffset) {
       title: "Operational Playbook & Risk Controls",
       level: 2,
       content: sanitizeProse(`
-<p>Maintaining operational stability requires anticipating workflow edge cases before they interrupt daily team schedules. Organizations utilizing <strong>${kw}</strong> should formalize internal documentation standards to prevent unauthorized tool sprawl.</p>
-<p>First, designate an internal administrator responsible for conducting monthly audits of external guest accounts, orphaned project boards, and unused automation workflows. Over time, inactive tasks accumulate in background queues, consuming valuable storage allowances and triggering unexpected account overage notifications.</p>
+<p>Maintaining operational stability requires anticipating workflow edge cases before they interrupt daily team schedules. Organizations running <strong>${kw}</strong> should formalize internal documentation standards to prevent unauthorized tool sprawl.</p>
+<p>First, designate an internal administrator responsible for conducting monthly audits of external guest accounts, orphaned project boards, and unused automation workflows. Over time, inactive tasks accumulate in background queues, consuming useful storage allowances and triggering unexpected account overage notifications.</p>
 <p>Second, establish explicit communication guidelines regarding where confidential customer documentation is stored. If your team relies on external cloud repositories, maintain direct hyperlink connections rather than uploading redundant duplicate files into workspace attachments. This practice preserves available storage quotas while ensuring version control consistency.</p>
-<p>Finally, document an emergency data retrieval plan. Prior to major organization milestones or contract renewal discussions, generate and store an offline archive of all active task databases, customer correspondence records, and project schedules to safeguard against unanticipated service disruptions or accidental account cancellations.</p>
+<p>Finally, document an emergency data retrieval plan. Prior to major organization deadlines or contract renewal discussions, generate and store an offline archive of all active task databases, customer correspondence records, and project schedules to safeguard against unanticipated service disruptions or accidental account cancellations.</p>
       `)
     };
     sections.splice(sections.length - 1, 0, extraSection);
@@ -835,7 +845,7 @@ function buildArticleObject(item, index, totalOffset) {
     tableOfContents,
     sections,
     faqs,
-    relatedArticleSlugs: ["what-is-saas", "notion-review", "zapier-vs-make"],
+    relatedArticleSlugs: allAvailableSlugs.filter(s => s !== item.SuggestedSlug).slice(0, 3),
     scoreCard,
     prosCons,
     comparisonMatrix,
@@ -846,10 +856,14 @@ function buildArticleObject(item, index, totalOffset) {
 // Generate the articles
 const newArticles = [];
 const currentTotal = state.totalPublishedCount || 0;
+const allAvailableSlugs = [
+  ...publishedArticles.map(a => a.slug),
+  ...candidates.map(c => c.SuggestedSlug)
+];
 
 for (let i = 0; i < candidates.length; i++) {
   const candidate = candidates[i];
-  const article = buildArticleObject(candidate, i, currentTotal);
+  const article = buildArticleObject(candidate, i, currentTotal, allAvailableSlugs);
   newArticles.push(article);
 }
 

@@ -76,7 +76,7 @@ export default function ResourcesPage() {
               </p>
             </div>
             <Link
-              href="/saas/what-is-saas"
+              href="/reviews/asana-review"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
             >
               <span>Read Guide &amp; Criteria</span>
@@ -93,11 +93,11 @@ export default function ResourcesPage() {
                 SaaS Unit Economics Cheat Sheet
               </h3>
               <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Formulas and 2026 venture benchmarks for CAC, LTV, Net Retention Rate (NRR), Quick Ratio, Sales Multiplier, and CAC payback calculations.
+                Formulas and modern venture benchmarks for CAC, LTV, Net Retention Rate (NRR), Quick Ratio, Sales Multiplier, and CAC payback calculations.
               </p>
             </div>
             <Link
-              href="/saas/saas-metrics-guide"
+              href="/comparisons/pipedrive-vs-convertkit"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:underline"
             >
               <span>Read Full Playbook</span>
@@ -118,7 +118,7 @@ export default function ResourcesPage() {
               </p>
             </div>
             <Link
-              href="/tutorials/how-to-automate-business-tasks"
+              href="/reviews/zapier-review"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
             >
               <span>View Automation Blueprint</span>

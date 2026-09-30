@@ -19,64 +19,76 @@ interface SoftwareItem {
 
 const SOFTWARE_DIRECTORY: SoftwareItem[] = [
   {
-    name: "Notion",
+    name: "Asana",
     category: "Productivity",
     categorySlug: "reviews",
     rating: 4.8,
-    pricing: "From $8/mo",
+    pricing: "Free Tier / Paid",
     model: "Per seat monthly",
-    strength: "Unified documentation, team wikis and databases",
+    strength: "Sprint boards, timeline tracking and team workflows",
     verdictBadge: "Editor's Choice",
     badgeColor: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300",
-    path: "/reviews/notion-review"
+    path: "/reviews/asana-review"
   },
   {
     name: "Zapier",
     category: "Automation",
-    categorySlug: "comparisons",
+    categorySlug: "reviews",
     rating: 4.7,
-    pricing: "Free / $19.99/mo",
+    pricing: "Free / Starter",
     model: "Task usage tier",
     strength: "Extensive library of 6,000+ app connectors",
     verdictBadge: "Ecosystem Leader",
     badgeColor: "bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300",
-    path: "/comparisons/zapier-vs-make"
+    path: "/reviews/zapier-review"
   },
   {
-    name: "Make",
-    category: "Automation",
-    categorySlug: "comparisons",
-    rating: 4.6,
-    pricing: "From $9/mo",
-    model: "Operation volume tier",
-    strength: "Visual data routing, routers and cost savings",
-    verdictBadge: "High Volume Pick",
-    badgeColor: "bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300",
-    path: "/comparisons/zapier-vs-make"
-  },
-  {
-    name: "ClickUp",
+    name: "Pipedrive",
     category: "Workplace",
     categorySlug: "comparisons",
-    rating: 4.6,
-    pricing: "From $7/mo",
+    rating: 4.7,
+    pricing: "From $14/mo",
     model: "Per seat monthly",
-    strength: "Detailed custom fields and sprint dashboards",
-    verdictBadge: "Feature Dense",
+    strength: "Visual sales pipeline and deal tracking",
+    verdictBadge: "Sales Pick",
     badgeColor: "bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300",
-    path: "/comparisons/notion-vs-clickup"
+    path: "/comparisons/pipedrive-vs-convertkit"
   },
   {
-    name: "Claude 3.5 & AI Agents",
+    name: "Perplexity",
     category: "AI Tools",
-    categorySlug: "ai-tools",
+    categorySlug: "reviews",
     rating: 4.9,
-    pricing: "API token usage",
-    model: "Per million tokens",
-    strength: "Reasoning capabilities, code generation and system logic",
-    verdictBadge: "Top Intelligence",
+    pricing: "Free / Pro $20/mo",
+    model: "Subscription",
+    strength: "Direct conversational research with verifiable citations",
+    verdictBadge: "Top Research AI",
     badgeColor: "bg-cyan-100 text-cyan-800 dark:bg-cyan-950/60 dark:text-cyan-300",
-    path: "/ai-tools/top-ai-agents-software-teams"
+    path: "/reviews/perplexity-review"
+  },
+  {
+    name: "Remote",
+    category: "Workplace",
+    categorySlug: "reviews",
+    rating: 4.8,
+    pricing: "Free Tier / Contractor",
+    model: "Per worker monthly",
+    strength: "Global payroll, compliance, and international team management",
+    verdictBadge: "HR Leader",
+    badgeColor: "bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300",
+    path: "/reviews/remote-review"
+  },
+  {
+    name: "GitHub Copilot",
+    category: "AI Tools",
+    categorySlug: "comparisons",
+    rating: 4.8,
+    pricing: "$10 to $19/seat",
+    model: "Per seat monthly",
+    strength: "Code completion, test writing, and developer terminal logic",
+    verdictBadge: "Dev Favorite",
+    badgeColor: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300",
+    path: "/comparisons/github-copilot-vs-loom"
   }
 ];
 

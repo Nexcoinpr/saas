@@ -1,15 +1,19 @@
 {
-  "lastPublishedAt": "2026-09-30T09:11:00.774Z",
-  "totalPublishedCount": 4,
+  "lastPublishedAt": "2026-09-30T09:17:09.631Z",
+  "totalPublishedCount": 8,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 1,
-  "lastCategory": "Project Management",
+  "categoryIndex": 5,
+  "lastCategory": "Workflow Automation",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
     "copper-review",
-    "asana-review"
+    "asana-review",
+    "pipedrive-vs-convertkit",
+    "perplexity-review",
+    "github-copilot-vs-loom",
+    "zapier-review"
   ],
   "history": [
     {
@@ -44,6 +48,36 @@
           "id": "asana-review",
           "title": "Asana Free Plan Limitations: Caps, Restrictions & Upgrade Value",
           "path": "/reviews/asana-review",
+          "author": "Liam Vance"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30T09:17:09.631Z",
+      "count": 4,
+      "articles": [
+        {
+          "id": "pipedrive-vs-convertkit",
+          "title": "Pipedrive vs ConvertKit for small business: Features, Pricing & Detailed Comparison",
+          "path": "/comparisons/pipedrive-vs-convertkit",
+          "author": "Sarah Jenkins"
+        },
+        {
+          "id": "perplexity-review",
+          "title": "Perplexity Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "path": "/reviews/perplexity-review",
+          "author": "Alex Rivera"
+        },
+        {
+          "id": "github-copilot-vs-loom",
+          "title": "GitHub Copilot vs Loom for small business: Features, Pricing & Detailed Comparison",
+          "path": "/comparisons/github-copilot-vs-loom",
+          "author": "Maya Lin"
+        },
+        {
+          "id": "zapier-review",
+          "title": "Zapier Free Plan Limitations: Caps, Restrictions & Upgrade Value",
+          "path": "/reviews/zapier-review",
           "author": "Liam Vance"
         }
       ]

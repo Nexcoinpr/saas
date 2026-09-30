@@ -66,7 +66,7 @@ export interface HowToStep {
 
 export interface Article {
   slug: string;
-  path: string; // e.g. /saas/what-is-saas
+  path: string; // e.g. /reviews/asana-review
   title: string;
   h1?: string;
   metaTitle: string;
