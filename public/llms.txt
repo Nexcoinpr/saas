@@ -9,14 +9,14 @@
 - CRM & Sales: Customer relationship management software, sales pipeline tracking, and email sync tools.
 
 ## Canonical Articles & Reviews
-- [Remote.com Review: Free Contractor Tier & EOR Pricing](https://saas-three-theta-94.vercel.app/reviews/remote-review)
-- [Vidyard Review: Free 25-Video Cap, Loom Comparison](https://saas-three-theta-94.vercel.app/reviews/vidyard-review)
-- [Copper CRM Review: Gmail Sync, Trial Caps & Pricing](https://saas-three-theta-94.vercel.app/reviews/copper-review)
-- [Asana Free Plan Review: 10-User Cap & Timeline Limits](https://saas-three-theta-94.vercel.app/reviews/asana-review)
-- [Pipedrive vs ConvertKit: Sales CRM vs Email Engine](https://saas-three-theta-94.vercel.app/comparisons/pipedrive-vs-convertkit)
-- [Perplexity AI Review: Free vs Pro Search Caps & Cost](https://saas-three-theta-94.vercel.app/reviews/perplexity-review)
-- [GitHub Copilot vs Loom: AI Coding vs Async Video Demo](https://saas-three-theta-94.vercel.app/comparisons/github-copilot-vs-loom)
-- [Zapier Free Plan Review: 100-Task Cap & Starter Costs](https://saas-three-theta-94.vercel.app/reviews/zapier-review)
+- [Remote.com Review: Free Contractor Tier & EOR Pricing](https://www.saasinsider.co.uk/reviews/remote-review)
+- [Vidyard Review: Free 25-Video Cap, Loom Comparison](https://www.saasinsider.co.uk/reviews/vidyard-review)
+- [Copper CRM Review: Gmail Sync, Trial Caps & Pricing](https://www.saasinsider.co.uk/reviews/copper-review)
+- [Asana Free Plan Review: 10-User Cap & Timeline Limits](https://www.saasinsider.co.uk/reviews/asana-review)
+- [Pipedrive vs ConvertKit: Sales CRM vs Email Engine](https://www.saasinsider.co.uk/comparisons/pipedrive-vs-convertkit)
+- [Perplexity AI Review: Free vs Pro Search Caps & Cost](https://www.saasinsider.co.uk/reviews/perplexity-review)
+- [GitHub Copilot vs Loom: AI Coding vs Async Video Demo](https://www.saasinsider.co.uk/comparisons/github-copilot-vs-loom)
+- [Zapier Free Plan Review: 100-Task Cap & Starter Costs](https://www.saasinsider.co.uk/reviews/zapier-review)
 
 ## Editorial Standards & Trust
 All evaluations at SaaSInsider are conducted by credentialed industry engineers and product leaders. We test software directly in production sandbox environments and maintain strict separation between affiliate partnerships and editorial review ratings.

@@ -31,7 +31,7 @@ export default function TermsPage() {
           <section>
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing or using SaaSInsider (https://saasinsider.io), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please discontinue use of the website.
+              By accessing or using SaaSInsider (https://www.saasinsider.co.uk), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please discontinue use of the website.
             </p>
           </section>
 
