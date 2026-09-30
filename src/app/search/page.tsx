@@ -48,7 +48,7 @@ function SearchContent() {
       return true;
     }).sort((a, b) => {
       if (sortBy === "popular") {
-        return (b.viewCount || 0) - (a.viewCount || 0);
+        return (b.isPopular ? 1 : 0) - (a.isPopular ? 1 : 0);
       }
       if (sortBy === "title") {
         return a.title.localeCompare(b.title);
@@ -151,7 +151,7 @@ function SearchContent() {
               className="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-cyan-500"
             >
               <option value="latest">Latest Published</option>
-              <option value="popular">Most Popular (Reads)</option>
+              <option value="popular">Featured First</option>
               <option value="title">Alphabetical (A-Z)</option>
             </select>
           </div>

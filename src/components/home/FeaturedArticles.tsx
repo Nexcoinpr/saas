@@ -71,10 +71,6 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                     >
                       {primary.subcategory || primary.category}
                     </Link>
-                    <span className="text-slate-300 dark:text-slate-700">•</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                      {primary.readingTime}
-                    </span>
                   </div>
 
                   <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors leading-tight">
@@ -151,10 +147,6 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                       >
                         {article.subcategory || article.category}
                       </Link>
-                      <span className="text-slate-300 dark:text-slate-700">•</span>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400">
-                        {article.readingTime}
-                      </span>
                     </div>
 
                     <h4 className="font-bold text-base text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors leading-snug line-clamp-2">

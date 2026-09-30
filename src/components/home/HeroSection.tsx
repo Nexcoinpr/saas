@@ -7,7 +7,7 @@ import {
   ShieldCheck, 
   Scale, 
   Star, 
-  Clock, 
+  Calendar,
   Layers, 
   FileText,
   BadgeCheck,
@@ -102,8 +102,8 @@ export function HeroSection() {
                       Lead Story • Editor&apos;s Choice
                     </span>
                     <span className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1 font-medium">
-                      <Clock className="w-3.5 h-3.5" />
-                      {leadArticle.readingTime}
+                      <Calendar className="w-3.5 h-3.5" />
+                      {formatDate(leadArticle.publishedAt)}
                     </span>
                   </div>
 
@@ -202,7 +202,7 @@ export function HeroSection() {
                   <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-2">
                     <span>{trending1.author.name}</span>
                     <span>•</span>
-                    <span>{trending1.readingTime}</span>
+                    <span>{formatDate(trending1.publishedAt)}</span>
                   </div>
                 </div>
               </article>
@@ -234,7 +234,7 @@ export function HeroSection() {
                   <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-2">
                     <span>{trending2.author.name}</span>
                     <span>•</span>
-                    <span>{trending2.readingTime}</span>
+                    <span>{formatDate(trending2.publishedAt)}</span>
                   </div>
                 </div>
               </article>
@@ -266,7 +266,7 @@ export function HeroSection() {
                   <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-2">
                     <span>{trending3.author.name}</span>
                     <span>•</span>
-                    <span>{trending3.readingTime}</span>
+                    <span>{formatDate(trending3.publishedAt)}</span>
                   </div>
                 </div>
               </article>

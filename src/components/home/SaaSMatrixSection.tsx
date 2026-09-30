@@ -21,14 +21,14 @@ const SOFTWARE_DIRECTORY: SoftwareItem[] = [
   {
     name: "Remote.com",
     category: "HR & Global",
-    categorySlug: "reviews",
+    categorySlug: "saas",
     rating: 4.8,
     pricing: "Free / $599 EOR",
     model: "Per worker monthly",
     strength: "Zero platform fee for international contractors and localized agreements in 180+ countries",
     verdictBadge: "Global HR Pick",
     badgeColor: "bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300",
-    path: "/reviews/remote-review"
+    path: "/saas/remote-review"
   },
   {
     name: "Vidyard",
@@ -45,26 +45,26 @@ const SOFTWARE_DIRECTORY: SoftwareItem[] = [
   {
     name: "Copper CRM",
     category: "CRM & Sales",
-    categorySlug: "reviews",
+    categorySlug: "business",
     rating: 4.6,
     pricing: "From $9/user/mo",
     model: "Per seat monthly",
     strength: "Native integration directly inside Gmail, Google Calendar, and Google Drive",
     verdictBadge: "Gmail CRM Pick",
     badgeColor: "bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300",
-    path: "/reviews/copper-review"
+    path: "/business/copper-review"
   },
   {
     name: "Asana",
     category: "Productivity",
-    categorySlug: "reviews",
+    categorySlug: "productivity",
     rating: 4.8,
     pricing: "Free (10 Users) / Paid",
     model: "Per seat monthly",
     strength: "Sprint boards, Kanban task cards, timeline Gantt views, and team workload tracking",
     verdictBadge: "Editor's Choice",
     badgeColor: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300",
-    path: "/reviews/asana-review"
+    path: "/productivity/asana-review"
   },
   {
     name: "Pipedrive vs ConvertKit",
@@ -81,38 +81,38 @@ const SOFTWARE_DIRECTORY: SoftwareItem[] = [
   {
     name: "Perplexity AI",
     category: "AI Tools",
-    categorySlug: "reviews",
+    categorySlug: "ai-tools",
     rating: 4.9,
     pricing: "Free (5 Pro/day) / $20",
     model: "Subscription",
     strength: "Conversational search engine with live academic and web citations without hallucinations",
     verdictBadge: "Top Research AI",
     badgeColor: "bg-cyan-100 text-cyan-800 dark:bg-cyan-950/60 dark:text-cyan-300",
-    path: "/reviews/perplexity-review"
+    path: "/ai-tools/perplexity-review"
   },
   {
     name: "GitHub Copilot vs Loom",
     category: "Developer Tools",
-    categorySlug: "comparisons",
+    categorySlug: "software",
     rating: 4.8,
     pricing: "$10/mo vs $12.50/mo",
     model: "Per seat monthly",
     strength: "Evaluating AI code generation versus asynchronous video screen recording for tech teams",
     verdictBadge: "Dev Showdown",
     badgeColor: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300",
-    path: "/comparisons/github-copilot-vs-loom"
+    path: "/software/github-copilot-vs-loom"
   },
   {
     name: "Zapier",
     category: "Automation",
-    categorySlug: "reviews",
+    categorySlug: "automation",
     rating: 4.7,
     pricing: "Free (100 Tasks) / $19.99",
     model: "Task usage tier",
     strength: "Multi-step automated workflows connecting over 6,000 cloud applications and webhooks",
     verdictBadge: "Ecosystem Leader",
     badgeColor: "bg-orange-100 text-orange-800 dark:bg-orange-950/60 dark:text-orange-300",
-    path: "/reviews/zapier-review"
+    path: "/automation/zapier-review"
   }
 ];
 

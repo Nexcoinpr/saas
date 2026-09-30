@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, Clock, RefreshCw, ShieldCheck } from "lucide-react";
+import { Calendar, RefreshCw, ShieldCheck } from "lucide-react";
 import { Article } from "@/types/blog";
 import { formatDate } from "@/lib/utils";
 import { SocialShare } from "./SocialShare";
@@ -21,11 +21,6 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
         >
           {article.subcategory || article.category}
         </Link>
-        <span className="text-slate-300 dark:text-slate-700">•</span>
-        <span className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
-          <Clock className="w-3.5 h-3.5 text-cyan-500" />
-          {article.readingTime}
-        </span>
         <span className="text-slate-300 dark:text-slate-700">•</span>
         <span className="inline-flex items-center gap-1 text-[11px] font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-2 py-0.5 rounded-full border border-emerald-200/60 dark:border-emerald-800/60">
           <ShieldCheck className="w-3 h-3 text-emerald-500" />

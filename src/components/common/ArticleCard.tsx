@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Calendar, Star, Scale, BookOpen, Layers } from "lucide-react";
+import { Calendar, Star, Scale, BookOpen, Layers } from "lucide-react";
 import { Article } from "@/types/blog";
 import { formatDate } from "@/lib/utils";
 
@@ -92,16 +92,9 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
                 <span className="font-medium text-slate-700 dark:text-slate-300">{article.author.name}</span>
               </Link>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="flex items-center gap-1">
-                <Calendar className="w-3.5 h-3.5" />
-                {formatDate(article.publishedAt)}
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1">
-                <Clock className="w-3.5 h-3.5" />
-                {article.readingTime}
-              </span>
+            <div className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
+              <Calendar className="w-3.5 h-3.5" />
+              <span>{formatDate(article.publishedAt)}</span>
             </div>
           </div>
         </div>
@@ -159,10 +152,9 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
             </span>
           </Link>
 
-          <div className="flex items-center gap-2 text-[11px]">
+          <div className="flex items-center gap-1.5 text-[11px] text-slate-500 dark:text-slate-400">
+            <Calendar className="w-3 h-3 text-slate-400" />
             <span>{formatDate(article.publishedAt)}</span>
-            <span>•</span>
-            <span>{article.readingTime}</span>
           </div>
         </div>
       </div>

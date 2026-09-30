@@ -1,14 +1,14 @@
 [
   {
     "slug": "remote-review",
-    "path": "/reviews/remote-review",
-    "title": "Remote.com Contractor Management vs EOR: Tested Free Tier Limits & True Pricing",
-    "h1": "Remote.com Contractor Management vs Employer of Record: Real Limits & Pricing Audit",
-    "metaTitle": "Remote.com Review: Free Contractor Tier vs EOR Pricing Breakdown",
-    "metaDescription": "Tested review of Remote.com. Analyze free contractor management limits, localized contract compliance, and the math behind the $599/mo EOR tier.",
-    "excerpt": "Evaluating Remote.com reveals a distinct split between its free contractor management and its premium Employer of Record tier. We examine contractor localized agreements, payment processing fees, and calculate true annual hiring expenses across 180 countries.",
-    "category": "reviews",
-    "subcategory": "HR & Payroll",
+    "path": "/saas/remote-review",
+    "title": "Remote.com Review: Free Contractor Tier & EOR Pricing",
+    "h1": "Remote.com Review: Free Contractor Tier & EOR Pricing",
+    "metaTitle": "Remote.com Review: Free Contractor Tier & EOR Pricing",
+    "metaDescription": "Tested review of Remote.com. Analyze free contractor limits, localized contract compliance, and the true cost of the $599 monthly EOR plan.",
+    "excerpt": "Tested review of Remote.com. Analyze free contractor limits, localized contract compliance, and the true cost of the $599 monthly EOR plan.",
+    "category": "saas",
+    "subcategory": "Global Payroll",
     "template": "review",
     "publishedAt": "2026-09-30T08:19:46.246Z",
     "updatedAt": "2026-09-30T08:19:46.246Z",
@@ -18,7 +18,6 @@
     "isFeatured": true,
     "isPopular": false,
     "isTrending": true,
-    "viewCount": 1840,
     "tags": [
       "HR & Payroll",
       "Contractor Management",
@@ -240,13 +239,13 @@
   {
     "slug": "vidyard-review",
     "path": "/reviews/vidyard-review",
-    "title": "Vidyard Free Tier Teardown: 25-Video Limit, Recording Caps & Pro Value",
-    "h1": "Vidyard Free Tier Teardown: Are 25 Videos and 30-Minute Caps Enough?",
-    "metaTitle": "Vidyard Free Plan Review: 25-Video Cap, Feature Limits & Pricing",
-    "metaDescription": "Hands-on audit of the Vidyard free plan. Test the 25-video storage ceiling, 30-minute recording caps, missing CRM integrations, and the $19/mo Pro upgrade.",
-    "excerpt": "Vidyard allows sales reps and educators to record quick video messages at zero initial charge, but enforces strict caps. We test the 25-video storage limit, examine missing in-video call-to-action buttons, and calculate when upgrading to the $19 monthly Pro plan becomes necessary.",
+    "title": "Vidyard Free Plan Review: 25-Video Limit & Pro Value",
+    "h1": "Vidyard Free Plan Review: 25-Video Limit & Pro Value",
+    "metaTitle": "Vidyard Free Plan Review: 25-Video Limit & Pro Value",
+    "metaDescription": "Hands-on review of the Vidyard free plan. Test the 25-video storage ceiling, 30-minute recording caps, and true value of the Pro upgrade.",
+    "excerpt": "Hands-on review of the Vidyard free plan. Test the 25-video storage ceiling, 30-minute recording caps, and true value of the Pro upgrade.",
     "category": "reviews",
-    "subcategory": "Communication & Video",
+    "subcategory": "Video Messaging",
     "template": "review",
     "publishedAt": "2026-09-30T08:34:46.249Z",
     "updatedAt": "2026-09-30T08:34:46.249Z",
@@ -256,7 +255,6 @@
     "isFeatured": false,
     "isPopular": true,
     "isTrending": false,
-    "viewCount": 2150,
     "tags": [
       "Communication & Video",
       "Screen Recording",
@@ -458,26 +456,27 @@
       }
     ],
     "author": {
-      "id": "liam-cooper",
-      "name": "Liam Vance",
-      "slug": "liam-cooper",
-      "role": "Workplace Tech Manager & Systems Analyst",
-      "bio": "Liam evaluates internal communication tools, team wikis, and project management databases. He spent eight years designing workspace templates and training non-technical teams on structured task collaboration.",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "id": "alex-rivera",
+      "name": "Alex Rivera",
+      "slug": "alex-rivera",
+      "role": "Principal Technical Reviewer & Systems Engineer",
+      "bio": "Alex is a backend software developer who spent over a decade maintaining distributed systems and internal developer portals. At SaaSInsider, he tests software speed, writes custom webhook scripts, and stress-tests third-party API limits.",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
       "credentials": [
-        "Former Workplace Tech Manager at SyncLoop",
-        "B.A. in Information Systems from Boston University",
-        "Project Management Professional (PMP)"
+        "Former Senior Infrastructure Engineer at DataMesh",
+        "B.S. in Computer Engineering from Georgia Tech",
+        "Certified Kubernetes Administrator (CKA)"
       ],
       "specialties": [
-        "Workplace Tools & Collaboration",
-        "Team Wiki & Knowledge Bases",
-        "Project Management Showdowns",
-        "Software Rollout Strategies"
+        "Head-to-Head Software Testing",
+        "API & Webhook Reliability",
+        "Cloud Infrastructure & Hosting",
+        "Database & Backup Systems"
       ],
-      "twitter": "https://twitter.com/liamvance_ops",
-      "linkedin": "https://linkedin.com/in/liamvance-collab",
-      "articlesCount": 21
+      "twitter": "https://twitter.com/alexrivera_dev",
+      "linkedin": "https://linkedin.com/in/alexrivera-tech",
+      "github": "https://github.com/alexrivera-dev",
+      "articlesCount": 24
     },
     "relatedArticleSlugs": [
       "github-copilot-vs-loom",
@@ -487,14 +486,14 @@
   },
   {
     "slug": "copper-review",
-    "path": "/reviews/copper-review",
-    "title": "Copper CRM Audit: Google Workspace Integration, Trial Realities & Starter Pricing",
-    "h1": "Copper CRM Audit: Is the Google Workspace Native CRM Worth the Cost?",
-    "metaTitle": "Copper CRM Review: Google Workspace Sync, Trial Limits & Seat Costs",
-    "metaDescription": "Detailed review of Copper CRM. Test native Gmail extension sync, Google Sheets integrations, contact limits, and whether the $29/seat Starter plan is worth it.",
-    "excerpt": "Copper CRM eliminates manual data entry by embedding directly inside Gmail, Google Calendar, and Google Drive. We test the 14-day trial, audit contact record boundaries, and review whether the $29 per user monthly Starter tier fits small sales organizations.",
-    "category": "reviews",
-    "subcategory": "CRM & Sales",
+    "path": "/business/copper-review",
+    "title": "Copper CRM Review: Gmail Sync, Trial Caps & Pricing",
+    "h1": "Copper CRM Review: Gmail Sync, Trial Caps & Pricing",
+    "metaTitle": "Copper CRM Review: Gmail Sync, Trial Caps & Pricing",
+    "metaDescription": "Detailed review of Copper CRM. Test native Gmail sync, Google Sheets workflows, contact caps, and see whether the Starter plan pays off.",
+    "excerpt": "Detailed review of Copper CRM. Test native Gmail sync, Google Sheets workflows, contact caps, and see whether the Starter plan pays off.",
+    "category": "business",
+    "subcategory": "Google Workspace CRM",
     "template": "review",
     "publishedAt": "2026-09-30T08:49:46.250Z",
     "updatedAt": "2026-09-30T08:49:46.250Z",
@@ -504,7 +503,6 @@
     "isFeatured": false,
     "isPopular": false,
     "isTrending": true,
-    "viewCount": 1690,
     "tags": [
       "CRM & Sales",
       "Google Workspace",
@@ -736,14 +734,14 @@
   },
   {
     "slug": "asana-review",
-    "path": "/reviews/asana-review",
-    "title": "Asana Free Plan Limits: 10-User Cap, Missing Timeline View & Upgrade Math",
-    "h1": "Asana Free Plan Limits: What Happens When You Hit the 10-Teammate Ceiling?",
-    "metaTitle": "Asana Free Tier Review: 10-User Limit, Missing Gantt Timeline & Costs",
-    "metaDescription": "Tested review of Asana Personal free plan. Examine the 10-seat user cap, missing Timeline Gantt charts, lack of custom fields, and the $10.99 Starter tier.",
-    "excerpt": "Asana Personal offers a clean task management experience for small workgroups, but enforces hard limits. We audit the 10-seat team cap, analyze the absence of Gantt timeline charts and automated rules, and evaluate the $10.99 per seat Starter tier.",
-    "category": "reviews",
-    "subcategory": "Project Management",
+    "path": "/productivity/asana-review",
+    "title": "Asana Free Plan Review: 10-User Cap & Timeline Limits",
+    "h1": "Asana Free Plan Review: 10-User Cap & Timeline Limits",
+    "metaTitle": "Asana Free Plan Review: 10-User Cap & Timeline Limits",
+    "metaDescription": "Tested review of Asana Personal. Check the 10-seat user cap, missing Timeline Gantt charts, lack of custom fields, and Starter upgrade math.",
+    "excerpt": "Tested review of Asana Personal. Check the 10-seat user cap, missing Timeline Gantt charts, lack of custom fields, and Starter upgrade math.",
+    "category": "productivity",
+    "subcategory": "Task Management",
     "template": "review",
     "publishedAt": "2026-09-30T08:56:00.492Z",
     "updatedAt": "2026-09-30T08:56:00.492Z",
@@ -753,7 +751,6 @@
     "isFeatured": false,
     "isPopular": true,
     "isTrending": false,
-    "viewCount": 2310,
     "tags": [
       "Project Management",
       "Task Management",
@@ -956,25 +953,25 @@
     ],
     "author": {
       "id": "liam-cooper",
-      "name": "Liam Vance",
+      "name": "Liam Cooper",
       "slug": "liam-cooper",
-      "role": "Workplace Tech Manager & Systems Analyst",
-      "bio": "Liam evaluates internal communication tools, team wikis, and project management databases. He spent eight years designing workspace templates and training non-technical teams on structured task collaboration.",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "role": "Workplace Software & Productivity Editor",
+      "bio": "Liam spent eight years setting up workspace software, documentation wikis, and task systems for software teams. He writes practical evaluations on how software handles real team communication.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
       "credentials": [
-        "Former Workplace Tech Manager at SyncLoop",
-        "B.A. in Information Systems from Boston University",
-        "Project Management Professional (PMP)"
+        "Former Product Operations Lead at TeamSync",
+        "B.A. in Technical Communication from University of Washington",
+        "Advisor to early-stage founder collectives"
       ],
       "specialties": [
-        "Workplace Tools & Collaboration",
-        "Team Wiki & Knowledge Bases",
-        "Project Management Showdowns",
-        "Software Rollout Strategies"
+        "Project & Task Management Tools",
+        "Team Knowledge Bases & Wikis",
+        "Workspace Organization",
+        "No-Code Business Workflows"
       ],
-      "twitter": "https://twitter.com/liamvance_ops",
-      "linkedin": "https://linkedin.com/in/liamvance-collab",
-      "articlesCount": 21
+      "twitter": "https://twitter.com/liamcooper_ops",
+      "linkedin": "https://linkedin.com/in/liamcooper-work",
+      "articlesCount": 19
     },
     "relatedArticleSlugs": [
       "copper-review",
@@ -985,13 +982,13 @@
   {
     "slug": "pipedrive-vs-convertkit",
     "path": "/comparisons/pipedrive-vs-convertkit",
-    "title": "Pipedrive vs ConvertKit for Small Business: Sales Pipeline CRM vs Email Marketing",
-    "h1": "Pipedrive vs ConvertKit: Should Small Teams Choose a Sales CRM or Email Funnels?",
-    "metaTitle": "Pipedrive vs ConvertKit: Sales CRM vs Creator Email Marketing Comparison",
-    "metaDescription": "Compare Pipedrive and ConvertKit for small business operations. Evaluate B2B deal pipelines against automated email marketing funnels, pricing, and integrations.",
-    "excerpt": "Small companies frequently debate between pipeline CRM software and email automation platforms. We compare Pipedrive deal tracking against ConvertKit subscriber funnels, examining activity scheduling, broadcast delivery, and total monthly software expenditure.",
+    "title": "Pipedrive vs ConvertKit: Sales CRM vs Email Marketing",
+    "h1": "Pipedrive vs ConvertKit: Sales CRM vs Email Marketing",
+    "metaTitle": "Pipedrive vs ConvertKit: Sales CRM vs Email Marketing",
+    "metaDescription": "Compare Pipedrive and ConvertKit for teams. Evaluate sales pipeline CRM against automated email marketing funnels and true software pricing.",
+    "excerpt": "Compare Pipedrive and ConvertKit for teams. Evaluate sales pipeline CRM against automated email marketing funnels and true software pricing.",
     "category": "comparisons",
-    "subcategory": "CRM & Sales",
+    "subcategory": "CRM vs Marketing",
     "template": "comparison",
     "publishedAt": "2026-09-30T09:04:46.246Z",
     "updatedAt": "2026-09-30T09:04:46.246Z",
@@ -1001,7 +998,6 @@
     "isFeatured": false,
     "isPopular": true,
     "isTrending": false,
-    "viewCount": 1980,
     "tags": [
       "CRM & Sales",
       "Email Marketing",
@@ -1255,27 +1251,26 @@
       }
     ],
     "author": {
-      "id": "sarah-jenkins",
-      "name": "Sarah Jenkins",
-      "slug": "sarah-jenkins",
-      "role": "Editor-in-Chief & SaaS Finance Lead",
-      "bio": "Sarah spent nine years managing software budgets and subscription renewals at mid-sized tech companies before joining SaaSInsider. She tests pricing changes, audits contract terms, and breaks down the math behind software unit economics.",
-      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+      "id": "liam-cooper",
+      "name": "Liam Cooper",
+      "slug": "liam-cooper",
+      "role": "Workplace Software & Productivity Editor",
+      "bio": "Liam spent eight years setting up workspace software, documentation wikis, and task systems for software teams. He writes practical evaluations on how software handles real team communication.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
       "credentials": [
-        "Former Director of Finance Operations at CloudScale",
-        "B.S. in Economics from University of Michigan",
-        "Speaker on SaaS subscription economics"
+        "Former Product Operations Lead at TeamSync",
+        "B.A. in Technical Communication from University of Washington",
+        "Advisor to early-stage founder collectives"
       ],
       "specialties": [
-        "SaaS Unit Economics (CAC, LTV, NRR)",
-        "Subscription Pricing Models",
-        "Contract Renewal Math",
-        "Software Procurement Checklists"
+        "Project & Task Management Tools",
+        "Team Knowledge Bases & Wikis",
+        "Workspace Organization",
+        "No-Code Business Workflows"
       ],
-      "twitter": "https://twitter.com/sarahjenkins_saas",
-      "linkedin": "https://linkedin.com/in/sarahjenkins-ops",
-      "website": "https://sarahjenkins.dev",
-      "articlesCount": 18
+      "twitter": "https://twitter.com/liamcooper_ops",
+      "linkedin": "https://linkedin.com/in/liamcooper-work",
+      "articlesCount": 19
     },
     "relatedArticleSlugs": [
       "copper-review",
@@ -1285,14 +1280,14 @@
   },
   {
     "slug": "perplexity-review",
-    "path": "/reviews/perplexity-review",
-    "title": "Perplexity AI Free vs Pro: 5-Query Cap, Deep Research Limits & Value",
-    "h1": "Perplexity AI Free vs Pro: Is the $20 Monthly Subscription Worth the Upgrade?",
-    "metaTitle": "Perplexity AI Review: Free vs Pro Search Limits, Citations & Pricing",
-    "metaDescription": "Hands-on test of Perplexity AI. Audit the 5 Pro searches per 4 hours limit, source citation reliability, Claude 3.7 model toggles, and the $20 Pro plan.",
-    "excerpt": "Perplexity AI challenges traditional search engines by synthesizing web research with direct footnote citations. We test the 5-query Pro limit on free accounts, evaluate document upload restrictions, and review whether the $20 monthly Pro plan justifies its cost for knowledge workers.",
-    "category": "reviews",
-    "subcategory": "AI & Machine Learning",
+    "path": "/ai-tools/perplexity-review",
+    "title": "Perplexity AI Review: Free vs Pro Search Caps & Cost",
+    "h1": "Perplexity AI Review: Free vs Pro Search Caps & Cost",
+    "metaTitle": "Perplexity AI Review: Free vs Pro Search Caps & Cost",
+    "metaDescription": "Hands-on test of Perplexity AI. Audit the 5 Pro searches per 4 hours limit, citation accuracy, Claude 3.7 model toggles, and the Pro plan.",
+    "excerpt": "Hands-on test of Perplexity AI. Audit the 5 Pro searches per 4 hours limit, citation accuracy, Claude 3.7 model toggles, and the Pro plan.",
+    "category": "ai-tools",
+    "subcategory": "AI Search Engine",
     "template": "review",
     "publishedAt": "2026-09-30T09:19:46.246Z",
     "updatedAt": "2026-09-30T09:19:46.246Z",
@@ -1302,7 +1297,6 @@
     "isFeatured": false,
     "isPopular": true,
     "isTrending": true,
-    "viewCount": 2840,
     "tags": [
       "AI & Machine Learning",
       "Artificial Intelligence",
@@ -1513,17 +1507,16 @@
       "credentials": [
         "M.S. in Computer Science from Carnegie Mellon",
         "Former Automation Specialist at ParsePoint",
-        "Contributor to open-source LLM benchmarking datasets"
+        "Creator of open-source API testing scripts"
       ],
       "specialties": [
-        "AI & Large Language Model Evaluations",
-        "Webhook & API Automation Workflows",
-        "Data Extraction Pipelines",
-        "Autonomous Agent Architectures"
+        "Autonomous AI Agents",
+        "Enterprise Language Models",
+        "Workflow Automation (Zapier, Make, n8n)",
+        "Data Privacy & Retention Rules"
       ],
       "twitter": "https://twitter.com/mayalin_ai",
       "linkedin": "https://linkedin.com/in/mayalin-automation",
-      "github": "https://github.com/mayalin-ai",
       "articlesCount": 15
     },
     "relatedArticleSlugs": [
@@ -1534,14 +1527,14 @@
   },
   {
     "slug": "github-copilot-vs-loom",
-    "path": "/comparisons/github-copilot-vs-loom",
-    "title": "GitHub Copilot vs Loom for Small Business: AI Coding vs Async Video Demos",
-    "h1": "GitHub Copilot vs Loom: Two Different Ways to Accelerate Small Engineering Teams",
-    "metaTitle": "GitHub Copilot vs Loom: Developer Tool Showdown, Pricing & ROI",
-    "metaDescription": "Compare GitHub Copilot and Loom for technical small businesses. Analyze AI pair programming speed versus asynchronous video bug walkthroughs and documentation.",
-    "excerpt": "Modern software development demands both rapid code authoring and clear cross-team communication. We evaluate GitHub Copilot AI autocomplete against Loom asynchronous video messaging to determine which tool yields greater productivity returns for growing engineering squads.",
-    "category": "comparisons",
-    "subcategory": "Developer Tools",
+    "path": "/software/github-copilot-vs-loom",
+    "title": "GitHub Copilot vs Loom: AI Coding vs Async Video Demo",
+    "h1": "GitHub Copilot vs Loom: AI Coding vs Async Video Demo",
+    "metaTitle": "GitHub Copilot vs Loom: AI Coding vs Async Video Demo",
+    "metaDescription": "Compare GitHub Copilot and Loom for software teams. Contrast AI code completion against async video bug reporting, team pricing, and speed.",
+    "excerpt": "Compare GitHub Copilot and Loom for software teams. Contrast AI code completion against async video bug reporting, team pricing, and speed.",
+    "category": "software",
+    "subcategory": "Developer Tooling",
     "template": "comparison",
     "publishedAt": "2026-09-30T09:29:46.246Z",
     "updatedAt": "2026-09-30T09:29:46.246Z",
@@ -1551,7 +1544,6 @@
     "isFeatured": false,
     "isPopular": false,
     "isTrending": true,
-    "viewCount": 1760,
     "tags": [
       "Developer Tools",
       "Artificial Intelligence",
@@ -1835,13 +1827,13 @@
   },
   {
     "slug": "zapier-review",
-    "path": "/reviews/zapier-review",
-    "title": "Zapier Free Plan Limitations: 100 Task Cap, Single-Step Rule & Starter Upgrade",
-    "h1": "Zapier Free Plan Limitations: What Happens When Your Workflows Scale?",
-    "metaTitle": "Zapier Free Tier Review: 100-Task Limit, Single-Step Rules & Pricing",
-    "metaDescription": "Complete breakdown of Zapier free plan limitations. Review the 100 tasks per month quota, single-step restrictions, missing webhooks, and the $19.99 Starter plan.",
-    "excerpt": "Zapier connects thousands of web applications, but its free plan imposes strict operational guardrails. We audit the 100-task monthly limit, test the single-action restriction, evaluate missing webhook filters, and calculate the exact moment your operations require the $19.99 Starter upgrade.",
-    "category": "reviews",
+    "path": "/automation/zapier-review",
+    "title": "Zapier Free Plan Review: 100-Task Cap & Starter Costs",
+    "h1": "Zapier Free Plan Review: 100-Task Cap & Starter Costs",
+    "metaTitle": "Zapier Free Plan Review: 100-Task Cap & Starter Costs",
+    "metaDescription": "Tested review of Zapier free plan limits. Audit the 100 tasks monthly quota, single-step rule limits, webhooks, and the $19.99 Starter plan.",
+    "excerpt": "Tested review of Zapier free plan limits. Audit the 100 tasks monthly quota, single-step rule limits, webhooks, and the $19.99 Starter plan.",
+    "category": "automation",
     "subcategory": "Workflow Automation",
     "template": "review",
     "publishedAt": "2026-09-30T09:34:46.246Z",
@@ -1852,7 +1844,6 @@
     "isFeatured": false,
     "isPopular": true,
     "isTrending": false,
-    "viewCount": 2490,
     "tags": [
       "Workflow Automation",
       "No-Code Tools",
@@ -2063,17 +2054,16 @@
       "credentials": [
         "M.S. in Computer Science from Carnegie Mellon",
         "Former Automation Specialist at ParsePoint",
-        "Contributor to open-source LLM benchmarking datasets"
+        "Creator of open-source API testing scripts"
       ],
       "specialties": [
-        "AI & Large Language Model Evaluations",
-        "Webhook & API Automation Workflows",
-        "Data Extraction Pipelines",
-        "Autonomous Agent Architectures"
+        "Autonomous AI Agents",
+        "Enterprise Language Models",
+        "Workflow Automation (Zapier, Make, n8n)",
+        "Data Privacy & Retention Rules"
       ],
       "twitter": "https://twitter.com/mayalin_ai",
       "linkedin": "https://linkedin.com/in/mayalin-automation",
-      "github": "https://github.com/mayalin-ai",
       "articlesCount": 15
     },
     "relatedArticleSlugs": [

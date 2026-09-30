@@ -76,7 +76,7 @@ export default function ResourcesPage() {
               </p>
             </div>
             <Link
-              href="/reviews/asana-review"
+              href="/productivity/asana-review"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
             >
               <span>Read Guide &amp; Criteria</span>
@@ -118,7 +118,7 @@ export default function ResourcesPage() {
               </p>
             </div>
             <Link
-              href="/reviews/zapier-review"
+              href="/automation/zapier-review"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
             >
               <span>View Automation Blueprint</span>
