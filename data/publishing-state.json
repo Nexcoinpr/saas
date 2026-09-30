@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-09-30T18:08:56.411Z",
-  "totalPublishedCount": 11,
+  "lastPublishedAt": "2026-09-30T21:07:08.952Z",
+  "totalPublishedCount": 12,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 8,
-  "lastCategory": "Communication & Video",
+  "categoryIndex": 9,
+  "lastCategory": "Design & Creative",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -16,7 +16,8 @@
     "zapier-review",
     "todoist-vs-debezium",
     "quickbooks-vs-brevo",
-    "discord-vs-brex"
+    "discord-vs-brex",
+    "looka-review"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -29,7 +30,8 @@
     "/images/articles/zapier-review.jpg",
     "https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -127,6 +129,18 @@
           "title": "Discord vs Brex for small business: Features",
           "path": "/comparisons/discord-vs-brex",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30T21:07:08.951Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "looka-review",
+          "title": "Looka Software Breakdown: Usability, Contract",
+          "path": "/reviews/looka-review",
+          "author": "Liam Vance"
         }
       ]
     }
