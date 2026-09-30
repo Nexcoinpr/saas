@@ -1,19 +1,20 @@
 import { Article } from "@/types/blog";
 import { AUTHORS } from "./authors";
+import publishedArticlesData from "./published-articles.json";
 
 const authorSarah = AUTHORS[0];
 const authorAlex = AUTHORS[1];
 const authorMaya = AUTHORS[2];
 const authorLiam = AUTHORS[3];
 
-export const ARTICLES: Article[] = [
+const SEED_ARTICLES: Article[] = [
   // 1. INFORMATIONAL ARTICLE: What Is SaaS?
   {
     slug: "what-is-saas",
     path: "/saas/what-is-saas",
-    title: "What Is SaaS? Definition, Business Models, Architecture & 2026 Trends",
+    title: "What Is SaaS? Definition, Business Models, Architecture & Trends",
     h1: "What Is SaaS? The Complete Software as a Service Guide",
-    metaTitle: "What Is SaaS? Software as a Service Definition & Guide (2026)",
+    metaTitle: "What Is SaaS? Software as a Service Definition & Guide",
     metaDescription: "Learn what SaaS (Software as a Service) is, how cloud delivery works, multi-tenant architectures, main business models, benefits, and 2026 industry trends.",
     excerpt: "Software as a Service (SaaS) delivers cloud-hosted applications over the web on subscription. Understand how it works, server setups, pricing, and why companies use it.",
     category: "saas",
@@ -53,7 +54,7 @@ export const ARTICLES: Article[] = [
       { id: "saas-vs-paas-vs-iaas", title: "SaaS vs PaaS vs IaaS Comparison", level: 2 },
       { id: "main-benefits-of-saas", title: "Main Benefits of the SaaS Model", level: 2 },
       { id: "common-saas-pricing-models", title: "Common SaaS Pricing Models", level: 2 },
-      { id: "market-trends-2026", title: "SaaS Market Shifts in 2026 and Beyond", level: 2 },
+      { id: "market-trends", title: "SaaS Market Shifts and Future Directions", level: 2 },
       { id: "frequently-asked-questions", title: "Frequently Asked Questions", level: 2 }
     ],
     sections: [
@@ -160,8 +161,8 @@ export const ARTICLES: Article[] = [
         `
       },
       {
-        id: "market-trends-2026",
-        title: "SaaS Market Shifts in 2026 and Beyond",
+        id: "market-trends",
+        title: "SaaS Market Shifts and Future Directions",
         level: 2,
         content: `
 <p>The SaaS market is going through a major shift:</p>
@@ -195,9 +196,9 @@ export const ARTICLES: Article[] = [
   {
     slug: "notion-review",
     path: "/reviews/notion-review",
-    title: "Notion Review (2026): Is It Still the Best Workspace & Wiki Tool?",
+    title: "Notion Review: Is It Still the Best Workspace & Wiki Tool?",
     h1: "Notion Review: In-Depth Features, Pricing & Editorial Verdict",
-    metaTitle: "Notion Review (2026): Pricing, Features, Pros & Cons Tested",
+    metaTitle: "Notion Review: Pricing, Features, Pros & Cons Tested",
     metaDescription: "Hands-on Notion review. We evaluate databases, Notion AI, collaboration capabilities, pricing tiers, pros, cons, and alternatives.",
     excerpt: "We put Notion through rigorous testing across project management, knowledge bases, and AI workflows. Here is our honest verdict, ratings, and pricing breakdown.",
     category: "reviews",
@@ -362,9 +363,9 @@ export const ARTICLES: Article[] = [
   {
     slug: "notion-vs-clickup",
     path: "/comparisons/notion-vs-clickup",
-    title: "Notion vs ClickUp (2026 Head-to-Head): Feature Matrix, Pricing & Winner",
-    h1: "Notion vs ClickUp: Which All-in-One Tool Wins in 2026?",
-    metaTitle: "Notion vs ClickUp (2026 Comparison): Features, Pricing, Winner",
+    title: "Notion vs ClickUp: Feature Matrix, Pricing & Winner",
+    h1: "Notion vs ClickUp: Which All-in-One Workspace Tool Wins?",
+    metaTitle: "Notion vs ClickUp Comparison: Features, Pricing, Winner",
     metaDescription: "Detailed head-to-head comparison of Notion vs ClickUp. We compare project management, knowledge wikis, pricing, automation, and provide a clear verdict.",
     excerpt: "Should your team pick Notion for clean docs and wikis, or ClickUp for detailed task dependencies and sprints? Here is the definitive showdown.",
     category: "comparisons",
@@ -508,8 +509,8 @@ export const ARTICLES: Article[] = [
     slug: "how-to-automate-business-tasks",
     path: "/tutorials/how-to-automate-business-tasks",
     title: "How to Automate Business Tasks: A Complete Step-by-Step Guide",
-    h1: "How to Automate Business Tasks: Step-by-Step Playbook (2026)",
-    metaTitle: "How to Automate Business Tasks: Step-by-Step Guide (2026)",
+    h1: "How to Automate Business Tasks: Step-by-Step Playbook",
+    metaTitle: "How to Automate Business Tasks: Step-by-Step Guide",
     metaDescription: "Learn how to map, design, and run automated business workflows using modern no-code tools and AI. Step-by-step instructions, templates, and troubleshooting.",
     excerpt: "Free your team from repetitive manual data entry. Learn how to map business bottlenecks, connect software via webhooks, and set up automated pipelines safely.",
     category: "tutorials",
@@ -668,9 +669,9 @@ export const ARTICLES: Article[] = [
   {
     slug: "best-ai-tools-for-business",
     path: "/ai-tools/best-ai-tools-for-business",
-    title: "The 10 Best AI Tools for Business Productivity and Automation in 2026",
+    title: "The 10 Best AI Tools for Business Productivity and Automation",
     h1: "Top 10 AI Tools for Business Productivity & Automation (Tested & Ranked)",
-    metaTitle: "10 Best AI Tools for Business in 2026 (Tested & Ranked)",
+    metaTitle: "10 Best AI Tools for Business (Tested & Ranked)",
     metaDescription: "Discover the best AI tools for business in 2026. Detailed evaluation of Claude, ChatGPT Enterprise, Perplexity, Cursor, Make AI, and autonomous agent platforms.",
     excerpt: "We benchmarked dozens of generative AI and autonomous agent platforms across workplace tasks. Here are the 10 tools that deliver measurable ROI.",
     category: "ai-tools",
@@ -705,7 +706,7 @@ export const ARTICLES: Article[] = [
     },
     tableOfContents: [
       { id: "direct-answer", title: "Direct Answer: Top AI Tools Ranked", level: 2 },
-      { id: "market-shift-2026", title: "The 2026 Enterprise AI Shift", level: 2 },
+      { id: "market-shift", title: "The Enterprise AI Shift", level: 2 },
       { id: "top-ai-tools-breakdown", title: "Top 10 Business AI Tools Detailed", level: 2 },
       { id: "ai-procurement-criteria", title: "How to Evaluate Enterprise AI Tools", level: 2 },
       { id: "security-and-data-privacy", title: "Security, SOC2 & Zero Data Retention", level: 2 },
@@ -713,8 +714,8 @@ export const ARTICLES: Article[] = [
     ],
     sections: [
       {
-        id: "market-shift-2026",
-        title: "The 2026 Enterprise AI Shift",
+        id: "market-shift",
+        title: "The Enterprise AI Shift",
         level: 2,
         content: `
 <p>Two years ago, companies experimented with generative AI by drafting emails and summarizing PDF documents. In 2026, the way teams work has shifted towards <strong>autonomous agentic workflows</strong>.</p>
@@ -782,7 +783,7 @@ export const ARTICLES: Article[] = [
     path: "/saas/saas-pricing-models",
     title: "SaaS Pricing Models Explained: Flat-Rate, Usage-Based, Tiered & Hybrid",
     h1: "SaaS Pricing Models Explained: Strategy, Psychology & Benchmarks",
-    metaTitle: "SaaS Pricing Models Explained: Tiered, Usage & Hybrid (2026)",
+    metaTitle: "SaaS Pricing Models Explained: Tiered, Usage & Hybrid",
     metaDescription: "Understand SaaS pricing strategy. Compare flat-rate, per-seat, usage-based, tiered, and hybrid pricing models with real software company examples and metrics.",
     excerpt: "Pricing is a major lever for SaaS growth. Discover how top software companies structure their value metrics, packaging, and monetization models.",
     category: "saas",
@@ -876,8 +877,8 @@ export const ARTICLES: Article[] = [
     slug: "zapier-vs-make",
     path: "/comparisons/zapier-vs-make",
     title: "Zapier vs Make: Which Automation Platform Is Right for Your Workflows?",
-    h1: "Zapier vs Make: Ultimate 2026 Workflow Automation Showdown",
-    metaTitle: "Zapier vs Make (2026 Comparison): Features, Pricing, Winner",
+    h1: "Zapier vs Make: Workflow Automation Showdown",
+    metaTitle: "Zapier vs Make Comparison: Features, Pricing, Winner",
     metaDescription: "Zapier vs Make in-depth comparison. Discover which no-code automation platform wins in price, ease of use, visual canvas, router logic, and scalability.",
     excerpt: "Should you automate with Zapier or Make? We compare execution pricing, multi-branch visual builders, error handling, and ease of use to declare a winner.",
     category: "comparisons",
@@ -1004,7 +1005,7 @@ export const ARTICLES: Article[] = [
     path: "/saas/saas-metrics-guide",
     title: "Important SaaS Metrics: Understanding CAC, LTV, NRR, and Churn Rate",
     h1: "The Important SaaS Metrics Playbook: Formulas, Benchmarks & Unit Economics",
-    metaTitle: "Important SaaS Metrics Guide: CAC, LTV, NRR, Churn (2026)",
+    metaTitle: "Important SaaS Metrics Guide: CAC, LTV, NRR, Churn",
     metaDescription: "Understand SaaS unit economics with complete formulas, 2026 benchmarks, and practical strategies for CAC, LTV, Net Retention Rate (NRR), and sales return ratios.",
     excerpt: "You cannot manage what you cannot measure. Learn the practical formulas, investor targets, and operational benchmarks of growing SaaS companies.",
     category: "saas",
@@ -1098,7 +1099,7 @@ export const ARTICLES: Article[] = [
     path: "/how-to/how-to-calculate-customer-churn",
     title: "How to Calculate Customer Churn in SaaS: Formulas, Cohorts & Benchmarks",
     h1: "How to Calculate Customer Churn in SaaS: Step-by-Step Guide",
-    metaTitle: "How to Calculate SaaS Churn: Formulas & Guide (2026)",
+    metaTitle: "How to Calculate SaaS Churn: Formulas & Guide",
     metaDescription: "Step-by-step tutorial on calculating SaaS customer and revenue churn. Includes exact formulas, cohort analysis models, and retention strategies.",
     excerpt: "Churn reduces recurring revenue. Learn how to calculate logo churn vs revenue churn, build cohort retention curves, and diagnose cancellations.",
     category: "how-to",
@@ -1198,6 +1199,11 @@ export const ARTICLES: Article[] = [
     ],
     relatedArticleSlugs: ["saas-metrics-guide", "what-is-saas", "saas-pricing-models"]
   }
+];
+
+export const ARTICLES: Article[] = [
+  ...SEED_ARTICLES,
+  ...(publishedArticlesData as unknown as Article[])
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

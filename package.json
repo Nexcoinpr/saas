@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "publish:daily": "node scripts/publish-daily.js --count 3",
+    "clean-check": "node scripts/clean-check.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
