@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/images/brand/saasinsider-favicon-3d.jpg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

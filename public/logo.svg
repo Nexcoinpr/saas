@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Cyan to Royal Blue Gradient -->
+    <linearGradient id="logoPrimaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Cable Gradient -->
+    <linearGradient id="logoCableGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Metal Plug Gradient -->
+    <linearGradient id="logoMetalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <!-- Ambient Shadow Filter -->
+    <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Group: Emblem Mark (Left) -->
+  <g id="logo-mark" transform="translate(10, 8) scale(0.28)">
+    <!-- Monitor Base & Stand -->
+    <path d="M 216 384 L 296 384 L 308 408 L 204 408 Z" fill="#1e293b" stroke="url(#logoPrimaryGrad)" stroke-width="3" />
+    <rect x="176" y="404" width="160" height="14" rx="7" fill="#0f172a" stroke="#334155" stroke-width="2" />
+    <rect x="240" y="324" width="32" height="64" rx="4" fill="#1e293b" stroke="#334155" stroke-width="2" />
+
+    <!-- Monitor Outer Body -->
+    <rect x="80" y="96" width="352" height="236" rx="28" fill="#070b14" stroke="#334155" stroke-width="4" />
+    <!-- Screen Glass -->
+    <rect x="96" y="112" width="320" height="204" rx="20" fill="#0b1324" stroke="#1e293b" stroke-width="2.5" />
+
+    <!-- Window Dots -->
+    <circle cx="120" cy="130" r="5" fill="#ef4444" opacity="0.8" />
+    <circle cx="136" cy="130" r="5" fill="#f59e0b" opacity="0.8" />
+    <circle cx="152" cy="130" r="5" fill="#10b981" opacity="0.8" />
+    <line x1="96" y1="144" x2="416" y2="144" stroke="#1e293b" stroke-width="2" />
+
+    <!-- Cloud Software Symbol -->
+    <g transform="translate(180, 160)">
+      <path d="M 38 72 
+               L 114 72 
+               A 22 22 0 0 0 120 28 
+               A 30 30 0 0 0 66 18 
+               A 26 26 0 0 0 38 46 
+               A 20 20 0 0 0 38 72 Z" 
+            fill="url(#logoPrimaryGrad)" 
+            opacity="0.3" 
+            filter="url(#logoGlow)" />
+      <path d="M 38 72 
+               L 114 72 
+               A 22 22 0 0 0 120 28 
+               A 30 30 0 0 0 66 18 
+               A 26 26 0 0 0 38 46 
+               A 20 20 0 0 0 38 72 Z" 
+            fill="none" 
+            stroke="url(#logoPrimaryGrad)" 
+            stroke-width="6" 
+            stroke-linejoin="round" />
+
+      <!-- Stylized 'S' inside Cloud -->
+      <path d="M 88 38 
+               C 84 32, 70 32, 68 39 
+               C 66 45, 84 48, 84 56 
+               C 84 64, 70 64, 64 58" 
+            fill="none" 
+            stroke="#ffffff" 
+            stroke-width="6" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" />
+    </g>
+
+    <!-- Interconnected Tech Cable with Connector -->
+    <path d="M 88 180 
+             C 52 180, 48 340, 120 376 
+             C 200 416, 290 400, 340 370 
+             C 400 334, 440 280, 424 210 
+             C 410 148, 350 144, 330 180 
+             C 310 220, 330 280, 380 300 
+             C 410 312, 420 360, 390 390 
+             L 364 416" 
+          fill="none" 
+          stroke="url(#logoCableGrad)" 
+          stroke-width="20" 
+          stroke-linecap="round" 
+          filter="url(#logoGlow)" />
+
+    <path d="M 88 180 
+             C 52 180, 48 340, 120 376 
+             C 200 416, 290 400, 340 370 
+             C 400 334, 440 280, 424 210 
+             C 410 148, 350 144, 330 180 
+             C 310 220, 330 280, 380 300 
+             C 410 312, 420 360, 390 390 
+             L 364 416" 
+          fill="none" 
+          stroke="#f0f9ff" 
+          stroke-width="6" 
+          stroke-linecap="round" />
+
+    <!-- USB Plug Head -->
+    <g transform="translate(364, 416) rotate(-45)">
+      <rect x="-14" y="0" width="28" height="12" rx="4" fill="#0284c7" />
+      <rect x="-16" y="12" width="32" height="36" rx="6" fill="#0369a1" stroke="#38bdf8" stroke-width="2.5" />
+      <circle cx="0" cy="30" r="5" fill="#0c4a6e" />
+      <rect x="-12" y="48" width="24" height="26" rx="2" fill="url(#logoMetalGrad)" stroke="#64748b" stroke-width="2" />
+      <rect x="-8" y="54" width="5" height="8" rx="1" fill="#1e293b" />
+      <rect x="3" y="54" width="5" height="8" rx="1" fill="#1e293b" />
+    </g>
+  </g>
+
+  <!-- Group: Typography (Right) -->
+  <g id="logo-text" transform="translate(160, 0)">
+    <!-- Primary Brand Wordmark: SaaS -->
+    <text x="0" y="88" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="62" 
+          font-weight="900" 
+          letter-spacing="-1.5" 
+          fill="#0f172a" 
+          class="dark-white">
+      SaaS<tspan fill="url(#logoPrimaryGrad)">Insider</tspan>
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="4" y="122" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="14" 
+          font-weight="700" 
+          letter-spacing="4.5" 
+          fill="#0284c7" 
+          text-transform="uppercase">
+      INDEPENDENT SOFTWARE REVIEWS
+    </text>
+  </g>
+</svg>

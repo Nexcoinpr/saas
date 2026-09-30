@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 import { TwitterIcon, LinkedinIcon, GithubIcon } from "@/components/common/SocialIcons";
+import { BrandLogo } from "@/components/common/BrandLogo";
 
 export function Footer() {
   return (
@@ -11,18 +12,7 @@ export function Footer() {
           
           {/* Brand Info & Mission */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-400 via-cyan-500 to-blue-600 p-[1.5px] shadow-sm shadow-cyan-500/30">
-                <div className="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center">
-                  <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-300 text-base tracking-tight">
-                    S
-                  </span>
-                </div>
-              </div>
-              <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white">
-                SaaS<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400">Insider</span>
-              </span>
-            </Link>
+            <BrandLogo />
             
             <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400 max-w-sm">
               An independent technology publication dedicated to high-signal SaaS insights, hands-on software reviews, head-to-head comparisons, and enterprise automation guides.

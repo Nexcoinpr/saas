@@ -11,6 +11,7 @@ import {
   Zap
 } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { BrandLogo } from "@/components/common/BrandLogo";
 
 const NAV_LINKS = [
   { name: "Home", href: "/" },
@@ -34,23 +35,7 @@ export function Header() {
           
           {/* Logo */}
           <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-400 via-cyan-500 to-blue-600 p-[1.5px] shadow-sm shadow-cyan-500/30 group-hover:shadow-cyan-500/50 group-hover:scale-105 transition-all">
-                <div className="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center">
-                  <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-300 text-lg tracking-tight">
-                    S
-                  </span>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white flex items-center">
-                  SaaS<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400">Insider</span>
-                </span>
-                <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-cyan-400/80 font-bold -mt-1">
-                  Independent Software Reviews
-                </span>
-              </div>
-            </Link>
+            <BrandLogo />
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
