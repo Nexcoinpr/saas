@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -78,9 +79,9 @@ export const metadata: Metadata = {
     canonical: SITE_CONFIG.siteUrl,
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+    google: "dpN8d_hni24K51X2rZi2ciRcvfWgEY4l3Pn5cAW-gkk",
     other: {
-      "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "",
+      "msvalidate.01": "25038A8801D42437BBC34723A41AC6C4",
     },
   },
 };
@@ -100,6 +101,23 @@ export default function RootLayout({
         <JsonLd data={websiteSchema} />
       </head>
       <body className="min-h-screen flex flex-col font-sans antialiased selection:bg-cyan-500 selection:text-white">
+        {/* Google Analytics 4 (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-EFS8DX89TN"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EFS8DX89TN');
+          `}
+        </Script>
+
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
