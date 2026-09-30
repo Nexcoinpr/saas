@@ -22,7 +22,17 @@ interface ScoreCardProps {
   };
 }
 
+const VENDOR_URLS: Record<string, string> = {
+  "Remote": "https://remote.com",
+  "Vidyard": "https://www.vidyard.com",
+  "Copper CRM": "https://www.copper.com",
+  "Asana": "https://asana.com",
+  "Perplexity AI": "https://www.perplexity.ai",
+  "Zapier": "https://zapier.com",
+};
+
 export function ScoreCard({ reviewData }: ScoreCardProps) {
+  const vendorUrl = VENDOR_URLS[reviewData.productName];
   return (
     <div
       id="verdict-scorecard"
@@ -125,14 +135,24 @@ export function ScoreCard({ reviewData }: ScoreCardProps) {
 
           {/* Action CTA */}
           <div className="pt-2">
-            <a
-              href="#"
-              rel="nofollow noopener"
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm transition-all shadow-md shadow-cyan-600/20"
-            >
-              <span>Visit {reviewData.productName}</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
+            {vendorUrl ? (
+              <a
+                href={vendorUrl}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm transition-all shadow-md shadow-cyan-600/20"
+              >
+                <span>Visit {reviewData.productName} Official Site</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            ) : (
+              <a
+                href="#pricing"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm transition-all shadow-md shadow-cyan-600/20"
+              >
+                <span>View Full Pricing Breakdown</span>
+              </a>
+            )}
           </div>
         </div>
 

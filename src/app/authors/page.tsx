@@ -162,6 +162,41 @@ export default function AuthorsPage() {
           ))}
         </div>
 
+        {/* Editorial Standards Section */}
+        <section className="my-16 pt-10 border-t border-slate-200 dark:border-cyan-950/40">
+          <div className="p-8 sm:p-10 rounded-3xl bg-slate-50 dark:bg-[#0a0f1d] border border-slate-200/90 dark:border-cyan-950/60 space-y-4">
+            <span className="text-xs uppercase font-extrabold tracking-widest text-cyan-600 dark:text-cyan-400 block">
+              Editorial Standards
+            </span>
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+              Our Research &amp; Fact-Checking Standards
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              Every contributor at SaaSInsider adheres to strict testing rules. Before any software review, teardown, or calculation guide goes live, our staff completes direct hands-on testing inside dedicated software environments.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 text-xs">
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 space-y-1">
+                <strong className="text-slate-900 dark:text-white font-bold block">1. Authentic Hands-On Testing</strong>
+                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                  We configure real accounts, test API endpoints, and import test datasets rather than summarizing vendor marketing copy.
+                </p>
+              </div>
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 space-y-1">
+                <strong className="text-slate-900 dark:text-white font-bold block">2. Fact-Checking &amp; Pricing Audits</strong>
+                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Pricing plans, seat minimums, and usage limits are verified directly against published terms and vendor quotes every quarter.
+                </p>
+              </div>
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 space-y-1">
+                <strong className="text-slate-900 dark:text-white font-bold block">3. Zero Vendor Influence</strong>
+                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Vendors cannot pay for favorable ratings or removal of negative benchmark scores. Our editors maintain strict independence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
   );

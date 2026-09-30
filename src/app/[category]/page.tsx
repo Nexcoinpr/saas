@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getCategoryBySlug, CATEGORIES } from "@/data/categories";
 import { getArticlesByCategory, getLatestArticles } from "@/data/articles";
+import { getCategoryGuide } from "@/data/categoryGuides";
 import { ArticleCard } from "@/components/common/ArticleCard";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SITE_CONFIG } from "@/lib/seo";
@@ -107,6 +108,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const articles = getArticlesByCategory(category.slug);
   const fallbackArticles = articles.length === 0 ? getLatestArticles(4) : [];
   const IconComponent = ICON_MAP[category.iconName] || Layers;
+  const guide = getCategoryGuide(category.slug);
 
   return (
     <div className="py-8 md:py-12">
@@ -166,6 +168,89 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               : fallbackArticles.map((art) => <ArticleCard key={art.slug} article={art} />)}
           </div>
         </div>
+
+        {/* Editorial Guide & Evaluation Framework */}
+        <section className="my-16 pt-12 border-t border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200">
+          <div className="space-y-6">
+            <div>
+              <span className="text-xs uppercase font-extrabold tracking-widest text-cyan-600 dark:text-cyan-400 block mb-2">
+                Editorial Evaluation Framework
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
+                {guide.title}
+              </h2>
+            </div>
+
+            <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              {guide.intro}
+            </p>
+
+            {/* Evaluation Criteria Grid */}
+            <div className="pt-4">
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">
+                Laboratory Testing Criteria
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {guide.evaluationCriteria.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="p-5 rounded-2xl bg-white dark:bg-[#0a0f1d] border border-slate-200/90 dark:border-cyan-950/60 space-y-2 shadow-sm"
+                  >
+                    <span className="text-xs font-bold text-cyan-600 dark:text-cyan-400 block">
+                      Criterion 0{idx + 1}
+                    </span>
+                    <h4 className="font-bold text-sm text-slate-900 dark:text-white">
+                      {item.title}
+                    </h4>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Buyer Checklist & Traps */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4">
+              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 space-y-4">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                  Buyer Checklist &amp; Procurement Considerations
+                </h3>
+                <div className="space-y-3">
+                  {guide.buyerConsiderations.map((item, idx) => (
+                    <div key={idx} className="space-y-1">
+                      <h4 className="text-xs font-bold text-slate-800 dark:text-slate-200">
+                        • {item.title}
+                      </h4>
+                      <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed pl-3">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 space-y-4">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                  Common Procurement Traps to Avoid
+                </h3>
+                <div className="space-y-3">
+                  {guide.commonPitfalls.map((item, idx) => (
+                    <div key={idx} className="space-y-1">
+                      <h4 className="text-xs font-bold text-amber-700 dark:text-amber-400">
+                        ⚠ {item.title}
+                      </h4>
+                      <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed pl-3">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
 
         {/* Other Hubs Navigation */}
         <section className="my-16 pt-10 border-t border-slate-200 dark:border-slate-800">

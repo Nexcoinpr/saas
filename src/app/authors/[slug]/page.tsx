@@ -225,6 +225,16 @@ export default async function AuthorProfilePage({ params }: AuthorProfilePagePro
           )}
         </section>
 
+        {/* Author Pledge */}
+        <section className="my-12 p-8 rounded-3xl bg-slate-50 dark:bg-[#0a0f1d] border border-slate-200/90 dark:border-cyan-950/60">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
+            Editorial Review &amp; Testing Pledge
+          </h3>
+          <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
+            As a verified SaaSInsider author, {author.name} conducts independent software audits and writes detailed reviews based on authentic hands-on account testing. Every published comparison and guide reflects real operating experience, verified pricing research, and transparent scoring without vendor sponsorship.
+          </p>
+        </section>
+
       </div>
     </div>
   );

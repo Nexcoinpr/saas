@@ -148,6 +148,13 @@ export function generateArticleSchema(article: Article) {
         "@type": "Offer",
         "price": rawPrice,
         "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": numericRating,
+        "reviewCount": 1,
+        "bestRating": 5,
+        "worstRating": 1
       }
     };
     baseSchema["reviewRating"] = {
