@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-09-30T21:07:08.952Z",
-  "totalPublishedCount": 12,
+  "lastPublishedAt": "2026-10-01T00:10:07.239Z",
+  "totalPublishedCount": 13,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 9,
-  "lastCategory": "Design & Creative",
+  "categoryIndex": 10,
+  "lastCategory": "Data Integration & ETL",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -17,7 +17,8 @@
     "todoist-vs-debezium",
     "quickbooks-vs-brevo",
     "discord-vs-brex",
-    "looka-review"
+    "looka-review",
+    "talend-vs-copy-ai"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -31,7 +32,8 @@
     "https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -141,6 +143,18 @@
           "title": "Looka Software Breakdown: Usability, Contract",
           "path": "/reviews/looka-review",
           "author": "Liam Vance"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01T00:10:07.239Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "talend-vs-copy-ai",
+          "title": "Talend vs Copy.ai for small business Showdown: Daily",
+          "path": "/comparisons/talend-vs-copy-ai",
+          "author": "Sarah Jenkins"
         }
       ]
     }
