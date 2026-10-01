@@ -107,7 +107,30 @@ for (const f of files) {
   });
 }
 
+// Author integrity check: Ensure all articles strictly use registered authors from src/data/authors.ts
+const VALID_AUTHORS = ['sarah-jenkins', 'alex-rivera', 'maya-lin', 'liam-cooper'];
+const publishedArticlesPath = path.join(__dirname, '../src/data/published-articles.json');
+if (fs.existsSync(publishedArticlesPath)) {
+  const publishedArticles = JSON.parse(fs.readFileSync(publishedArticlesPath, 'utf8'));
+  publishedArticles.forEach((article, idx) => {
+    const authorSlug = article.author ? (article.author.slug || article.author.id) : null;
+    const authorName = article.author ? article.author.name : null;
+    if (!VALID_AUTHORS.includes(authorSlug) || authorName === 'Liam Vance' || authorSlug === 'liam-vance') {
+      results.push({
+        file: 'src/data/published-articles.json',
+        line: idx + 1,
+        word: `invalid-author: ${authorName} (${authorSlug})`,
+        text: `Article "${article.slug}" has unauthorized author "${authorName}"`
+      });
+    }
+  });
+}
+
 console.log(`Found ${results.length} occurrences across files.`);
 results.forEach(r => {
   console.log(`${r.file}:${r.line} [${r.word}] -> ${r.text.substring(0, 100)}`);
 });
+
+if (results.length > 0) {
+  process.exit(1);
+}

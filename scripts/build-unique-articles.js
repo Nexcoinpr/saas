@@ -74,25 +74,25 @@ const AUTHORS = {
   },
   "liam-cooper": {
     id: "liam-cooper",
-    name: "Liam Vance",
+    name: "Liam Cooper",
     slug: "liam-cooper",
-    role: "Workplace Tech Manager & Systems Analyst",
-    bio: "Liam evaluates internal communication tools, team wikis, and project management databases. He spent eight years designing workspace templates and training non-technical teams on structured task collaboration.",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    role: "Workplace Software & Productivity Editor",
+    bio: "Liam spent eight years setting up workspace software, documentation wikis, and task systems for software teams. He writes practical evaluations on how software handles real team communication.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
     credentials: [
-      "Former Workplace Tech Manager at SyncLoop",
-      "B.A. in Information Systems from Boston University",
-      "Project Management Professional (PMP)"
+      "Former Product Operations Lead at TeamSync",
+      "B.A. in Technical Communication from University of Washington",
+      "Advisor to early-stage founder collectives"
     ],
     specialties: [
-      "Workplace Tools & Collaboration",
-      "Team Wiki & Knowledge Bases",
-      "Project Management Showdowns",
-      "Software Rollout Strategies"
+      "Project & Task Management Tools",
+      "Team Knowledge Bases & Wikis",
+      "Workspace Organization",
+      "No-Code Business Workflows"
     ],
-    twitter: "https://twitter.com/liamvance_ops",
-    linkedin: "https://linkedin.com/in/liamvance-collab",
-    articlesCount: 21
+    twitter: "https://twitter.com/liamcooper_ops",
+    linkedin: "https://linkedin.com/in/liamcooper-work",
+    articlesCount: 19
   }
 };
 
