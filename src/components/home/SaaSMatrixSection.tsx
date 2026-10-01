@@ -19,6 +19,30 @@ interface SoftwareItem {
 
 const SOFTWARE_DIRECTORY: SoftwareItem[] = [
   {
+    name: "QuickBooks vs Brevo",
+    category: "Finance & Sales",
+    categorySlug: "comparisons",
+    rating: 4.7,
+    pricing: "From $30/mo / From $25/mo",
+    model: "Monthly subscription",
+    strength: "Comparing small business bookkeeping against omnichannel email and SMS marketing funnels",
+    verdictBadge: "Latest Comparison",
+    badgeColor: "bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300",
+    path: "/comparisons/quickbooks-vs-brevo"
+  },
+  {
+    name: "Todoist vs Debezium",
+    category: "Productivity",
+    categorySlug: "comparisons",
+    rating: 4.8,
+    pricing: "Free / Open Source",
+    model: "Freemium vs Self-hosted",
+    strength: "Evaluating personal and team task management against real-time data capture infrastructure",
+    verdictBadge: "Architecture Pick",
+    badgeColor: "bg-indigo-100 text-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300",
+    path: "/comparisons/todoist-vs-debezium"
+  },
+  {
     name: "Remote.com",
     category: "HR & Global",
     categorySlug: "reviews",

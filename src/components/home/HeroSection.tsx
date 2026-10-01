@@ -14,15 +14,14 @@ import {
   CreditCard,
   MessageSquare
 } from "lucide-react";
-import { getArticleBySlug } from "@/data/articles";
+import { getLatestArticles } from "@/data/articles";
 import { formatDate } from "@/lib/utils";
 
 export function HeroSection() {
-  // Grab our primary cover story and trending editorial articles
-  const leadArticle = getArticleBySlug("remote-review");
-  const trending1 = getArticleBySlug("pipedrive-vs-convertkit");
-  const trending2 = getArticleBySlug("asana-review");
-  const trending3 = getArticleBySlug("zapier-review");
+  // Grab our latest published articles dynamically
+  const latestArticles = getLatestArticles(4);
+  const leadArticle = latestArticles[0];
+  const trendingArticles = latestArticles.slice(1, 4);
 
   return (
     <section className="relative overflow-hidden pt-8 pb-14 md:pt-12 md:pb-20 border-b border-slate-200/80 dark:border-slate-800 bg-white dark:bg-[#070b14]">
@@ -160,10 +159,10 @@ export function HeroSection() {
 
                   <Link
                     href={leadArticle.path}
-                    aria-label={`Read full review of ${leadArticle.title}`}
+                    aria-label={`Read ${leadArticle.title}`}
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs font-semibold hover:bg-slate-800 dark:hover:bg-slate-100 transition-all"
                   >
-                    <span>Read Full Review</span>
+                    <span>{leadArticle.template === "comparison" ? "Read Comparison" : "Read Full Review"}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -183,114 +182,58 @@ export function HeroSection() {
               </span>
             </div>
 
-            {/* Trending Card 1: Pipedrive vs ConvertKit */}
-            {trending1 && (
-              <article className="group p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 hover:border-slate-300 dark:hover:border-slate-700 transition-all flex gap-4">
-                <Link
-                  href={trending1.path}
-                  aria-label={`Read ${trending1.title}`}
-                  className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800"
-                >
-                  <Image
-                    src={trending1.featuredImage}
-                    alt={trending1.featuredImageAlt}
-                    fill
-                    sizes="120px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </Link>
-                <div className="flex-1 flex flex-col justify-between py-0.5">
-                  <div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-cyan-400 block mb-1">
-                      Head-to-Head Showdown
-                    </span>
-                    <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors line-clamp-2 leading-snug">
-                      <Link href={trending1.path}>
-                        {trending1.title}
-                      </Link>
-                    </h3>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 mt-2">
-                    <span>{trending1.author.name}</span>
-                    <span>•</span>
-                    <span>{formatDate(trending1.publishedAt)}</span>
-                  </div>
-                </div>
-              </article>
-            )}
+            {/* Trending Cards from Latest Publications */}
+            {trendingArticles.map((article, idx) => {
+              const badgeText = article.template === "comparison"
+                ? "Head-to-Head Showdown"
+                : article.template === "review"
+                ? "Software Review"
+                : article.subcategory || article.category;
 
-            {/* Trending Card 2: Asana */}
-            {trending2 && (
-              <article className="group p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 hover:border-slate-300 dark:hover:border-slate-700 transition-all flex gap-4">
-                <Link
-                  href={trending2.path}
-                  aria-label={`Read ${trending2.title}`}
-                  className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800"
-                >
-                  <Image
-                    src={trending2.featuredImage}
-                    alt={trending2.featuredImageAlt}
-                    fill
-                    sizes="120px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </Link>
-                <div className="flex-1 flex flex-col justify-between py-0.5">
-                  <div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block mb-1">
-                      Limits Teardown
-                    </span>
-                    <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors line-clamp-2 leading-snug">
-                      <Link href={trending2.path}>
-                        {trending2.title}
-                      </Link>
-                    </h3>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 mt-2">
-                    <span>{trending2.author.name}</span>
-                    <span>•</span>
-                    <span>{formatDate(trending2.publishedAt)}</span>
-                  </div>
-                </div>
-              </article>
-            )}
+              const badgeColor = idx === 0 
+                ? "text-blue-600 dark:text-cyan-400" 
+                : idx === 1 
+                ? "text-emerald-600 dark:text-emerald-400" 
+                : "text-purple-600 dark:text-purple-400";
 
-            {/* Trending Card 3: Zapier */}
-            {trending3 && (
-              <article className="group p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 hover:border-slate-300 dark:hover:border-slate-700 transition-all flex gap-4">
-                <Link
-                  href={trending3.path}
-                  aria-label={`Read ${trending3.title}`}
-                  className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800"
+              return (
+                <article
+                  key={article.slug}
+                  className="group p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 hover:border-slate-300 dark:hover:border-slate-700 transition-all flex gap-4"
                 >
-                  <Image
-                    src={trending3.featuredImage}
-                    alt={trending3.featuredImageAlt}
-                    fill
-                    sizes="120px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </Link>
-                <div className="flex-1 flex flex-col justify-between py-0.5">
-                  <div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 block mb-1">
-                      Automation Limits
-                    </span>
-                    <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors line-clamp-2 leading-snug">
-                      <Link href={trending3.path}>
-                        {trending3.title}
-                      </Link>
-                    </h3>
+                  <Link
+                    href={article.path}
+                    aria-label={`Read ${article.title}`}
+                    className="w-28 sm:w-32 aspect-[4/3] rounded-xl overflow-hidden relative flex-shrink-0 bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-800"
+                  >
+                    <Image
+                      src={article.featuredImage}
+                      alt={article.featuredImageAlt}
+                      fill
+                      sizes="120px"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </Link>
+                  <div className="flex-1 flex flex-col justify-between py-0.5">
+                    <div>
+                      <span className={`text-[11px] font-bold uppercase tracking-wider ${badgeColor} block mb-1`}>
+                        {badgeText}
+                      </span>
+                      <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors line-clamp-2 leading-snug">
+                        <Link href={article.path}>
+                          {article.title}
+                        </Link>
+                      </h3>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 mt-2">
+                      <span>{article.author.name}</span>
+                      <span>•</span>
+                      <span>{formatDate(article.publishedAt)}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 mt-2">
-                    <span>{trending3.author.name}</span>
-                    <span>•</span>
-                    <span>{formatDate(trending3.publishedAt)}</span>
-                  </div>
-                </div>
-              </article>
-            )}
-
+                </article>
+              );
+            })}
           </div>
 
         </div>

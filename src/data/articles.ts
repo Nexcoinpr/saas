@@ -20,12 +20,18 @@ export function getArticlesByAuthor(authorSlug: string): Article[] {
   return ARTICLES.filter(a => a.author.slug === authorSlug);
 }
 
-export function getFeaturedArticles(): Article[] {
-  return ARTICLES.filter(a => a.isFeatured);
+export function getFeaturedArticles(limit?: number): Article[] {
+  const sorted = [...ARTICLES]
+    .filter(a => a.isFeatured)
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  return limit ? sorted.slice(0, limit) : sorted;
 }
 
-export function getPopularArticles(): Article[] {
-  return ARTICLES.filter(a => a.isPopular);
+export function getPopularArticles(limit?: number): Article[] {
+  const sorted = [...ARTICLES]
+    .filter(a => a.isPopular)
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  return limit ? sorted.slice(0, limit) : sorted;
 }
 
 export function getLatestArticles(limit?: number): Article[] {
