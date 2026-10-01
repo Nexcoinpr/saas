@@ -37,7 +37,7 @@ export default function HomePage() {
       <SaaSTestimonials />
 
       {/* Reader Favorites */}
-      <PopularArticles articles={popularArticles} />
+      <PopularArticles articles={popularArticles} allArticles={latestArticles} />
 
       {/* Latest Articles in clean filterable grid */}
       <LatestArticlesGrid articles={latestArticles} />
