@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-01T03:07:38.606Z",
-  "totalPublishedCount": 14,
+  "lastPublishedAt": "2026-10-01T06:10:58.702Z",
+  "totalPublishedCount": 15,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 11,
-  "lastCategory": "HR & Payroll",
+  "categoryIndex": 12,
+  "lastCategory": "Marketing",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -19,7 +19,8 @@
     "discord-vs-brex",
     "looka-review",
     "talend-vs-copy-ai",
-    "deel-vs-lastpass"
+    "deel-vs-lastpass",
+    "activecampaign-vs-zendesk"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -35,7 +36,8 @@
     "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -169,6 +171,18 @@
           "title": "Deel vs LastPass for small business: Usability",
           "path": "/comparisons/deel-vs-lastpass",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01T06:10:58.702Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "activecampaign-vs-zendesk",
+          "title": "ActiveCampaign vs Zendesk for small business Review",
+          "path": "/comparisons/activecampaign-vs-zendesk",
+          "author": "Maya Lin"
         }
       ]
     }
