@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-01T09:08:53.303Z",
-  "totalPublishedCount": 16,
+  "lastPublishedAt": "2026-10-01T12:11:07.336Z",
+  "totalPublishedCount": 17,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 13,
-  "lastCategory": "Support & Success",
+  "categoryIndex": 14,
+  "lastCategory": "Commerce & Sales",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -21,7 +21,8 @@
     "talend-vs-copy-ai",
     "deel-vs-lastpass",
     "activecampaign-vs-zendesk",
-    "crisp-vs-supabase"
+    "crisp-vs-supabase",
+    "shopify-vs-1password"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -39,7 +40,8 @@
     "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -197,6 +199,18 @@
           "title": "Crisp vs Supabase for small business: Features",
           "path": "/comparisons/crisp-vs-supabase",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01T12:11:07.336Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "shopify-vs-1password",
+          "title": "Shopify or 1Password for small business? In-Depth",
+          "path": "/comparisons/shopify-vs-1password",
+          "author": "Sarah Jenkins"
         }
       ]
     }
