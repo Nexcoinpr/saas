@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-02T12:09:05.178Z",
-  "totalPublishedCount": 20,
+  "lastPublishedAt": "2026-10-02T15:08:51.511Z",
+  "totalPublishedCount": 21,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 2,
-  "lastCategory": "CRM & Sales",
+  "categoryIndex": 3,
+  "lastCategory": "AI & Machine Learning",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -25,7 +25,8 @@
     "shopify-vs-1password",
     "1password-vs-lastpass",
     "asana-vs-make",
-    "copper-vs-sproutsocial"
+    "copper-vs-sproutsocial",
+    "cursor-vs-copper"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -47,7 +48,8 @@
     "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -253,6 +255,18 @@
           "title": "Copper vs SproutSocial for small business Review",
           "path": "/comparisons/copper-vs-sproutsocial",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02T15:08:51.511Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "cursor-vs-copper",
+          "title": "Cursor vs Copper for small business: Features",
+          "path": "/comparisons/cursor-vs-copper",
+          "author": "Sarah Jenkins"
         }
       ]
     }
