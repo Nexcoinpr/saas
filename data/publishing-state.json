@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-02T18:09:13.220Z",
-  "totalPublishedCount": 22,
+  "lastPublishedAt": "2026-10-02T21:07:06.232Z",
+  "totalPublishedCount": 23,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 4,
-  "lastCategory": "Developer Tools",
+  "categoryIndex": 5,
+  "lastCategory": "Workflow Automation",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -27,7 +27,8 @@
     "asana-vs-make",
     "copper-vs-sproutsocial",
     "cursor-vs-copper",
-    "replit-vs-zoho-books"
+    "replit-vs-zoho-books",
+    "outsystems-review"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -51,7 +52,8 @@
     "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -281,6 +283,18 @@
           "title": "Replit or Zoho Books for small business? In-Depth",
           "path": "/comparisons/replit-vs-zoho-books",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02T21:07:06.232Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "outsystems-review",
+          "title": "OutSystems Under the Microscope: Quota Limits, Team",
+          "path": "/reviews/outsystems-review",
+          "author": "Maya Lin"
         }
       ]
     }
