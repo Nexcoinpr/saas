@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { getUniqueImage } = require('./image-bank.js');
+const { sanitizeText, sanitizeSlug, autoRemediateArticle, auditArticle } = require('./banned-words.js');
 
 // CLI options
 const args = process.argv.slice(2);
@@ -159,14 +160,14 @@ const COMPARISON_PATTERNS = [
     h1: `${a} vs ${b} Showdown: Which Software Better Fits Your Daily Workflow?`,
     metaTitle: `${a} vs ${b} Breakdown: Usability, Seat Pricing & Verdict`,
     metaDescription: `Unbiased comparison of ${a} and ${b}. Discover which tool handles team workflows faster, costs less per seat, and scales better.`,
-    excerpt: `A side-by-side comparison of ${a} and ${b} focusing on daily workflow efficiency, collaborator permissions, and long-term cost of ownership for growing companies.`
+    excerpt: `A side-by-side comparison of ${a} and ${b} focusing on daily workflow productivity, collaborator permissions, and long-term cost of ownership for growing companies.`
   }),
   (a, b) => ({
     title: `${a} vs ${b}: Usability, Integration Depth & Value Breakdown`,
     h1: `${a} vs ${b}: Comparing Usability, App Integrations & Total Cost`,
     metaTitle: `${a} vs ${b}: In-Depth Testing, Pricing Tiers & Verdict`,
     metaDescription: `Compare ${a} and ${b} side by side. We evaluate user seats, data storage quotas, API support, and annual contract value.`,
-    excerpt: `We put ${a} and ${b} through extensive laboratory testing, analyzing UI latency, multi-branch automation triggers, and customer support responsiveness.`
+    excerpt: `We put ${a} and ${b} through extensive laboratory testing, analyzing UI response speed, multi-branch automation triggers, and customer support responsiveness.`
   }),
   (a, b) => ({
     title: `${a} vs ${b} Review: Feature Depth, Real Costs & Tradeoffs`,
@@ -190,27 +191,27 @@ const REVIEW_PATTERNS = [
     h1: `${tool} Free Plan Limits: Tested User Caps, Storage & Upgrade Value`,
     metaTitle: `${tool} Free Tier Limits: Quotas, Caps & When to Upgrade`,
     metaDescription: `Testing ${tool} on its zero-dollar plan. We examine active user caps, storage ceilings, export options, and upgrade pricing.`,
-    excerpt: `A rigorous hands-on audit of the ${tool} zero-dollar workspace tier. Find out where operational caps emerge, how to optimize storage allowances, and when paid licenses become mathematically justified.`
+    excerpt: `A rigorous hands-on audit of the ${tool} zero-dollar workspace tier. Find out where operational caps emerge, how to manage storage allowances, and when paid licenses become mathematically justified.`
   }),
   (tool) => ({
     title: `${tool} Hands-On Audit: Real Costs, Missing Features & Small Business Value`,
     h1: `${tool} Hands-On Audit: Workflow Limits, Missing Features & True ROI`,
     metaTitle: `${tool} Hands-On Review: Real Costs & Limitations`,
     metaDescription: `Hands-on evaluation of ${tool}. Discover hidden usage restrictions, evaluate entry paid tiers, and calculate total software expenses.`,
-    excerpt: `We spent two weeks running real production workloads inside ${tool} to uncover hidden usage restrictions, rate limits, and calculate total software expenses before you commit team resources.`
+    excerpt: `We spent two weeks running real production workloads inside ${tool} to identify hidden usage restrictions, rate limits, and calculate total software expenses before you commit team resources.`
   }),
   (tool) => ({
     title: `Is ${tool} Worth It? Complete Free Tier, Feature Depth & Pricing Breakdown`,
     h1: `Is ${tool} Worth It? Complete Free Tier, Operational Caps & Pricing Review`,
     metaTitle: `Is ${tool} Worth It? Free Plan Limits & Pricing Review`,
     metaDescription: `Unbiased review of ${tool}. We test account quotas, team collaborator limits, API support, and determine if upgrading is worth it.`,
-    excerpt: `An independent teardown of ${tool} evaluating whether its entry tiers justify monthly seat investments or whether solo operators can thrive on its zero-dollar features indefinitely.`
+    excerpt: `An independent teardown of ${tool} evaluating whether its entry tiers justify monthly seat investments or whether solo operators can succeed on its zero-dollar features indefinitely.`
   }),
   (tool) => ({
     title: `${tool} Under the Microscope: Quota Limits, Team Caps & Upgrade Math`,
     h1: `${tool} Under the Microscope: Tested Ceilings, User Seats & Value`,
     metaTitle: `${tool} Teardown: Quota Limits, Seat Pricing & Verdict`,
-    metaDescription: `Detailed analysis of ${tool} usage limits. Find out where free accounts stall, what starter tiers unlock, and how to budget.`,
+    metaDescription: `Detailed analysis of ${tool} usage limits. Find out where free accounts hit limits, what starter tiers provide, and how to budget.`,
     excerpt: `A detailed teardown of ${tool} usage boundaries. We examine collaborator thresholds, file attachment quotas, API rate limits, and provide a clear timeline for when teams outgrow free plans.`
   }),
   (tool) => ({
@@ -292,79 +293,10 @@ function stripYear(str) {
   return str.replace(/\b202\d\b/g, '').replace(/\s{2,}/g, ' ').trim();
 }
 
-// Helper: Strip banned words or replace them
+// Helper: Strip banned words and sanitize prose using the complete banned-words engine
 function sanitizeProse(text) {
   if (!text) return '';
-  let clean = text
-    .replace(/\b202\d\b/g, '')
-    // Replace typical banned words with clean equivalents
-    .replace(/\bdelve\b/gi, 'examine')
-    .replace(/\brobust\b/gi, 'solid')
-    .replace(/\bseamlessly\b/gi, 'smoothly')
-    .replace(/\bseamless\b/gi, 'smooth')
-    .replace(/\blandscape\b/gi, 'market')
-    .replace(/\btapestry\b/gi, 'range')
-    .replace(/\btestament\b/gi, 'proof')
-    .replace(/\belevate\b/gi, 'improve')
-    .replace(/\bcrucial\b/gi, 'important')
-    .replace(/\bvital\b/gi, 'important')
-    .replace(/\benable\b/gi, 'allow')
-    .replace(/\benables\b/gi, 'allows')
-    .replace(/\benabling\b/gi, 'allowing')
-    .replace(/\bfundamental\b/gi, 'underlying')
-    .replace(/\bfundamentally\b/gi, 'at its core')
-    .replace(/\bexpertise\b/gi, 'skills')
-    .replace(/\bmaximize\b/gi, 'extend')
-    .replace(/\bto maximize\b/gi, 'to extend')
-    .replace(/\bessential\b/gi, 'necessary')
-    .replace(/\bcritical\b/gi, 'important')
-    .replace(/\bgame-changer\b/gi, 'major shift')
-    .replace(/\bgame changer\b/gi, 'major shift')
-    .replace(/\bmoreover\b/gi, 'also')
-    .replace(/\bfurthermore\b/gi, 'additionally')
-    .replace(/\bin conclusion\b/gi, 'in review')
-    .replace(/\bto summarize\b/gi, 'in review')
-    .replace(/\butilize\b/gi, 'use')
-    .replace(/\butilizing\b/gi, 'using')
-    .replace(/\boptimize\b/gi, 'tune')
-    .replace(/\boptimizing\b/gi, 'tuning')
-    .replace(/\bleverage\b/gi, 'apply')
-    .replace(/\bleveraging\b/gi, 'applying')
-    .replace(/\bstreamline\b/gi, 'simplify')
-    .replace(/\bstreamlined\b/gi, 'simplified')
-    .replace(/\bempower\b/gi, 'help')
-    .replace(/\bplethora\b/gi, 'wide selection')
-    .replace(/\bparamount\b/gi, 'top priority')
-    .replace(/\bgroundbreaking\b/gi, 'distinct')
-    .replace(/\bnotable\b/gi, 'marked')
-    .replace(/\bmilestones?\b/gi, 'targets')
-    .replace(/\bgranular\b/gi, 'detailed')
-    .replace(/\bgranularly\b/gi, 'in detail')
-    .replace(/\bnevertheless\b/gi, 'even so')
-    .replace(/\bexcels\b/gi, 'stands out')
-    .replace(/\bsignificantly\b/gi, 'noticeably')
-    .replace(/\bvaluable\b/gi, 'useful')
-    .replace(/\bcollaborative\b/gi, 'cooperative')
-    .replace(/\bjourney\b/gi, 'process')
-    .replace(/\bhowever\b/gi, 'yet')
-    .replace(/\buptime\b/gi, 'service availability')
-    .replace(/\bonboarding\b/gi, 'getting started')
-    .replace(/\blatency\b/gi, 'response speed')
-    .replace(/\bseamless\b/gi, 'smooth')
-    .replace(/\brobust\b/gi, 'solid')
-    .replace(/\buser interface\b/gi, 'visual layout')
-    .replace(/\buser experience\b/gi, 'product experience')
-    .replace(/\bnimble\b/gi, 'compact')
-    .replace(/\brodmap\b/gi, 'plan')
-    .replace(/\btco\b/gi, 'total expense')
-    .replace(/\bstakeholders\b/gi, 'team leads')
-    // Remove dashes in prose
-    .replace(/ - /g, ', ')
-    .replace(/ — /g, ', ')
-    .replace(/ – /g, ', ')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
-  return clean;
+  return sanitizeText(text);
 }
 
 function countWords(str) {
@@ -892,12 +824,7 @@ function buildArticleObject(item, index, totalOffset, allAvailableSlugs = []) {
     if (scoreCard.freePlan) scoreCard.freePlan = sanitizeProse(stripYear(scoreCard.freePlan));
   }
 
-  const slug = item.SuggestedSlug
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '')
-    .replace(/-2026/g, '')
-    .replace(/2026-/g, '');
+  const slug = sanitizeSlug(item.SuggestedSlug);
   const readingTime = `${Math.ceil(bodyWordCount / 180)} min read`;
 
   console.log(`[Publisher] Article "${articleTitle}" generated with ${bodyWordCount} body words (excluding FAQs). Reading time: ${readingTime}`);
@@ -953,7 +880,16 @@ const allAvailableSlugs = [
 
 for (let i = 0; i < candidates.length; i++) {
   const candidate = candidates[i];
-  const article = buildArticleObject(candidate, i, currentTotal, allAvailableSlugs);
+  let article = buildArticleObject(candidate, i, currentTotal, allAvailableSlugs);
+  article = autoRemediateArticle(article);
+
+  // Assert 0 banned words before accepting
+  const violations = auditArticle(article);
+  if (violations.length > 0) {
+    console.error(`[Publisher ERROR] Article "${article.slug}" still contains banned words:`, violations);
+    process.exit(1);
+  }
+  console.log(`[Publisher] Clean-check verified: Article "${article.slug}" contains 0 banned words.`);
   newArticles.push(article);
 }
 
