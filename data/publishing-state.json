@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-02T15:08:51.511Z",
-  "totalPublishedCount": 21,
+  "lastPublishedAt": "2026-10-02T18:09:13.220Z",
+  "totalPublishedCount": 22,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 3,
-  "lastCategory": "AI & Machine Learning",
+  "categoryIndex": 4,
+  "lastCategory": "Developer Tools",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -26,7 +26,8 @@
     "1password-vs-lastpass",
     "asana-vs-make",
     "copper-vs-sproutsocial",
-    "cursor-vs-copper"
+    "cursor-vs-copper",
+    "replit-vs-zoho-books"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -49,7 +50,8 @@
     "https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -267,6 +269,18 @@
           "title": "Cursor vs Copper for small business: Features",
           "path": "/comparisons/cursor-vs-copper",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02T18:09:13.219Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "replit-vs-zoho-books",
+          "title": "Replit or Zoho Books for small business? In-Depth",
+          "path": "/comparisons/replit-vs-zoho-books",
+          "author": "Alex Rivera"
         }
       ]
     }
