@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-02T09:08:32.594Z",
-  "totalPublishedCount": 19,
+  "lastPublishedAt": "2026-10-02T12:09:05.178Z",
+  "totalPublishedCount": 20,
   "dailyTarget": 8,
   "scheduleInterval": "every 3 hours (8 articles/day)",
-  "categoryIndex": 1,
-  "lastCategory": "Project Management",
+  "categoryIndex": 2,
+  "lastCategory": "CRM & Sales",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -24,7 +24,8 @@
     "crisp-vs-supabase",
     "shopify-vs-1password",
     "1password-vs-lastpass",
-    "asana-vs-make"
+    "asana-vs-make",
+    "copper-vs-sproutsocial"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -45,7 +46,8 @@
     "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -239,6 +241,18 @@
           "title": "Asana vs Make for small business: Usability, Integrat",
           "path": "/comparisons/asana-vs-make",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02T12:09:05.178Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "copper-vs-sproutsocial",
+          "title": "Copper vs SproutSocial for small business Review",
+          "path": "/comparisons/copper-vs-sproutsocial",
+          "author": "Liam Cooper"
         }
       ]
     }
