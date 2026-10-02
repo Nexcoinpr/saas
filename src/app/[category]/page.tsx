@@ -258,11 +258,11 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             Browse Other Category Hubs
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            {CATEGORIES.filter((c) => c.slug !== category.slug).slice(0, 6).map((c) => (
+            {CATEGORIES.filter((c) => c.slug !== category.slug).map((c) => (
               <Link
                 key={c.slug}
                 href={c.path}
-                className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface hover:border-slate-400 dark:hover:border-cyan-700/60 hover:shadow-sm transition-all text-xs font-semibold text-slate-800 dark:text-slate-200 text-center block"
+                className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-darkSurface hover:border-cyan-500 dark:hover:border-cyan-700/60 hover:shadow-sm transition-all text-xs font-semibold text-slate-800 dark:text-slate-200 text-center block"
               >
                 {c.name}
               </Link>

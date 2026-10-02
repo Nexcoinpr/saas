@@ -1,15 +1,21 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Award } from "lucide-react";
+import { ArrowRight, Award, FileText } from "lucide-react";
 import { TwitterIcon, LinkedinIcon, GithubIcon } from "@/components/common/SocialIcons";
 import { Author } from "@/types/blog";
+import { getArticlesByAuthor } from "@/data/articles";
 
 interface AuthorCardProps {
   author: Author;
+  currentSlug?: string;
 }
 
-export function AuthorCard({ author }: AuthorCardProps) {
+export function AuthorCard({ author, currentSlug }: AuthorCardProps) {
+  const authorArticles = getArticlesByAuthor(author.slug || author.id)
+    .filter(a => a.slug !== currentSlug)
+    .slice(0, 2);
+
   return (
     <div className="my-10 p-6 sm:p-8 rounded-3xl border border-slate-200/90 dark:border-cyan-950/60 bg-slate-50/60 dark:bg-[#0a0f1d] shadow-sm">
       <div className="flex flex-col sm:flex-row gap-5 items-start">
@@ -91,7 +97,7 @@ export function AuthorCard({ author }: AuthorCardProps) {
 
           {/* Credentials Snippet */}
           {author.credentials && author.credentials.length > 0 && (
-            <div className="pt-2 flex flex-wrap gap-1.5">
+            <div className="pt-1 flex flex-wrap gap-1.5">
               {author.credentials.slice(0, 2).map((cred, idx) => (
                 <span
                   key={idx}
@@ -104,12 +110,33 @@ export function AuthorCard({ author }: AuthorCardProps) {
             </div>
           )}
 
+          {/* Author Recent Articles (Natural Internal Backlinks) */}
+          {authorArticles.length > 0 && (
+            <div className="pt-3 border-t border-slate-200/70 dark:border-slate-800 space-y-1.5">
+              <span className="text-[10px] uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 block">
+                More evaluations by {author.name}:
+              </span>
+              <div className="space-y-1">
+                {authorArticles.map((art) => (
+                  <Link
+                    key={art.slug}
+                    href={art.path}
+                    className="flex items-center gap-2 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors line-clamp-1"
+                  >
+                    <FileText className="w-3 h-3 text-cyan-500 flex-shrink-0" />
+                    <span>{art.title}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="pt-2">
             <Link
               href={`/authors/${author.slug}`}
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
             >
-              <span>View all articles by {author.name}</span>
+              <span>View full profile &amp; all articles by {author.name}</span>
               <ArrowRight className="w-3 h-3" />
             </Link>
           </div>

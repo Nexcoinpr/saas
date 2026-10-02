@@ -63,89 +63,143 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Categories Column 1 */}
+          {/* Column 2: Popular Comparisons */}
           <div>
             <h3 className="font-semibold text-xs uppercase tracking-wider text-slate-900 dark:text-slate-200 mb-3.5">
-              Topics & Hubs
+              Popular Comparisons
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/saas" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  SaaS Industry
+                <Link href="/comparisons/1password-vs-lastpass" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  1Password vs LastPass
                 </Link>
               </li>
               <li>
-                <Link href="/reviews" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  SaaS Reviews
+                <Link href="/comparisons/crisp-vs-supabase" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Crisp vs Supabase
                 </Link>
               </li>
               <li>
-                <Link href="/comparisons" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  SaaS Comparisons
+                <Link href="/comparisons/shopify-vs-1password" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Shopify vs 1Password
                 </Link>
               </li>
               <li>
-                <Link href="/ai-tools" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  AI Tools
+                <Link href="/comparisons/pipedrive-vs-convertkit" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Pipedrive vs ConvertKit
                 </Link>
               </li>
               <li>
-                <Link href="/crm" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  CRM &amp; Sales
+                <Link href="/comparisons/github-copilot-vs-loom" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  GitHub Copilot vs Loom
                 </Link>
               </li>
               <li>
-                <Link href="/productivity" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Productivity
+                <Link href="/comparisons/todoist-vs-debezium" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Todoist vs Debezium
                 </Link>
               </li>
               <li>
-                <Link href="/automation" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Automation
+                <Link href="/comparisons/quickbooks-vs-brevo" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  QuickBooks vs Brevo
                 </Link>
               </li>
               <li>
-                <Link href="/software" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Software & Dev
+                <Link href="/comparisons/activecampaign-vs-zendesk" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  ActiveCampaign vs Zendesk
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Categories Column 2 */}
+          {/* Column 3: Tested SaaS Reviews */}
           <div>
             <h3 className="font-semibold text-xs uppercase tracking-wider text-slate-900 dark:text-slate-200 mb-3.5">
-              Guides & Insights
+              Tested Reviews
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/tutorials" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Tutorials
+                <Link href="/reviews/zapier-review" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Zapier Automation Review
                 </Link>
               </li>
               <li>
-                <Link href="/how-to" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  How-To Guides
+                <Link href="/reviews/asana-review" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Asana Review &amp; Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  SaaS News
+                <Link href="/reviews/copper-review" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Copper CRM Review
                 </Link>
               </li>
               <li>
-                <Link href="/startups" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Startups
+                <Link href="/reviews/perplexity-review" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Perplexity AI Teardown
                 </Link>
               </li>
               <li>
-                <Link href="/business" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Business Tech
+                <Link href="/reviews/remote-review" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Remote.com Contractor
                 </Link>
               </li>
               <li>
-                <Link href="/cloud" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Cloud Computing
+                <Link href="/reviews/vidyard-review" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Vidyard Video Caps
+                </Link>
+              </li>
+              <li>
+                <Link href="/reviews/looka-review" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Looka Logo Breakdown
+                </Link>
+              </li>
+              <li>
+                <Link href="/reviews" className="font-semibold text-cyan-600 dark:text-cyan-400 hover:underline">
+                  All Software Reviews →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4: Software Category Pillars */}
+          <div>
+            <h3 className="font-semibold text-xs uppercase tracking-wider text-slate-900 dark:text-slate-200 mb-3.5">
+              Category Hubs
+            </h3>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <Link href="/crm" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  CRM &amp; Sales Tools
+                </Link>
+              </li>
+              <li>
+                <Link href="/productivity" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Productivity Suites
+                </Link>
+              </li>
+              <li>
+                <Link href="/ai-tools" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  AI &amp; Automation
+                </Link>
+              </li>
+              <li>
+                <Link href="/automation" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Workflow Automation
+                </Link>
+              </li>
+              <li>
+                <Link href="/software" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Software &amp; Dev Stack
+                </Link>
+              </li>
+              <li>
+                <Link href="/saas" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  SaaS Industry Reports
+                </Link>
+              </li>
+              <li>
+                <Link href="/comparisons" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Head-to-Head Hub
                 </Link>
               </li>
               <li>
@@ -156,12 +210,12 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Publication & Legal */}
+          {/* Column 5: Publication & Legal */}
           <div>
             <h3 className="font-semibold text-xs uppercase tracking-wider text-slate-900 dark:text-slate-200 mb-3.5">
-              Publication & Legal
+              Publication &amp; Legal
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/about" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                   About SaaSInsider
@@ -169,7 +223,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/authors" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Authors & Editorial Team
+                  Authors &amp; Editorial Team
                 </Link>
               </li>
               <li>
@@ -189,7 +243,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/terms" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Terms & Conditions
+                  Terms &amp; Conditions
                 </Link>
               </li>
               <li>

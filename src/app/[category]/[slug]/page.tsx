@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { getArticleBySlug, ARTICLES } from "@/data/articles";
+import { getArticleBySlug, ARTICLES, getPreviousAndNextArticle, getRelatedArticles, getPopularArticles } from "@/data/articles";
 import { getCategoryBySlug } from "@/data/categories";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ArticleHeader } from "@/components/article/ArticleHeader";
@@ -16,6 +16,8 @@ import { ComparisonTable } from "@/components/article/ComparisonTable";
 import { StepByStepGuide } from "@/components/article/StepByStepGuide";
 import { FaqAccordion } from "@/components/article/FaqAccordion";
 import { AuthorCard } from "@/components/article/AuthorCard";
+import { ArticlePagination } from "@/components/article/ArticlePagination";
+import { SidebarRecommendations } from "@/components/article/SidebarRecommendations";
 import { RelatedArticles } from "@/components/article/RelatedArticles";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
 import { JsonLd } from "@/components/common/JsonLd";
@@ -91,10 +93,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const category = getCategoryBySlug(article.category);
   const articleSchema = generateArticleSchema(article);
 
-  // Fetch related articles based on slugs
-  const relatedArticles = ARTICLES.filter(
-    (a) => article.relatedArticleSlugs.includes(a.slug) || (a.category === article.category && a.slug !== article.slug)
-  );
+  // Compute smart related articles based on category, author & tags
+  const relatedArticles = getRelatedArticles(article, 6);
+
+  // Sequential Next / Previous articles for unbroken crawler traversal
+  const { prev, next } = getPreviousAndNextArticle(article.slug);
+
+  // Popular articles for sticky sidebar recommendations
+  const popularArticles = getPopularArticles(6);
 
   return (
     <article className="py-8 md:py-12">
@@ -199,11 +205,31 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               ))}
             </div>
 
+            {/* Key Topics Tags */}
+            {article.tags && article.tags.length > 0 && (
+              <div className="pt-6 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center gap-2">
+                <span className="text-xs font-bold text-slate-500 uppercase tracking-wider mr-1">
+                  Topics:
+                </span>
+                {article.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 font-medium"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            )}
+
             {/* Interactive FAQ Accordion */}
             <FaqAccordion faqs={article.faqs} />
 
-            {/* Author Credential Bio Box */}
-            <AuthorCard author={article.author} />
+            {/* Author Credential Bio Box with other articles */}
+            <AuthorCard author={article.author} currentSlug={article.slug} />
+
+            {/* Sequential Next & Previous Article Internal Links */}
+            <ArticlePagination prev={prev} next={next} />
 
           </div>
 
@@ -212,6 +238,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             
             {/* Table of Contents */}
             <TableOfContents items={article.tableOfContents} />
+
+            {/* Trending & Pillar Internal Links */}
+            <SidebarRecommendations
+              currentSlug={article.slug}
+              popularArticles={popularArticles}
+            />
 
             {/* Quick Fact Checking & Methodology Card */}
             <div className="p-5 rounded-2xl border border-slate-200 dark:border-cyan-500/20 bg-white dark:bg-darkSurface text-xs text-slate-600 dark:text-slate-400 space-y-3">

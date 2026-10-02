@@ -137,6 +137,102 @@ const SOFTWARE_DIRECTORY: SoftwareItem[] = [
     verdictBadge: "Ecosystem Leader",
     badgeColor: "bg-orange-100 text-orange-800 dark:bg-orange-950/60 dark:text-orange-300",
     path: "/reviews/zapier-review"
+  },
+  {
+    name: "1Password vs LastPass",
+    category: "Security",
+    categorySlug: "comparisons",
+    rating: 4.8,
+    pricing: "From $2.99/mo / From $3/mo",
+    model: "Monthly subscription",
+    strength: "Master password architecture, zero-knowledge secret keys, and enterprise credential auditing",
+    verdictBadge: "Security Pick",
+    badgeColor: "bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300",
+    path: "/comparisons/1password-vs-lastpass"
+  },
+  {
+    name: "Crisp vs Supabase",
+    category: "Developer Tools",
+    categorySlug: "comparisons",
+    rating: 4.7,
+    pricing: "Free / Free tier + usage",
+    model: "Freemium vs Backend usage",
+    strength: "Customer communication suite versus managed PostgreSQL backend and real-time database architecture",
+    verdictBadge: "Full-Stack Showdown",
+    badgeColor: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300",
+    path: "/comparisons/crisp-vs-supabase"
+  },
+  {
+    name: "Shopify vs 1Password",
+    category: "Finance & Sales",
+    categorySlug: "comparisons",
+    rating: 4.8,
+    pricing: "From $39/mo / From $2.99/mo",
+    model: "Store hosting vs Team vault",
+    strength: "Comparing e-commerce storefront infrastructure against business password security standards",
+    verdictBadge: "Commerce & Auth",
+    badgeColor: "bg-violet-100 text-violet-800 dark:bg-violet-950/60 dark:text-violet-300",
+    path: "/comparisons/shopify-vs-1password"
+  },
+  {
+    name: "ActiveCampaign vs Zendesk",
+    category: "CRM & Sales",
+    categorySlug: "comparisons",
+    rating: 4.7,
+    pricing: "From $29/mo / From $19/agent/mo",
+    model: "Contact tiered vs Per seat",
+    strength: "Comparing advanced marketing automation funnels with enterprise multi-channel customer support desks",
+    verdictBadge: "Service vs Marketing",
+    badgeColor: "bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300",
+    path: "/comparisons/activecampaign-vs-zendesk"
+  },
+  {
+    name: "Looka Logo Maker",
+    category: "AI Tools",
+    categorySlug: "reviews",
+    rating: 4.5,
+    pricing: "From $20 / $96/yr Brand Kit",
+    model: "One-time download vs Sub",
+    strength: "AI-generated vector logos, brand guidelines, typography palettes, and exportable vector assets",
+    verdictBadge: "Brand AI Pick",
+    badgeColor: "bg-cyan-100 text-cyan-800 dark:bg-cyan-950/60 dark:text-cyan-300",
+    path: "/reviews/looka-review"
+  },
+  {
+    name: "Talend vs Copy.ai",
+    category: "AI Tools",
+    categorySlug: "comparisons",
+    rating: 4.6,
+    pricing: "Enterprise quote / Free + $49/mo",
+    model: "Enterprise ETL vs Subscription",
+    strength: "Comparing big data integration pipelines against AI content generation and marketing copy engines",
+    verdictBadge: "Data vs AI",
+    badgeColor: "bg-pink-100 text-pink-800 dark:bg-pink-950/60 dark:text-pink-300",
+    path: "/comparisons/talend-vs-copy-ai"
+  },
+  {
+    name: "Discord vs Brex",
+    category: "Finance & Sales",
+    categorySlug: "comparisons",
+    rating: 4.7,
+    pricing: "Free / Corporate card tiers",
+    model: "Community server vs FinTech",
+    strength: "Contrasting asynchronous community communication with corporate credit lines and expense spend controls",
+    verdictBadge: "Ops & Treasury",
+    badgeColor: "bg-indigo-100 text-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300",
+    path: "/comparisons/discord-vs-brex"
+  },
+  {
+    name: "Deel vs LastPass",
+    category: "HR & Global",
+    categorySlug: "comparisons",
+    rating: 4.8,
+    pricing: "From $49/contractor / From $3/mo",
+    model: "Compliance monthly vs Per user",
+    strength: "Contrasting international payroll and tax compliance with corporate password vaults and SSO",
+    verdictBadge: "Global Operations",
+    badgeColor: "bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300",
+    path: "/comparisons/deel-vs-lastpass"
   }
 ];
 
@@ -144,7 +240,7 @@ export function SaaSMatrixSection() {
   const [selectedFilter, setSelectedFilter] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const categories = ["All", "Productivity", "CRM & Sales", "AI Tools", "Automation", "Video & Sales", "HR & Global", "Developer Tools"];
+  const categories = ["All", "Productivity", "CRM & Sales", "AI Tools", "Automation", "Developer Tools", "Finance & Sales", "HR & Global", "Security"];
 
   const filteredItems = SOFTWARE_DIRECTORY.filter((item) => {
     const matchesCategory = selectedFilter === "All" || item.category === selectedFilter;
