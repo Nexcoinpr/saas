@@ -1,8 +1,8 @@
 {
   "lastPublishedAt": "2026-10-03T03:16:36.568Z",
   "totalPublishedCount": 25,
-  "dailyTarget": 8,
-  "scheduleInterval": "every 3 hours (8 articles/day)",
+  "dailyTarget": 1,
+  "scheduleInterval": "every 24 hours (1 article/day)",
   "categoryIndex": 7,
   "lastCategory": "Finance & Accounting",
   "publishedSlugs": [

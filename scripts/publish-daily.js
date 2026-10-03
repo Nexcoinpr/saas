@@ -5,12 +5,12 @@ const { sanitizeText, sanitizeSlug, autoRemediateArticle, auditArticle } = requi
 
 // CLI options
 const args = process.argv.slice(2);
-let count = 3;
+let count = 1;
 let dryRun = false;
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--count' && args[i + 1]) {
-    count = parseInt(args[i + 1], 10) || 3;
+    count = parseInt(args[i + 1], 10) || 1;
     i++;
   } else if (args[i] === '--dry-run') {
     dryRun = true;
@@ -939,8 +939,8 @@ updatedHistory.push({
 const updatedState = {
   lastPublishedAt: new Date().toISOString(),
   totalPublishedCount: currentTotal + newArticles.length,
-  dailyTarget: 8,
-  scheduleInterval: "every 3 hours (8 articles/day)",
+  dailyTarget: 1,
+  scheduleInterval: "every 24 hours (1 article/day)",
   categoryIndex: catIndex,
   lastCategory: newArticles[newArticles.length - 1].tags[0],
   publishedSlugs: updatedSlugs,

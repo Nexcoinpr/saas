@@ -1,13 +1,13 @@
-name: Automated Article Publishing (8 Articles/Day, Every 3 Hours)
+name: Automated Article Publishing (1 Article/Day, Every 24 Hours)
 
 on:
   schedule:
-    # Runs every 3 hours (24 / 8 = every 3 hours: 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC)
-    - cron: '0 */3 * * *'
+    # Runs once every 24 hours (1 article/day at 00:00 UTC)
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       count:
-        description: 'Number of articles to publish (default 1 per 3h run, or enter 8 for full day)'
+        description: 'Number of articles to publish (default 1 per day)'
         required: true
         default: '1'
         type: string
