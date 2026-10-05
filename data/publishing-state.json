@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-04T03:01:46.967Z",
-  "totalPublishedCount": 26,
+  "lastPublishedAt": "2026-10-05T00:02:25.251Z",
+  "totalPublishedCount": 27,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 8,
-  "lastCategory": "Communication & Video",
+  "categoryIndex": 9,
+  "lastCategory": "Design & Creative",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -31,7 +31,8 @@
     "outsystems-review",
     "slite-vs-dbt",
     "chargebee-vs-zoho-people",
-    "aircall-vs-klaviyo"
+    "aircall-vs-klaviyo",
+    "adobe-express-vs-posthog"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -59,7 +60,8 @@
     "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -337,6 +339,18 @@
           "title": "Aircall vs Klaviyo for small business: Features",
           "path": "/comparisons/aircall-vs-klaviyo",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05T00:02:25.251Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "adobe-express-vs-posthog",
+          "title": "Adobe Express or PostHog for small business? In-Depth",
+          "path": "/comparisons/adobe-express-vs-posthog",
+          "author": "Maya Lin"
         }
       ]
     }
