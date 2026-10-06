@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Calendar, ArrowRight, RefreshCw, Star } from "lucide-react";
 import { Article } from "@/types/blog";
 import { formatDate } from "@/lib/utils";
+import { SafeImage } from "@/components/common/SafeImage";
 
 interface FeaturedArticlesProps {
   articles: Article[];
@@ -50,7 +51,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                 aria-label={`Read cover story: ${primary.title}`}
                 className="aspect-[16/9] relative overflow-hidden bg-slate-100 dark:bg-slate-800"
               >
-                <Image
+                <SafeImage
                   src={primary.featuredImage}
                   alt={primary.featuredImageAlt}
                   fill
@@ -135,7 +136,7 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
                   aria-label={`Read ${article.title}`}
                   className="sm:w-2/5 aspect-[16/10] relative rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0"
                 >
-                  <Image
+                  <SafeImage
                     src={article.featuredImage}
                     alt={article.featuredImageAlt}
                     fill

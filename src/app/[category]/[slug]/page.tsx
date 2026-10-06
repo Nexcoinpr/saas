@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { SafeImage } from "@/components/common/SafeImage";
 import { getArticleBySlug, ARTICLES, getPreviousAndNextArticle, getRelatedArticles, getPopularArticles } from "@/data/articles";
 import { getCategoryBySlug } from "@/data/categories";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -127,7 +128,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
         {/* Featured Image */}
         <figure className="my-8 rounded-3xl overflow-hidden aspect-[16/9] relative bg-slate-100 dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 shadow-sm">
-          <Image
+          <SafeImage
             src={article.featuredImage}
             alt={article.featuredImageAlt}
             fill

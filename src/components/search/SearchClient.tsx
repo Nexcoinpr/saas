@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, X } from "lucide-react";
+import { SafeImage } from "@/components/common/SafeImage";
 import { ARTICLES } from "@/data/articles";
 import { CATEGORIES } from "@/data/categories";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -189,7 +190,7 @@ export function SearchClient() {
                   href={article.path}
                   className="aspect-[16/10] relative overflow-hidden bg-slate-100 dark:bg-slate-800"
                 >
-                  <Image
+                  <SafeImage
                     src={article.featuredImage}
                     alt={article.featuredImageAlt}
                     fill

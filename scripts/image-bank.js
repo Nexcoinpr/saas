@@ -23,7 +23,7 @@ const IMAGE_BANK = [
   },
   {
     id: "crm-4",
-    url: "https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=1200&q=80",
+    url: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&q=80",
     alt: "Retail commerce checkout terminal processing digital transaction records in store",
     categories: ["Commerce & Sales", "Finance & Accounting"]
   },
@@ -97,7 +97,7 @@ const IMAGE_BANK = [
   },
   {
     id: "pm-6",
-    url: "https://images.unsplash.com/photo-1531538606171-0880c5335496?auto=format&fit=crop&w=1200&q=80",
+    url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
     alt: "Scrum master facilitating task priority review with engineering team",
     categories: ["Project Management", "Developer Tools"]
   },
@@ -153,14 +153,14 @@ const IMAGE_BANK = [
   },
   {
     id: "ai-5",
-    url: "https://images.unsplash.com/photo-1677756119517-756a188d2d94?auto=format&fit=crop&w=1200&q=80",
+    url: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     alt: "Human operator testing natural language understanding models on desktop workstation",
     categories: ["AI & Machine Learning", "Developer Tools"]
   },
   {
     id: "ai-6",
-    url: "https://images.unsplash.com/photo-1617791160505-6f008e1e6703?auto=format&fit=crop&w=1200&q=80",
-    alt: "Digital matrix data streams illustrating multi-dimensional vector database indexing",
+    url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    alt: "High-performance cloud server network racks processing real-time database queries",
     categories: ["AI & Machine Learning", "Data Integration & ETL"]
   },
   {
@@ -369,8 +369,8 @@ const IMAGE_BANK = [
   },
   {
     id: "comm-10",
-    url: "https://images.unsplash.com/photo-1573497491278-6715b3a8908f?auto=format&fit=crop&w=1200&q=80",
-    alt: "Client success manager handling asynchronous audio messages and client video tickets",
+    url: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80",
+    alt: "Distributed team collaborating on workspace documentation and project notes",
     categories: ["Communication & Video", "Support & Success"]
   },
 

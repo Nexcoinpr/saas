@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Calendar, Star, Scale, BookOpen, Layers } from "lucide-react";
 import { Article } from "@/types/blog";
 import { formatDate } from "@/lib/utils";
+import { SafeImage } from "@/components/common/SafeImage";
 
 interface ArticleCardProps {
   article: Article;
@@ -53,7 +54,7 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
           aria-label={`Read ${article.title}`}
           className="sm:w-1/3 aspect-[16/10] relative rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0"
         >
-          <Image
+          <SafeImage
             src={article.featuredImage}
             alt={article.featuredImageAlt}
             fill
@@ -114,7 +115,7 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
         aria-label={`Read ${article.title}`}
         className="aspect-[16/10] relative overflow-hidden bg-slate-100 dark:bg-slate-800"
       >
-        <Image
+        <SafeImage
           src={article.featuredImage}
           alt={article.featuredImageAlt}
           fill
