@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-06T00:02:23.605Z",
-  "totalPublishedCount": 28,
+  "lastPublishedAt": "2026-10-07T00:02:24.633Z",
+  "totalPublishedCount": 29,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 10,
-  "lastCategory": "Data Integration & ETL",
+  "categoryIndex": 11,
+  "lastCategory": "HR & Payroll",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -33,7 +33,8 @@
     "chargebee-vs-zoho-people",
     "aircall-vs-klaviyo",
     "adobe-express-vs-posthog",
-    "matillion-vs-hibob"
+    "matillion-vs-hibob",
+    "workday-vs-beehiiv"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -63,7 +64,8 @@
     "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -365,6 +367,18 @@
           "title": "Matillion vs HiBob for small business Showdown",
           "path": "/comparisons/matillion-vs-hibob",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07T00:02:24.633Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "workday-vs-beehiiv",
+          "title": "Workday vs Beehiiv for small business: Usability",
+          "path": "/comparisons/workday-vs-beehiiv",
+          "author": "Sarah Jenkins"
         }
       ]
     }
