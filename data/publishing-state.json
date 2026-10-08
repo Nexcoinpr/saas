@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-07T00:02:24.633Z",
-  "totalPublishedCount": 29,
+  "lastPublishedAt": "2026-10-08T00:02:06.213Z",
+  "totalPublishedCount": 30,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 11,
-  "lastCategory": "HR & Payroll",
+  "categoryIndex": 12,
+  "lastCategory": "Marketing",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -34,7 +34,8 @@
     "aircall-vs-klaviyo",
     "adobe-express-vs-posthog",
     "matillion-vs-hibob",
-    "workday-vs-beehiiv"
+    "workday-vs-beehiiv",
+    "substack-vs-crisp"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -65,7 +66,8 @@
     "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -379,6 +381,18 @@
           "title": "Workday vs Beehiiv for small business: Usability",
           "path": "/comparisons/workday-vs-beehiiv",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08T00:02:06.213Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "substack-vs-crisp",
+          "title": "Substack vs Crisp for small business Review: Feature",
+          "path": "/comparisons/substack-vs-crisp",
+          "author": "Alex Rivera"
         }
       ]
     }
