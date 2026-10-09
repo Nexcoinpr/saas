@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-08T00:02:06.213Z",
-  "totalPublishedCount": 30,
+  "lastPublishedAt": "2026-10-09T00:03:33.747Z",
+  "totalPublishedCount": 31,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 12,
-  "lastCategory": "Marketing",
+  "categoryIndex": 13,
+  "lastCategory": "Support & Success",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -35,7 +35,8 @@
     "adobe-express-vs-posthog",
     "matillion-vs-hibob",
     "workday-vs-beehiiv",
-    "substack-vs-crisp"
+    "substack-vs-crisp",
+    "intercom-vs-gitlab"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -67,7 +68,8 @@
     "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -393,6 +395,18 @@
           "title": "Substack vs Crisp for small business Review: Feature",
           "path": "/comparisons/substack-vs-crisp",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09T00:03:33.747Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "intercom-vs-gitlab",
+          "title": "Intercom vs GitLab for small business: Features",
+          "path": "/comparisons/intercom-vs-gitlab",
+          "author": "Maya Lin"
         }
       ]
     }
