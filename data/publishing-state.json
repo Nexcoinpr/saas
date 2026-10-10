@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-09T00:03:33.747Z",
-  "totalPublishedCount": 31,
+  "lastPublishedAt": "2026-10-10T00:03:12.965Z",
+  "totalPublishedCount": 32,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 13,
-  "lastCategory": "Support & Success",
+  "categoryIndex": 14,
+  "lastCategory": "Commerce & Sales",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -36,7 +36,8 @@
     "matillion-vs-hibob",
     "workday-vs-beehiiv",
     "substack-vs-crisp",
-    "intercom-vs-gitlab"
+    "intercom-vs-gitlab",
+    "woocommerce-review"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -69,7 +70,8 @@
     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -407,6 +409,18 @@
           "title": "Intercom vs GitLab for small business: Features",
           "path": "/comparisons/intercom-vs-gitlab",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10T00:03:12.964Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "woocommerce-review",
+          "title": "WooCommerce Free Plan Limits: Tested Quotas, Workarou",
+          "path": "/reviews/woocommerce-review",
+          "author": "Liam Cooper"
         }
       ]
     }
