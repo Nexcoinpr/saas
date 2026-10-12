@@ -684,7 +684,8 @@
     "KeywordDifficulty_KD": 24,
     "Priority": "Tier 1 (High Quick-Win)",
     "SuggestedSlug": "smartsheet-vs-dbt",
-    "Status": "pending"
+    "Status": "published",
+    "PublishedAt": "2026-10-12T00:03:07.183Z"
   },
   {
     "ArticleID": "ART-005771",
