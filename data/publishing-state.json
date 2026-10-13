@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-12T00:03:07.315Z",
-  "totalPublishedCount": 34,
+  "lastPublishedAt": "2026-10-13T00:04:57.989Z",
+  "totalPublishedCount": 35,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 1,
-  "lastCategory": "Project Management",
+  "categoryIndex": 2,
+  "lastCategory": "CRM & Sales",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -39,7 +39,8 @@
     "intercom-vs-gitlab",
     "woocommerce-review",
     "cheapest-vpn-software-for-manufacturing",
-    "smartsheet-vs-dbt"
+    "smartsheet-vs-dbt",
+    "freshsales-vs-gorgias"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -75,7 +76,8 @@
     "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -449,6 +451,18 @@
           "title": "Smartsheet vs dbt for small business: Usability",
           "path": "/comparisons/smartsheet-vs-dbt",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13T00:04:57.988Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "freshsales-vs-gorgias",
+          "title": "Freshsales vs Gorgias for small business Review",
+          "path": "/comparisons/freshsales-vs-gorgias",
+          "author": "Maya Lin"
         }
       ]
     }
