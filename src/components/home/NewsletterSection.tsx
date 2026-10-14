@@ -8,7 +8,7 @@ export function NewsletterSection() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !email.includes("@")) {
       setStatus("error");
@@ -17,12 +17,25 @@ export function NewsletterSection() {
     }
 
     setStatus("loading");
-    // Simulate instantaneous client confirmation
-    setTimeout(() => {
-      setStatus("success");
-      setMessage("You are subscribed! Welcome to our weekly software briefing.");
-      setEmail("");
-    }, 600);
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setStatus("success");
+        setMessage(data.message || "You are subscribed! Welcome to our weekly software briefing.");
+        setEmail("");
+      } else {
+        setStatus("error");
+        setMessage(data.error || "Subscription failed. Please try again.");
+      }
+    } catch {
+      setStatus("error");
+      setMessage("Network error. Please try again later.");
+    }
   };
 
   return (

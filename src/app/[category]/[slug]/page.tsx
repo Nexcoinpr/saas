@@ -22,7 +22,7 @@ import { SidebarRecommendations } from "@/components/article/SidebarRecommendati
 import { RelatedArticles } from "@/components/article/RelatedArticles";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
 import { JsonLd } from "@/components/common/JsonLd";
-import { generateArticleSchema, SITE_CONFIG } from "@/lib/seo";
+import { generateArticleSchema, generateFaqSchema, generateBreadcrumbSchema, SITE_CONFIG } from "@/lib/seo";
 
 interface ArticlePageProps {
   params: Promise<{
@@ -93,6 +93,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   const category = getCategoryBySlug(article.category);
   const articleSchema = generateArticleSchema(article);
+  const faqSchema = generateFaqSchema(article.faqs);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: category ? category.name : article.category, item: `/${article.category}` },
+    { name: article.title, item: article.path },
+  ]);
 
   // Compute smart related articles based on category, author & tags
   const relatedArticles = getRelatedArticles(article, 6);
@@ -107,6 +112,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     <article className="py-8 md:py-12">
       {/* Schema.org Structured Data */}
       <JsonLd data={articleSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
+      <JsonLd data={breadcrumbSchema} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         

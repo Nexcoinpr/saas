@@ -132,10 +132,10 @@ export function generateArticleSchema(article: Article) {
     "keywords": article.tags.join(", ")
   };
 
-  if (article.template === "review") {
+  if (article.template === "review" || article.template === "comparison") {
     const rawRating = article.reviewData?.overallRating ?? (article.scoreCard ? article.scoreCard.overallScore / 2 : 4.4);
     const numericRating = Number(Number(rawRating).toFixed(1));
-    const productName = article.reviewData?.productName || article.title.replace(/Review.*$/i, "").trim() || "Software";
+    const productName = article.reviewData?.productName || article.title.replace(/Review.*$/i, "").replace(/vs\b.*$/i, "").trim() || "Software";
     const productCategory = article.reviewData?.productCategory || "BusinessApplication";
     const rawPrice = article.reviewData?.startingPrice?.replace(/[^0-9.]/g, "") || "0";
 

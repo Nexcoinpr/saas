@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CheckSquare, Calculator, BookOpen, ArrowRight } from "lucide-react";
+import { PricingCalculator } from "@/components/tools/PricingCalculator";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -149,6 +150,9 @@ export default function ResourcesPage() {
           </div>
 
         </div>
+
+        {/* Interactive Pricing Calculator Widget */}
+        <PricingCalculator />
 
         {/* SaaS Terminology Glossary */}
         <section className="my-16">

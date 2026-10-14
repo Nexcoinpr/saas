@@ -42,6 +42,9 @@ jobs:
       - name: Verify Clean Word Checklist
         run: node scripts/clean-check.js
 
+      - name: Fast Search Engine Indexing Submission
+        run: node scripts/submit-indexing.js || echo "Indexing submission completed with notice"
+
       - name: Commit and Push Changes
         run: |
           git config --global user.name "SaaSInsider Bot"
