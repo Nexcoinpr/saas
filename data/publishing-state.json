@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-13T00:04:57.989Z",
-  "totalPublishedCount": 35,
+  "lastPublishedAt": "2026-10-14T00:10:02.043Z",
+  "totalPublishedCount": 36,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 2,
-  "lastCategory": "CRM & Sales",
+  "categoryIndex": 3,
+  "lastCategory": "AI & Machine Learning",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -40,7 +40,8 @@
     "woocommerce-review",
     "cheapest-vpn-software-for-manufacturing",
     "smartsheet-vs-dbt",
-    "freshsales-vs-gorgias"
+    "freshsales-vs-gorgias",
+    "gemini-vs-recurly"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -77,7 +78,8 @@
     "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -463,6 +465,18 @@
           "title": "Freshsales vs Gorgias for small business Review",
           "path": "/comparisons/freshsales-vs-gorgias",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14T00:10:02.043Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "gemini-vs-recurly",
+          "title": "Gemini vs Recurly for small business: Features",
+          "path": "/comparisons/gemini-vs-recurly",
+          "author": "Liam Cooper"
         }
       ]
     }

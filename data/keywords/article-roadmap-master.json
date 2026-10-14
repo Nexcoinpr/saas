@@ -384,7 +384,8 @@
     "KeywordDifficulty_KD": 25,
     "Priority": "Tier 1 (High Quick-Win)",
     "SuggestedSlug": "gemini-vs-recurly",
-    "Status": "pending"
+    "Status": "published",
+    "PublishedAt": "2026-10-14T00:10:01.827Z"
   },
   {
     "ArticleID": "ART-005609",
