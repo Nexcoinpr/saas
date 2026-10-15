@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-14T00:10:02.043Z",
-  "totalPublishedCount": 36,
+  "lastPublishedAt": "2026-10-15T00:09:27.499Z",
+  "totalPublishedCount": 37,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 3,
-  "lastCategory": "AI & Machine Learning",
+  "categoryIndex": 4,
+  "lastCategory": "Developer Tools",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -41,7 +41,8 @@
     "cheapest-vpn-software-for-manufacturing",
     "smartsheet-vs-dbt",
     "freshsales-vs-gorgias",
-    "gemini-vs-recurly"
+    "gemini-vs-recurly",
+    "bolt-new-vs-helpscout"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -79,7 +80,8 @@
     "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -477,6 +479,18 @@
           "title": "Gemini vs Recurly for small business: Features",
           "path": "/comparisons/gemini-vs-recurly",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15T00:09:27.499Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "bolt-new-vs-helpscout",
+          "title": "Bolt.new or HelpScout for small business? In-Depth",
+          "path": "/comparisons/bolt-new-vs-helpscout",
+          "author": "Sarah Jenkins"
         }
       ]
     }

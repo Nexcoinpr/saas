@@ -994,7 +994,8 @@
     "KeywordDifficulty_KD": 24,
     "Priority": "Tier 1 (High Quick-Win)",
     "SuggestedSlug": "bolt.new-vs-helpscout",
-    "Status": "pending"
+    "Status": "published",
+    "PublishedAt": "2026-10-15T00:09:27.268Z"
   },
   {
     "ArticleID": "ART-005827",
