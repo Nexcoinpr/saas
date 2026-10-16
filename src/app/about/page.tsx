@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "About Us & Editorial Standards | SaaSInsider",
+  title: "About Us & Editorial Standards",
   description: "Learn about SaaSInsider editorial mission, hands-on software testing methodology, and our commitment to unbiased B2B software evaluations.",
   alternates: {
     canonical: `${SITE_CONFIG.siteUrl}/about`,

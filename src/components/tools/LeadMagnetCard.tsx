@@ -117,7 +117,11 @@ export function LeadMagnetCard() {
               </button>
 
               <p className="text-[10px] text-slate-400 text-center">
-                Instant delivery. Zero spam guarantee.
+                Instant delivery. By downloading, you agree to our{" "}
+                <a href="/privacy" className="underline hover:text-cyan-300">
+                  Privacy Policy
+                </a>
+                .
               </p>
             </form>
           )}

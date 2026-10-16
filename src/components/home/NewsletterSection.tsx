@@ -92,10 +92,13 @@ export function NewsletterSection() {
             <p className="mt-2 text-xs text-rose-300">{message}</p>
           )}
 
-          {/* Privacy messaging */}
-          <div className="mt-4 flex items-center justify-center gap-2 text-xs text-slate-400">
-            <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Strict zero-spam policy. Unsubscribe anytime with 1-click.</span>
+          {/* Privacy messaging with consent link */}
+          <div className="mt-4 text-xs text-slate-400">
+            <span>By subscribing, you agree to our </span>
+            <a href="/privacy" className="text-cyan-400 underline hover:text-cyan-300">
+              Privacy Policy
+            </a>
+            <span>. Strict zero-spam policy. Unsubscribe anytime with 1-click.</span>
           </div>
         </form>
 

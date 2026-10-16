@@ -7,12 +7,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/*.csv$", "/*.xlsx$"],
+        disallow: ["/api/", "/search", "/*.csv$", "/*.xlsx$"],
       },
       {
         userAgent: ["Googlebot", "Bingbot"],
         allow: "/",
-        disallow: ["/api/", "/*.csv$", "/*.xlsx$"],
+        disallow: ["/api/", "/search", "/*.csv$", "/*.xlsx$"],
       },
       {
         userAgent: [
@@ -25,10 +25,9 @@ export default function robots(): MetadataRoute.Robots {
           "cohere-ai"
         ],
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/search"],
       }
     ],
     sitemap: `${SITE_CONFIG.siteUrl}/sitemap.xml`,
-    host: SITE_CONFIG.siteUrl,
   };
 }

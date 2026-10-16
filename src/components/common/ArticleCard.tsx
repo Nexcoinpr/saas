@@ -152,8 +152,7 @@ export function ArticleCard({ article, variant = "standard", priority = false }:
           <Link href={`/authors/${article.author.slug}`} className="flex items-center gap-2 hover:underline">
             <Image
               src={article.author.avatar}
-              alt=""
-              aria-hidden="true"
+              alt={article.author.name}
               width={22}
               height={22}
               className="rounded-full object-cover ring-1 ring-slate-200 dark:ring-slate-700"

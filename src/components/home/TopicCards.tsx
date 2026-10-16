@@ -22,59 +22,59 @@ interface TopicItem {
 
 const TOPICS: TopicItem[] = [
   {
-    name: "SaaS",
-    slug: "saas",
-    description: "Business models, pricing psychology, unit economics & benchmarks",
+    name: "SaaS Reviews",
+    slug: "reviews",
+    description: "Hands-on software teardowns, verified plan limitations, and pricing models",
     icon: Layers,
-    count: "40+ Guides",
+    count: "Full Reviews",
     color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
   },
   {
-    name: "AI Tools",
-    slug: "ai-tools",
-    description: "Generative AI, enterprise LLMs, reasoning models & AI agents",
+    name: "Comparisons",
+    slug: "comparisons",
+    description: "Side-by-side software showdowns, feature matrices, and migration advice",
     icon: Sparkles,
-    count: "28+ Tools",
+    count: "Head-to-Head",
     color: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/60"
   },
   {
-    name: "Software",
-    slug: "software",
-    description: "System architecture, developer tooling & cloud data systems",
+    name: "AI & Automation",
+    slug: "ai-tools",
+    description: "Generative AI, enterprise LLMs, reasoning models & AI assistants",
     icon: Cpu,
-    count: "35+ Reviews",
+    count: "Tools Tested",
     color: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60"
   },
   {
-    name: "Automation",
-    slug: "automation",
-    description: "No-code workflows, webhooks, Zapier, Make & algorithmic ops",
+    name: "SaaS Economics",
+    slug: "saas",
+    description: "Pricing psychology, unit economics (CAC/LTV/NRR), and benchmarks",
     icon: GitMerge,
-    count: "22+ Playbooks",
+    count: "Research",
     color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
   },
   {
     name: "Productivity",
     slug: "productivity",
-    description: "Async collaboration, team wikis, project management & sprint tools",
+    description: "Collaboration platforms, project management, and sprint trackers",
     icon: CheckCircle,
-    count: "30+ Reviews",
+    count: "Productivity Hub",
     color: "bg-teal-500/10 text-teal-600 dark:text-teal-400 border-teal-200 dark:border-teal-900/60"
   },
   {
-    name: "Business",
-    slug: "business",
-    description: "Software migration, vendor procurement & IT modernization",
+    name: "Buyer Resources",
+    slug: "resources",
+    description: "Free cost calculators, churn estimators, and procurement scorecards",
     icon: Briefcase,
-    count: "18+ Teardowns",
+    count: "Interactive Tools",
     color: "bg-sky-500/10 text-sky-600 dark:text-sky-400 border-sky-200 dark:border-sky-900/60"
   },
   {
-    name: "Startups",
-    slug: "startups",
-    description: "Zero-to-one tech stacks, lean tooling & founder operations",
+    name: "Cloud Computing",
+    slug: "cloud",
+    description: "Serverless systems, databases, hosting plans, and infrastructure bills",
     icon: Rocket,
-    count: "25+ Articles",
+    count: "Architecture",
     color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60"
   }
 ];

@@ -59,9 +59,9 @@ export function LatestArticlesGrid({ articles }: LatestArticlesGridProps) {
           </div>
         </div>
 
-        {/* 3-Column Articles Grid */}
+        {/* 3-Column Articles Grid (Trimmed to top 9 to avoid massive DOM depth) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredArticles.map((article) => (
+          {filteredArticles.slice(0, 9).map((article) => (
             <ArticleCard key={article.slug} article={article} />
           ))}
         </div>

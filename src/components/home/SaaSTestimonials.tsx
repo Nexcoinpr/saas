@@ -36,8 +36,7 @@ export function SaaSTestimonials() {
                 <div className="flex items-center gap-3.5 mb-4">
                   <Image
                     src={author.avatar}
-                    alt=""
-                    aria-hidden="true"
+                    alt={`${author.name} - ${author.role}`}
                     width={48}
                     height={48}
                     className="rounded-full object-cover ring-2 ring-slate-200 dark:ring-slate-700 group-hover:ring-blue-500 transition-all"

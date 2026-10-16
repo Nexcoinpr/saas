@@ -103,6 +103,23 @@ export function ContactForm() {
         />
       </div>
 
+      <div className="pt-2">
+        <label className="flex items-start gap-2.5 text-xs text-slate-600 dark:text-slate-400 cursor-pointer">
+          <input
+            type="checkbox"
+            required
+            className="mt-0.5 rounded border-slate-300 text-cyan-600 focus:ring-cyan-500"
+          />
+          <span>
+            I agree to the processing of my contact information to respond to this inquiry in accordance with the{" "}
+            <a href="/privacy" className="text-cyan-600 dark:text-cyan-400 underline hover:text-cyan-500">
+              Privacy Policy
+            </a>
+            .
+          </span>
+        </label>
+      </div>
+
       <button
         type="submit"
         disabled={status === "loading"}

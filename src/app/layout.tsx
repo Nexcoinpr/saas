@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
     url: SITE_CONFIG.siteUrl,
     siteName: SITE_CONFIG.name,
     title: SITE_CONFIG.title,
@@ -95,7 +95,7 @@ export default function RootLayout({
   const websiteSchema = generateWebsiteSchema();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-GB" suppressHydrationWarning>
       <head>
         <JsonLd data={orgSchema} />
         <JsonLd data={websiteSchema} />

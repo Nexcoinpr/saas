@@ -7,29 +7,33 @@ const VALUE_PILLARS = [
     icon: Laptop,
     title: "Direct Sandbox Testing",
     badge: "Hands-On",
-    description: "We purchase active software accounts, run team workflows, and test actual UI responsiveness rather than reciting marketing claims.",
-    href: "/about"
+    description: "We test software in active environments, run team workflows, and test actual UI responsiveness rather than reciting marketing claims.",
+    href: "/about",
+    linkLabel: "Read Editorial Methodology"
   },
   {
     icon: Calculator,
     title: "True Cost & Billing Math",
     badge: "Finance Audits",
     description: "Our finance editors break down seat minimums, annual renewal traps, add-on fees, and the real 3-year total expense of ownership.",
-    href: "/saas"
+    href: "/saas",
+    linkLabel: "Review SaaS Economics"
   },
   {
     icon: Link2,
     title: "App Connectivity & Webhooks",
     badge: "Reliability",
     description: "We test webhook trigger speeds, API rate limits, payload sizes, and connection reliability across modern automation stacks.",
-    href: "/comparisons"
+    href: "/comparisons",
+    linkLabel: "Compare Software Head-to-Head"
   },
   {
     icon: ShieldCheck,
     title: "Zero Vendor Sponsorship",
     badge: "Unbiased",
     description: "No software company can pay for higher ratings, remove negative findings, or influence editorial recommendations on our site.",
-    href: "/about"
+    href: "/about",
+    linkLabel: "Our Ethics Policy"
   }
 ];
 
@@ -82,10 +86,10 @@ export function SaaSFeatureGrid() {
                 <div className="pt-4 mt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center text-xs font-semibold text-blue-600 dark:text-cyan-400 group-hover:translate-x-0.5 transition-transform">
                   <Link
                     href={pillar.href}
-                    aria-label={`Read testing standard for ${pillar.title}`}
+                    aria-label={pillar.linkLabel}
                     className="inline-flex items-center gap-1"
                   >
-                    <span>Read Testing Standard</span>
+                    <span>{pillar.linkLabel}</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

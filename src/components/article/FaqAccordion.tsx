@@ -60,11 +60,13 @@ export function FaqAccordion({ faqs }: FaqAccordionProps) {
                 </span>
               </button>
 
-              {isOpen && (
-                <div className="px-4 pb-5 sm:px-5 sm:pb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-3">
-                  {faq.answer}
-                </div>
-              )}
+              <div
+                className={`px-4 pb-5 sm:px-5 sm:pb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-3 ${
+                  isOpen ? "block" : "hidden"
+                }`}
+              >
+                {faq.answer}
+              </div>
             </div>
           );
         })}
