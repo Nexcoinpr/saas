@@ -21,6 +21,7 @@ import { ArticlePagination } from "@/components/article/ArticlePagination";
 import { SidebarRecommendations } from "@/components/article/SidebarRecommendations";
 import { RelatedArticles } from "@/components/article/RelatedArticles";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
+import { LeadMagnetCard } from "@/components/tools/LeadMagnetCard";
 import { JsonLd } from "@/components/common/JsonLd";
 import { generateArticleSchema, generateFaqSchema, generateBreadcrumbSchema, SITE_CONFIG } from "@/lib/seo";
 
@@ -229,6 +230,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 ))}
               </div>
             )}
+
+            {/* Free Downloadable Toolkit / Lead Magnet */}
+            <LeadMagnetCard />
 
             {/* Interactive FAQ Accordion */}
             <FaqAccordion faqs={article.faqs} />

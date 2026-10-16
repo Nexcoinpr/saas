@@ -7,6 +7,7 @@ import { getArticlesByCategory, getLatestArticles } from "@/data/articles";
 import { getCategoryGuide } from "@/data/categoryGuides";
 import { ArticleCard } from "@/components/common/ArticleCard";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { LeadMagnetCard } from "@/components/tools/LeadMagnetCard";
 import { SITE_CONFIG } from "@/lib/seo";
 import { 
   Layers, 
@@ -168,6 +169,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               : fallbackArticles.map((art) => <ArticleCard key={art.slug} article={art} />)}
           </div>
         </div>
+
+        {/* Free Procurement & Evaluation Toolkit Lead Magnet */}
+        <LeadMagnetCard />
 
         {/* Editorial Guide & Evaluation Framework */}
         <section className="my-16 pt-12 border-t border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200">

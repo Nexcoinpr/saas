@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CheckSquare, Calculator, BookOpen, ArrowRight } from "lucide-react";
 import { PricingCalculator } from "@/components/tools/PricingCalculator";
+import { ChurnCalculator } from "@/components/tools/ChurnCalculator";
+import { MrrArrConverter } from "@/components/tools/MrrArrConverter";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -151,8 +153,12 @@ export default function ResourcesPage() {
 
         </div>
 
-        {/* Interactive Pricing Calculator Widget */}
-        <PricingCalculator />
+        {/* Interactive Calculators & Tools Suite */}
+        <section className="my-12 space-y-10">
+          <PricingCalculator />
+          <ChurnCalculator />
+          <MrrArrConverter />
+        </section>
 
         {/* SaaS Terminology Glossary */}
         <section className="my-16">
