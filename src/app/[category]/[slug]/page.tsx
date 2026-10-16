@@ -9,6 +9,7 @@ import { getCategoryBySlug } from "@/data/categories";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ArticleHeader } from "@/components/article/ArticleHeader";
 import { DirectAnswerBox } from "@/components/article/DirectAnswerBox";
+import { AiFactSheet } from "@/components/article/AiFactSheet";
 import { KeyTakeaways } from "@/components/article/KeyTakeaways";
 import { TableOfContents } from "@/components/article/TableOfContents";
 import { ScoreCard } from "@/components/article/ScoreCard";
@@ -149,6 +150,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
         {/* AEO / GEO Direct Answer Box */}
         <DirectAnswerBox directAnswer={article.directAnswer} />
+
+        {/* Structured Fact Sheet for AI Engine Citation (GEO) */}
+        <AiFactSheet article={article} />
 
         {/* Main Points */}
         <KeyTakeaways takeaways={article.keyTakeaways} />
