@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-17T00:08:02.603Z",
-  "totalPublishedCount": 14,
+  "lastPublishedAt": "2026-10-18T00:06:38.010Z",
+  "totalPublishedCount": 15,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 6,
-  "lastCategory": "Productivity & Collaboration",
+  "categoryIndex": 7,
+  "lastCategory": "Finance & Accounting",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -19,7 +19,8 @@
     "pipedrive-vs-convertkit",
     "asana-vs-make",
     "activecampaign-vs-zendesk",
-    "slite-vs-otter-ai"
+    "slite-vs-otter-ai",
+    "bill-com-vs-workday"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -60,7 +61,8 @@
     "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -494,6 +496,18 @@
           "title": "Slite vs Otter.ai for small business: Usability",
           "path": "/comparisons/slite-vs-otter-ai",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18T00:06:38.010Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "bill-com-vs-workday",
+          "title": "Bill.com vs Workday for small business Review",
+          "path": "/comparisons/bill-com-vs-workday",
+          "author": "Maya Lin"
         }
       ]
     }

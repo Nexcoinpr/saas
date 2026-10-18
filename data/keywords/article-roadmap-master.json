@@ -563,7 +563,8 @@
     "KeywordDifficulty_KD": 25,
     "Priority": "Tier 1 (High Quick-Win)",
     "SuggestedSlug": "bill.com-vs-workday",
-    "Status": "pending"
+    "Status": "published",
+    "PublishedAt": "2026-10-18T00:06:37.899Z"
   },
   {
     "ArticleID": "ART-005671",
