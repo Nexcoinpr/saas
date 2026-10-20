@@ -2,10 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { CheckSquare, Calculator, BookOpen, ArrowRight } from "lucide-react";
-import { PricingCalculator } from "@/components/tools/PricingCalculator";
-import { ChurnCalculator } from "@/components/tools/ChurnCalculator";
-import { MrrArrConverter } from "@/components/tools/MrrArrConverter";
+import { CheckSquare, Calculator, BookOpen, ArrowRight, Sparkles } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -153,11 +150,27 @@ export default function ResourcesPage() {
 
         </div>
 
-        {/* Interactive Calculators & Tools Suite */}
-        <section className="my-12 space-y-10">
-          <PricingCalculator />
-          <ChurnCalculator />
-          <MrrArrConverter />
+        {/* Dedicated Interactive Calculators Suite Callout */}
+        <section className="my-12 p-8 rounded-3xl bg-gradient-to-br from-cyan-950 via-slate-900 to-[#040816] border border-cyan-500/40 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden">
+          <div className="space-y-2 max-w-xl relative z-10">
+            <span className="inline-flex items-center gap-1.5 text-xs uppercase font-extrabold tracking-widest text-cyan-400">
+              <Sparkles className="w-3.5 h-3.5" />
+              Interactive Calculation Suite
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-black text-white">
+              SaaS Pricing, Churn &amp; Revenue Calculators
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Use our live calculation engines to model team seat markups, evaluate monthly logo vs MRR churn, and project forward ARR run-rates with compound growth.
+            </p>
+          </div>
+          <Link
+            href="/tools"
+            className="px-6 py-3.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-sm shadow-md transition-all shrink-0 flex items-center gap-2 relative z-10"
+          >
+            <span>Open All Calculators</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </section>
 
         {/* SaaS Terminology Glossary */}
