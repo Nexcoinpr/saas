@@ -25,6 +25,8 @@ import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
 import { LeadMagnetCard } from "@/components/tools/LeadMagnetCard";
 import { SocialShareBar } from "@/components/article/SocialShareBar";
 import { AlternativesMatrix } from "@/components/article/AlternativesMatrix";
+import { TopicClusterLinks } from "@/components/article/TopicClusterLinks";
+import { getKeywordLinkTargets, injectInternalLinks } from "@/lib/internalLinks";
 import { JsonLd } from "@/components/common/JsonLd";
 import { generateArticleSchema, generateFaqSchema, generateBreadcrumbSchema, SITE_CONFIG } from "@/lib/seo";
 
@@ -111,6 +113,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   // Popular articles for sticky sidebar recommendations
   const popularArticles = getPopularArticles(6);
+  const keywordTargets = getKeywordLinkTargets(article.slug);
 
   return (
     <article className="py-8 md:py-12">
@@ -243,6 +246,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {/* Free Downloadable Toolkit / Lead Magnet */}
             {/* Buyer Alternatives & Showdowns */}
             <AlternativesMatrix currentProduct={article.reviewData ? article.reviewData.productName : article.title.split(":")[0].trim()} category={article.category} />
+
+            {/* Smart Topic Cluster Silo Linking */}
+            <TopicClusterLinks currentArticle={article} clusterArticles={relatedArticles} />
 
             <LeadMagnetCard />
 
