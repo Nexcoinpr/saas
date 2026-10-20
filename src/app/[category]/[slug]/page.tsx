@@ -23,6 +23,8 @@ import { SidebarRecommendations } from "@/components/article/SidebarRecommendati
 import { RelatedArticles } from "@/components/article/RelatedArticles";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
 import { LeadMagnetCard } from "@/components/tools/LeadMagnetCard";
+import { SocialShareBar } from "@/components/article/SocialShareBar";
+import { AlternativesMatrix } from "@/components/article/AlternativesMatrix";
 import { JsonLd } from "@/components/common/JsonLd";
 import { generateArticleSchema, generateFaqSchema, generateBreadcrumbSchema, SITE_CONFIG } from "@/lib/seo";
 
@@ -154,6 +156,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {/* Structured Fact Sheet for AI Engine Citation (GEO) */}
         <AiFactSheet article={article} />
 
+        {/* Social Share Bar */}
+        <SocialShareBar title={article.title} url={`${SITE_CONFIG.siteUrl}${article.path}`} summary={article.excerpt} />
+
         {/* Main Points */}
         <KeyTakeaways takeaways={article.keyTakeaways} />
 
@@ -236,6 +241,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             )}
 
             {/* Free Downloadable Toolkit / Lead Magnet */}
+            {/* Buyer Alternatives & Showdowns */}
+            <AlternativesMatrix currentProduct={article.reviewData ? article.reviewData.productName : article.title.split(":")[0].trim()} category={article.category} />
+
             <LeadMagnetCard />
 
             {/* Interactive FAQ Accordion */}

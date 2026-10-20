@@ -246,31 +246,55 @@ let catIndex = state.categoryIndex || 0;
 const candidates = [];
 const candidateSlugs = new Set();
 
+// High-impact traffic optimization:
+// Filter remaining pending roadmap items and sort by opportunity:
+// (High Monthly Volume + Low Keyword Difficulty KD + Category diversity)
 for (let step = 0; step < count; step++) {
   let found = null;
-  // Try categories in round-robin order
   for (let attempt = 0; attempt < CATEGORY_ROTATION.length; attempt++) {
     const targetCat = CATEGORY_ROTATION[(catIndex + attempt) % CATEGORY_ROTATION.length];
-    const match = roadmap.find(r => 
-      r.Category === targetCat && 
-      r.Status !== 'published' && 
-      !publishedSlugsSet.has(r.SuggestedSlug) &&
-      !candidateSlugs.has(r.SuggestedSlug)
-    );
-    if (match) {
-      found = match;
+    const categoryPool = roadmap
+      .filter(r => 
+        r.Category === targetCat && 
+        r.Status !== 'published' && 
+        !publishedSlugsSet.has(r.SuggestedSlug) &&
+        !candidateSlugs.has(r.SuggestedSlug)
+      )
+      .sort((a, b) => {
+        const volA = Number(a.MonthlyVolume) || 0;
+        const volB = Number(b.MonthlyVolume) || 0;
+        if (volB !== volA) return volB - volA;
+        const kdA = Number(a.KeywordDifficulty_KD) || 50;
+        const kdB = Number(b.KeywordDifficulty_KD) || 50;
+        return kdA - kdB;
+      });
+
+    if (categoryPool.length > 0) {
+      found = categoryPool[0];
       catIndex = (catIndex + attempt + 1) % CATEGORY_ROTATION.length;
       break;
     }
   }
 
-  // Fallback: If no category matched, take any top pending item
   if (!found) {
-    found = roadmap.find(r => 
-      r.Status !== 'published' && 
-      !publishedSlugsSet.has(r.SuggestedSlug) &&
-      !candidateSlugs.has(r.SuggestedSlug)
-    );
+    const globalPool = roadmap
+      .filter(r => 
+        r.Status !== 'published' && 
+        !publishedSlugsSet.has(r.SuggestedSlug) &&
+        !candidateSlugs.has(r.SuggestedSlug)
+      )
+      .sort((a, b) => {
+        const volA = Number(a.MonthlyVolume) || 0;
+        const volB = Number(b.MonthlyVolume) || 0;
+        if (volB !== volA) return volB - volA;
+        const kdA = Number(a.KeywordDifficulty_KD) || 50;
+        const kdB = Number(b.KeywordDifficulty_KD) || 50;
+        return kdA - kdB;
+      });
+
+    if (globalPool.length > 0) {
+      found = globalPool[0];
+    }
   }
 
   if (found) {
