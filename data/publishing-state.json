@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-19T00:07:50.294Z",
-  "totalPublishedCount": 16,
+  "lastPublishedAt": "2026-10-20T00:12:31.938Z",
+  "totalPublishedCount": 17,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 8,
-  "lastCategory": "Communication & Video",
+  "categoryIndex": 9,
+  "lastCategory": "Design & Creative",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -21,7 +21,8 @@
     "activecampaign-vs-zendesk",
     "slite-vs-otter-ai",
     "bill-com-vs-workday",
-    "zoom-vs-venngage"
+    "zoom-vs-venngage",
+    "visme-vs-brevo"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -64,7 +65,8 @@
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -522,6 +524,18 @@
           "title": "Zoom vs Venngage for small business: Features",
           "path": "/comparisons/zoom-vs-venngage",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20T00:12:31.938Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "visme-vs-brevo",
+          "title": "Visme or Brevo for small business? In-Depth Platform",
+          "path": "/comparisons/visme-vs-brevo",
+          "author": "Sarah Jenkins"
         }
       ]
     }
