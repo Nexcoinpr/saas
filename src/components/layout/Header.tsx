@@ -15,12 +15,11 @@ import { BrandLogo } from "@/components/common/BrandLogo";
 
 const NAV_LINKS = [
   { name: "Home", href: "/" },
-  { name: "SaaS", href: "/saas" },
   { name: "Reviews", href: "/reviews" },
   { name: "Comparisons", href: "/comparisons" },
   { name: "AI Tools", href: "/ai-tools" },
-  { name: "Tutorials", href: "/tutorials" },
-  { name: "News", href: "/news" },
+  { name: "Tools & Calculators", href: "/tools" },
+  { name: "SaaS", href: "/saas" },
   { name: "Resources", href: "/resources" },
 ];
 
@@ -58,85 +57,72 @@ export function Header() {
             </nav>
           </div>
 
-          {/* Right Action Bar */}
-          <div className="flex items-center gap-2 sm:gap-3">
-            {/* Search Link Button */}
+          {/* Right Action Icons */}
+          <div className="flex items-center gap-3">
+            {/* Search Link */}
             <Link
               href="/search"
               aria-label="Search articles"
-              className="flex items-center gap-2 px-3 py-1.5 text-sm text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800/90 rounded-lg hover:border-cyan-400 dark:hover:border-cyan-700/60 hover:bg-slate-50 dark:hover:bg-slate-900/60 transition-all"
+              className="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
-              <Search className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
-              <span className="hidden sm:inline font-normal">Search...</span>
-              <kbd className="hidden sm:inline text-[10px] bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-slate-500 dark:text-slate-400 font-mono border border-slate-200 dark:border-slate-700">
-                ⌘K
-              </kbd>
+              <Search className="w-5 h-5" />
             </Link>
 
-            {/* Dark/Light mode toggle */}
+            {/* Dark/Light Mode Toggle */}
             <ThemeToggle />
 
-            {/* Newsletter CTA Button */}
-            <a
-              href="#newsletter"
-              className="hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white transition-all shadow-sm shadow-cyan-600/30 hover:scale-[1.02] active:scale-[0.98]"
+            {/* Quick Action Button */}
+            <Link
+              href="/tools"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold shadow-sm transition-all"
             >
-              <Zap className="w-3.5 h-3.5 fill-current" />
-              <span>Get Updates</span>
-            </a>
+              <Zap className="w-3.5 h-3.5" />
+              <span>Free Tools</span>
+            </Link>
 
-            {/* Mobile menu trigger */}
+            {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Open mobile menu"
-              className="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              className="lg:hidden p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Dropdown Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-b border-slate-200 dark:border-cyan-950/60 bg-white dark:bg-[#070b14] px-4 pt-3 pb-6 space-y-2">
-          <div className="grid grid-cols-2 gap-2 pb-3 border-b border-slate-100 dark:border-slate-800/80">
-            {NAV_LINKS.map((link) => {
-              const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
-              return (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`px-3 py-2 rounded-lg text-sm font-medium ${
-                    isActive
-                      ? "text-cyan-600 dark:text-cyan-300 bg-cyan-50 dark:bg-cyan-950/50 font-semibold"
-                      : "text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-900"
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
-          </div>
-
-          <div className="pt-2 flex flex-col gap-2">
+        <div className="lg:hidden border-b border-slate-200 dark:border-cyan-950/40 bg-white dark:bg-[#070b14] px-4 pt-2 pb-6 space-y-1">
+          {NAV_LINKS.map((link) => {
+            const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block px-3 py-2 rounded-xl text-base font-medium transition-colors ${
+                  isActive
+                    ? "text-cyan-600 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-950/50 font-bold"
+                    : "text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800"
+                }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
+          
+          <div className="pt-4 border-t border-slate-100 dark:border-slate-800">
             <Link
-              href="/search"
+              href="/tools"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2.5 px-3 py-2 text-sm text-slate-600 dark:text-slate-300 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-600 text-white font-bold text-sm shadow-sm"
             >
-              <Search className="w-4 h-4 text-cyan-500" />
-              <span>Full Site Search</span>
+              <Zap className="w-4 h-4" />
+              <span>Open Free Calculators</span>
             </Link>
-            <a
-              href="#newsletter"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg text-center shadow-md shadow-cyan-600/25"
-            >
-              <span>Subscribe to SaaSInsider Briefing</span>
-            </a>
           </div>
         </div>
       )}
