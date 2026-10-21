@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-20T00:12:31.938Z",
-  "totalPublishedCount": 42,
+  "lastPublishedAt": "2026-10-21T00:10:59.539Z",
+  "totalPublishedCount": 43,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 9,
-  "lastCategory": "Design & Creative",
+  "categoryIndex": 10,
+  "lastCategory": "Data Integration & ETL",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -47,7 +47,8 @@
     "freshsales-vs-gorgias",
     "gemini-vs-recurly",
     "bolt-new-vs-helpscout",
-    "zapier-vs-perplexity"
+    "zapier-vs-perplexity",
+    "airbyte-vs-quickbooks-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -91,7 +92,8 @@
     "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1526374870839-e155464bb9b2?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -561,6 +563,18 @@
           "title": "Visme or Brevo for small business? In-Depth Platform",
           "path": "/comparisons/visme-vs-brevo",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21T00:10:59.539Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "airbyte-vs-quickbooks-1",
+          "title": "Airbyte vs QuickBooks reddit Showdown: Daily Workflow",
+          "path": "/comparisons/airbyte-vs-quickbooks-1",
+          "author": "Maya Lin"
         }
       ]
     }
