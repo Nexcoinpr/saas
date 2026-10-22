@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-21T00:10:59.539Z",
-  "totalPublishedCount": 43,
+  "lastPublishedAt": "2026-10-22T00:10:20.644Z",
+  "totalPublishedCount": 44,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 10,
-  "lastCategory": "Data Integration & ETL",
+  "categoryIndex": 11,
+  "lastCategory": "HR & Payroll",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -48,7 +48,8 @@
     "gemini-vs-recurly",
     "bolt-new-vs-helpscout",
     "zapier-vs-perplexity",
-    "airbyte-vs-quickbooks-1"
+    "airbyte-vs-quickbooks-1",
+    "rippling-vs-klaviyo-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -93,7 +94,8 @@
     "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1526374870839-e155464bb9b2?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1526374870839-e155464bb9b2?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -575,6 +577,18 @@
           "title": "Airbyte vs QuickBooks reddit Showdown: Daily Workflow",
           "path": "/comparisons/airbyte-vs-quickbooks-1",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22T00:10:20.644Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "rippling-vs-klaviyo-1",
+          "title": "Rippling vs Klaviyo reddit: Usability, Integration",
+          "path": "/comparisons/rippling-vs-klaviyo-1",
+          "author": "Liam Cooper"
         }
       ]
     }
