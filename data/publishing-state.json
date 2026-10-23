@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-22T00:10:20.644Z",
-  "totalPublishedCount": 44,
+  "lastPublishedAt": "2026-10-23T00:12:14.177Z",
+  "totalPublishedCount": 45,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 11,
-  "lastCategory": "HR & Payroll",
+  "categoryIndex": 12,
+  "lastCategory": "Marketing",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -49,7 +49,8 @@
     "bolt-new-vs-helpscout",
     "zapier-vs-perplexity",
     "airbyte-vs-quickbooks-1",
-    "rippling-vs-klaviyo-1"
+    "rippling-vs-klaviyo-1",
+    "hootsuite-vs-gitlab"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -95,7 +96,8 @@
     "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1526374870839-e155464bb9b2?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -589,6 +591,18 @@
           "title": "Rippling vs Klaviyo reddit: Usability, Integration",
           "path": "/comparisons/rippling-vs-klaviyo-1",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23T00:12:14.177Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "hootsuite-vs-gitlab",
+          "title": "Hootsuite vs GitLab reddit Review: Feature Depth",
+          "path": "/comparisons/hootsuite-vs-gitlab",
+          "author": "Sarah Jenkins"
         }
       ]
     }

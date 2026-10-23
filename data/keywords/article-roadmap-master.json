@@ -372646,7 +372646,8 @@
     "KeywordDifficulty_KD": 35,
     "Priority": "Tier 2 (High Potential)",
     "SuggestedSlug": "hootsuite-vs-gitlab",
-    "Status": "pending"
+    "Status": "published",
+    "PublishedAt": "2026-10-23T00:12:14.038Z"
   },
   {
     "ArticleID": "ART-000484",
