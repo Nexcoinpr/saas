@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-25T00:07:13.694Z",
-  "totalPublishedCount": 47,
+  "lastPublishedAt": "2026-10-26T00:09:07.764Z",
+  "totalPublishedCount": 48,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 14,
-  "lastCategory": "Commerce & Sales",
+  "categoryIndex": 0,
+  "lastCategory": "IT & Security",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -52,7 +52,8 @@
     "rippling-vs-klaviyo-1",
     "hootsuite-vs-gitlab",
     "zendesk-vs-front-2",
-    "bigcommerce-vs-posthog"
+    "bigcommerce-vs-posthog",
+    "best-vpn-software-for-healthcare"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -101,7 +102,8 @@
     "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -631,6 +633,18 @@
           "title": "BigCommerce or PostHog reddit? In-Depth Platform",
           "path": "/comparisons/bigcommerce-vs-posthog",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26T00:09:07.764Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "best-vpn-software-for-healthcare",
+          "title": "best VPN Software for Healthcare Software Breakdown",
+          "path": "/reviews/best-vpn-software-for-healthcare",
+          "author": "Liam Cooper"
         }
       ]
     }
