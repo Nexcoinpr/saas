@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-26T00:09:07.764Z",
-  "totalPublishedCount": 48,
+  "lastPublishedAt": "2026-10-27T00:13:50.007Z",
+  "totalPublishedCount": 49,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 0,
-  "lastCategory": "IT & Security",
+  "categoryIndex": 1,
+  "lastCategory": "Project Management",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -53,7 +53,8 @@
     "hootsuite-vs-gitlab",
     "zendesk-vs-front-2",
     "bigcommerce-vs-posthog",
-    "best-vpn-software-for-healthcare"
+    "best-vpn-software-for-healthcare",
+    "clickup-vs-aircall-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -103,7 +104,8 @@
     "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -645,6 +647,18 @@
           "title": "best VPN Software for Healthcare Software Breakdown",
           "path": "/reviews/best-vpn-software-for-healthcare",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27T00:13:50.007Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "clickup-vs-aircall-1",
+          "title": "ClickUp vs Aircall reddit: Usability, Integration",
+          "path": "/comparisons/clickup-vs-aircall-1",
+          "author": "Sarah Jenkins"
         }
       ]
     }
