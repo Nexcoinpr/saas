@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-27T00:13:50.007Z",
-  "totalPublishedCount": 49,
+  "lastPublishedAt": "2026-10-28T00:18:51.068Z",
+  "totalPublishedCount": 50,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 1,
-  "lastCategory": "Project Management",
+  "categoryIndex": 2,
+  "lastCategory": "CRM & Sales",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -54,7 +54,8 @@
     "zendesk-vs-front-2",
     "bigcommerce-vs-posthog",
     "best-vpn-software-for-healthcare",
-    "clickup-vs-aircall-1"
+    "clickup-vs-aircall-1",
+    "pipedrive-vs-brex-3"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -105,7 +106,8 @@
     "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -659,6 +661,18 @@
           "title": "ClickUp vs Aircall reddit: Usability, Integration",
           "path": "/comparisons/clickup-vs-aircall-1",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28T00:18:51.068Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "pipedrive-vs-brex-3",
+          "title": "Pipedrive vs Brex reddit Review: Feature Depth, Real",
+          "path": "/comparisons/pipedrive-vs-brex-3",
+          "author": "Alex Rivera"
         }
       ]
     }
