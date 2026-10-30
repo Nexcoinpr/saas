@@ -372153,7 +372153,8 @@
     "KeywordDifficulty_KD": 35,
     "Priority": "Tier 2 (High Potential)",
     "SuggestedSlug": "jira-vs-workato",
-    "Status": "pending"
+    "Status": "published",
+    "PublishedAt": "2026-10-30T03:08:57.724Z"
   },
   {
     "ArticleID": "ART-000421",
