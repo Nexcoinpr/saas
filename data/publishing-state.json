@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-10-30T03:08:57.861Z",
-  "totalPublishedCount": 52,
+  "lastPublishedAt": "2026-10-31T02:54:48.122Z",
+  "totalPublishedCount": 53,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 4,
-  "lastCategory": "Developer Tools",
+  "categoryIndex": 5,
+  "lastCategory": "Workflow Automation",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -57,7 +57,8 @@
     "clickup-vs-aircall-1",
     "pipedrive-vs-brex-3",
     "claude-vs-dialpad-1",
-    "jira-vs-workato"
+    "jira-vs-workato",
+    "tray-io-vs-wave-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -111,7 +112,8 @@
     "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -701,6 +703,18 @@
           "title": "Jira or Workato reddit? In-Depth Platform Breakdown",
           "path": "/comparisons/jira-vs-workato",
           "author": "Liam Cooper"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31T02:54:48.122Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "tray-io-vs-wave-1",
+          "title": "Tray.io vs Wave reddit Showdown: Daily Workflow",
+          "path": "/comparisons/tray-io-vs-wave-1",
+          "author": "Sarah Jenkins"
         }
       ]
     }
