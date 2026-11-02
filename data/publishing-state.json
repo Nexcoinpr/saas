@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-01T02:48:15.548Z",
-  "totalPublishedCount": 54,
+  "lastPublishedAt": "2026-11-02T02:55:59.424Z",
+  "totalPublishedCount": 55,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 6,
-  "lastCategory": "Productivity & Collaboration",
+  "categoryIndex": 7,
+  "lastCategory": "Finance & Accounting",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -59,7 +59,8 @@
     "claude-vs-dialpad-1",
     "jira-vs-workato",
     "tray-io-vs-wave-1",
-    "coda-vs-freshsales"
+    "coda-vs-freshsales",
+    "zoho-books-vs-workday"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -115,7 +116,8 @@
     "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -729,6 +731,18 @@
           "title": "Coda vs Freshsales reddit: Usability, Integration",
           "path": "/comparisons/coda-vs-freshsales",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02T02:55:59.424Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "zoho-books-vs-workday",
+          "title": "Zoho Books vs Workday reddit Review: Feature Depth",
+          "path": "/comparisons/zoho-books-vs-workday",
+          "author": "Maya Lin"
         }
       ]
     }
