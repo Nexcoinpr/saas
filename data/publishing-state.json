@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-02T02:55:59.424Z",
-  "totalPublishedCount": 55,
+  "lastPublishedAt": "2026-11-03T04:14:30.418Z",
+  "totalPublishedCount": 56,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 7,
-  "lastCategory": "Finance & Accounting",
+  "categoryIndex": 8,
+  "lastCategory": "Communication & Video",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -60,7 +60,8 @@
     "jira-vs-workato",
     "tray-io-vs-wave-1",
     "coda-vs-freshsales",
-    "zoho-books-vs-workday"
+    "zoho-books-vs-workday",
+    "descript-vs-zoom-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -117,7 +118,8 @@
     "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -743,6 +745,18 @@
           "title": "Zoho Books vs Workday reddit Review: Feature Depth",
           "path": "/comparisons/zoho-books-vs-workday",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03T04:14:30.418Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "descript-vs-zoom-1",
+          "title": "Descript vs Zoom reddit: Features, Pricing Tiers &",
+          "path": "/comparisons/descript-vs-zoom-1",
+          "author": "Liam Cooper"
         }
       ]
     }
