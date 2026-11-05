@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-04T03:32:02.395Z",
-  "totalPublishedCount": 57,
+  "lastPublishedAt": "2026-11-05T03:53:31.380Z",
+  "totalPublishedCount": 58,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 9,
-  "lastCategory": "Design & Creative",
+  "categoryIndex": 10,
+  "lastCategory": "Data Integration & ETL",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -62,7 +62,8 @@
     "coda-vs-freshsales",
     "zoho-books-vs-workday",
     "descript-vs-zoom-1",
-    "canva-vs-mailchimp-1"
+    "canva-vs-mailchimp-1",
+    "fivetran-vs-perplexity-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -121,7 +122,8 @@
     "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -771,6 +773,18 @@
           "title": "Canva or Mailchimp reddit? In-Depth Platform Breakdow",
           "path": "/comparisons/canva-vs-mailchimp-1",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05T03:53:31.380Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "fivetran-vs-perplexity-1",
+          "title": "Fivetran vs Perplexity reddit Showdown: Daily",
+          "path": "/comparisons/fivetran-vs-perplexity-1",
+          "author": "Alex Rivera"
         }
       ]
     }
