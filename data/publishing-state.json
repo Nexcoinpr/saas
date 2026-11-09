@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-08T02:54:08.184Z",
-  "totalPublishedCount": 61,
+  "lastPublishedAt": "2026-11-09T03:14:27.065Z",
+  "totalPublishedCount": 62,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 13,
-  "lastCategory": "Support & Success",
+  "categoryIndex": 14,
+  "lastCategory": "Commerce & Sales",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -66,7 +66,8 @@
     "fivetran-vs-perplexity-1",
     "hibob-vs-heap",
     "amplitude-vs-heap-1",
-    "freshdesk-vs-gitlab-2"
+    "freshdesk-vs-gitlab-2",
+    "woocommerce-vs-posthog-2"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -129,7 +130,8 @@
     "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1522071901873-411886a10004?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -827,6 +829,18 @@
           "title": "Freshdesk vs GitLab reddit: Features, Pricing Tiers",
           "path": "/comparisons/freshdesk-vs-gitlab-2",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09T03:14:27.065Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "woocommerce-vs-posthog-2",
+          "title": "WooCommerce or PostHog reddit? In-Depth Platform",
+          "path": "/comparisons/woocommerce-vs-posthog-2",
+          "author": "Alex Rivera"
         }
       ]
     }
