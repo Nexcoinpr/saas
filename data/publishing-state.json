@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-12T04:32:12.461Z",
-  "totalPublishedCount": 65,
+  "lastPublishedAt": "2026-11-13T03:46:56.821Z",
+  "totalPublishedCount": 66,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 2,
-  "lastCategory": "CRM & Sales",
+  "categoryIndex": 3,
+  "lastCategory": "AI & Machine Learning",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -70,7 +70,8 @@
     "woocommerce-vs-posthog-2",
     "free-vpn-software-software-for-remote-companies",
     "basecamp-vs-zapier",
-    "attio-vs-1password-1"
+    "attio-vs-1password-1",
+    "midjourney-vs-apollo"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -137,7 +138,8 @@
     "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -883,6 +885,18 @@
           "title": "Attio vs 1Password reddit Review: Feature Depth",
           "path": "/comparisons/attio-vs-1password-1",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13T03:46:56.821Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "midjourney-vs-apollo",
+          "title": "Midjourney vs Apollo reddit: Features, Pricing Tiers",
+          "path": "/comparisons/midjourney-vs-apollo",
+          "author": "Alex Rivera"
         }
       ]
     }
