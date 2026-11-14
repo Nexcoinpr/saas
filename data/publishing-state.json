@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-13T03:46:56.821Z",
-  "totalPublishedCount": 66,
+  "lastPublishedAt": "2026-11-14T03:45:07.214Z",
+  "totalPublishedCount": 67,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 3,
-  "lastCategory": "AI & Machine Learning",
+  "categoryIndex": 4,
+  "lastCategory": "Developer Tools",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -71,7 +71,8 @@
     "free-vpn-software-software-for-remote-companies",
     "basecamp-vs-zapier",
     "attio-vs-1password-1",
-    "midjourney-vs-apollo"
+    "midjourney-vs-apollo",
+    "linear-vs-zoho-crm"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -139,7 +140,8 @@
     "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -897,6 +899,18 @@
           "title": "Midjourney vs Apollo reddit: Features, Pricing Tiers",
           "path": "/comparisons/midjourney-vs-apollo",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14T03:45:07.214Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "linear-vs-zoho-crm",
+          "title": "Linear or Zoho CRM reddit? In-Depth Platform Breakdow",
+          "path": "/comparisons/linear-vs-zoho-crm",
+          "author": "Maya Lin"
         }
       ]
     }
