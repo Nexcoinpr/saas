@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-14T03:45:07.214Z",
-  "totalPublishedCount": 67,
+  "lastPublishedAt": "2026-11-15T03:23:29.756Z",
+  "totalPublishedCount": 68,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 4,
-  "lastCategory": "Developer Tools",
+  "categoryIndex": 5,
+  "lastCategory": "Workflow Automation",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -72,7 +72,8 @@
     "basecamp-vs-zapier",
     "attio-vs-1password-1",
     "midjourney-vs-apollo",
-    "linear-vs-zoho-crm"
+    "linear-vs-zoho-crm",
+    "mendix-vs-xero"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -141,7 +142,8 @@
     "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -911,6 +913,18 @@
           "title": "Linear or Zoho CRM reddit? In-Depth Platform Breakdow",
           "path": "/comparisons/linear-vs-zoho-crm",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15T03:23:29.756Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "mendix-vs-xero",
+          "title": "Mendix vs Xero reddit Showdown: Daily Workflow, True",
+          "path": "/comparisons/mendix-vs-xero",
+          "author": "Liam Cooper"
         }
       ]
     }
