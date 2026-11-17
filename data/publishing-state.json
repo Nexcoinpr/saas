@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-16T03:24:49.874Z",
-  "totalPublishedCount": 69,
+  "lastPublishedAt": "2026-11-17T05:25:00.631Z",
+  "totalPublishedCount": 70,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 6,
-  "lastCategory": "Productivity & Collaboration",
+  "categoryIndex": 7,
+  "lastCategory": "Finance & Accounting",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -74,7 +74,8 @@
     "midjourney-vs-apollo",
     "linear-vs-zoho-crm",
     "mendix-vs-xero",
-    "evernote-vs-github-copilot"
+    "evernote-vs-github-copilot",
+    "chargebee-vs-amplitude-2"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -145,7 +146,8 @@
     "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -939,6 +941,18 @@
           "title": "Evernote vs GitHub Copilot reddit: Usability",
           "path": "/comparisons/evernote-vs-github-copilot",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17T05:25:00.631Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "chargebee-vs-amplitude-2",
+          "title": "Chargebee vs Amplitude reddit Review: Feature Depth",
+          "path": "/comparisons/chargebee-vs-amplitude-2",
+          "author": "Alex Rivera"
         }
       ]
     }
