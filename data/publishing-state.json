@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-18T04:51:21.265Z",
-  "totalPublishedCount": 71,
+  "lastPublishedAt": "2026-11-19T04:42:42.151Z",
+  "totalPublishedCount": 72,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 8,
-  "lastCategory": "Communication & Video",
+  "categoryIndex": 9,
+  "lastCategory": "Design & Creative",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -76,7 +76,8 @@
     "mendix-vs-xero",
     "evernote-vs-github-copilot",
     "chargebee-vs-amplitude-2",
-    "google-meet-vs-piktochart"
+    "google-meet-vs-piktochart",
+    "adobe-express-vs-zendesk"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -149,7 +150,8 @@
     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -967,6 +969,18 @@
           "title": "Google Meet vs Piktochart reddit: Features, Pricing",
           "path": "/comparisons/google-meet-vs-piktochart",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19T04:42:42.151Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "adobe-express-vs-zendesk",
+          "title": "Adobe Express or Zendesk reddit? In-Depth Platform",
+          "path": "/comparisons/adobe-express-vs-zendesk",
+          "author": "Liam Cooper"
         }
       ]
     }
