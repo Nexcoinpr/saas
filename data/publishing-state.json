@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-20T04:33:38.995Z",
-  "totalPublishedCount": 73,
+  "lastPublishedAt": "2026-11-21T04:27:57.077Z",
+  "totalPublishedCount": 74,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 10,
-  "lastCategory": "Data Integration & ETL",
+  "categoryIndex": 11,
+  "lastCategory": "HR & Payroll",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -78,7 +78,8 @@
     "chargebee-vs-amplitude-2",
     "google-meet-vs-piktochart",
     "adobe-express-vs-zendesk",
-    "dbt-vs-dialpad-1"
+    "dbt-vs-dialpad-1",
+    "bamboohr-vs-activecampaign-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -153,7 +154,8 @@
     "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -995,6 +997,18 @@
           "title": "dbt vs Dialpad reddit Showdown: Daily Workflow, True",
           "path": "/comparisons/dbt-vs-dialpad-1",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-21T04:27:57.077Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "bamboohr-vs-activecampaign-1",
+          "title": "BambooHR vs ActiveCampaign reddit: Usability",
+          "path": "/comparisons/bamboohr-vs-activecampaign-1",
+          "author": "Alex Rivera"
         }
       ]
     }
