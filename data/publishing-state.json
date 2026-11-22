@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-21T04:27:57.077Z",
-  "totalPublishedCount": 74,
+  "lastPublishedAt": "2026-11-22T03:41:53.570Z",
+  "totalPublishedCount": 75,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 11,
-  "lastCategory": "HR & Payroll",
+  "categoryIndex": 12,
+  "lastCategory": "Marketing",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -79,7 +79,8 @@
     "google-meet-vs-piktochart",
     "adobe-express-vs-zendesk",
     "dbt-vs-dialpad-1",
-    "bamboohr-vs-activecampaign-1"
+    "bamboohr-vs-activecampaign-1",
+    "activecampaign-vs-zendesk-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -155,7 +156,8 @@
     "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1551836022-b06985bceb24?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -1009,6 +1011,18 @@
           "title": "BambooHR vs ActiveCampaign reddit: Usability",
           "path": "/comparisons/bamboohr-vs-activecampaign-1",
           "author": "Alex Rivera"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22T03:41:53.570Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "activecampaign-vs-zendesk-1",
+          "title": "ActiveCampaign vs Zendesk reddit Review: Feature",
+          "path": "/comparisons/activecampaign-vs-zendesk-1",
+          "author": "Maya Lin"
         }
       ]
     }

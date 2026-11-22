@@ -373233,7 +373233,8 @@
     "KeywordDifficulty_KD": 34,
     "Priority": "Tier 2 (High Potential)",
     "SuggestedSlug": "activecampaign-vs-zendesk-1",
-    "Status": "pending"
+    "Status": "published",
+    "PublishedAt": "2026-11-22T03:41:53.380Z"
   },
   {
     "ArticleID": "ART-000548",
