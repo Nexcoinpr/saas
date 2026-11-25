@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-24T07:15:44.389Z",
-  "totalPublishedCount": 77,
+  "lastPublishedAt": "2026-11-25T05:49:03.797Z",
+  "totalPublishedCount": 78,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 14,
-  "lastCategory": "Commerce & Sales",
+  "categoryIndex": 0,
+  "lastCategory": "IT & Security",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -82,7 +82,8 @@
     "bamboohr-vs-activecampaign-1",
     "activecampaign-vs-zendesk-1",
     "freshdesk-vs-hotjar-2",
-    "shopify-vs-square"
+    "shopify-vs-square",
+    "free-vpn-software-software-for-financial-advisors"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -161,7 +162,8 @@
     "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1551836022-b06985bceb24?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1565372195458-9de0b320ef04?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1565372195458-9de0b320ef04?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -1051,6 +1053,18 @@
           "title": "Shopify or Square reddit? In-Depth Platform Breakdown",
           "path": "/comparisons/shopify-vs-square",
           "author": "Sarah Jenkins"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25T05:49:03.797Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "free-vpn-software-software-for-financial-advisors",
+          "title": "free VPN Software software for Financial Advisors",
+          "path": "/reviews/free-vpn-software-software-for-financial-advisors",
+          "author": "Alex Rivera"
         }
       ]
     }
