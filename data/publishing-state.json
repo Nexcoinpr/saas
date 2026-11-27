@@ -1,10 +1,10 @@
 {
-  "lastPublishedAt": "2026-11-26T05:39:28.263Z",
-  "totalPublishedCount": 79,
+  "lastPublishedAt": "2026-11-27T05:33:05.005Z",
+  "totalPublishedCount": 80,
   "dailyTarget": 1,
   "scheduleInterval": "every 24 hours (1 article/day)",
-  "categoryIndex": 1,
-  "lastCategory": "Project Management",
+  "categoryIndex": 2,
+  "lastCategory": "CRM & Sales",
   "publishedSlugs": [
     "remote-review",
     "vidyard-review",
@@ -84,7 +84,8 @@
     "freshdesk-vs-hotjar-2",
     "shopify-vs-square",
     "free-vpn-software-software-for-financial-advisors",
-    "smartsheet-vs-stitch"
+    "smartsheet-vs-stitch",
+    "zoominfo-vs-netlify-1"
   ],
   "usedImages": [
     "/images/articles/remote-review.jpg",
@@ -165,7 +166,8 @@
     "https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1565372195458-9de0b320ef04?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80"
   ],
   "history": [
     {
@@ -1079,6 +1081,18 @@
           "title": "Smartsheet vs Stitch reddit: Usability, Integration",
           "path": "/comparisons/smartsheet-vs-stitch",
           "author": "Maya Lin"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27T05:33:05.005Z",
+      "count": 1,
+      "articles": [
+        {
+          "id": "zoominfo-vs-netlify-1",
+          "title": "ZoomInfo vs Netlify reddit Review: Feature Depth",
+          "path": "/comparisons/zoominfo-vs-netlify-1",
+          "author": "Liam Cooper"
         }
       ]
     }
